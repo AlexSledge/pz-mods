@@ -563,18 +563,6 @@ module Base
 		StaticModel = ShotgunShell,
 	}
 	
-		item 762x51Bullets_casing_spent
-	{
-		CanStack	=	TRUE,
-		Weight	=	0.02,
-		Type	=	Normal,
-		DisplayName	= Spent  7.62x51mm Casing,
-		Icon	=	308_Casing,
-		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
-		Tooltip = Tooltip_CasingSpent,
-	}
-	
 	/*******************************************************/
 	/*                      Primers                        */
 	/*******************************************************/

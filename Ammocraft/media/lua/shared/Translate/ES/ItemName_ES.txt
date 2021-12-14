@@ -1,0 +1,36 @@
+ItemName_ES = {
+    ItemName_Base.762Bullets_casingbox = "Caja de casquillos 7.62x51mm",
+    ItemName_Base.762x39Bullets_casingbox = "Caja de casquillos 7.62x39mm",
+    ItemName_Base.22LRBullets_casingbox = "Caja de casquillos .22 LR",
+    ItemName_Base.4440Bullets_casingbox = "Caja de casquillos .44-40",
+
+    ItemName_Base.762Bullets_tipbox = "Caja de puntas de bala 7.62mm",
+    ItemName_Base.22LRBullets_tipbox = "Caja de puntas de bala .22 LR",
+    ItemName_Base.4440Bullets_tipbox = "Caja de puntas de bala .44-40",
+
+    ItemName_Base.762Bullets_tip = "Punta de bala 7.62mm",
+    ItemName_Base.22LRBullets_tip = "Punta de bala .22 LR",
+    ItemName_Base.4440Bullets_tip = "Punta de bala .44-40",
+
+    ItemName_Base.762Bullets_casing = "Casquillo 7.62x51mm ",
+    ItemName_Base.762x39Bullets_casing = "Casquillo 7.62x39mm",
+    ItemName_Base.22LRBullets_casing = "Casquillo .22 LR",
+    ItemName_Base.4440Bullets_casing = "Casquillo .44-40",
+
+    ItemName_Base.762Bullets_casing_spent = "Casquillo gastado 7.62x51mm",
+    ItemName_Base.762x39Bullets_casing_spent = "Casquillo gastado 7.62x39mm",
+    ItemName_Base.22LRBullets_casing_spent = "Casquillo gastado .22 LR",
+    ItemName_Base.4440Bullets_casing_spent = "Casquillo gastado .44-40",
+
+    ItemName_Base.762Bullets_casing_spent_noprimer = "Casquillo sin primer 7.62x51mm",
+    ItemName_Base.762x39Bullets_casing_spent_noprimer = "Casquillo sin primer 7.62x39mm",
+    ItemName_Base.22LRBullets_casing_spent_noprimer = "Casquillo sin primer .22 LR",
+    ItemName_Base.4440Bullets_casing_spent_noprimer = "Casquillo sin primer .44-40",
+
+    ItemName_Base.762BulletsMold = "Molde punta de bala 7.62mm",
+    ItemName_Base.762x39BulletsMold = "Molde punta de bala 7.62x39mm",
+    ItemName_Base.22LRBulletsMold = "Molde punta de bala .22 LR",
+    ItemName_Base.4440BulletsMold = "Molde punta de bala .44-40",
+
+    ItemName_Base.GunnutMonthly7 = "Revista mensual Gunnut 'Yippie Ki Yay'",
+}

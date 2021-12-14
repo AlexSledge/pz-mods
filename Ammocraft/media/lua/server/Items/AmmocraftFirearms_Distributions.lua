@@ -18,13 +18,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 0.01,
+              "762x51Bullets_casingbox", 0.01,
               "762x39Bullets_casingbox", 0.01,
-              "4440Bullets_casingbox", 0.025,
+              "Bullets4440_casingbox", 0.025,
               "22LRBullets_casingbox", 0.05,
               --Tips
-              "762Bullets_tipbox", 0.01,
-              "4440Bullets_tipbox", 0.01,
+              "762x51Bullets_tipbox", 0.01,
+              "Bullets4440_tipbox", 0.01,
               "22LRBullets_tipbox", 0.05,
             }
         },
@@ -32,13 +32,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 0.01,
+              "762x51Bullets_casingbox", 0.01,
               "762x39Bullets_casingbox", 0.01,
-              "4440Bullets_casingbox", 0.025,
+              "Bullets4440_casingbox", 0.025,
               "22LRBullets_casingbox", 0.05,
               --Tips
-              "762Bullets_tipbox", 0.01,
-              "4440Bullets_tipbox", 0.01,
+              "762x51Bullets_tipbox", 0.01,
+              "Bullets4440_tipbox", 0.01,
               "22LRBullets_tipbox", 0.05,
             }
         },
@@ -46,13 +46,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
@@ -66,13 +66,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
@@ -120,13 +120,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
@@ -139,13 +139,13 @@ local distributionTable = {
             rolls = 2,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
             },
         },
@@ -155,13 +155,13 @@ local distributionTable = {
             rolls = 2,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -173,13 +173,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -188,13 +188,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -206,13 +206,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             dontSpawnAmmo = true,
@@ -222,13 +222,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             dontSpawnAmmo = true,
@@ -238,13 +238,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             dontSpawnAmmo = true,
@@ -254,13 +254,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             dontSpawnAmmo = true,
@@ -273,13 +273,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
 
@@ -292,13 +292,13 @@ local distributionTable = {
             rolls = 2,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -307,13 +307,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
@@ -326,13 +326,13 @@ local distributionTable = {
             rolls = 3,
             items = {
               --Casings
-              "762Bullets_casingbox", 1,
+              "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
-              "4440Bullets_casingbox", 1,
+              "Bullets4440_casingbox", 1,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 1,
-              "4440Bullets_tipbox", 1,
+              "762x51Bullets_tipbox", 1,
+              "Bullets4440_tipbox", 1,
               "22LRBullets_tipbox", 5,
             }
         }
@@ -346,13 +346,13 @@ local distributionTable = {
         rolls = 3,
         items = {
           --Casings
-          "762Bullets_casingbox", 5,
+          "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
-          "4440Bullets_casingbox", 5,
+          "Bullets4440_casingbox", 5,
           "22LRBullets_casingbox", 5,
           --Tips
-          "762Bullets_tipbox", 5,
-          "4440Bullets_tipbox", 5,
+          "762x51Bullets_tipbox", 5,
+          "Bullets4440_tipbox", 5,
           "22LRBullets_tipbox", 5,
         },
         fillRand = 0,
@@ -362,13 +362,13 @@ local distributionTable = {
         rolls = 5,
         items = {
           --Casings
-          "762Bullets_casingbox", 5,
+          "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
-          "4440Bullets_casingbox", 5,
+          "Bullets4440_casingbox", 5,
           "22LRBullets_casingbox", 5,
           --Tips
-          "762Bullets_tipbox", 5,
-          "4440Bullets_tipbox", 5,
+          "762x51Bullets_tipbox", 5,
+          "Bullets4440_tipbox", 5,
           "22LRBullets_tipbox", 5,
         },
         -- only two map allowed
@@ -382,13 +382,13 @@ local distributionTable = {
         rolls = 1,
         items = {
           --Casings
-          "762Bullets_casingbox", 5,
+          "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
-          "4440Bullets_casingbox", 5,
+          "Bullets4440_casingbox", 5,
           "22LRBullets_casingbox", 5,
           --Tips
-          "762Bullets_tipbox", 5,
-          "4440Bullets_tipbox", 5,
+          "762x51Bullets_tipbox", 5,
+          "Bullets4440_tipbox", 5,
           "22LRBullets_tipbox", 5,
         },
         fillRand = 0,
@@ -398,13 +398,13 @@ local distributionTable = {
         rolls = 1,
         items = {
           --Casings
-          "762Bullets_casingbox", 5,
+          "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
-          "4440Bullets_casingbox", 5,
+          "Bullets4440_casingbox", 5,
           "22LRBullets_casingbox", 5,
           --Tips
-          "762Bullets_tipbox", 5,
-          "4440Bullets_tipbox", 5,
+          "762x51Bullets_tipbox", 5,
+          "Bullets4440_tipbox", 5,
           "22LRBullets_tipbox", 5,
         },
         fillRand = 0,
@@ -414,13 +414,13 @@ local distributionTable = {
         rolls = 1,
         items = {
           --Casings
-          "762Bullets_casingbox", 5,
+          "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
-          "4440Bullets_casingbox", 5,
+          "Bullets4440_casingbox", 5,
           "22LRBullets_casingbox", 5,
           --Tips
-          "762Bullets_tipbox", 5,
-          "4440Bullets_tipbox", 5,
+          "762x51Bullets_tipbox", 5,
+          "Bullets4440_tipbox", 5,
           "22LRBullets_tipbox", 5,
         },
         fillRand = 0,
@@ -430,13 +430,13 @@ local distributionTable = {
         rolls = 1,
         items = {
           --Casings
-          "762Bullets_casingbox", 5,
+          "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
-          "4440Bullets_casingbox", 5,
+          "Bullets4440_casingbox", 5,
           "22LRBullets_casingbox", 5,
           --Tips
-          "762Bullets_tipbox", 5,
-          "4440Bullets_tipbox", 5,
+          "762x51Bullets_tipbox", 5,
+          "Bullets4440_tipbox", 5,
           "22LRBullets_tipbox", 5,
         },
         fillRand = 0,
@@ -451,13 +451,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -466,13 +466,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             fillRand=1,
@@ -484,13 +484,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -499,13 +499,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             }
         },
@@ -516,13 +516,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             dontSpawnAmmo = true,
@@ -532,13 +532,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
         },
@@ -547,13 +547,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             fillRand = 1,
@@ -565,13 +565,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             dontSpawnAmmo = true,
@@ -581,13 +581,13 @@ local distributionTable = {
             rolls = 1,
             items = {
               --Casings
-              "762Bullets_casingbox", 5,
+              "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
-              "4440Bullets_casingbox", 5,
+              "Bullets4440_casingbox", 5,
               "22LRBullets_casingbox", 5,
               --Tips
-              "762Bullets_tipbox", 5,
-              "4440Bullets_tipbox", 5,
+              "762x51Bullets_tipbox", 5,
+              "Bullets4440_tipbox", 5,
               "22LRBullets_tipbox", 5,
             },
             fillRand=1,

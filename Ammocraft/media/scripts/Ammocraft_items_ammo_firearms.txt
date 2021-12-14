@@ -3,7 +3,7 @@ module Base
  	/*****************************************************/
  	/*                       Boxes                       */
 	/*****************************************************/
-	item 762Bullets_casingbox
+	item 762x51Bullets_casingbox
 	{
 		CanStack	=	FALSE,
 		Weight	=	0.5,
@@ -14,7 +14,7 @@ module Base
 		Tooltip = Tooltip_BoxCasings,
 	}
 
-	item 762Bullets_tipbox
+	item 762x51Bullets_tipbox
 	{
 		CanStack	=	FALSE,
 		Weight	=	0.5,
@@ -58,7 +58,7 @@ module Base
 		Tooltip = Tooltip_BoxTips,
 	}
 
-	item 4440Bullets_casingbox
+	item Bullets4440_casingbox
 	{
 		CanStack	=	FALSE,
 		Weight	=	0.5,
@@ -69,7 +69,7 @@ module Base
 		Tooltip = Tooltip_BoxCasings,
 	}
 
-	item 4440Bullets_tipbox
+	item Bullets4440_tipbox
 	{
 		CanStack	=	FALSE,
 		Weight	=	0.5,
@@ -84,7 +84,7 @@ module Base
 	/*                       Casings & Tips                       */
 	/**************************************************************/
 
-	item 762Bullets_casing
+	item 762x51Bullets_casing
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -96,7 +96,7 @@ module Base
 		Tooltip = Tooltip_762_308,
 	}
 
-	item 762Bullets_casing_spent
+	item 762x51Bullets_casing_spent
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -108,7 +108,7 @@ module Base
 		Tooltip = Tooltip_CasingSpent,
 	}
 
-	item 762Bullets_casing_spent_noprimer
+	item 762x51Bullets_casing_spent_noprimer
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -120,7 +120,7 @@ module Base
 		Tooltip = Tooltip_CasingEmpty,
 	}
 
-	item 762Bullets_tip
+	item 762x51Bullets_tip
 	{
 	  CanStack	=	TRUE,
 		Weight	=	0.01,
@@ -205,7 +205,7 @@ module Base
     Tooltip = Tooltip_Casing,
 	}
 
-	item 4440Bullets_casing
+	item Bullets4440_casing
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -217,7 +217,7 @@ module Base
     Tooltip = Tooltip_Casing,
 	}
 
-	item 4440Bullets_casing_spent
+	item Bullets4440_casing_spent
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -229,7 +229,7 @@ module Base
 		Tooltip = Tooltip_CasingSpent,
 	}
 
-	item 4440Bullets_casing_spent_noprimer
+	item Bullets4440_casing_spent_noprimer
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -241,7 +241,7 @@ module Base
 		Tooltip = Tooltip_CasingEmpty,
 	}
 
-	item 4440Bullets_tip
+	item Bullets4440_tip
 	{
 	  CanStack	=	TRUE,
 		Weight	=	0.01,

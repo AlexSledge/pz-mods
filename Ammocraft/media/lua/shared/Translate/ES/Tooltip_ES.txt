@@ -1,0 +1,11 @@
+
+Tooltip_ES = {
+  /*Boxes*/
+  Tooltip_BoxSPPrimers = "100 Primers para cartuchos 9x19mm Parabellum, .38 Special o 22LR.",
+  Tooltip_BoxRPrimers = "100 Primers para cartuchos 5.56x45mm, .223 Remington, .308 Winchester, 7.62x51mm or 7.62x39mm.",
+  /*Casings*/
+  Tooltip_762_308 = "Intercambiable con .308"
+  /*Primers*/
+  Tooltip_SP_Primer = "Se puede usar con cartuchos 9x19mm Parabellum, .38 Special or 22LR.",
+  Tooltip_R_Primer = "Se puede usar con cartuchos 5.56x45mm, .223 Remington, .308 Winchester, 7.62x51mm or 7.62x39mm.",
+}

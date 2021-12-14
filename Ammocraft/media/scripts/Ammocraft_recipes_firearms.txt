@@ -6,10 +6,10 @@ module Base
 
 		recipe Open 7.62x51mm Casing Box
 		{
-			762Bullets_casingbox,
+			762x51Bullets_casingbox,
 
 			CanBeDoneFromFloor:false,
-			Result:762Bullets_casing=50,
+			Result:762x51Bullets_casing=50,
 			Sound:PutItemInBag,
 			Time:30.0,
 			Prop1:RifleBullet_Casing,
@@ -54,10 +54,10 @@ module Base
 
 		recipe Open Box of 7.62mm Bullet Tips
 		{
-			762Bullets_tipbox,
+			762x51Bullets_tipbox,
 
 			CanBeDoneFromFloor:false,
-			Result:762Bullets_tip=50,
+			Result:762x51Bullets_tip=50,
 			Sound:PutItemInBag,
 			Time:30.0,
 			Prop1:RifleBullet,
@@ -96,11 +96,11 @@ module Base
 
 		recipe Insert Primer into 7.62x51mm Casing
 		{
-		762Bullets_casing_spent_noprimer,
+		762x51Bullets_casing_spent_noprimer,
 		R_Primers,
 
 		CanBeDoneFromFloor:true,
-		Result:762Bullets_casing,
+		Result:762x51Bullets_casing,
 		Time:230.0,
 		Category:Ammunition,
 		Prop1:RifleBullet_Casing,
@@ -181,7 +181,7 @@ module Base
 
 		recipe Remove Rifle Primer
 		{
-		308Bullets_casing/223Bullets_casing/556Bullets_casing/762Bullets_casing/762x39Bullets_casing,
+		308Bullets_casing/223Bullets_casing/556Bullets_casing/762x51Bullets_casing/762x39Bullets_casing,
 		keep Screwdriver,
 		keep Hammer,
 
@@ -229,7 +229,7 @@ module Base
 
 		recipe Remove Spent Rifle Primer
 		{
-		308Bullets_casing_spent/223Bullets_casing_spent/556Bullets_casing_spent/762Bullets_casing_spent/762x39Bullets_casing_spent,
+		308Bullets_casing_spent/223Bullets_casing_spent/556Bullets_casing_spent/762x51Bullets_casing_spent/762x39Bullets_casing_spent,
 		keep Screwdriver,
 		keep Hammer,
 
@@ -250,13 +250,13 @@ module Base
 
 		recipe Make 7.62x51mm Round
 		{
-			762Bullets_casing/308Bullets_casing,
-			762Bullets_tip/308Bullets_tip,
+			762x51Bullets_casing/308Bullets_casing,
+			762x51Bullets_tip/308Bullets_tip,
 			GunPowder=5,
 			keep Reloadingpress,
 
 			CanBeDoneFromFloor:true,
-			Result:762Bullets,
+			Result:762x51Bullets,
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:RifleBullet,
@@ -266,8 +266,8 @@ module Base
 
 		recipe Make .308 Round
 		{
-			762Bullets_casing/308Bullets_casing,
-			762Bullets_tip/308Bullets_tip,
+			762x51Bullets_casing/308Bullets_casing,
+			762x51Bullets_tip/308Bullets_tip,
 			GunPowder=5,
 			keep Reloadingpress,
 
@@ -284,7 +284,7 @@ module Base
 		recipe Make 7.62x39mm Round
 		{
 			762x39Bullets_casing,
-			762Bullets_tip/308Bullets_tip,
+			762x51Bullets_tip/308Bullets_tip,
 			GunPowder=5,
 			keep Reloadingpress,
 
@@ -335,7 +335,7 @@ module Base
 
 	recipe Dismantle 7.62x51mm Round
 	{
-		762Bullets,
+		762x51Bullets,
 		keep Pliers,
 
 		Result:GunPowder,
@@ -395,7 +395,7 @@ module Base
 
 	recipe Gather Gunpowder
 	{
-		 Bullets9mm/ShotgunShells/223Bullets/308Bullets/556Bullets/Bullets44/Bullets45/Bullets38/4440Bullets/762Bullets/762x39Bullets/22LRBullets,
+		 Bullets9mm/ShotgunShells/223Bullets/308Bullets/556Bullets/Bullets44/Bullets45/Bullets38/4440Bullets/762x51Bullets/762x39Bullets/22LRBullets,
 
 		 Result:GunPowder,
 		 Time:100.0,
@@ -415,7 +415,7 @@ module Base
 	keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
 	CanBeDoneFromFloor:true,
-	Result:762Bullets_tip,
+	Result:762x51Bullets_tip,
 	Time:200.0,
   Category:Welding,
 	SkillRequired:MetalWelding=6,
