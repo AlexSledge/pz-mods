@@ -1,0 +1,29 @@
+Recipes_EN = {
+    Recipe_Open_7.62x51mm_Casing_Box = "Open Box of 7.62x51mm Casings",
+    Recipe_Open_7.62x39mm_Casing_Box = "Open Box of 7.62x39mm Casings",
+    Recipe_Open_.22_LR_Casing_Box = "Open Box of .22 LR Casings",
+    Recipe_Open_.44-40_Casing_Box = "Open Box of .44-40 Casings",
+
+    Recipe_Open_Box_of_7.62mm_Tips = "Open Box of 7.62mm Bullets Tips",
+    Recipe_Open_Box_of_.22_LR_Casing_Box = "Open Box of .22 LR Bullets Tips",
+    Recipe_Open_Box_of_.44-40_Casing_Box = "Open Box of .44-40 Bullets Tips",
+
+    Recipe_Insert_Primer_into_7.62x51mm_Casing = "Insert Primer into 7.62x51mm Casing",
+    Recipe_Insert_Primer_into_7.62x39mm_Casing = "Insert Primer into 7.62x51mm Casing",
+    Recipe_Insert_Primer_into_.22_LR_Rimfire_Casing = "Insert Primer into .22 LR Rimfire Casing",
+    Recipe_Insert_Primer_into_.44-40_Casing = "Insert Primer into .44-40 Casing",
+
+    Recipe_Make_7.62x51mm_Round = "Make 7.62x51mm Round",
+    Recipe_Make_7.62x39mm_Special_Round = "Make 7.62x39mm Round",
+    Recipe_Make_.22_LR_Round = "Make .22 LR Round",
+    Recipe_Make_.44-40_Round = "Make .44-40 Round
+
+    Recipe_Dismantle_7.62x51mm_Round = "Dismantle 7.62x51mm Round",
+    Recipe_Dismantle_7.62x51mm_Special_Round = "Dismantle 7.62x39mm Round",
+    Recipe_Dismantle_.22_LR_Round = "Dismantle .22 LR Round",
+    Recipe_Dismantle_.44-40_Round = "Dismantle .44-40 Round",
+
+    Recipe_Cast_7.62mm_Bullet_Tip = "Cast 7.62mm Bullet Tip",
+    Recipe_Cast_.22_LR_Bullet_Tip = "Cast .22 LR Bullet Tip",
+    Recipe_Cast_.44-40_Bullet_Tip = "Cast .44-40 Bullet Tip",
+}

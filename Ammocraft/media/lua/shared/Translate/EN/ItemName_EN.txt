@@ -1,0 +1,36 @@
+ItemName_EN = {
+    ItemName_Base.762Bullets_casingbox = "Box of 7.62x51mm Casings",
+    ItemName_Base.762x39Bullets_casingbox = "Box of 7.62x39mm Casings",
+    ItemName_Base.22LRBullets_casingbox = "Box of .22 LR Casings",
+    ItemName_Base.4440Bullets_casingbox = "Box of .44-40 Casings",
+
+    ItemName_Base.762Bullets_tipbox = "Box of 7.62mm Bullet Tips",
+    ItemName_Base.22LRBullets_tipbox = "Box of .22 LR Bullet Tips",
+    ItemName_Base.4440Bullets_tipbox = "Box of .44-40 Bullet Tips",
+
+    ItemName_Base.762Bullets_tip = "7.62mm Bullet",
+    ItemName_Base.22LRBullets_tip = ".22 LR Bullet",
+    ItemName_Base.4440Bullets_tip = ".44-40 Bullet",
+
+    ItemName_Base.762Bullets_casing = "7.62x51mm Casing",
+    ItemName_Base.762x39Bullets_casing = "7.62x39mm Casing",
+    ItemName_Base.22LRBullets_casing = ".22 LR Casing",
+    ItemName_Base.4440Bullets_casing = ".44-40 Casing",
+
+    ItemName_Base.762Bullets_casing_spent = "Spent 7.62x51mm Casing",
+    ItemName_Base.762x39Bullets_casing_spent = "Spent 7.62x39mm Casing",
+    ItemName_Base.22LRBullets_casing_spent = "Spent .22 LR Casing",
+    ItemName_Base.4440Bullets_casing_spent = "Spent .44-40 Casing",
+
+    ItemName_Base.762Bullets_casing_spent_noprimer = "7.62x51mm Casing without Primer",
+    ItemName_Base.762x39Bullets_casing_spent_noprimer = "7.62x39mm Casing without Primer",
+    ItemName_Base.22LRBullets_casing_spent_noprimer = ".22 LR Casing without Primer",
+    ItemName_Base.4440Bullets_casing_spent_noprimer = ".44-40 Casing without Primer",
+
+    ItemName_Base.762BulletsMold = "7.62mm Bullet Mold",
+    ItemName_Base.762x39BulletsMold = "7.62x39mm Bullet Mold",
+    ItemName_Base.22LRBulletsMold = ".22 LR Bullet Mold",
+    ItemName_Base.4440BulletsMold = ".44-40 Bullet Mold",
+
+    ItemName_Base.GunnutMonthly7 = "Gunnut Monthly December '89 'Yippie Ki Yay Edition'",
+}

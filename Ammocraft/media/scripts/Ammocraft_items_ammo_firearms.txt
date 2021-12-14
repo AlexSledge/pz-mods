@@ -1,0 +1,290 @@
+module Base
+{
+ 	/*****************************************************/
+ 	/*                       Boxes                       */
+	/*****************************************************/
+	item 762Bullets_casingbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of 7.62x51mm Casings,
+		Icon	=	Ammobox_Casings,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxCasings,
+	}
+
+	item 762Bullets_tipbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of 7.62mm Bullet Tips,
+		Icon	=	Ammobox_Tips,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxTips,
+	}
+
+	item 762x39Bullets_casingbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of 7.62x39mm Casings,
+		Icon	=	Ammobox_Casings,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxCasings,
+	}
+
+	item 22LRBullets_casingbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of .22 LR Casings,
+		Icon	=	Ammobox_Casings,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxCasings,
+	}
+
+	item 22LRBullets_tipbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of .22 LR Bullet Tips,
+		Icon	=	Ammobox_Tips,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxTips,
+	}
+
+	item 4440Bullets_casingbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of .44-40 Casings,
+		Icon	=	Ammobox_Casings,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxCasings,
+	}
+
+	item 4440Bullets_tipbox
+	{
+		CanStack	=	FALSE,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of .44-40 Bullet Tips,
+		Icon	=	Ammobox_Tips,
+		StaticModel = Ammobox,
+		Tooltip = Tooltip_BoxTips,
+	}
+
+	/**************************************************************/
+	/*                       Casings & Tips                       */
+	/**************************************************************/
+
+	item 762Bullets_casing
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	7.62x51mm Casing,
+		Icon	=	308_Casing,
+    MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_762_308,
+	}
+
+	item 762Bullets_casing_spent
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	= Spent	7.62x51mm Casing,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingSpent,
+	}
+
+	item 762Bullets_casing_spent_noprimer
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	7.62x51mm Casing without Primer,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingEmpty,
+	}
+
+	item 762Bullets_tip
+	{
+	  CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	7.62mm Bullet,
+		Icon	=	9mm_Bullet,
+    MetalValue = 5,
+		StaticModel = Bullet,
+		Tooltip = Tooltip_762_308,
+	}
+
+	item 762x39Bullets_casing
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	7.62x39mm Casing,
+		Icon	=	308_Casing,
+	  MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_Casing,
+	}
+
+	item 762x39Bullets_casing_spent
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	= Spent	7.62x39mm Casing,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingSpent,
+	}
+
+	item 762x39Bullets_casing_spent_noprimer
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	7.62x39mm Casing without Primer,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingEmpty,
+	}
+
+
+	item 22LRBullets_casing
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	.22 LR Casing,
+		Icon	=	308_Casing,
+	  MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+    Tooltip = Tooltip_Casing,
+	}
+
+	item 22LRBullets_casing_spent
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	= Spent	.22 LR Casing,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingSpent,
+	}
+
+	item 22LRBullets_tip
+	{
+	  CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	.22 LR Bullet,
+		Icon	=	9mm_Bullet,
+	   MetalValue = 5,
+		StaticModel = Bullet,
+    Tooltip = Tooltip_Casing,
+	}
+
+	item 4440Bullets_casing
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	.44-40 Casing,
+		Icon	=	308_Casing,
+	  MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+    Tooltip = Tooltip_Casing,
+	}
+
+	item 4440Bullets_casing_spent
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	= Spent	.44-40 Casing,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingSpent,
+	}
+
+	item 4440Bullets_casing_spent_noprimer
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	.44-40 Casing without Primer,
+		Icon	=	308_Casing,
+		MetalValue = 10,
+		StaticModel = RifleBullet_Casing,
+		Tooltip = Tooltip_CasingEmpty,
+	}
+
+	item 4440Bullets_tip
+	{
+	  CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	.44-40 Bullet,
+		Icon	=	9mm_Bullet,
+	   MetalValue = 5,
+		StaticModel = Bullet,
+    Tooltip = Tooltip_Casing,
+	}
+
+	/*****************************************************/
+	/*                       Molds                       */
+	/*****************************************************/
+
+	item 762BulletsMold
+	{
+			Weight = 0.5,
+			Type = Normal,
+			DisplayName	= 7.62mm Bullets Mold,
+			Icon = BulletMold,
+			MetalValue = 15,
+			Tooltip = Tooltip_BulletIngredient,
+	}
+
+	item 22LRBulletsMold
+	{
+			Weight = 0.5,
+			Type = Normal,
+			DisplayName	= .22 LR Bullets Mold,
+			Icon = BulletMold,
+			MetalValue = 15,
+			Tooltip = Tooltip_BulletIngredient,
+	}
+
+	item 4440BulletsMold
+	{
+			Weight = 0.5,
+			Type = Normal,
+			DisplayName	= .44-40 Bullets Mold,
+			Icon = BulletMold,
+			MetalValue = 15,
+			Tooltip = Tooltip_BulletIngredient,
+	}
+
+}
