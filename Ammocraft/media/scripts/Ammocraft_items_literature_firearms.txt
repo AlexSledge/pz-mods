@@ -11,7 +11,7 @@ module Base
 		Icon	=	GunnutMonthly5,
 		Weight	=	0.15,
 		Type	=	Literature,
-		TeachedRecipes =   Make 7.62x51mm Round;Make 7.62x39mm Round;Make .22 LR Round;Make .44-40 Round;Dismantle 7.62x51mm Round;Dismantle 7.62x39mm Round;Dismantle 22 LR Round;Dismantle .44-40 Round,
+		TeachedRecipes =   Make 7.62x51mm Round;Make 7.62x39mm Round;Make .22 LR Round;Make .44-40 Round;Dismantle 7.62x51mm Round;Dismantle 7.62x39mm Round;Dismantle .22 LR Round;Dismantle .44-40 Round,
 		ReplaceOnUse    =   GunnutMonthly7,
 		StaticModel = Magazine,
 	}
