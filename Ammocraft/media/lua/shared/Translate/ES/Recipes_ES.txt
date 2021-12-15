@@ -76,7 +76,7 @@ Recipes_ES = {
     Recipe_Cast_Shotgun_Buckshot = "Fundir perdigones para escopeta",
 
     Recipe_Create_Homemade_Gunpowder = "Hacer polvora casera",
-    Recipe_Make_Saltpeter = "Hacer salitre",
+    Recipe_Make_Saltpeter = "Hacer Nitrato de Postasio",
     Recipe_Saw_Lead_Pipe_into_Lead_Pieces = "Aserrar un tubo de plomo en trozos",
 
     Recipe_Open_7.62x51mm_Casing_Box = "Abrir caja de casquillos 7.62x51mm",

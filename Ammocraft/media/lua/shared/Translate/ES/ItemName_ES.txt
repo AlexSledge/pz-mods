@@ -21,7 +21,7 @@ ItemName_ES = {
     ItemName_Base.223BulletsMold = "Molde punta de bala .223 Remington",
     ItemName_Base.308BulletsMold = "Molde punta de bala .308 Winchester",
     ItemName_Base.9mmBulletsMold = "Molde punta de bala 9x19mm Parabellum",
-    ItemName_Base.ShotgunShellsMold = "Molde para cartucho vacio de escopeta",
+    ItemName_Base.ShotgunShellsMold = "Molde para perdigones",
 
     ItemName_Base.Bullets9mm_casingbox = "Caja de casquillos 9x19mm Parabellum",
     ItemName_Base.Bullets38_casingbox = "Caja de casquillos .38 Special",
@@ -72,14 +72,14 @@ ItemName_ES = {
     ItemName_Base.556Bullets_casing_spent = "Casquillo gastado 5.56x45mm",
     ItemName_Base.ShotgunShells_casing_spent = "Cartucho gastado de escopeta",
 
-    ItemName_Base.Bullets9mm_casing_spent_noprimer = "Casquillo sin primer 9x19mm Parabellum",
-    ItemName_Base.Bullets38_casing_spent_noprimer = "Casquillo sin primer .38 Special",
-    ItemName_Base.Bullets45_casing_spent_noprimer = "Casquillo sin primer .45 ACP",
-    ItemName_Base.Bullets44_casing_spent_noprimer = "Casquillo sin primer .44 Magnum",
-    ItemName_Base.223Bullets_casing_spent_noprimer = "Casquillo sin primer .223 Remington",
-    ItemName_Base.308Bullets_casing_spent_noprimer = "Casquillo sin primer .308 Winchester",
-    ItemName_Base.556Bullets_casing_spent_noprimer = "Casquillo sin primer 5.56x45mm",
-    ItemName_Base.ShotgunShells_casing_spent_noprimer = "Cartucho vacio sin primer de escopeta",
+    ItemName_Base.Bullets9mm_casing_spent_noprimer = "Casquillo gastado sin primer 9x19mm Parabellum",
+    ItemName_Base.Bullets38_casing_spent_noprimer = "Casquillo gastado sin primer .38 Special",
+    ItemName_Base.Bullets45_casing_spent_noprimer = "Casquillo gastado sin primer .45 ACP",
+    ItemName_Base.Bullets44_casing_spent_noprimer = "Casquillo gastado sin primer .44 Magnum",
+    ItemName_Base.223Bullets_casing_spent_noprimer = "Casquillo gastado sin primer .223 Remington",
+    ItemName_Base.308Bullets_casing_spent_noprimer = "Casquillo gastado sin primer .308 Winchester",
+    ItemName_Base.556Bullets_casing_spent_noprimer = "Casquillo gastado sin primer 5.56x45mm",
+    ItemName_Base.ShotgunShells_casing_spent_noprimer = "Cartucho gastado sin primer de escopeta",
 
     ItemName_Base.SP_Primers = "Primer pequeño para pistola",
     ItemName_Base.LP_Primers = "Primer grande para pistola",
@@ -101,7 +101,7 @@ ItemName_ES = {
     ItemName_Base.ShotgunShellsMold = "Molde Perdigon",
 
     ItemName_Base.Lead = "Plomo",
-    ItemName_Base.Saltpeter = "Nitrato Postasio",
+    ItemName_Base.Saltpeter = "Nitrato de Postasio",
     ItemName_Base.Sulfur = "Sulfuro",
 
     ItemName_Base.GunnutMonthly1 = "Revista Gunnut Monthly Marzo '92 'Pistola'",
@@ -110,7 +110,7 @@ ItemName_ES = {
     ItemName_Base.GunnutMonthly4 = "Revista Gunnut Julio '92 'Magnum'",
     ItemName_Base.GunnutMonthly5 = "Revista Gunnut Agosto '92 'Rifle de Asalto'",
     ItemName_Base.GunnutMonthly6 = "Revista Gunnut Deciembre '91 'Supervivencia'",
-    ItemName_Base.GunnutBible = "The New Gunnut Testament",
+    ItemName_Base.GunnutBible = "El Nuevo Testatamento Gunnut",
 
     ItemName_Base.Reloadingpress = "Prensa de Recarga",
     ItemName_Base.Pliers = "Alicates",
@@ -138,10 +138,10 @@ ItemName_ES = {
     ItemName_Base.Bullets22_casing_spent = "Casquillo gastado .22 LR",
     ItemName_Base.Bullets4440_casing_spent = "Casquillo gastado .44-40",
 
-    ItemName_Base.762x51Bullets_casing_spent_noprimer = "Casquillo sin primer 7.62x51mm",
-    ItemName_Base.762x39Bullets_casing_spent_noprimer = "Casquillo sin primer 7.62x39mm",
-    ItemName_Base.Bullets22_casing_spent_noprimer = "Casquillo sin primer .22 LR",
-    ItemName_Base.Bullets4440_casing_spent_noprimer = "Casquillo sin primer .44-40",
+    ItemName_Base.762x51Bullets_casing_spent_noprimer = "Casquillo gastado sin primer 7.62x51mm",
+    ItemName_Base.762x39Bullets_casing_spent_noprimer = "Casquillo gastado sin primer 7.62x39mm",
+    ItemName_Base.Bullets22_casing_spent_noprimer = "Casquillo gastado sin primer .22 LR",
+    ItemName_Base.Bullets4440_casing_spent_noprimer = "Casquillo gastado sin primer .44-40",
 
     ItemName_Base.762BulletsMold = "Molde punta de bala 7.62mm",
     ItemName_Base.762x39BulletsMold = "Molde punta de bala 7.62x39mm",
