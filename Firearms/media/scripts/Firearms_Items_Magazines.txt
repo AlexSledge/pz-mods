@@ -174,7 +174,7 @@ module Base
 		Weight	=	0.2,
 		Type	=	Normal,
 		DisplayName	=	FN FAL Magazine,
-		DisplayCategory = Magazine308,
+		DisplayCategory = Magazine762,
 		Icon	=	308_Mag2,
 		MaxAmmo = 20,
 		AmmoType = Base.762x51Bullets,

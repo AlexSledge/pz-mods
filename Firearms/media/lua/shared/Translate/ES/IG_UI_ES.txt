@@ -27,7 +27,7 @@ IGUI_ES = {
 
     IGUI_ItemCat_Shotgun12ga = "Escopeta, 12ga"
 
-    IGUI_ItemCat_SubMachine9mm = "Pistola ametralladora, 9mm",
+    IGUI_ItemCat_SubMachine9mm = "Subfusil, 9mm",
 
     IGUI_ItemCat_AssaultRifle308 = "Rifle de Asalto, .308",
     IGUI_ItemCat_AssaultRifle223 = "Rifle de Asalto, .223",
