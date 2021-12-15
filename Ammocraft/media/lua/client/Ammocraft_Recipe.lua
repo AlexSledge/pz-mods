@@ -14,7 +14,7 @@ function recipe_Dismantle_Ammo(items, result, player)
 	for i=0, items:size()-1 do
 		local item = items:get(i) -- Get item in question
 		local ammo =  item:getType() -- Get the Item type so we can use it to figure out the caliber :- )
-		if item:getType() == "Bullets9mm" or ammo == "Bullets38" or ammo == "22LRBullets" then
+		if item:getType() == "Bullets9mm" or ammo == "Bullets38" or ammo == "Bullets22" then
 			result:setUsedDelta(0.1) -- Set the Used Delta so we don't give too much
 		end
 		if item:getType() == "Bullets44" or ammo == "Bullets45" or ammo == "Bullets4440" then

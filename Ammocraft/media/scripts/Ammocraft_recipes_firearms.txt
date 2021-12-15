@@ -30,10 +30,10 @@ module Base
 
 		recipe Open .22 LR Casing Box
 		{
-			22LRBullets_casingbox,
+			Bullets22_casingbox,
 
 			CanBeDoneFromFloor:false,
-			Result:22LRBullets_casing=50,
+			Result:Bullets22_casing=50,
 			Sound:PutItemInBag,
 			Time:30.0,
 			Prop1:RifleBullet_Casing,
@@ -66,10 +66,10 @@ module Base
 
 		recipe Open Box of .22 LR Bullet Tips
 		{
-			22LRBullets_tipbox,
+			Bullets22_tipbox,
 
 			CanBeDoneFromFloor:false,
-			Result:22LRBullets_tip=50,
+			Result:Bullets22_tip=50,
 			Sound:PutItemInBag,
 			Time:30.0,
 			Prop1:RifleBullet,
@@ -122,12 +122,12 @@ module Base
 
 		recipe Insert Primer into .22 LR Rimfire Casing
 		{
-		22LRBullets_casing_spent,
+		Bullets22_casing_spent,
 		GunPowder/Matches/Sparklers=3,
 		keep Screwdriver,
 
 		CanBeDoneFromFloor:true,
-		Result:22LRBullets_casing,
+		Result:Bullets22_casing,
 		Time:230.0,
 		Category:Ammunition,
 		Prop1:RifleBullet_Casing,
@@ -299,13 +299,13 @@ module Base
 
 		recipe Make .22 LR Round
 		{
-			22LRBullets_casing,
-			22LRBullets_tip,
+			Bullets22_casing,
+			Bullets22_tip,
 			GunPowder=5,
 			keep Reloadingpress,
 
 			CanBeDoneFromFloor:true,
-			Result:22LRBullets,
+			Result:Bullets22,
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:RifleBullet,
@@ -363,9 +363,9 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle 22 LR Round
+	recipe Dismantle .22 LR Round
 	{
-		22LRBullets,
+		Bullets22,
 		keep Pliers,
 
 		Result:GunPowder,
@@ -395,7 +395,7 @@ module Base
 
 	recipe Gather Gunpowder
 	{
-		 Bullets9mm/ShotgunShells/223Bullets/308Bullets/556Bullets/Bullets44/Bullets45/Bullets38/Bullets4440/762x51Bullets/762x39Bullets/22LRBullets,
+		 Bullets9mm/ShotgunShells/223Bullets/308Bullets/556Bullets/Bullets44/Bullets45/Bullets38/Bullets4440/762x51Bullets/762x39Bullets/Bullets22,
 
 		 Result:GunPowder,
 		 Time:100.0,
@@ -431,7 +431,7 @@ module Base
 	keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
 	CanBeDoneFromFloor:true,
-	Result:22LRBullets_tip,
+	Result:Bullets22_tip,
 	Time:200.0,
   Category:Welding,
 	SkillRequired:MetalWelding=6,

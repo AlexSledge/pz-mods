@@ -30,7 +30,7 @@ local myDistTableLit = {
 }
 
 for i = 1, #myDistTableBoxes, 2 do
-  table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.22LRBullets_casingbox")
+  table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.Bullets22_casingbox")
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, myDistTableBoxes[i+1])
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.Bullets4440_casingbox")
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, myDistTableBoxes[i+1]/2)
@@ -38,7 +38,7 @@ for i = 1, #myDistTableBoxes, 2 do
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, myDistTableBoxes[i+1]/3)
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.762x51Bullets_casingbox")
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, myDistTableBoxes[i+1]/4)
-  table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.22LRBullets_tipbox")
+  table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.Bullets22_tipbox")
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, myDistTableBoxes[i+1])
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, "Base.Bullets4440_tipbox")
   table.insert(ProceduralDistributions.list[myDistTableBoxes[i]].items, myDistTableBoxes[i+1]/2)

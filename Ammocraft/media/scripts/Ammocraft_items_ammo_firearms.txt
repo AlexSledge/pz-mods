@@ -36,7 +36,7 @@ module Base
 		Tooltip = Tooltip_BoxCasings,
 	}
 
-	item 22LRBullets_casingbox
+	item Bullets22_casingbox
 	{
 		CanStack	=	FALSE,
 		Weight	=	0.5,
@@ -47,7 +47,7 @@ module Base
 		Tooltip = Tooltip_BoxCasings,
 	}
 
-	item 22LRBullets_tipbox
+	item Bullets22_tipbox
 	{
 		CanStack	=	FALSE,
 		Weight	=	0.5,
@@ -169,7 +169,7 @@ module Base
 	}
 
 
-	item 22LRBullets_casing
+	item Bullets22_casing
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -181,7 +181,7 @@ module Base
     Tooltip = Tooltip_Casing,
 	}
 
-	item 22LRBullets_casing_spent
+	item Bullets22_casing_spent
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.02,
@@ -193,7 +193,7 @@ module Base
 		Tooltip = Tooltip_CasingSpent,
 	}
 
-	item 22LRBullets_tip
+	item Bullets22_tip
 	{
 	  CanStack	=	TRUE,
 		Weight	=	0.01,

@@ -117,30 +117,30 @@ ItemName_ES = {
 
     ItemName_Base.762x51Bullets_casingbox = "Caja de casquillos 7.62x51mm",
     ItemName_Base.762x39Bullets_casingbox = "Caja de casquillos 7.62x39mm",
-    ItemName_Base.22LRBullets_casingbox = "Caja de casquillos .22 LR",
+    ItemName_Base.Bullets22_casingbox = "Caja de casquillos .22 LR",
     ItemName_Base.Bullets4440_casingbox = "Caja de casquillos .44-40",
 
     ItemName_Base.762x51Bullets_tipbox = "Caja de puntas de bala 7.62mm",
-    ItemName_Base.22LRBullets_tipbox = "Caja de puntas de bala .22 LR",
+    ItemName_Base.Bullets22_tipbox = "Caja de puntas de bala .22 LR",
     ItemName_Base.Bullets4440_tipbox = "Caja de puntas de bala .44-40",
 
     ItemName_Base.762x51Bullets_tip = "Punta de bala 7.62mm",
-    ItemName_Base.22LRBullets_tip = "Punta de bala .22 LR",
+    ItemName_Base.Bullets22_tip = "Punta de bala .22 LR",
     ItemName_Base.Bullets4440_tip = "Punta de bala .44-40",
 
     ItemName_Base.762x51Bullets_casing = "Casquillo 7.62x51mm ",
     ItemName_Base.762x39Bullets_casing = "Casquillo 7.62x39mm",
-    ItemName_Base.22LRBullets_casing = "Casquillo .22 LR",
+    ItemName_Base.Bullets22_casing = "Casquillo .22 LR",
     ItemName_Base.Bullets4440_casing = "Casquillo .44-40",
 
     ItemName_Base.762x51Bullets_casing_spent = "Casquillo gastado 7.62x51mm",
     ItemName_Base.762x39Bullets_casing_spent = "Casquillo gastado 7.62x39mm",
-    ItemName_Base.22LRBullets_casing_spent = "Casquillo gastado .22 LR",
+    ItemName_Base.Bullets22_casing_spent = "Casquillo gastado .22 LR",
     ItemName_Base.Bullets4440_casing_spent = "Casquillo gastado .44-40",
 
     ItemName_Base.762x51Bullets_casing_spent_noprimer = "Casquillo sin primer 7.62x51mm",
     ItemName_Base.762x39Bullets_casing_spent_noprimer = "Casquillo sin primer 7.62x39mm",
-    ItemName_Base.22LRBullets_casing_spent_noprimer = "Casquillo sin primer .22 LR",
+    ItemName_Base.Bullets22_casing_spent_noprimer = "Casquillo sin primer .22 LR",
     ItemName_Base.Bullets4440_casing_spent_noprimer = "Casquillo sin primer .44-40",
 
     ItemName_Base.762BulletsMold = "Molde punta de bala 7.62mm",

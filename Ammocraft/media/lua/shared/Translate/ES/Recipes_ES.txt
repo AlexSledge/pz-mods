@@ -18,7 +18,7 @@ Recipes_ES = {
     Recipe_Open_Box_of_5.56x45mm_Casing_Box = "Abrir caja de puntas de bala 5.56x45mm Bullets Tips",
     Recipe_Open_Jar_of_Buckshot = "Abir Bote de perdigones",
 
-    Recipe_Open_Small_Pistol_Primer_Box = "Abrir caja de primers pequeÃ±os de pistola",
+    Recipe_Open_Small_Pistol_Primer_Box = "Abrir caja de primers pequeños de pistola",
     Recipe_Open_Large_Pistol_Primer_Box = "Abrir caja de primers grandes de pistola",
     Recipe_Open_Rifle_Primer_Box = "Abrir caja de primers para Rifle",
     Recipe_Open_Shotgun_Primer_Box = "Abrir caja de primers para escopeta",
@@ -38,7 +38,7 @@ Recipes_ES = {
     Recipe_Remove_Shotgun_Primer = "Quitar primer",
 	
 	Recipe_Remove_Shotgun_Shell_Primer = "Quitar primer de cartucho vacio de escopeta",
-	Recipe_Remove_Spent_Small_Pistol_Primer = "Quitar primer pequeÃ±o de casquillo gastado de pistola",
+	Recipe_Remove_Spent_Small_Pistol_Primer = "Quitar primer pequeño de casquillo gastado de pistola",
 	Recipe_Remove_Spent_Large_Pistol_Primer = "Quitar primer grande de casquillo gastado de pistola",
 	Recipe_Remove_Spent_Rifle_Primer = "Quitar primer de casquillo gastado de rifle",
 	Recipe_Remove_Spent_Shotgun_Shell_Primer = "Quitar primer de cartucho gastado de escopeta",
@@ -94,12 +94,12 @@ Recipes_ES = {
     Recipe_Insert_Primer_into_.44-40_Casing = "Insertar primer en casquillo .44-40",
 
     Recipe_Make_7.62x51mm_Round = "Hacer cartucho 7.62x51mm",
-    Recipe_Make_7.62x39mm_Special_Round = "Hacer cartucho 7.62x39mm",
+    Recipe_Make_7.62x39mm_Round = "Hacer cartucho 7.62x39mm",
     Recipe_Make_.22_LR_Round = "Hacer cartucho .22 LR",
     Recipe_Make_.44-40_Round = "Hacer cartucho .44-40",
 
     Recipe_Dismantle_7.62x51mm_Round = "Desmantelar cartucho 7.62x51mm",
-    Recipe_Dismantle_7.62x51mm_Special_Round = "Desmantelar cartucho 7.62x39mm",
+    Recipe_Dismantle_7.62x39mm_Round = "Desmantelar cartucho 7.62x39mm",
     Recipe_Dismantle_.22_LR_Round = "Desmantelar cartucho .22 LR",
     Recipe_Dismantle_.44-40_Round = "Desmantelar cartucho .44-40",
 

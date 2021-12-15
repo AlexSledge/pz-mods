@@ -21,11 +21,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 0.01,
               "762x39Bullets_casingbox", 0.01,
               "Bullets4440_casingbox", 0.025,
-              "22LRBullets_casingbox", 0.05,
+              "Bullets22_casingbox", 0.05,
               --Tips
               "762x51Bullets_tipbox", 0.01,
               "Bullets4440_tipbox", 0.01,
-              "22LRBullets_tipbox", 0.05,
+              "Bullets22_tipbox", 0.05,
             }
         },
         inventoryfemale = {
@@ -35,11 +35,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 0.01,
               "762x39Bullets_casingbox", 0.01,
               "Bullets4440_casingbox", 0.025,
-              "22LRBullets_casingbox", 0.05,
+              "Bullets22_casingbox", 0.05,
               --Tips
               "762x51Bullets_tipbox", 0.01,
               "Bullets4440_tipbox", 0.01,
-              "22LRBullets_tipbox", 0.05,
+              "Bullets22_tipbox", 0.05,
             }
         },
         crate = {
@@ -49,17 +49,17 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
               --Molds
               "762BulletsMold", 1,
               "4440BulletsMold", 1,
-              "22LRBulletsMold", 1,
+              "Bullets22Mold", 1,
             }
         },
         counter = {
@@ -69,11 +69,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
             },
@@ -123,11 +123,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
             }
@@ -142,11 +142,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
         },
 
@@ -158,11 +158,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
     },
@@ -176,11 +176,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
 
@@ -191,11 +191,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
     },
@@ -209,11 +209,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -225,11 +225,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -241,11 +241,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -257,11 +257,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -276,11 +276,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
 
             dontSpawnAmmo = true,
@@ -295,11 +295,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
 
@@ -310,11 +310,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
               --Magazine
               "GunnutMonthly7", 1,
             }
@@ -329,11 +329,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 1,
               "762x39Bullets_casingbox", 1,
               "Bullets4440_casingbox", 1,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 1,
               "Bullets4440_tipbox", 1,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         }
     },
@@ -349,11 +349,11 @@ local distributionTable = {
           "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
           "Bullets4440_casingbox", 5,
-          "22LRBullets_casingbox", 5,
+          "Bullets22_casingbox", 5,
           --Tips
           "762x51Bullets_tipbox", 5,
           "Bullets4440_tipbox", 5,
-          "22LRBullets_tipbox", 5,
+          "Bullets22_tipbox", 5,
         },
         fillRand = 0,
     },
@@ -365,11 +365,11 @@ local distributionTable = {
           "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
           "Bullets4440_casingbox", 5,
-          "22LRBullets_casingbox", 5,
+          "Bullets22_casingbox", 5,
           --Tips
           "762x51Bullets_tipbox", 5,
           "Bullets4440_tipbox", 5,
-          "22LRBullets_tipbox", 5,
+          "Bullets22_tipbox", 5,
         },
         -- only two map allowed
         maxMap = 2,
@@ -385,11 +385,11 @@ local distributionTable = {
           "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
           "Bullets4440_casingbox", 5,
-          "22LRBullets_casingbox", 5,
+          "Bullets22_casingbox", 5,
           --Tips
           "762x51Bullets_tipbox", 5,
           "Bullets4440_tipbox", 5,
-          "22LRBullets_tipbox", 5,
+          "Bullets22_tipbox", 5,
         },
         fillRand = 0,
     },
@@ -401,11 +401,11 @@ local distributionTable = {
           "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
           "Bullets4440_casingbox", 5,
-          "22LRBullets_casingbox", 5,
+          "Bullets22_casingbox", 5,
           --Tips
           "762x51Bullets_tipbox", 5,
           "Bullets4440_tipbox", 5,
-          "22LRBullets_tipbox", 5,
+          "Bullets22_tipbox", 5,
         },
         fillRand = 0,
     },
@@ -417,11 +417,11 @@ local distributionTable = {
           "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
           "Bullets4440_casingbox", 5,
-          "22LRBullets_casingbox", 5,
+          "Bullets22_casingbox", 5,
           --Tips
           "762x51Bullets_tipbox", 5,
           "Bullets4440_tipbox", 5,
-          "22LRBullets_tipbox", 5,
+          "Bullets22_tipbox", 5,
         },
         fillRand = 0,
     },
@@ -433,11 +433,11 @@ local distributionTable = {
           "762x51Bullets_casingbox", 5,
           "762x39Bullets_casingbox", 5,
           "Bullets4440_casingbox", 5,
-          "22LRBullets_casingbox", 5,
+          "Bullets22_casingbox", 5,
           --Tips
           "762x51Bullets_tipbox", 5,
           "Bullets4440_tipbox", 5,
-          "22LRBullets_tipbox", 5,
+          "Bullets22_tipbox", 5,
         },
         fillRand = 0,
     },
@@ -454,11 +454,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
 
@@ -469,11 +469,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             fillRand=1,
         },
@@ -487,11 +487,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
 
@@ -502,11 +502,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             }
         },
     },
@@ -519,11 +519,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -535,11 +535,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
         },
 
@@ -550,11 +550,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             fillRand = 1,
         },
@@ -568,11 +568,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             dontSpawnAmmo = true,
         },
@@ -584,11 +584,11 @@ local distributionTable = {
               "762x51Bullets_casingbox", 5,
               "762x39Bullets_casingbox", 5,
               "Bullets4440_casingbox", 5,
-              "22LRBullets_casingbox", 5,
+              "Bullets22_casingbox", 5,
               --Tips
               "762x51Bullets_tipbox", 5,
               "Bullets4440_tipbox", 5,
-              "22LRBullets_tipbox", 5,
+              "Bullets22_tipbox", 5,
             },
             fillRand=1,
         },
