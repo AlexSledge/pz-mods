@@ -9,7 +9,6 @@ function spawnCasing(playerObj, weapon)
 	local gunAmmo, replaced = string.gsub(weapon:getAmmoType(), "Base.", "")
 	if weapon and weapon:isRanged() then
 		playerObj:getCurrentSquare():AddWorldInventoryItem("Base." .. gunAmmo .. "_casing_spent", 0.0, 0.0, 0.0);
-		print("Missing " .. "Base." .. gunAmmo .. "_casing_spent")
 	end
 end
 

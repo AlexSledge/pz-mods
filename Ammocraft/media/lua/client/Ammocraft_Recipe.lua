@@ -17,10 +17,10 @@ function recipe_Dismantle_Ammo(items, result, player)
 		if item:getType() == "Bullets9mm" or ammo == "Bullets38" or ammo == "22LRBullets" then
 			result:setUsedDelta(0.1) -- Set the Used Delta so we don't give too much
 		end
-		if item:getType() == "Bullets44" or ammo == "Bullets45" or ammo == "4440Bullets" then
+		if item:getType() == "Bullets44" or ammo == "Bullets45" or ammo == "Bullets4440" then
 			result:setUsedDelta(0.2) -- Set the Used Delta so we don't give too much
 		end
-		if ammo == "308Bullets" or ammo == "556Bullets" or ammo == "762Bullets" or ammo == "762x39Bullets" then
+		if ammo == "308Bullets" or ammo == "556Bullets" or ammo == "762x51Bullets" or ammo == "762x39Bullets" then
 			result:setUsedDelta(0.4) -- Set the Used Delta so we don't give too much
 		end
 		if ammo == "223Bullets" then
