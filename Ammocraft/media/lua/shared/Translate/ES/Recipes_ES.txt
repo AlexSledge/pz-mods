@@ -96,14 +96,14 @@ Recipes_ES = {
     Recipe_Make_7.62x51mm_Round = "Hacer cartucho 7.62x51mm",
     Recipe_Make_7.62x39mm_Special_Round = "Hacer cartucho 7.62x39mm",
     Recipe_Make_.22_LR_Round = "Hacer cartucho .22 LR",
-    Recipe_Make_.44-40_Round = "Hacer cartucho .44-40
+    Recipe_Make_.44-40_Round = "Hacer cartucho .44-40",
 
     Recipe_Dismantle_7.62x51mm_Round = "Desmantelar cartucho 7.62x51mm",
     Recipe_Dismantle_7.62x51mm_Special_Round = "Desmantelar cartucho 7.62x39mm",
     Recipe_Dismantle_.22_LR_Round = "Desmantelar cartucho .22 LR",
     Recipe_Dismantle_.44-40_Round = "Desmantelar cartucho .44-40",
 
-    Recipe_Cast_7.62mm_Bullet_Tip = "Fundir punta de pala 7.62mm",
-    Recipe_Cast_.22_LR_Bullet_Tip = "Fundir punta de pala .22 LR",
-    Recipe_Cast_.44-40_Bullet_Tip = "Fundir punta de pala .44-40",
+    Recipe_Cast_7.62mm_Bullet_Tip = "Fundir punta de bala 7.62mm",
+    Recipe_Cast_.22_LR_Bullet_Tip = "Fundir punta de bala .22 LR",
+    Recipe_Cast_.44-40_Bullet_Tip = "Fundir punta de bala .44-40",
 }

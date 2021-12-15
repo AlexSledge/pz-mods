@@ -148,5 +148,5 @@ ItemName_ES = {
     ItemName_Base.22LRBulletsMold = "Molde punta de bala .22 LR",
     ItemName_Base.4440BulletsMold = "Molde punta de bala .44-40",
 
-    ItemName_Base.GunnutMonthly7 = "Revista Gunnut Diciembre '89 'Ediccion Yippie Ki Yay'",
+    ItemName_Base.GunnutMonthly7 = "Revista Gunnut Diciembre '89 'Yippie Ki Yay'",
 }
