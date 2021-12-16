@@ -78,7 +78,7 @@ ItemName_ES = {
     ItemName_Base.45Clip = "Cargador M1911",
     ItemName_Base.Glock17Mag = "Cargador Glock 17",
     ItemName_Base.MP5Mag = "Cargador MP5",
-    ItemName_Base.UZIMag = "Cargador Carabina UZI",
+    ItemName_Base.UZIMag = "Cargador Uzi",
     ItemName_Base.M60Mag = "Cargador M60"
 
     ItemName_Base.Bullets22Box = "Caja de cartuchos .22 LR",
