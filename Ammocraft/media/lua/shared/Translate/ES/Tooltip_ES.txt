@@ -14,8 +14,8 @@ Tooltip_ES = {
   Tooltip_GunpowderJar = "La mejor polvora en el mundo",
   /*Casings*/
   Tooltip_Casing = "Se usa en la elaboración de cartuchos de munición.",
-  Tooltip_CasingSpent = "Necesita un primer nuevo.",
-  Tooltip_CasingEmpty = "Necesita un primer.",
+  Tooltip_CasingSpent = "Necesita un pistón nuevo o recargado.",
+  Tooltip_CasingEmpty = "Necesita un pistón.",
   Tooltip_223_556 = "Intercambiable con 5.56x45mm.",
   Tooltip_556_223 = "Intercambiable con .223 Remington.",
   /*Primers*/
