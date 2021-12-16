@@ -1,6 +1,6 @@
 Recipes_ES = {
 
-    Recipe_Open_9x19mm_Parabellum_Casing_Box = "Abrir caja de casquillos 9x19mm Parabellum",
+    Recipe_Open_9x19mm_Parabellum_Casing_Box = "Abrir caja de casquillos 9x19mm",
     Recipe_Open_.38_Special_Casing_Box = "Abrir caja de casquillos .38 Special",
     Recipe_Open_.45_ACP_Casing_Box = "Abrir caja de casquillos .45 ACP",
     Recipe_Open_.44_Magnum_Casing_Box = "Abrir caja de casquillos .44 Magnum",
@@ -9,7 +9,7 @@ Recipes_ES = {
     Recipe_Open_5.56x45mm_Casing_Box = "Abrir caja de casquillos 5.56x45mm",
     Recipe_Open_Empty_Shotgun_Shells_Box = "Abrir caja de casquillos 5.56x45mm",
 
-    Recipe_Open_Box_of_9x19mm_Parabellum_Tips = "Abrir caja de puntas de bala 9x19mm Parabellum",
+    Recipe_Open_Box_of_9x19mm_Parabellum_Tips = "Abrir caja de puntas de bala 9x19mm",
     Recipe_Open_Box_of_.38_Special_Casing_Box = "Abrir caja de puntas de bala .38 Special",
     Recipe_Open_Box_of_.45_ACP_Casing_Box = "Abrir caja de puntas de bala .45 ACP",
     Recipe_Open_Box_of_.44_Magnum_Casing_Box = "Abrir caja de puntas de bala .44 Magnum",
@@ -23,7 +23,7 @@ Recipes_ES = {
     Recipe_Open_Rifle_Primer_Box = "Abrir caja de pistones (Rifle)",
     Recipe_Open_Shotgun_Primer_Box = "Abrir caja de pistones (Escopeta)",
 
-    Recipe_Insert_Primer_into_9x19mm_Parabellum_Casing = "Insertar pistón en casquillo 9x19mm Parabellum",
+    Recipe_Insert_Primer_into_9x19mm_Parabellum_Casing = "Insertar pistón en casquillo 9x19mm",
     Recipe_Insert_Primer_into_.38_Special_Casing = "Insertar pistón en casquillo .38 Special",
     Recipe_Insert_Primer_into_.45_ACP_Casing = "Insertar pistón en casquillo .45 ACP",
     Recipe_Insert_Primer_into_.44_Magnum_Casing = "Insertar pistón en casquillo .44 Magnum",
@@ -48,7 +48,7 @@ Recipes_ES = {
     Recipe_Reload_Rifle_Primer = "Recargar pistón (Rifle)",
     Recipe_Reload_Shotgun_Primer = "Recargar pistón (Escopeta)",
 
-    Recipe_Make_9mm_Round = "Hacer cartucho  9x19mm Parabellum",
+    Recipe_Make_9mm_Round = "Hacer cartucho 9x19mm",
     Recipe_Make_.38_Special_Round = "Hacer cartucho  .38 Special",
     Recipe_Make_.45_Round = "Hacer cartucho .45 ACP",
     Recipe_Make_.44_Round = "Hacer cartucho .44 Magnum",
@@ -57,8 +57,8 @@ Recipes_ES = {
     Recipe_Make_5.56_Round = "Hacer cartucho 5.56x45mm",
     Recipe_Make_Shotgun_Shell = "Hacer cartucho para escopeta",
 
-    Recipe_Dismantle_9mm_Round = "Desmantelar cartucho  9x19mm Parabellum",
-    Recipe_Dismantle_.38_Special_Round = "Desmantelar cartucho  .38 Special",
+    Recipe_Dismantle_9mm_Round = "Desmantelar cartucho 9x19mm",
+    Recipe_Dismantle_.38_Special_Round = "Desmantelar cartucho .38 Special",
     Recipe_Dismantle_.45_Round = "Desmantelar cartucho.45 ACP",
     Recipe_Dismantle_.44_Round = "Desmantelar cartucho .44 Magnum",
     Recipe_Dismantle_.223_Round = "Desmantelar cartucho .223 Remington",
@@ -66,7 +66,7 @@ Recipes_ES = {
     Recipe_Dismantle_5.56_Round = "Desmantelar cartucho 5.56x45mm",
     Recipe_Dismantle_Shotgun_Shell = "Desmantelar cartucho de escopeta",
 
-    Recipe_Cast_9mm_Bullet_Tip = "Fundir punta de pala 9x19mm Parabellum",
+    Recipe_Cast_9mm_Bullet_Tip = "Fundir punta de pala 9x19mm",
     Recipe_Cast_.38_Special_Bullet_Tip = "Fundir punta de pala .38 Special",
     Recipe_Cast_.45_Bullet_Tip = "Fundir punta de pala .45 ACP",
     Recipe_Cast_.44_Bullet_Tip = "Fundir punta de pala .44 Magnum",
