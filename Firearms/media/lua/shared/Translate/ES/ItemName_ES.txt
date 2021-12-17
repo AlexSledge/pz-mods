@@ -16,6 +16,7 @@ ItemName_ES = {
 
     ItemName_Base.AssaultRifle = "M16A1",
     ItemName_Base.M16A2 = "M16A2",
+	ItemName_Base.AR15 = "AR-15",
     ItemName_Base.AssaultRifle2 = "M14",
     ItemName_Base.FN_FAL = "FN Fal",
     ItemName_Base.M24Rifle = "M24",
@@ -32,6 +33,8 @@ ItemName_ES = {
     ItemName_Base.Mossberg500Tactical = "Mossberg 590A1 Táctico",
     ItemName_Base.Remington870Wood = "Remington 870",
     ItemName_Base.Remington870Sawnoff = "Remington 870 recortada",
+	ItemName_Base.M37 = "Ithaca 37",
+    ItemName_Base.M37Sawnoff = "Ithaca 37 recortada",
     ItemName_Base.Winchester94 = "Winchester Modelo 1894",
     ItemName_Base.Winchester73 = "Winchester Modelo 1873",
 
@@ -41,7 +44,8 @@ ItemName_ES = {
     ItemName_Base.x8Scope = "Mira x8 ",
     ItemName_Base.x4-x12Scope = "Mira x4-x12",
 
-    ItemName_Base.Solvent = "WD-40",
+    
+	ItemName_Base.Solvent = "WD-40",
 
     ItemName_Base.ExtendedRecoilPad = "Culata de retroceso extendida",
     ItemName_Base.AmmoStock = "Correa para munición de escopeta",
@@ -67,6 +71,7 @@ ItemName_ES = {
     ItemName_Base.Silencer_PopBottle = "Silenciador de botella improvisado",
 
     ItemName_Base.9mmCompensator = "Compensador 9mm",
+
 
     ItemName_Base.223Clip = "Cargador Remington Model 700",
     ItemName_Base.308Clip = "Cargador Internal",

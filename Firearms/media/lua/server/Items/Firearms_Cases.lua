@@ -15,6 +15,8 @@ require "Items/ItemPicker"
 			"Base.308Clip",			3,
       "Base.MP5",       0.5,
       "Base.MP5Mag",      1,
+      "Base.AR15",      0.3,
+      "Base.556Clip",      0.5,
 		},
 	};
 
@@ -37,10 +39,13 @@ require "Items/ItemPicker"
 		items = {
       "Base.Mossberg500",     10,
       "Base.Mossberg500Tactical", 10,
+			"Base.M37",				1,
       "Base.Winchester73",      1,
       "Base.Winchester94",    1,
 			"Base.Rugerm7722",			3,
 			"Base.HuntingRifle",			3,
+			"Base.AR15",				0.3,
+			"Base.556Clip",				0.5,
       "Base.762x51Box",          10,
 			"Base.Bullets22Box",          10,
       "Base.4440Box",          10,

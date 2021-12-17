@@ -15,7 +15,7 @@ module Base
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.Pistol,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
 	}
 
 	item 45Clip
@@ -30,7 +30,7 @@ module Base
 		AmmoType = Base.Bullets45,
 		GunType = Base.Pistol2,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
 	}
 
 	item 44Clip
@@ -45,7 +45,7 @@ module Base
 		AmmoType = Base.Bullets44,
 		GunType = Base.Pistol3,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
 	}
 
 	item Glock17Mag
@@ -60,7 +60,7 @@ module Base
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.Glock17,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Glock_Mag,
 	}
 
 	item MP5Mag
@@ -75,7 +75,7 @@ module Base
 		AmmoType = Base.Bullets9mm,
 		GunType = Base.MP5,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = Mp5_Mag,
 	}
 
 	item UZIMag
@@ -165,7 +165,7 @@ module Base
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.M60,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = M60_mag,
 	}
 
 	item FN_FAL_Mag
@@ -174,13 +174,13 @@ module Base
 		Weight	=	0.2,
 		Type	=	Normal,
 		DisplayName	=	FN FAL Magazine,
-		DisplayCategory = Magazine762,
+		DisplayCategory = Magazine308,
 		Icon	=	308_Mag2,
 		MaxAmmo = 20,
 		AmmoType = Base.762x51Bullets,
 		GunType = Base.FN_FAL,
 		StaticModel = GunMagazine,
-		WorldStaticModel = Gun_Magazine_Ground,
+		WorldStaticModel = fn_fal_mag,
 	}
 
 }
