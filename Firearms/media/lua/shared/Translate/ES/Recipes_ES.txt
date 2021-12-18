@@ -1,8 +1,8 @@
 Recipes_ES = {
-	Recipe_Saw_Off_Rifle = "Rifle recortado",
+	Recipe_Saw_Off_Rifle = "Hacer rifle recortado",
 	Recipe_Make_Improvised_Flashlight_Silencer = "Hacer supresor de linterna improvisado",
 	Recipe_Make_Improvised_Bottle_Silencer ="Hacer silenciador de botella improvisado",
-	Recipe_Saw_Off_Shotgun ="Escopeta recortada",
+	Recipe_Saw_Off_Shotgun ="Hacer escopeta recortada",
 	Recipe_Extend_Stock ="Extender culata",
 	Recipe_Detract_Stock ="Retraer culata",
 	Recipe_Convert_to_5.56x45mm ="Convertir a 5.56x45mm",
