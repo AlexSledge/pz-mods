@@ -43,10 +43,10 @@ Recipes_ES = {
 	Recipe_Remove_Spent_Rifle_Primer = "Retirar pistón de casquillo gastado de rifle",
 	Recipe_Remove_Spent_Shotgun_Shell_Primer = "Retirar pistón de cartucho gastado de escopeta",
 
-    Recipe_Reload_Small_Pistol_Primer = "Recargar pistón pequeño (Pistola) ",
-    Recipe_Reload_Large_Pistol_Primer = "Recargar pistón grande (Pistola)",
-    Recipe_Reload_Rifle_Primer = "Recargar pistón (Rifle)",
-    Recipe_Reload_Shotgun_Primer = "Recargar pistón (Escopeta)",
+    Recipe_Reload_Small_Pistol_Primer = "Recargar pistón pequeño de pistola",
+    Recipe_Reload_Large_Pistol_Primer = "Recargar pistón grande de pistola",
+    Recipe_Reload_Rifle_Primer = "Recargar pistón de rifle",
+    Recipe_Reload_Shotgun_Primer = "Recargar pistón de escopeta",
 
     Recipe_Make_9mm_Round = "Hacer cartucho 9mm",
     Recipe_Make_.38_Special_Round = "Hacer cartucho  .38 Special",

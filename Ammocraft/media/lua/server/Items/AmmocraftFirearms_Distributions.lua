@@ -59,7 +59,7 @@ local distributionTable = {
               --Molds
               "762BulletsMold", 1,
               "4440BulletsMold", 1,
-              "Bullets22Mold", 1,
+              "22LRBulletsMold", 1,
             }
         },
         counter = {

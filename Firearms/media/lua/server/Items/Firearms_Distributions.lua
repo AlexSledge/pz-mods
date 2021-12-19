@@ -60,6 +60,17 @@ local distributionTable = {
 			},
 			fillRand = 0,
 	},
+		AmmoCan44mm = {
+			rolls = 2,
+			items = {
+				"Bullets44Box", 100,
+				"Bullets44Box", 50,
+				"Bullets44Box", 25,
+				"Bullets44Box", 10,
+				"Bullets44Box", 5,
+			},
+			fillRand = 0,
+	},
 }
 
 table.insert(Distributions, 1, distributionTable);

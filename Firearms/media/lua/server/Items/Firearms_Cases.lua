@@ -7,7 +7,7 @@ require "Items/ItemPicker"
 		rolls = 2,
 		items = {
 			"Base.Remington870Wood",		10,
-      "Base.Mossberg590",     10,
+      "Base.Mossberg500",     10,
       "Base.Mossberg500Tactical", 10,
 			"Base.Glock17",	1,
 			"Base.Glock17Mag",			5,
@@ -25,7 +25,7 @@ require "Items/ItemPicker"
 		items = {
       "Base.AssaultRifle", 5,
 			"Base.M16A2",		5,
-      "Base.Mossberg590",     10,
+      "Base.Mossberg500",     10,
       "Base.Mossberg500Tactical", 10,
 			"Base.M24Rifle",			0.5,
       "Base.M60",       0.1,
@@ -48,7 +48,7 @@ require "Items/ItemPicker"
 			"Base.556Clip",				0.5,
       "Base.762x51Box",          10,
 			"Base.Bullets22Box",          10,
-      "Base.4440Box",          10,
+      "Base.Bullets4440Box",          10,
 			"Base.GunToolKit",				1,
 		},
 	};
@@ -71,7 +71,7 @@ require "Items/ItemPicker"
       "Base.Bullets44Box",		3,
       "Base.Bullets45Box",		4,
       "Base.Bullets9mmBox",		4,
-      "Base.4440Box",		5,
+      "Base.Bullets4440Box",		5,
     },
 		};
 

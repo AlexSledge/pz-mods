@@ -72,7 +72,7 @@ local distributionTable = {
               "556Bullets_tip", 0.01,
               "ShotgunShells_tip", 0.10,
               --Gunpowder
-              "Gunpowder", 0.05,
+              "GunpowderJar", 0.05,
             }
         },
         crate = {
