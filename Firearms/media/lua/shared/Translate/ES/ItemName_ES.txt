@@ -46,6 +46,7 @@ ItemName_ES = {
 
     
 	ItemName_Base.Solvent = "WD-40",
+	ItemName_Base.GunToolKit = "Kit de herramientas para armas",
 
     ItemName_Base.ExtendedRecoilPad = "Culata de retroceso extendida",
     ItemName_Base.AmmoStock = "Correa para munición de escopeta",
