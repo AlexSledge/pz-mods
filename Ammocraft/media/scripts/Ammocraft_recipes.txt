@@ -195,7 +195,7 @@ module Base
 			OnCreate:recipe_Open_Jar,
 		}
 
-		recipe Open Small Pistol Primer  Box
+		recipe Open Small Pistol Primer Box
 		{
 			SP_Primers_box,
 
@@ -206,7 +206,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Large Pistol Primer  Box
+		recipe Open Large Pistol Primer Box
 		{
 			LP_Primers_box,
 
@@ -217,7 +217,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Rifle Primer  Box
+		recipe Open Rifle Primer Box
 		{
 			R_Primers_box,
 
@@ -228,7 +228,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Shotgun Primer  Box
+		recipe Open Shotgun Primer Box
 		{
 			SG_Primers_box,
 
