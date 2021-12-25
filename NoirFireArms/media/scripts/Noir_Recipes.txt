@@ -1,0 +1,27 @@
+module Base
+{
+	recipe Open Box of 7.62x51mm Ammo
+	{
+		762x51Box,
+
+		Result:762x51Bullets=8,
+		Sound:OpenAmmoBox,
+		Time:30.0,
+		Prop1:Bullet_Casing,
+		Prop2:Ammobox,
+		Override:true,
+	}
+
+	recipe Place 7.62x51mm in Box
+	{
+		762x51Bullets=40,
+
+		Result:762x51Box,
+		Sound:OpenAmmoBox,
+		Time:30.0,
+		Prop1:Bullet_Casing,
+		Prop2:Ammobox,
+		Override:true,
+	}
+
+}

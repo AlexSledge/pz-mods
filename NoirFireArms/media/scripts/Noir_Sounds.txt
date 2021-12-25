@@ -1,0 +1,143 @@
+module Base
+{
+    sound Mp5Shot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/mp5_shoot.wav,
+            distanceMax = 80
+        }
+    }
+
+    sound Mp5ShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/mp5_shoot_silenced.wav,
+            distanceMax = 40
+        }
+    }
+
+    sound Glock17Shot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/glock17_shoot.wav,
+            distanceMax = 80
+        }
+    }
+
+    sound Glock17ShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/glock17_shoot_silenced.wav,
+            distanceMax = 40
+        }
+    }
+
+    sound FnFalShot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/fal_shoot.wav,
+            distanceMax = 160
+        }
+    }
+
+    sound FnFalShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/fal_shoot_silenced.wav,
+            distanceMax = 80
+        }
+    }
+
+    sound ColtShot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/45_shoot.wav,
+            distanceMax = 100
+        }
+    }
+
+    sound ColtShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/45_shoot_silenced.wav,
+            distanceMax = 50
+        }
+    }
+
+    sound VarmintRifleShot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound VarmintRifleShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot_silenced.wav,
+            distanceMax = 70
+        }
+    }
+
+    sound HuntingRifleShot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound HuntingRifleShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot_silenced.wav,
+            distanceMax = 70
+        }
+    }
+
+    sound M14Shot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound M14ShotSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot_silenced.wav,
+            distanceMax = 70
+        }
+    }
+
+}

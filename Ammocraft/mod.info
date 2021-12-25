@@ -1,8 +1,0 @@
-name=Ammocraft Firearms
-id=ammocraftfirearms
-description=Adds ammo crafting to Firearms B41.
-poster=poster.png
-poster=Ammocraft.png
-poster=Ammocraft2.png
-poster=Ammocraft_books.png
-require=firearmmod

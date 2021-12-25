@@ -1,0 +1,6 @@
+Recipes_ES = {
+
+	Recipe_Open_Box_of_7.62x51mm_Ammo ="Abrir caja de cartuchos 7.62x51mm",
+	Recipe_Place_7.62x51mm_in_Box ="Poner cartuchos 7.62x51mm en una caja",
+	
+	}

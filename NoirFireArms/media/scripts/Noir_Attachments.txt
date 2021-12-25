@@ -1,0 +1,80 @@
+module Base
+{
+    item 9mmSilencer
+	{
+        Type = WeaponPart,
+        DisplayName = 9mm Silencer,
+        DisplayCategory = WeaponPart,
+        Icon = Silencer,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MountOn = Glock17; Pistol; Mp5,
+        PartType = Canon,
+        Tooltip = Tooltip_Silencer,
+        WorldStaticModel = Silencer_wm,
+    }
+
+	item 45Silencer
+	{
+        Type = WeaponPart,
+        DisplayName = Silencer,
+        DisplayCategory = WeaponPart,
+        Icon = Silencer,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MountOn = Pistol2,
+        PartType = Canon,
+        Tooltip = Tooltip_Silencer,
+        WorldStaticModel = Silencer_wm,
+	}
+
+
+	item 223Silencer
+	{
+        Type = WeaponPart,
+        DisplayName = Silencer,
+        DisplayCategory = WeaponPart,
+        Icon = Silencer,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MountOn = VarmintRifle; AssaultRifle,
+        PartType = Canon,
+        Tooltip = Tooltip_Silencer,
+        WorldStaticModel = Silencer_wm,
+	}
+
+	item 308Silencer
+	{
+        Type = WeaponPart,
+        DisplayName = Silencer,
+        DisplayCategory = WeaponPart,
+        Icon = Silencer,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MountOn = AssaultRifle2; HuntingRifle; FnFal,
+        PartType = Canon,
+        Tooltip = Tooltip_Silencer,
+        WorldStaticModel = Silencer_wm,
+	}
+
+
+    /***** Vanilla Attachments *****/
+
+    item RedDot
+    {
+        DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Red Dot,
+        Icon = RedDot,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+        MountOn = Pistol; Pistol2; Pistol3; Revolver; Revolver_Long; AssaultRifle; AssaultRifle2; HuntingRifle; VarmintRifle; Glock17; Mp5; FnFal,
+        PartType = Scope,
+        Tooltip = Tooltip_RedDot,
+        StaticModel = RedDot,
+        MetalValue = 15,
+        WorldStaticModel = Handgun_RedDotScope_Ground,
+    }
+
+}
