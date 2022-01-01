@@ -1,66 +1,28 @@
 module Base
 {
-    sound Mp5Shot
+
+
+    sound 9mmShoot
     {
         category = Item,
         clip
         {
-            file = media/sound/mp5_shoot.wav,
+            file = media/sound/9mm_shoot.wav,
             distanceMax = 80
         }
     }
 
-    sound Mp5ShotSilenced
+    sound 9mmShootSilenced
     {
         category = Item,
         clip
         {
-            file = media/sound/mp5_shoot_silenced.wav,
+            file = media/sound/9mm_shoot_silenced.wav,
             distanceMax = 40
         }
     }
 
-    sound Glock17Shot
-    {
-        category = Item,
-        clip
-        {
-            file = media/sound/glock17_shoot.wav,
-            distanceMax = 80
-        }
-    }
-
-    sound Glock17ShotSilenced
-    {
-        category = Item,
-        clip
-        {
-            file = media/sound/glock17_shoot_silenced.wav,
-            distanceMax = 40
-        }
-    }
-
-    sound FnFalShot
-    {
-        category = Item,
-        clip
-        {
-            file = media/sound/fal_shoot.wav,
-            distanceMax = 160
-        }
-    }
-
-    sound FnFalShotSilenced
-    {
-        category = Item,
-        clip
-        {
-            file = media/sound/fal_shoot_silenced.wav,
-            distanceMax = 80
-        }
-    }
-
-    sound ColtShot
+    sound 45Shoot
     {
         category = Item,
         clip
@@ -70,7 +32,7 @@ module Base
         }
     }
 
-    sound ColtShotSilenced
+    sound 45ShootSilenced
     {
         category = Item,
         clip
@@ -80,7 +42,27 @@ module Base
         }
     }
 
-    sound VarmintRifleShot
+    sound 223Shoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/223_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound 223ShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/223_shoot_silenced.wav,
+            distanceMax = 70
+        }
+    }
+
+    sound 308Shoot
     {
         category = Item,
         clip
@@ -90,7 +72,7 @@ module Base
         }
     }
 
-    sound VarmintRifleShotSilenced
+    sound 308ShootSilenced
     {
         category = Item,
         clip
@@ -100,42 +82,42 @@ module Base
         }
     }
 
-    sound HuntingRifleShot
+    sound 5x45mmShoot
     {
         category = Item,
         clip
         {
-            file = media/sound/308_shoot.wav,
+            file = media/sound/5x45mm_shoot.wav,
             distanceMax = 140
         }
     }
 
-    sound HuntingRifleShotSilenced
+    sound 5x45mmShootSilenced
     {
         category = Item,
         clip
         {
-            file = media/sound/308_shoot_silenced.wav,
+            file = media/sound/5x45mm_shoot_silenced.wav,
             distanceMax = 70
         }
     }
 
-    sound M14Shot
+    sound 12gaShoot
     {
         category = Item,
         clip
         {
-            file = media/sound/308_shoot.wav,
+            file = media/sound/12ga_shoot.wav,
             distanceMax = 140
         }
     }
 
-    sound M14ShotSilenced
+    sound 12gaShootSilenced
     {
         category = Item,
         clip
         {
-            file = media/sound/308_shoot_silenced.wav,
+            file = media/sound/12ga_shoot_silenced.wav,
             distanceMax = 70
         }
     }

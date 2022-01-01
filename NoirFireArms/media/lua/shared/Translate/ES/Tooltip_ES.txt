@@ -1,6 +1,0 @@
-
-Tooltip_ES = {
-
-  Tooltip_Silencer = "Suprime el sonido del disparo de un arma."
-  
-}
