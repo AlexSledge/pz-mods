@@ -604,6 +604,7 @@ module Base
         ModelWeaponPart = ChokeTubeFull ChokeTube choketube choketube,
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = 12gaSilencer Silencer silencer silencer,
+        ModelWeaponPart = ShotgunTacticalLight ShotgunTacticalLight light light,
         StopPower = 20,
 	}
 

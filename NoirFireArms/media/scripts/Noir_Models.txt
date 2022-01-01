@@ -1,16 +1,5 @@
 module Base
 {
-	model Silencer
-	{
-		mesh = weapons/firearm/attachments/Silencer,
-		texture = weapons/firearm/attachments/Silencer,
-	}
-	model Silencer_wm
-	{
-		mesh = weapons/firearm/attachments/Silencer_wm,
-		texture = weapons/firearm/attachments/Silencer,
-	}
-	
 	model AssaultRifle
 	{
 		mesh = Weapons/Firearm/AssaultRifle,
@@ -276,7 +265,6 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
-
 	model Shotgun
 	{
 		mesh = Weapons/Firearm/Shotgun,
@@ -301,8 +289,29 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4410 0.0330,
+			offset = 0.0000 0.4410 0.0300,
 			rotate = 0.0000 0.0000 0.0000,
 		}
+
+		attachment light
+		{
+			offset = 0.0000 0.0150 0.0090,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+	model ShotgunTacticalLight
+	{
+		mesh = weapons/firearm/attachments/ShotgunTacticalLight,
+		texture = weapons/firearm/attachments/ShotgunTacticalLight,
+	}
+	model Silencer
+		{
+			mesh = weapons/firearm/attachments/Silencer,
+			texture = weapons/firearm/attachments/Silencer,
+		}
+	model Silencer_wm
+	{
+		mesh = weapons/firearm/attachments/Silencer_wm,
+		texture = weapons/firearm/attachments/Silencer,
 	}
 }

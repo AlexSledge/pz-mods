@@ -72,4 +72,49 @@ module Base
 		WorldStaticModel = Silencer_wm,
 	}
 
+	item PistolTacticalLight
+    {
+        Type = WeaponPart,
+        DisplayName = Pistol Tactical Light,
+        Icon = TacticalLight,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		AimingTimeModifier = -2,
+        MountOn = Pistol; Pistol2,
+        PartType = Sling,
+		ActivatedItem	=	FALSE,
+		MetalValue = 5,
+    }
+
+	item ShotgunTacticalLight
+    {
+        Type = WeaponPart,
+        DisplayName = Shotgun Tactical Light,
+        Icon = TacticalLight2,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+		AimingTimeModifier = -3,
+        MountOn = Shotgun,
+        PartType = Sling,
+		ActivatedItem	=	FALSE,
+		MetalValue = 5,
+    }
+
+	item RifleTacticalLight
+    {
+        Type = WeaponPart,
+        DisplayName = Rifle Tactical Light,
+        Icon = M16Flashlight,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		AimingTimeModifier = -2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Sling,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+		MetalValue = 5,
+    }
+
 }
