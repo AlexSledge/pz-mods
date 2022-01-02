@@ -1,6 +1,6 @@
 name=Noir FireArms
 id=noirfirearms
 description=
-description=Adds some guns, silencers and EFT sounds
-description=
+description=GunLights, Silencers, EFT Sounds
+description= Add gunlights and silencers to some fire arms, some weapons use EFT sounds, keys to toggle GunLight and change fire mode
 poster=poster.png
