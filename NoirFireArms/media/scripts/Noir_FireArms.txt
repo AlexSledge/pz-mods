@@ -607,7 +607,7 @@ module Base
         AttachmentType = Rifle,
         ModelWeaponPart = ChokeTubeFull ChokeTube choketube choketube,
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
-        ModelWeaponPart = 12gaSilencer Silencer silencer silencer,
+        ModelWeaponPart = 12gaSilencer Salvo12 silencer silencer,
         ModelWeaponPart = GunLight GunLight gunlight gunlight,
         StopPower = 20,
 	}

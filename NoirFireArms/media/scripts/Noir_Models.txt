@@ -301,7 +301,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4410 0.0300,
+			offset = 0.0000 0.5370 0.0300,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 
@@ -320,5 +320,10 @@ module Base
 	{
 		mesh = weapons/firearm/attachments/Silencer_wm,
 		texture = weapons/firearm/attachments/Silencer,
+	}
+	model Salvo12
+	{
+		mesh = weapons/firearm/attachments/Salvo12,
+		texture = weapons/firearm/attachments/Salvo12,
 	}
 }
