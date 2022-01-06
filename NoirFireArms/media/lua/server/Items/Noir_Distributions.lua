@@ -1,4 +1,5 @@
 require 'Items/ProceduralDistributions'
+require 'Items/Distributions'
 
 local safeHouseWeapons = {
     "GarageFirearms",
@@ -10,10 +11,11 @@ local armyPawnWeapons = {
     "PawnShopGunsSpecial"
 }
 
-local gunStoresWeapons ={ 
+local policeGunStoresWeapons ={ 
     "GunStoreCounter",
     "GunStoreDisplayCase",
-    "GunStoreShelf"
+    "GunStoreShelf",
+    "PoliceStorageGuns",
 }
 
 for i =1 , #safeHouseWeapons do
@@ -39,37 +41,33 @@ for i =1 , #armyPawnWeapons do
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 10);
 end
 
-for i =1 , #gunStoresWeapons do
-    table.insert(ProceduralDistributions.list[gunStoresWeapons[i]].items, "Base.45Silencer");
-    table.insert(ProceduralDistributions.list[gunStoresWeapons[i]].items, 5);
-    table.insert(ProceduralDistributions.list[gunStoresWeapons[i]].items, "Base.9mmSilencer");
-    table.insert(ProceduralDistributions.list[gunStoresWeapons[i]].items, 5);
-    table.insert(ProceduralDistributions.list[gunStoresWeapons[i]].items, "Base.12gaSilencer");
-    table.insert(ProceduralDistributions.list[gunStoresWeapons[i]].items, 5);
+for i =1 , #policeGunStoresWeapons do
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, "Base.45Silencer");
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 5);
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, "Base.9mmSilencer");
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 5);
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, "Base.12gaSilencer");
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 5);
 end
 
-table.insert(ProceduralDistributions.list["PoliceStorageAmmunition"].items, "Base.9mmSilencer");
-table.insert(ProceduralDistributions.list["PoliceStorageAmmunition"].items, 10);
-table.insert(ProceduralDistributions.list["PoliceStorageAmmunition"].items, "Base.12gaSilencer");
-table.insert(ProceduralDistributions.list["PoliceStorageAmmunition"].items, 10);
 
 table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Base.9mmSilencer");
-table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 3);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 5);
 table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Base.45Silencer");
-table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 3);
+table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 5);
 
 table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Base.9mmSilencer");
-table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 3);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 5);
 table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, "Base.45Silencer");
-table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 3);
+table.insert(SuburbsDistributions["GunCache2"]["GunBox"].items, 5);
 
 table.insert(SuburbsDistributions["GunCache2"]["Bag_DuffelBagTINT"].items, "Base.9mmSilencer");
-table.insert(SuburbsDistributions["GunCache2"]["Bag_DuffelBagTINT"].items, 3);
+table.insert(SuburbsDistributions["GunCache2"]["Bag_DuffelBagTINT"].items, 5);
 table.insert(SuburbsDistributions["GunCache2"]["Bag_DuffelBagTINT"].items, "Base.45Silencer");
-table.insert(SuburbsDistributions["GunCache2"]["Bag_DuffelBagTINT"].items, 3);
+table.insert(SuburbsDistributions["GunCache2"]["Bag_DuffelBagTINT"].items, 5);
 
 table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Base.12gaSilencer");
-table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 3);
+table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 5);
 
 table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, "Base.12gaSilencer");
-table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 3);
+table.insert(SuburbsDistributions["ShotgunCache1"]["ShotgunBox"].items, 5);
