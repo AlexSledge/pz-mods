@@ -48,13 +48,13 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.3640 0.0260,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.4620 0.0300,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.2010 0.0090,
+			offset = 0.0000 0.2430 0.0090,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -94,7 +94,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1080 -0.0190,
+			offset = 0.0000 0.1950 -0.0300,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -134,7 +134,7 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.1230 -0.0260,
+			offset = 0.0000 0.1910 -0.0260,
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
@@ -157,8 +157,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4250 0.0340,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.5320 0.0370,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 
 		attachment gunlight
@@ -221,8 +221,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4830 0.0330,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.5620 0.0330,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 	}
 	model HuntingRifle
@@ -273,8 +273,8 @@ module Base
 
 		attachment silencer
 		{
-			offset = 0.0000 0.4410 0.0330,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.5230 0.0330,
+			rotate = 180.0000 0.0000 180.0000,
 		}
 	}
 	model Shotgun
@@ -324,6 +324,11 @@ module Base
 	model Salvo12
 	{
 		mesh = weapons/firearm/attachments/Salvo12,
-		texture = weapons/firearm/attachments/Salvo12,
+		texture = weapons/firearm/attachments/Silencer,
+	}
+	model Salvo12_wm
+	{
+		mesh = weapons/firearm/attachments/Salvo12_wm,
+		texture = weapons/firearm/attachments/Silencer,
 	}
 }

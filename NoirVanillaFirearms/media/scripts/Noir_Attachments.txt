@@ -63,13 +63,13 @@ module Base
 		Type = WeaponPart,
 		DisplayName = Silencer,
 		DisplayCategory = WeaponPart,
-		Icon = Salvo12,
+		Icon = Silencer,
 		Weight = 0.3,
 		WeightModifier = 0.3,
 		MountOn = Shotgun,
 		PartType = Canon,
 		Tooltip = Tooltip_Silencer,
-		WorldStaticModel = Silencer_wm,
+		WorldStaticModel = Salvo12_wm,
 	}
 
     item GunLight
