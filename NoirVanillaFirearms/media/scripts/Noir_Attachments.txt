@@ -71,6 +71,20 @@ module Base
 		Tooltip = Tooltip_Silencer,
 		WorldStaticModel = Salvo12_wm,
 	}
+	
+	item BottleSilencer
+	{
+		Type = WeaponPart,
+		DisplayName = Silencer,
+		DisplayCategory = WeaponPart,
+		Icon = Silencer,
+		Weight = 0.3,
+		WeightModifier = 0.3,
+		MountOn = Pistol,
+		PartType = Canon,
+		Tooltip = Tooltip_Silencer,
+		WorldStaticModel = WaterBottleEmpty,
+	}
 
     item GunLight
     {

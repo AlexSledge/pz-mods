@@ -331,4 +331,9 @@ module Base
 		mesh = weapons/firearm/attachments/Salvo12_wm,
 		texture = weapons/firearm/attachments/Silencer,
 	}
+	
+	model BottleSilencer
+	{
+		mesh = WaterBottle
+	}
 }
