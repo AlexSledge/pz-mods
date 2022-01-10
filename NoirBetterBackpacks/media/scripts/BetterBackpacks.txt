@@ -3,7 +3,7 @@ module Base{
     item Bag_Satchel
     {
         DisplayCategory = Bag,
-        WeightReduction	=	60,
+        WeightReduction	=	55,
         Weight	=	1,
         Type	=	Container,
         Capacity	=	15,
