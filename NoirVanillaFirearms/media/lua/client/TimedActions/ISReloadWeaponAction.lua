@@ -448,9 +448,9 @@ end
 function ISReloadWeaponAction:vanillaEffects(character,weapon,muzzleFlash)
 	character:playSound(weapon:getSwingSound());
 	local radius = weapon:getSoundRadius();
-	if isClient() then -- limit sound radius in MP
-		radius = radius / 3;
-	end
+--	if isClient() then -- limit sound radius in MP
+--		radius = radius / 3;
+--	end
 	character:addWorldSoundUnlessInvisible(radius, weapon:getSoundVolume(), false);
 	if(muzzleFlash) then
 	character:startMuzzleFlash()
