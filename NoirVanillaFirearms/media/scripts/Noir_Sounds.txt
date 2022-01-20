@@ -18,7 +18,7 @@ module Base
         clip
         {
             file = media/sound/9mm_shoot_silenced.wav,
-            distanceMax = 40
+            distanceMax = 70
         }
     }
 
@@ -38,7 +38,7 @@ module Base
         clip
         {
             file = media/sound/45_shoot_silenced.wav,
-            distanceMax = 50
+            distanceMax = 90
         }
     }
 
@@ -58,7 +58,7 @@ module Base
         clip
         {
             file = media/sound/223_shoot_silenced.wav,
-            distanceMax = 70
+            distanceMax = 130
         }
     }
 
@@ -78,7 +78,7 @@ module Base
         clip
         {
             file = media/sound/308_shoot_silenced.wav,
-            distanceMax = 70
+            distanceMax = 130
         }
     }
 
@@ -98,7 +98,7 @@ module Base
         clip
         {
             file = media/sound/5x45mm_shoot_silenced.wav,
-            distanceMax = 70
+            distanceMax = 130
         }
     }
 
@@ -118,7 +118,7 @@ module Base
         clip
         {
             file = media/sound/12ga_shoot_silenced.wav,
-            distanceMax = 70
+            distanceMax = 130
         }
     }
 
