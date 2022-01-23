@@ -11,7 +11,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of 9x19mm Parabellum Casings,
 		Icon	=	Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item Bullets45_casingbox
@@ -21,7 +21,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .45 ACP Casings,
 		Icon	=	Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item Bullets44_casingbox
@@ -31,7 +31,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .44 Magnum Casings,
 		Icon	= Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item Bullets38_casingbox
@@ -41,7 +41,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .38 Special Casings,
 		Icon	=	Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item 308Bullets_casingbox
@@ -51,7 +51,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .308 Winchester Casings,
 		Icon	=	Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item 223Bullets_casingbox
@@ -61,7 +61,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .223 Casings,
 		Icon	=	Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item 556Bullets_casingbox
@@ -71,7 +71,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of 5.56x45mm Casings,
 		Icon	=	Ammobox_Casings,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxCasings,
 	}
 	item ShotgunShells_casingbox
@@ -81,7 +81,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of Empty Shotgun Shells,
 		Icon	=	Ammobox_Shotgun,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxShells,
 	}
 	item Bullets9mm_tipbox
@@ -91,7 +91,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of 9x19mm Parabellum Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item Bullets45_tipbox
@@ -101,7 +101,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .45 ACP Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item Bullets44_tipbox
@@ -111,7 +111,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .44 Magnum Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item Bullets38_tipbox
@@ -121,7 +121,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .38 Special Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item 308Bullets_tipbox
@@ -131,7 +131,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .308 Winchester Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item 223Bullets_tipbox
@@ -141,7 +141,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of .223 Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item 556Bullets_tipbox
@@ -151,7 +151,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of 5.56x45mm Bullet Tips,
 		Icon	=	Ammobox_Tips,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxTips,
 	}
 	item ShotgunShells_tipbox
@@ -161,7 +161,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Jar of Buckshot,
 		Icon	=	GunpowderJar,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BuckshotJar,
 	}
 	item SP_Primers_box
@@ -171,7 +171,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of Small Pistol Primers,
 		Icon	=	Ammobox_Primers,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxSPPrimers,
 	}
 	item LP_Primers_box
@@ -181,7 +181,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of Large Pistol Primers,
 		Icon	=	Ammobox_Primers,
-		StaticModel = Ammobox,
+		WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxLPPrimers,
 	}
 	item R_Primers_box
@@ -191,7 +191,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of Rifle Primers,
 		Icon	= Ammobox_Primers,
-    StaticModel = Ammobox,
+    	WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxRPrimers,
 	}
 	item SG_Primers_box
@@ -201,7 +201,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Box of Shotgun Primers,
 		Icon	=	Ammobox_Primers,
-    StaticModel = Ammobox,
+    	WorldStaticModel = Ammobox,
 		Tooltip = Tooltip_BoxSGPrimers,
 	}
 	item GunpowderJar
@@ -224,8 +224,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	9x19mm Parabellum Casing,
 		Icon	=	9mm_Casing,
-    MetalValue = 10,
-		StaticModel = Bullet,
+    	MetalValue = 10,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets9mm_casing_spent
@@ -246,7 +246,7 @@ module Base
 		DisplayName	=	9x19mm Parabellum Casing without Primer,
 		Icon	=	9mm_Casing,
 		MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets9mm_tip
@@ -256,8 +256,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	9x19mm Parabellum Bullet,
 		Icon	=	9mm_Bullet,
-    MetalValue = 5,
-		StaticModel = Bullet,
+    	MetalValue = 5,
+		WorldStaticModel = Bullet,
 	}
 	item Bullets45_casing
 	{
@@ -266,8 +266,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.45 ACP Casing,
 		Icon	=	45_Casing,
-    MetalValue = 10,
-		StaticModel = Bullet,
+   		MetalValue = 10,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets45_casing_spent
@@ -278,7 +278,7 @@ module Base
 		DisplayName	=	Spent .45 ACP Casing,
 		Icon	=	45_Casing,
 		MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item Bullets45_casing_spent_noprimer
@@ -288,8 +288,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.45 ACP Casing without Primer,
 		Icon	=	45_Casing,
-	  MetalValue = 10,
-		StaticModel = Bullet,
+	  	MetalValue = 10,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets45_tip
@@ -299,8 +299,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.45 ACP Bullet,
 		Icon	=	45_Bullet,
-    MetalValue = 5,
-		StaticModel = Bullet,
+    	MetalValue = 5,
+		WorldStaticModel = Bullet,
 	}
 	item Bullets44_casing
 	{
@@ -310,7 +310,7 @@ module Base
 		DisplayName	=	.44 Magnum Casing,
 		Icon	=	45_Casing,
     MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets44_casing_spent
@@ -321,7 +321,7 @@ module Base
 		DisplayName	= Spent	.44 Magnum Casing,
 		Icon	=	45_Casing,
 		MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item Bullets44_casing_spent_noprimer
@@ -332,7 +332,7 @@ module Base
 		DisplayName	=	.44 Magnum Casing without Primer,
 		Icon	=	45_Casing,
 		MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets44_tip
@@ -342,8 +342,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.44 Bullet,
 		Icon	=	45_Bullet,
-    MetalValue = 5,
-		StaticModel = Bullet,
+    	MetalValue = 5,
+		WorldStaticModel = Bullet,
 	}
 	item Bullets38_casing
 	{
@@ -352,8 +352,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.38 Special Casing,
 		Icon	=	38_Casing,
-    MetalValue = 10,
-		StaticModel = Bullet,
+    	MetalValue = 10,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets38_casing_spent
@@ -364,7 +364,7 @@ module Base
 		DisplayName	= Spent	.38 Special Casing,
 		Icon	=	38_Casing,
 		MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item Bullets38_casing_spent_noprimer
@@ -375,7 +375,7 @@ module Base
 		DisplayName	=	.38 Special Casing without Primer,
 		Icon	=	38_Casing,
 		MetalValue = 10,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets38_tip
@@ -385,8 +385,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.38 Special Bullet,
 		Icon	=	38_Bullet,
-    MetalValue = 5,
-		StaticModel = Bullet,
+    	MetalValue = 5,
+		WorldStaticModel = Bullet,
 	}
 	item 308Bullets_casing
 	{
@@ -396,7 +396,7 @@ module Base
 		DisplayName	=	.308 Winchester Casing,
 		Icon	=	308_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_Casing,
 	}
 	item 308Bullets_casing_spent
@@ -407,7 +407,7 @@ module Base
 		DisplayName	= Spent	.308 Winchester Casing,
 		Icon	=	308_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item 308Bullets_casing_spent_noprimer
@@ -418,7 +418,7 @@ module Base
 		DisplayName	=	.308 Winchester Casing without Primer,
 		Icon	=	308_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item 308Bullets_tip
@@ -429,7 +429,7 @@ module Base
 		DisplayName	=	.308 Winchester Bullet,
 		Icon	=	38_Bullet,
 		MetalValue = 5,
-		StaticModel = Bullet,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_223_556,
 	}
 	item 223Bullets_casing
@@ -439,8 +439,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.223 Remington Casing,
 		Icon	=	223_Casing,
-    MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+    	MetalValue = 10,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_223_556,
 	}
 	item 223Bullets_casing_spent
@@ -451,7 +451,7 @@ module Base
 		DisplayName	= Spent	.223 Remington Casing,
 		Icon	=	223_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item 223Bullets_casing_spent_noprimer
@@ -462,7 +462,7 @@ module Base
 		DisplayName	=	.223 Remington Casing without Primer,
 		Icon	=	223_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item 223Bullets_tip
@@ -472,8 +472,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.223 Remington Bullet,
 		Icon	=	9mm_Bullet,
-    MetalValue = 5,
-		StaticModel = Bullet,
+   	 	MetalValue = 5,
+		WorldStaticModel = Bullet,
 	}
 	item 556Bullets_casing
 	{
@@ -482,8 +482,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	5.56x45mm Casing,
 		Icon	=	308_Casing,
-    MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+    	MetalValue = 10,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_556_223,
 	}
 	item 556Bullets_casing_spent
@@ -494,7 +494,7 @@ module Base
 		DisplayName	= Spent	5.56x45mm Casing,
 		Icon	=	308_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item 556Bullets_casing_spent_noprimer
@@ -505,7 +505,7 @@ module Base
 		DisplayName	=	5.56x45mm Casing without Primer,
 		Icon	=	308_Casing,
 		MetalValue = 10,
-		StaticModel = RifleBullet_Casing,
+		WorldStaticModel = RifleBullet_Casing,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item 556Bullets_tip
@@ -515,8 +515,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	5.56x45mm Bullet,
 		Icon	=	9mm_Bullet,
-    MetalValue = 5,
-		StaticModel = Bullet,
+   		MetalValue = 5,
+		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_556_223,
 	}
 	item ShotgunShells_casing
@@ -526,8 +526,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Empty Shotgunshell,
 		Icon	=	ShotgunShells_casing,
-    MetalValue = 10,
-		StaticModel = ShotgunShell,
+    	MetalValue = 10,
+		WorldStaticModel = ShotgunShell,
 		Tooltip = Tooltip_Casing,
 	}
 	item ShotgunShells_casing_spent
@@ -538,7 +538,7 @@ module Base
 		DisplayName	=	Spent Empty Shotgunshell,
 		Icon	=	ShotgunShells_casing,
 		MetalValue = 10,
-		StaticModel = ShotgunShell,
+		WorldStaticModel = ShotgunShell,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item ShotgunShells_casing_spent_noprimer
@@ -549,7 +549,7 @@ module Base
 		DisplayName	=	Empty Shotgunshell without Primer,
 		Icon	=	ShotgunShells_casing,
 		MetalValue = 10,
-		StaticModel = ShotgunShell,
+		WorldStaticModel = ShotgunShell,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item ShotgunShells_tip
@@ -559,8 +559,8 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	Shotgun buckshot,
 		Icon	=	ShotgunShells_Buckshot,
-    MetalValue = 5,
-		StaticModel = ShotgunShell,
+    	MetalValue = 5,
+		WorldStaticModel = ShotgunShell,
 	}
 	/*******************************************************/
 	/*                      Primers                        */
@@ -642,76 +642,76 @@ module Base
 	/*****************************************************/
 	item 45BulletsMold
 	{
-			Weight = 0.5,
-			Type = Normal,
-			DisplayName	= .45 ACP Bullets Mold,
-			Icon = BulletMold,
-			MetalValue = 15,
-			Tooltip = Tooltip_BulletIngredient,
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName	= .45 ACP Bullets Mold,
+		Icon = BulletMold,
+		MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
 	}
 
 	item 44BulletsMold
 	{
-			Weight = 0.5,
-			Type = Normal,
-			DisplayName	= .44 Bullets Mold,
-			Icon = BulletMold,
-			MetalValue = 15,
-			Tooltip = Tooltip_BulletIngredient,
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName	= .44 Bullets Mold,
+		Icon = BulletMold,
+		MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
 	}
 
 	item 38BulletsMold
 	{
-			Weight = 0.5,
-			Type = Normal,
-			DisplayName	= .38 Special Bullets Mold,
-			Icon = BulletMold,
-			MetalValue = 15,
-			Tooltip = Tooltip_BulletIngredient,
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName	= .38 Special Bullets Mold,
+		Icon = BulletMold,
+		MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
 	}
 
 	item 556BulletsMold
 	{
-			Weight = 0.5,
-			Type = Normal,
-			DisplayName	= 5.56x45mm Bullets Mold,
-			Icon = BulletMold,
-			MetalValue = 15,
-			Tooltip = Tooltip_BulletIngredient,
+		Weight = 0.5,
+		Type = Normal,
+		DisplayName	= 5.56x45mm Bullets Mold,
+		Icon = BulletMold,
+		MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
 	}
 
 	item Lead
 	{
-			Weight = 0.1,
-			Type = Normal,
-			DisplayName	= Lead,
-			Icon = MetalBits,
-			MetalValue = 15,
-			Tooltip = Tooltip_BulletIngredient,
+		Weight = 0.1,
+		Type = Normal,
+		DisplayName	= Lead,
+		Icon = MetalBits,
+		MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
 	}
 
 	item Saltpeter
 	{
-			Weight	=	0.1,
-			Type	=	Drainable,
-			UseDelta = 0.1,
-			UseWhileEquipped = FALSE,
-			DisplayName	=	Saltpeter,
-			Icon	=	Gunpowder,
-			WeightEmpty = 0.01,
-			Tooltip = Tooltip_GunpowderIngredient,
+		Weight	=	0.1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		DisplayName	=	Saltpeter,
+		Icon	=	Gunpowder,
+		WeightEmpty = 0.01,
+		Tooltip = Tooltip_GunpowderIngredient,
 	}
 
 	item Sulfur
 	{
-			Weight	=	0.1,
-			Type	=	Drainable,
-			UseDelta = 0.1,
-			UseWhileEquipped = FALSE,
-			DisplayName	=	Elemental Sulfur,
-			Icon	=	Sulfur,
-			WeightEmpty = 0.01,
-			Tooltip = Tooltip_GunpowderIngredient,
+		Weight	=	0.1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		DisplayName	=	Elemental Sulfur,
+		Icon	=	Sulfur,
+		WeightEmpty = 0.01,
+		Tooltip = Tooltip_GunpowderIngredient,
 	}
 
 }

@@ -38,10 +38,12 @@ module Base
 	model ShotgunShell
 	{
 		mesh = ammo/ShotgunShells,
+		texture = ammo/ShotgunShells,
 	}
 
 	model Ammobox
 	{
 		mesh = ammo/Ammobox,
+		texture = ammo/Ammobox,
 	}
 }

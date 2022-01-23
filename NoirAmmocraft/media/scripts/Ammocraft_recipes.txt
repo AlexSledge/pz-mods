@@ -4,7 +4,7 @@ module Base
 	/*****************************************************/
 	/*                       Boxes                       */
 	/*****************************************************/
-		recipe Open 9x19mm Parabellum Casing Box
+		recipe Open 9mm Casing Box
 		{
 			Bullets9mm_casingbox,
 
@@ -16,7 +16,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open .45 ACP Casing Box
+		recipe Open .45 Auto Casing Box
 		{
 			Bullets45_casingbox,
 
@@ -52,7 +52,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open .308 Winchester Casing Box
+		recipe Open .308 Casing Box
 		{
 			308Bullets_casingbox,
 
@@ -64,7 +64,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open .223 Remington Casing Box
+		recipe Open .223 Casing Box
 		{
 			223Bullets_casingbox,
 
@@ -76,7 +76,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open 5.56x45mm Casing Box
+		recipe Open 5.56 Casing Box
 		{
 			556Bullets_casingbox,
 
@@ -100,7 +100,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Box of 9x19mm Parabellum Bullet Tips
+		recipe Open Box of 9mm Bullet Tips
 		{
 			Bullets9mm_tipbox,
 
@@ -112,7 +112,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Box of .45 ACP Bullet Tips
+		recipe Open Box of .45 Auto Bullet Tips
 		{
 			Bullets45_tipbox,
 
@@ -148,7 +148,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Box of .308 Winchester Bullet Tips
+		recipe Open Box of .308 Bullet Tips
 		{
 			308Bullets_tipbox,
 
@@ -160,7 +160,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Box of .223 Remington Bullet Tips
+		recipe Open Box of .223 Bullet Tips
 		{
 			223Bullets_tipbox,
 
@@ -172,7 +172,7 @@ module Base
 			Prop2:Ammobox,
 		}
 
-		recipe Open Box of 5.56x45mm Bullet Tips
+		recipe Open Box of 5.56 Bullet Tips
 		{
 			556Bullets_tipbox,
 
@@ -568,9 +568,9 @@ module Base
 			CanBeDoneFromFloor:true,
 			Result:Bullets9mm,
 			Time:230.0,
-	    Category:Ammunition,
+	    	Category:Ammunition,
 			Prop1:Bullet,
-			Prop2:Reloadingpress,
+			
 			NeedToBeLearn:true,
 		}
 
@@ -584,9 +584,9 @@ module Base
 			CanBeDoneFromFloor:true,
 			Result:Bullets45,
 			Time:230.0,
-	    Category:Ammunition,
+	    	Category:Ammunition,
 			Prop1:Bullet,
-			Prop2:Reloadingpress,
+			
 			NeedToBeLearn:true,
 		}
 
@@ -600,9 +600,9 @@ module Base
 			CanBeDoneFromFloor:true,
 			Result:Bullets44,
 			Time:230.0,
-	    Category:Ammunition,
+	    	Category:Ammunition,
 			Prop1:Bullet,
-			Prop2:Reloadingpress,
+			
 			NeedToBeLearn:true,
 		}
 
@@ -618,7 +618,7 @@ module Base
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:Bullet,
-			Prop2:Reloadingpress,
+			
 			NeedToBeLearn:true,
 		}
 
@@ -634,7 +634,6 @@ module Base
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:RifleBullet,
-			Prop2:Reloadingpress,
 			NeedToBeLearn:true,
 		}
 
@@ -650,7 +649,6 @@ module Base
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:RifleBullet,
-			Prop2:Reloadingpress,
 			NeedToBeLearn:true,
 		}
 
@@ -666,7 +664,6 @@ module Base
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:RifleBullet,
-			Prop2:Reloadingpress,
 			NeedToBeLearn:true,
 		}
 
@@ -682,7 +679,6 @@ module Base
 			Time:230.0,
 			Category:Ammunition,
 			Prop1:ShotgunShell,
-			Prop2:Reloadingpress,
 			NeedToBeLearn:true,
 		}
 	/*******************************************************/
@@ -691,13 +687,13 @@ module Base
 	recipe Dismantle 9mm Round
 	{
 		Bullets9mm,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:Bullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -706,13 +702,13 @@ module Base
 	recipe Dismantle .45 Round
 	{
 		Bullets45,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:Bullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -721,13 +717,13 @@ module Base
 	recipe Dismantle .44 Round
 	{
 		Bullets44,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:Bullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -736,13 +732,13 @@ module Base
 	recipe Dismantle .38 Special Round
 	{
 		Bullets38,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:Bullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -751,13 +747,13 @@ module Base
 	recipe Dismantle .223 Round
 	{
 		223Bullets,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:RifleBullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -766,13 +762,13 @@ module Base
 	recipe Dismantle .308 Round
 	{
 		308Bullets,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:RifleBullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -781,13 +777,13 @@ module Base
 	recipe Dismantle 5.56 Round
 	{
 		556Bullets,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:RifleBullet,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
@@ -796,13 +792,13 @@ module Base
 	recipe Dismantle Shotgun Shell
 	{
 		ShotgunShells,
-		keep Pliers,
+		keep GunsmithPliers,
 
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
-		Prop1:Pliers,
+		Prop1:GunsmithPliers,
 		Prop2:ShotgunShell,
 		OnCreate:recipe_Dismantle_Ammo,
 		NeedToBeLearn:true,
