@@ -7,9 +7,9 @@ module Base
 		mesh = tools/Reloadingpress,
 	}
 
-	model Pliers
+	model GunsmithPliers
 	{
-		mesh = tools/Pliers,
+		mesh = tools/GunsmithPliers,
 	}
 
 	model Bullet

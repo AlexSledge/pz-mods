@@ -34,13 +34,13 @@ module Base
 		MinDamage	=	0.5,
 		MaxDamage	=	1,
 		BaseSpeed = 1,
-	  WeaponLength = 0.23,
+	 	WeaponLength = 0.23,
 		Tooltip = Tooltip_Reloader,
 	}
-	item Pliers
+	item GunsmithPliers
 	{
 		MaxRange	=	1.1,
-		WeaponSprite	=	Pliers,
+		WeaponSprite	=	GunsmithPliers,
 		MinAngle	=	0.67,
 		Type	=	Weapon,
 		MinimumSwingTime	=	4,
@@ -56,12 +56,12 @@ module Base
 		MaxHitCount	=	2,
 		DoorDamage	=	10,
 		SwingAnim	=	Bat,
-		DisplayName	=	Pliers,
+		DisplayName	=	Gunsmith Pliers,
 		MinRange	=	0.61,
 		SwingTime	=	4,
 		KnockdownMod	=	2,
 		SplatBloodOnNoDeath	=	FALSE,
-		Icon	=	Pliers,
+		Icon	=	GunsmithPliers,
 		BreakSound  =   BreakMetalItem,
 		TreeDamage  =   0,
 		CriticalChance	=	20,
@@ -69,9 +69,9 @@ module Base
 		MinDamage	=	0.5,
 		MaxDamage	=	1,
 		BaseSpeed = 1,
-	    	WeaponLength = 0.23,
-	    	AttachmentType = Hammer,
-				Tooltip = Tooltip_Pliers,
+	    WeaponLength = 0.23,
+	    AttachmentType = Hammer,
+		Tooltip = Tooltip_Pliers,
 	}
 
 }

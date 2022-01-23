@@ -1,5 +1,5 @@
 require 'Items/ProceduralDistributions'
-require 'Items/Distributions'
+require 'Items/SuburbsDistributions'
 
 local safeHouseWeapons = {
     "GarageFirearms",

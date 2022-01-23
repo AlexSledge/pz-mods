@@ -1,8 +1,6 @@
 module Base
 {
 
-	/************************Misc************************/
-
 	item GunPowder
 	{
 			Weight	=	0.1,
