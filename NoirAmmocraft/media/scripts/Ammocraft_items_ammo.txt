@@ -10,7 +10,8 @@ module Base
 		UseWhileEquipped = FALSE,
 		DisplayName	=	Gunpowder,
 		Icon	=	Gunpowder,
-		WeightEmpty = 0.01
+		WeightEmpty = 0.01,
+		WorldStaticModel = GunPowder,
 	}
 
     item Sparklers
@@ -255,39 +256,40 @@ module Base
 		CanStack	=	TRUE,
 		Weight	=	0.01,
 		Type	=	Normal,
-		DisplayName	=	9x19mm Parabellum Casing,
+		DisplayName	=	9mm Casing,
 		Icon	=	9mm_Casing,
     	MetalValue = 10,
-		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_Casing,
+		WorldStaticModel = Bullet_Casing,
 	}
 	item Bullets9mm_casing_spent
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.01,
 		Type	=	Normal,
-		DisplayName	=	Spent 9x19mm Parabellum Casing,
+		DisplayName	=	Spent 9mm Casing,
 		Icon	=	9mm_Casing,
 		MetalValue = 10,
 		Tooltip = Tooltip_CasingSpent,
+		WorldStaticModel = Bullet_Casing,
 	}
 	item Bullets9mm_casing_spent_noprimer
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.01,
 		Type	=	Normal,
-		DisplayName	=	9x19mm Parabellum Casing without Primer,
+		DisplayName	=	9mm Casing without Primer,
 		Icon	=	9mm_Casing,
 		MetalValue = 10,
-		WorldStaticModel = Bullet,
 		Tooltip = Tooltip_CasingEmpty,
+		WorldStaticModel = Bullet_Casing,
 	}
 	item Bullets9mm_tip
 	{
 		CanStack	=	TRUE,
 		Weight	=	0.01,
 		Type	=	Normal,
-		DisplayName	=	9x19mm Parabellum Bullet,
+		DisplayName	=	9mm Bullet,
 		Icon	=	9mm_Bullet,
     	MetalValue = 5,
 		WorldStaticModel = Bullet,
@@ -300,7 +302,7 @@ module Base
 		DisplayName	=	.45 ACP Casing,
 		Icon	=	45_Casing,
    		MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets45_casing_spent
@@ -311,7 +313,7 @@ module Base
 		DisplayName	=	Spent .45 ACP Casing,
 		Icon	=	45_Casing,
 		MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item Bullets45_casing_spent_noprimer
@@ -322,7 +324,7 @@ module Base
 		DisplayName	=	.45 ACP Casing without Primer,
 		Icon	=	45_Casing,
 	  	MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets45_tip
@@ -343,7 +345,7 @@ module Base
 		DisplayName	=	.44 Magnum Casing,
 		Icon	=	45_Casing,
     MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets44_casing_spent
@@ -354,7 +356,7 @@ module Base
 		DisplayName	= Spent	.44 Magnum Casing,
 		Icon	=	45_Casing,
 		MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item Bullets44_casing_spent_noprimer
@@ -365,7 +367,7 @@ module Base
 		DisplayName	=	.44 Magnum Casing without Primer,
 		Icon	=	45_Casing,
 		MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets44_tip
@@ -386,7 +388,7 @@ module Base
 		DisplayName	=	.38 Special Casing,
 		Icon	=	38_Casing,
     	MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_Casing,
 	}
 	item Bullets38_casing_spent
@@ -397,7 +399,7 @@ module Base
 		DisplayName	= Spent	.38 Special Casing,
 		Icon	=	38_Casing,
 		MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_CasingSpent,
 	}
 	item Bullets38_casing_spent_noprimer
@@ -408,7 +410,7 @@ module Base
 		DisplayName	=	.38 Special Casing without Primer,
 		Icon	=	38_Casing,
 		MetalValue = 10,
-		WorldStaticModel = Bullet,
+		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_CasingEmpty,
 	}
 	item Bullets38_tip
@@ -595,6 +597,7 @@ module Base
     	MetalValue = 5,
 		WorldStaticModel = ShotgunShell,
 	}
+
 	/*******************************************************/
 	/*                      Primers                        */
 	/*******************************************************/
@@ -660,6 +663,7 @@ module Base
 		DisplayName	=	Spent Rifle Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_PrimerSpent,
+		WorldStaticModel = Primer,
 	}
 	item SG_Primers_Spent
 	{
@@ -670,37 +674,94 @@ module Base
 		Icon	=	Primer,
 		Tooltip = Tooltip_PrimerSpent,
 	}
+
+
 	/*****************************************************/
 	/*                       Molds                       */
 	/*****************************************************/
+
+	item 9mmBulletsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= 9mm Bullets Mold,
+        Icon = BulletMold,
+        MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
+    }
+
+	item ShotgunShellsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= Shotgun Shells Mold,
+        Icon = BulletMold,
+        MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = ShotgunShellsMold,
+    }
+	
+	item 308BulletsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= 308 Bullets Mold,
+        Icon = BulletMold,
+        MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
+    }
+
+	item 223BulletsMold
+    {
+        DisplayCategory = Ammo,
+        Weight = 0.5,
+        Type = Normal,
+        DisplayName	= 223 Bullets Mold,
+        Icon = BulletMold,
+        MetalValue = 15,
+		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
+    }
+
 	item 45BulletsMold
 	{
+		DisplayCategory = Ammo,
 		Weight = 0.5,
 		Type = Normal,
-		DisplayName	= .45 ACP Bullets Mold,
+		DisplayName	= .45 Bullets Mold,
 		Icon = BulletMold,
 		MetalValue = 15,
 		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
 	}
 
 	item 44BulletsMold
 	{
+		DisplayCategory = Ammo,
 		Weight = 0.5,
 		Type = Normal,
 		DisplayName	= .44 Bullets Mold,
 		Icon = BulletMold,
 		MetalValue = 15,
 		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
 	}
 
 	item 38BulletsMold
 	{
+		DisplayCategory = Ammo,
 		Weight = 0.5,
 		Type = Normal,
 		DisplayName	= .38 Special Bullets Mold,
 		Icon = BulletMold,
 		MetalValue = 15,
 		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
 	}
 
 	item 556BulletsMold
@@ -711,6 +772,7 @@ module Base
 		Icon = BulletMold,
 		MetalValue = 15,
 		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = BulletMold,
 	}
 
 	item Lead
@@ -721,6 +783,7 @@ module Base
 		Icon = MetalBits,
 		MetalValue = 15,
 		Tooltip = Tooltip_BulletIngredient,
+		WorldStaticModel = Lead,
 	}
 
 	item Saltpeter
@@ -730,9 +793,10 @@ module Base
 		UseDelta = 0.1,
 		UseWhileEquipped = FALSE,
 		DisplayName	=	Saltpeter,
-		Icon	=	Gunpowder,
+		Icon	=	Saltpeter,
 		WeightEmpty = 0.01,
 		Tooltip = Tooltip_GunpowderIngredient,
+		WorldStaticModel = Saltpeter,
 	}
 
 	item Sulfur
@@ -741,10 +805,11 @@ module Base
 		Type	=	Drainable,
 		UseDelta = 0.1,
 		UseWhileEquipped = FALSE,
-		DisplayName	=	Elemental Sulfur,
+		DisplayName	= Sulfur,
 		Icon	=	Sulfur,
 		WeightEmpty = 0.01,
 		Tooltip = Tooltip_GunpowderIngredient,
+		WorldStaticModel = Sulfur,
 	}
 
 }

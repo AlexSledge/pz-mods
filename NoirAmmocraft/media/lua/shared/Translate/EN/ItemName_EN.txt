@@ -88,7 +88,7 @@ ItemName_EN = {
 
     ItemName_Base.Lead = "Lead",
     ItemName_Base.Saltpeter = "Potassium nitrate",
-    ItemName_Base.Sulfur = "Elemental Sulfur",
+    ItemName_Base.Sulfur = "Sulfur",
 
     ItemName_Base.GunnutMonthly1 = "Gunnut Monthly March '92 'Handgun Edition'",
     ItemName_Base.GunnutMonthly2 = "Gunnut Monthly May '92 'Shotgun Edition'",

@@ -52,6 +52,8 @@ for i =1 , #policeGunStoresWeapons do
     table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 0.05);
     table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, "Base.12gaSilencer");
     table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 0.05);
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, "Base.308Silencer");
+    table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 0.05);
     table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, "GunLight");
     table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 0.05);
 end
@@ -87,4 +89,9 @@ table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "Base.12
 table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
 table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, "GunLight");
 table.insert(SuburbsDistributions["ShotgunCache2"]["ShotgunBox"].items, 0.05);
+
+table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, "Base.45Silencer");
+table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, 1);
+table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, "Base.9mmSilencer");
+table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, 1);
 

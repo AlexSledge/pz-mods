@@ -5,16 +5,19 @@ module Base
 	model Reloadingpress
 	{
 		mesh = tools/Reloadingpress,
+		texture = tools/Reloadingpress,
 	}
 
 	model GunsmithPliers
 	{
 		mesh = tools/GunsmithPliers,
+		texture = tools/GunsmithPliers,
 	}
 
 	model Bullet
 	{
 		mesh = ammo/Bullet,
+		texture = ammo/Bullet,
 	}
 
 	model Bullet_Casing
@@ -45,5 +48,54 @@ module Base
 	{
 		mesh = ammo/Ammobox,
 		texture = ammo/Ammobox,
+	}
+
+	model GunPowder
+	{
+		mesh = WorldItems/Yeast,
+		texture = WorldItems/GunPowder,
+		scale = 0.6,
+	}
+
+	model Sulfur
+	{
+		mesh = WorldItems/Yeast,
+		texture = ammo/Sulfur,
+		scale = 0.6,
+	}
+
+	model Saltpeter
+	{
+		mesh = WorldItems/Yeast,
+		texture = ammo/Saltpeter,
+		scale = 0.6,
+	}
+
+	model Primer
+	{
+		mesh = ammo/Bullet_Casing,
+		texture = ammo/Bullet,
+		scale = 0.6,
+	}
+
+	model BulletMold
+	{
+		mesh = WorldItems/BulletMold,
+		texture = WorldItems/BulletMold,
+		scale = 0.4,
+	}
+
+	model ShotgunShellsMold
+	{
+		mesh = WorldItems/ShotGunShellstMold,
+		texture = WorldItems/ShotgunShellsMold,
+		scale = 0.4,
+	}
+
+	model Lead
+	{
+		mesh = WorldItems/Yeast,
+		texture = ammo/Lead,
+		scale = 0.3,
 	}
 }

@@ -71,7 +71,7 @@ module Base
 		BaseSpeed = 1,
 	    WeaponLength = 0.23,
 	    AttachmentType = Hammer,
-		Tooltip = Tooltip_Pliers,
+		Tooltip = Tooltip_GunsmithPliers,
 	}
 
 }
