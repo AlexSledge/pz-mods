@@ -1,6 +1,38 @@
 module Base
 {
 
+	
+	item GunPowder
+	{
+		Weight	=	0.1,
+		Type	=	Drainable,
+		UseDelta = 0.1,
+		UseWhileEquipped = FALSE,
+		DisplayName	=	Gunpowder,
+		Icon	=	Gunpowder,
+		WeightEmpty = 0.01
+	}
+
+    item Sparklers
+    {
+        DisplayCategory = Material,
+        Weight	=	0.2,
+        Type	=	Drainable,
+        DisplayName	=	Box of Sparklers,
+        Icon	=	Sparklers,
+        WorldStaticModel = BoxOfSparklers,
+    }
+
+	recipe Gather Gunpowder
+	{
+		 Bullets9mm/ShotgunShells/223Bullets/308Bullets/556Bullets/Bullets44/Bullets45/Bullets38,
+
+		 Result:GunPowder,
+		 Time:100.0,
+		 OnCreate:recipe_Gather_Gunpowder,
+		 Override:true,
+	 }
+
  	/*****************************************************/
  	/*                       Boxes                       */
 	/*****************************************************/
@@ -212,6 +244,7 @@ module Base
 		DisplayName	=	Jar of Gunpowder,
 		Icon	=	GunpowderJar,
 		Tooltip = Tooltip_GunpowderJar,
+        WorldStaticModel = GunpowderJar,
 	}
 
 	/**************************************************************/
