@@ -4,13 +4,12 @@ require 'Vehicles/VehicleDistributions'
 
 
 local magazines = {
-    "GunnutMonthly1", 0.025,
-    "GunnutMonthly2", 0.025,
-    "GunnutMonthly3", 0.025,
-    "GunnutMonthly4", 0.025,
-    "GunnutMonthly5", 0.025,
-    "GunnutMonthly6", 0.025,
-    "GunnutBible", 0.025
+    "GunEnthusiast1", 0.025,
+    "GunEnthusiast2", 0.025,
+    "GunEnthusiast3", 0.025,
+    "GunEnthusiast4", 0.025,
+    "GunEnthusiast5", 0.025,
+    "GunEnthusiast6", 0.025,
 }
 
 local molds = {

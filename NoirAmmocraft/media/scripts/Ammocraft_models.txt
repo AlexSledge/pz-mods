@@ -1,7 +1,7 @@
 module Base
 {
 
-	/************************Models************************/
+	/*****		Models	******/
 	model Reloadingpress
 	{
 		mesh = tools/Reloadingpress,
@@ -94,8 +94,50 @@ module Base
 
 	model Lead
 	{
-		mesh = WorldItems/Yeast,
+		mesh = WorldItems/MetalBits,
 		texture = ammo/Lead,
-		scale = 0.3,
+		scale = 0.05,
 	}
+
+    model GunEnthusiast1
+    {
+        mesh = WorldItems/Magazine,
+        texture = magazine/GunEnthusiast1,
+        scale = 0.4,
+    }	
+
+    model GunEnthusiast2
+    {
+        mesh = WorldItems/Magazine,
+        texture = magazine/GunEnthusiast2,
+        scale = 0.4,
+    }	
+
+    model GunEnthusiast3
+    {
+        mesh = WorldItems/Magazine,
+        texture = magazine/GunEnthusiast3,
+        scale = 0.4,
+    }	
+
+    model GunEnthusiast4
+    {
+        mesh = WorldItems/Magazine,
+        texture = magazine/GunEnthusiast4,
+        scale = 0.4,
+    }
+
+    model GunEnthusiast5
+    {
+        mesh = WorldItems/Magazine,
+        texture = magazine/GunEnthusiast5,
+        scale = 0.4,
+    }	
+
+    model GunEnthusiast6
+    {
+        mesh = WorldItems/Magazine,
+        texture = magazine/GunEnthusiast6,
+        scale = 0.4,
+    }		
 }

@@ -8,7 +8,7 @@ ItemName_EN = {
     ItemName_Base.308Bullets_casingbox = "Box of .308 Casings",
     ItemName_Base.556Bullets_casingbox = "Box of 5.56 Casings",
     ItemName_Base.ShotgunShells_casingbox = "Box of Empty Shotgun Shells",
-    ItemName_Base.Bullets9mm_tipbox = "Box of 9mm Parabellum Bullet Tips",
+    ItemName_Base.Bullets9mm_tipbox = "Box of 9mm Bullet Tips",
     ItemName_Base.Bullets38_tipbox = "Box of .38 Special Bullet Tips",
     ItemName_Base.Bullets45_tipbox = "Box of .45 Auto Bullet Tips",
     ItemName_Base.Bullets44_tipbox = "Box of .44 Magnum Bullet Tips",
@@ -31,7 +31,7 @@ ItemName_EN = {
     ItemName_Base.556Bullets_casing = "5.56 Casing",
     ItemName_Base.ShotgunShells_casing = "Empty Shotgun Shell",
 
-    ItemName_Base.Bullets9mm_tip = "9mm Parabellum Bullet Tip",
+    ItemName_Base.Bullets9mm_tip = "9mm Bullet Tip",
     ItemName_Base.Bullets38_tip = ".38 Special Bullet Tip",
     ItemName_Base.Bullets45_tip = ".45 Auto Bullet Tip",
     ItemName_Base.Bullets44_tip = ".44 Magnum Bullet Tip",
@@ -40,7 +40,7 @@ ItemName_EN = {
     ItemName_Base.556Bullets_tip = "5.56 Bullet Tip",
     ItemName_Base.ShotgunShells_tip = "Buckshot",
 
-    ItemName_Base.Bullets9mm_casing_spent = "Spent 9mm Parabellum Casing",
+    ItemName_Base.Bullets9mm_casing_spent = "Spent 9mm Casing",
     ItemName_Base.Bullets38_casing_spent = "Spent .38 Special Casing",
     ItemName_Base.Bullets45_casing_spent = "Spent .45 Auto Casing",
     ItemName_Base.Bullets44_casing_spent = "Spent .44 Magnum Casing",
@@ -49,7 +49,7 @@ ItemName_EN = {
     ItemName_Base.556Bullets_casing_spent = "Spent 5.56 Casing",
     ItemName_Base.ShotgunShells_casing_spent = "Spent Shotgun Shell",
 
-    ItemName_Base.Bullets9mm_casing_spent_noprimer = "9mm Parabellum Casing without Primer",
+    ItemName_Base.Bullets9mm_casing_spent_noprimer = "9mm Casing without Primer",
     ItemName_Base.Bullets38_casing_spent_noprimer = ".38 Special Casing without Primer",
     ItemName_Base.Bullets45_casing_spent_noprimer = ".45 Auto Casing without Primer",
     ItemName_Base.Bullets44_casing_spent_noprimer = ".44 Magnum Casing without Primer",
@@ -58,7 +58,7 @@ ItemName_EN = {
     ItemName_Base.556Bullets_casing_spent_noprimer = "5.56 Casing without Primer",
     ItemName_Base.ShotgunShells_casing_spent_noprimer = "Empty Shotgun Shell without Primer",
 
-    ItemName_Base.Bullets9mm_tip = "9mm Parabellum Bullet",
+    ItemName_Base.Bullets9mm_tip = "9mm Bullet",
     ItemName_Base.Bullets38_tip = ".38 Special Bullet",
     ItemName_Base.Bullets45_tip = ".45 Auto Bullet",
     ItemName_Base.Bullets44_tip = ".44 Magnum Bullet",
@@ -77,7 +77,7 @@ ItemName_EN = {
     ItemName_Base.R_Primers_Spent = "Spent Rifle Primer",
     ItemName_Base.SG_Primers_Spent = "Spent Shotgun Primer",
 
-    ItemName_Base.Bullets9mmMold = "9mm Parabellum Bullet Mold",
+    ItemName_Base.Bullets9mmMold = "9mm Bullet Mold",
     ItemName_Base.Bullets38Mold = ".38 Special Bullet Mold",
     ItemName_Base.45BulletsMold = ".45 Auto Bullet Mold",
     ItemName_Base.Bullets44Mold = ".44 Magnum Bullet Mold",
@@ -90,13 +90,12 @@ ItemName_EN = {
     ItemName_Base.Saltpeter = "Potassium nitrate",
     ItemName_Base.Sulfur = "Sulfur",
 
-    ItemName_Base.GunnutMonthly1 = "Gunnut Monthly March '92 'Handgun Edition'",
-    ItemName_Base.GunnutMonthly2 = "Gunnut Monthly May '92 'Shotgun Edition'",
-    ItemName_Base.GunnutMonthly3 = "Gunnut Monthly June '92 'Rifle Edition'",
-    ItemName_Base.GunnutMonthly4 = "Gunnut Monthly July '92 'Magnum Edition'",
-    ItemName_Base.GunnutMonthly5 = "Gunnut Monthly August '92 'Assault Rifle Edition'",
-    ItemName_Base.GunnutMonthly6 = "Gunnut Monthly December '91 'Survival Edition'",
-    ItemName_Base.GunnutBible = "The New Gunnut Testament",
+    ItemName_Base.GunEnthusiast1 = "Gun Enthusiast 'Handgun Edition'",
+    ItemName_Base.GunEnthusiast2 = "Gun Enthusiast 'Shotgun Edition'",
+    ItemName_Base.GunEnthusiast3 = "Gun Enthusiast 'Rifle Edition'",
+    ItemName_Base.GunEnthusiast4 = "Gun Enthusiast 'Magnum Edition'",
+    ItemName_Base.GunEnthusiast5 = "Gun Enthusiast 'Assault Rifle Edition'",
+    ItemName_Base.GunEnthusiast6 = "Gun Enthusiast 'Home Reloading'",
 
     ItemName_Base.Reloadingpress = "Reloading Press",
     ItemName_Base.GunsmithPliers = "Gunsmith Pliers",

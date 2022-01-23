@@ -1,7 +1,7 @@
 module Base
 {
 
-	
+ 	/*****		Vanilla Override		******/	
 	item GunPowder
 	{
 		Weight	=	0.1,
@@ -24,19 +24,8 @@ module Base
         WorldStaticModel = BoxOfSparklers,
     }
 
-	recipe Gather Gunpowder
-	{
-		 Bullets9mm/ShotgunShells/223Bullets/308Bullets/556Bullets/Bullets44/Bullets45/Bullets38,
+ 	/*****		Boxes		******/
 
-		 Result:GunPowder,
-		 Time:100.0,
-		 OnCreate:recipe_Gather_Gunpowder,
-		 Override:true,
-	 }
-
- 	/*****************************************************/
- 	/*                       Boxes                       */
-	/*****************************************************/
 	item Bullets9mm_casingbox
 	{
 		CanStack	=	FALSE,
@@ -248,9 +237,7 @@ module Base
         WorldStaticModel = GunpowderJar,
 	}
 
-	/**************************************************************/
-	/*                       Casings & Tips                       */
-	/**************************************************************/
+ 	/*****		Casings & Tips		******/
 	item Bullets9mm_casing
 	{
 		CanStack	=	TRUE,
@@ -344,7 +331,7 @@ module Base
 		Type	=	Normal,
 		DisplayName	=	.44 Magnum Casing,
 		Icon	=	45_Casing,
-    MetalValue = 10,
+    	MetalValue = 10,
 		WorldStaticModel = Bullet_Casing,
 		Tooltip = Tooltip_Casing,
 	}
@@ -595,12 +582,10 @@ module Base
 		DisplayName	=	Shotgun buckshot,
 		Icon	=	ShotgunShells_Buckshot,
     	MetalValue = 5,
-		WorldStaticModel = ShotgunShell,
+		WorldStaticModel = Bullet,
 	}
 
-	/*******************************************************/
-	/*                      Primers                        */
-	/*******************************************************/
+ 	/*****		Primers		******/
 	item SP_Primers
 	{
 		CanStack	=	TRUE,
@@ -609,6 +594,7 @@ module Base
 		DisplayName	=	Small Pistol Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_SP_Primer,
+		WorldStaticModel = Primer,
 	}
 	item LP_Primers
 	{
@@ -618,6 +604,7 @@ module Base
 		DisplayName	=	Large Pistol Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_LP_Primer,
+		WorldStaticModel = Primer,
 	}
 	item R_Primers
 	{
@@ -627,6 +614,7 @@ module Base
 		DisplayName	=	Rifle Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_R_Primer,
+		WorldStaticModel = Primer,
 	}
 	item SG_Primers
 	{
@@ -636,6 +624,7 @@ module Base
 		DisplayName	=	Shotgun Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_SG_Primer,
+		WorldStaticModel = Primer,
 	}
 	item SP_Primers_Spent
 	{
@@ -645,6 +634,7 @@ module Base
 		DisplayName	= Spent Small Pistol Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_PrimerSpent,
+		WorldStaticModel = Primer,
 	}
 	item LP_Primers_Spent
 	{
@@ -654,6 +644,7 @@ module Base
 		DisplayName	=	Spent Large Pistol Primer,
 		Icon	=	Primer,
 		Tooltip = Tooltip_PrimerSpent,
+		WorldStaticModel = Primer,
 	}
 	item R_Primers_Spent
 	{
@@ -676,9 +667,7 @@ module Base
 	}
 
 
-	/*****************************************************/
-	/*                       Molds                       */
-	/*****************************************************/
+ 	/*****		Molds		******/
 
 	item 9mmBulletsMold
     {
@@ -775,6 +764,7 @@ module Base
 		WorldStaticModel = BulletMold,
 	}
 
+ 	/*****		Components		******/
 	item Lead
 	{
 		Weight = 0.1,
@@ -811,5 +801,164 @@ module Base
 		Tooltip = Tooltip_GunpowderIngredient,
 		WorldStaticModel = Sulfur,
 	}
+
+ 	/*****		Magazines	******/
+	item GunEnthusiast1
+	{
+		Weight	=	0.15,
+		Type	=	Literature,
+		DisplayName	=	Gun Enthusiast 'Handgun Edition',
+		Icon	=	GunEnthusiast1,
+		Weight	=	0.15,
+		Type	=	Literature,
+		TeachedRecipes =   Make 9mm Round;Make .45 Round;Dismantle 9mm Round;Dismantle .45 Round;Insert Primer into 9mm Casing;Insert Primer into .45 Auto Casing,
+		ReplaceOnUse    =   GunEnthusiast1,
+		StaticModel = Magazine,
+		WorldStaticModel = GunEnthusiast1,
+	}
+
+	item GunEnthusiast2
+	{
+		Weight	=	0.15,
+		Type	=	Literature,
+		DisplayName	=	Gun Enthusiast 'Shotgun Edition',
+		Icon	=	GunEnthusiast2,
+		Weight	=	0.15,
+		Type	=	Literature,
+		TeachedRecipes =   Make Shotgun Shell;Dismantle Shotgun Shell;Cast Shotgun Buckshot;Insert Primer into Shotgun Shell,
+		ReplaceOnUse    =   GunEnthusiast2,
+		StaticModel = Magazine,
+		WorldStaticModel = GunEnthusiast2,
+	}
+
+	item GunEnthusiast3
+	{
+		Weight	=	0.15,
+		Type	=	Literature,
+		DisplayName	=	Gun Enthusiast 'Rifle Edition',
+		Icon	=	GunEnthusiast3,
+		Weight	=	0.15,
+		Type	=	Literature,
+		TeachedRecipes =   Make .223 Round;Make .308 Round;Dismantle .223 Round;Dismantle .308 Round;Insert Primer into .308 Casing;Insert Primer into .223 Casing,
+		ReplaceOnUse    =   GunEnthusiast3,
+		StaticModel = Magazine,
+		WorldStaticModel = GunEnthusiast3,
+	}
+
+	item GunEnthusiast4
+	{
+		Weight	=	0.15,
+		Type	=	Literature,
+		DisplayName	=	Gun Enthusiast 'Magnum Edition',
+		Icon	=	GunEnthusiast4,
+		Weight	=	0.15,
+		Type	=	Literature,
+		TeachedRecipes =   Make .44 Round;Make .38 Special Round;Dismantle .44 Round;Dismantle .38 Special Round;Insert Primer into .44 Casing;Insert Primer into .38 Special Casing,
+		ReplaceOnUse    =   GunEnthusiast4,
+		StaticModel = Magazine,
+		WorldStaticModel = GunEnthusiast4,
+	}
+
+	item GunEnthusiast5
+	{
+		Weight	=	0.15,
+		Type	=	Literature,
+		DisplayName	=	Gun Enthusiast 'Assault Rifle Edition',
+		Icon	=	GunEnthusiast5,
+		Weight	=	0.15,
+		Type	=	Literature,
+		TeachedRecipes =   Make 5.56 Round;Dismantle 5.56 Round;Insert Primer into 5.56 Casing,
+		ReplaceOnUse    =   GunEnthusiast5,
+		StaticModel = Magazine,
+		WorldStaticModel = GunEnthusiast5,
+	}
+
+	item GunEnthusiast6
+	{
+		Weight	=	0.15,
+		Type	=	Literature,
+		DisplayName	=	Gun Enthusiast 'Home Reloading',
+		Icon	=	GunEnthusiast6,
+		Weight	=	0.15,
+		Type	=	Literature,
+		TeachedRecipes =   Remove Small Pistol Primer;Remove Large Pistol Primer;Remove Rifle Primer;Remove Shotgun Shell Primer;Remove Spent Small Pistol Primer;Remove Spent Large Pistol Primer;Remove Spent Rifle Primer;Remove Spent Shotgun Shell Primer;Reload Small Pistol Primer;Reload Large Pistol Primer;Reload Rifle Primer;Reload Shotgun Primer;Cast 9mm Bullet Tip;Cast .45 Bullet Tip;Cast .44 Bullet Tip;Cast .38 Special Bullet Tip;Cast 5.56 Bullet Tip;Cast .308 Bullet Tip;Cast .223 Bullet Tip;Create Homemade Gunpowder;Make Saltpeter,
+		ReplaceOnUse    =   GunEnthusiast6,
+		StaticModel = Magazine,
+		WorldStaticModel = GunEnthusiast6,
+	}
+
+	/*****		Tools	******/
+	item Reloadingpress
+	{
+		MaxRange	=	0.5,
+		WeaponSprite	=	Reloadingpress,
+		MinAngle	=	0.67,
+		Type	=	Weapon,
+		MinimumSwingTime	=	4,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	SmallBlunt,
+		ConditionLowerChanceOneIn	=	15,
+		Weight	=	15,
+		SplatNumber	=	1,
+		PushBackMod	=	0.3,
+		SubCategory	=	Swinging,
+		ConditionMax	=	9,
+		MaxHitCount	=	2,
+		DoorDamage	=	10,
+		SwingAnim	=	Bat,
+		DisplayName	=	Reloading Press,
+		MinRange	=	0.61,
+		SwingTime	=	4,
+		KnockdownMod	=	2,
+		SplatBloodOnNoDeath	=	FALSE,
+		Icon	=	Reloadingpress,
+		BreakSound  =   BreakMetalItem,
+		TreeDamage  =   0,
+		CriticalChance	=	20,
+		CritDmgMultiplier = 2,
+		MinDamage	=	0.5,
+		MaxDamage	=	1,
+		BaseSpeed = 1,
+	 	WeaponLength = 0.23,
+		Tooltip = Tooltip_Reloader,
+	}
+	item GunsmithPliers
+	{
+		MaxRange	=	1.1,
+		WeaponSprite	=	GunsmithPliers,
+		MinAngle	=	0.67,
+		Type	=	Weapon,
+		MinimumSwingTime	=	4,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	SmallBlunt,
+		ConditionLowerChanceOneIn	=	15,
+		Weight	=	1,
+		SplatNumber	=	1,
+		PushBackMod	=	0.3,
+		SubCategory	=	Swinging,
+		ConditionMax	=	9,
+		MaxHitCount	=	2,
+		DoorDamage	=	10,
+		SwingAnim	=	Bat,
+		DisplayName	=	Gunsmith Pliers,
+		MinRange	=	0.61,
+		SwingTime	=	4,
+		KnockdownMod	=	2,
+		SplatBloodOnNoDeath	=	FALSE,
+		Icon	=	GunsmithPliers,
+		BreakSound  =   BreakMetalItem,
+		TreeDamage  =   0,
+		CriticalChance	=	20,
+		CritDmgMultiplier = 2,
+		MinDamage	=	0.5,
+		MaxDamage	=	1,
+		BaseSpeed = 1,
+	    WeaponLength = 0.23,
+	    AttachmentType = Hammer,
+		Tooltip = Tooltip_GunsmithPliers,
+	}
+
 
 }

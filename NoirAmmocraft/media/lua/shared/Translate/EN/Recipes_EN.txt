@@ -34,7 +34,12 @@ Recipes_EN = {
     Recipe_Remove_Small_Pistol_Primer = "Remove Primer",
     Recipe_Remove_Large_Pistol_Primer = "Remove Primer",
     Recipe_Remove_Rifle_Primer = "Remove Primer",
-    Recipe_Remove_Shotgun_Primer = "Remove Primer",
+    Recipe_Remove_Shotgun_Shell_Primer = "Remove Primer",
+
+    Recipe_Remove_Spent_Small_Pistol_Primer = "Remove Primer",
+    Recipe_Remove_Spent_Large_Pistol_Primer = "Remove Primer",
+    Recipe_Remove_Spent_Rifle_Primer = "Remove Primer",
+    Recipe_Remove_Spent_Shotgun_Shell_Primer = "Remove Primer",
 
     Recipe_Reload_Small_Pistol_Primer = "Reload Primer",
     Recipe_Reload_Large_Pistol_Primer = "Reload Primer",
