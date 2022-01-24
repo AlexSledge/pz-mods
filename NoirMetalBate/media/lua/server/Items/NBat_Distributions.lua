@@ -2,19 +2,19 @@ require 'Items/SuburbsDistributions'
 require 'Items/Distributions'
 
 table.insert(ProceduralDistributions["list"]["MeleeWeapons"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["MeleeWeapons"].items, 5);
+table.insert(ProceduralDistributions["list"]["MeleeWeapons"].items, 3);
 table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 8);
+table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 5);
 table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 8);
+table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 5);
 table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 8);
+table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 5);
 table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 8);
+table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 5);
 table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 8);
+table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 5);
 table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, "MetalBat.MetalBaseballBat");
-table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 8);
+table.insert(ProceduralDistributions["list"]["SportStorageBats"].items, 5);
 table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, "MetalBat.MetalBaseballBat");
 table.insert(ProceduralDistributions["list"]["WardrobeMan"].items, 0.4);
 table.insert(ProceduralDistributions["list"]["WardrobeManClassy"].items, "MetalBat.MetalBaseballBat");
