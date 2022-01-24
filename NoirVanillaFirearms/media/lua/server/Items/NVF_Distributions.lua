@@ -58,6 +58,38 @@ for i =1 , #policeGunStoresWeapons do
     table.insert(ProceduralDistributions.list[policeGunStoresWeapons[i]].items, 0.05);
 end
 
+table.insert(SuburbsDistributions["PistolCase1"].items, "Base.9mmSilencer");
+table.insert(SuburbsDistributions["PistolCase1"].items, 1);
+table.insert(SuburbsDistributions["PistolCase1"].items, "Base.GunLight");
+table.insert(SuburbsDistributions["PistolCase1"].items, 1);
+
+table.insert(SuburbsDistributions["PistolCase2"].items, "Base.45Silencer");
+table.insert(SuburbsDistributions["PistolCase2"].items, 1);
+table.insert(SuburbsDistributions["PistolCase2"].items, "Base.GunLight");
+table.insert(SuburbsDistributions["PistolCase2"].items, 1);
+
+table.insert(SuburbsDistributions["RifleCase1"].items, "Base.223Silencer");
+table.insert(SuburbsDistributions["RifleCase1"].items, 1);
+
+table.insert(SuburbsDistributions["RifleCase2"].items, "Base.308Silencer");
+table.insert(SuburbsDistributions["RifleCase2"].items, 1);
+
+table.insert(SuburbsDistributions["RifleCase3"].items, "Base.308Silencer");
+table.insert(SuburbsDistributions["RifleCase3"].items, 1);
+table.insert(SuburbsDistributions["RifleCase3"].items, "Base.GunLight");
+table.insert(SuburbsDistributions["RifleCase3"].items, 1);
+
+
+table.insert(SuburbsDistributions["ShotgunCase1"].items, "Base.12gaSilencer");
+table.insert(SuburbsDistributions["ShotgunCase1"].items, 1);
+table.insert(SuburbsDistributions["ShotgunCase1"].items, "Base.GunLight");
+table.insert(SuburbsDistributions["ShotgunCase1"].items, 1);
+
+table.insert(SuburbsDistributions["ShotgunCase2"].items, "Base.12gaSilencer");
+table.insert(SuburbsDistributions["ShotgunCase2"].items, 1);
+table.insert(SuburbsDistributions["ShotgunCase2"].items, "Base.GunLight");
+table.insert(SuburbsDistributions["ShotgunCase2"].items, 1);
+
 
 table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, "Base.9mmSilencer");
 table.insert(SuburbsDistributions["GunCache1"]["GunBox"].items, 0.05);
