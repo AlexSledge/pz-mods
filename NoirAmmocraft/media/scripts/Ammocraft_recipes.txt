@@ -562,7 +562,7 @@ module Base
 		Prop2:RifleBullet_Casing,
 		NeedToBeLearn:true,
 	}
-	recipe Reload Shotgun Primer
+	recipe Reload Shotgun Shell Primer
 	{
 		SG_Primers_Spent,
 		GunPowder/Matches/Sparklers=2,

@@ -881,7 +881,7 @@ module Base
 		Icon	=	GunEnthusiast6,
 		Weight	=	0.15,
 		Type	=	Literature,
-		TeachedRecipes =   Remove Small Pistol Primer;Remove Large Pistol Primer;Remove Rifle Primer;Remove Shotgun Shell Primer;Remove Spent Small Pistol Primer;Remove Spent Large Pistol Primer;Remove Spent Rifle Primer;Remove Spent Shotgun Shell Primer;Reload Small Pistol Primer;Reload Large Pistol Primer;Reload Rifle Primer;Reload Shotgun Primer;Cast 9mm Bullet Tip;Cast .45 Bullet Tip;Cast .44 Bullet Tip;Cast .38 Special Bullet Tip;Cast 5.56 Bullet Tip;Cast .308 Bullet Tip;Cast .223 Bullet Tip;Create Homemade Gunpowder;Make Saltpeter,
+		TeachedRecipes =   Remove Small Pistol Primer;Remove Large Pistol Primer;Remove Rifle Primer;Remove Shotgun Shell Primer;Remove Spent Small Pistol Primer;Remove Spent Large Pistol Primer;Remove Spent Rifle Primer;Remove Spent Shotgun Shell Primer;Reload Small Pistol Primer;Reload Large Pistol Primer;Reload Rifle Primer;Reload Shotgun Shell Primer;Cast 9mm Bullet Tip;Cast .45 Bullet Tip;Cast .44 Bullet Tip;Cast .38 Special Bullet Tip;Cast 5.56 Bullet Tip;Cast .308 Bullet Tip;Cast .223 Bullet Tip;Create Homemade Gunpowder;Make Saltpeter,
 		ReplaceOnUse    =   GunEnthusiast6,
 		StaticModel = Magazine,
 		WorldStaticModel = GunEnthusiast6,
