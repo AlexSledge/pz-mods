@@ -9,7 +9,7 @@ module Base
 
 		 Result:GunPowder,
 		 Time:100.0,
-		 OnCreate:recipe_Dismantle_Ammo,
+		 OnCreate:recipe_Gather_GunPowder,
 		 Override:true,
 	 }
 
@@ -390,130 +390,19 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Remove Small Pistol Primer
+	recipe Remove Primer
 	{
-		Bullets9mm_casing/Bullets38_casing,
+		Bullets9mm_casing/Bullets38_casing/Bullets45_casing/Bullets44_casing/308Bullets_casing/223Bullets_casing/556Bullets_casing/ShotgunShells_casing/Bullets9mm_casing_spent/Bullets38_casing_spent/Bullets45_casing_spent/Bullets44_casing_spent/308Bullets_casing_spent/223Bullets_casing_spent/556Bullets_casing_spent/ShotgunShells_casing_spent,
 		keep Screwdriver,
 		keep Hammer,
 
-		Result:SP_Primers,
+		Result:Matching Primer,
+		RemoveResultItem: true,
 		Time:50.0,
 		Category:Ammunition,
 		AnimNode:Disassemble,
 		Prop1:Screwdriver,
 		Prop2:Bullet_Casing,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Large Pistol Primer
-	{
-		Bullets45_casing/Bullets44_casing,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:LP_Primers,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:Bullet_Casing,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Rifle Primer
-	{
-		308Bullets_casing/223Bullets_casing/556Bullets_casing,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:R_Primers,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:Bullet_Casing,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Shotgun Shell Primer
-	{
-		ShotgunShells_casing,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:SG_Primers,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:ShotgunShell,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Spent Small Pistol Primer
-	{
-		Bullets9mm_casing_spent/Bullets38_casing_spent,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:SP_Primers_Spent,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:Bullet_Casing,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Spent Large Pistol Primer
-	{
-		Bullets45_casing_spent/Bullets44_casing_spent,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:LP_Primers_Spent,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:Bullet_Casing,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Spent Rifle Primer
-	{
-		308Bullets_casing_spent/223Bullets_casing_spent/556Bullets_casing_spent,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:R_Primers_Spent,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:RifleBullet_Casing,
-		OnCreate:recipe_Remove_Primer,
-		NeedToBeLearn:true,
-	}
-
-	recipe Remove Spent Shotgun Shell Primer
-	{
-		ShotgunShells_casing_spent,
-		keep Screwdriver,
-		keep Hammer,
-
-		Result:SG_Primers_Spent,
-		Time:50.0,
-		Category:Ammunition,
-		AnimNode:Disassemble,
-		Prop1:Screwdriver,
-		Prop2:ShotgunShell,
 		OnCreate:recipe_Remove_Primer,
 		NeedToBeLearn:true,
 	}
@@ -565,7 +454,7 @@ module Base
 	recipe Reload Shotgun Shell Primer
 	{
 		SG_Primers_Spent,
-		GunPowder/Matches/Sparklers=2,
+		GunPowder/Matches/Sparklers=3,
 		keep Screwdriver,
 
 		CanBeDoneFromFloor:true,
@@ -958,6 +847,7 @@ module Base
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=1,
 		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+		NeedToBeLearn:true
 	}
 
 	/*****		Survival	******/
