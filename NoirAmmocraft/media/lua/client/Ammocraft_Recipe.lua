@@ -9,26 +9,22 @@ PrimersDef["223Bullets_casing"] = "R_Primers"
 PrimersDef["556Bullets_casing"] = "R_Primers"
 PrimersDef["ShotgunShells_casing"] = "SG_Primers"
 
+BulletGunpowder = {}
+
+BulletGunpowder["Bullets9mm"] = 0.1
+BulletGunpowder["Bullets38"] = 0.1
+BulletGunpowder["Bullets44"] = 0.2
+BulletGunpowder["Bullets45"] = 0.2
+BulletGunpowder["223Bullets"] = 0.3
+BulletGunpowder["308Bullets"] = 0.4
+BulletGunpowder["556Bullets"] = 0.4
+BulletGunpowder["ShotgunShells"] = 0.5
 
 function recipe_Dismantle_Ammo(items, result, player)
 	local inv = player:getInventory();
 	local type = items:get(0):getType()
-	if type == "Bullets9mm" or type == "Bullets38" then
-		result:setUsedDelta(0.1) 
-	end
-	if type == "Bullets44" or type == "Bullets45" then
-		result:setUsedDelta(0.2) 
-	end
-	if type == "308Bullets" or type == "556Bullets" then
-		result:setUsedDelta(0.4) 
-	end
-	if type == "223Bullets" then
-		result:setUsedDelta(0.3) 
-	end
-	if type == "ShotgunShells" then
-		result:setUsedDelta(0.5) 
-	end
-
+	
+	result:setUsedDelta(BulletGunpowder[type]) 
 	inv:AddItem("Base." .. type .. "_casing");
 	inv:AddItem("Base." .. type .. "_tip");
 
@@ -37,21 +33,7 @@ end
 function recipe_Gather_GunPowder(items, result, player)
 	local inv = player:getInventory();
 	local type = items:get(0):getType()
-	if type == "Bullets9mm" or type == "Bullets38" then
-		result:setUsedDelta(0.1) 
-	end
-	if type == "Bullets44" or type == "Bullets45" then
-		result:setUsedDelta(0.2) 
-	end
-	if type == "308Bullets" or type == "556Bullets" then
-		result:setUsedDelta(0.4) 
-	end
-	if type == "223Bullets" then
-		result:setUsedDelta(0.3) 
-	end
-	if type == "ShotgunShells" then
-		result:setUsedDelta(0.5) 
-	end
+	result:setUsedDelta(BulletGunpowder[type]) 
 end
 
 
