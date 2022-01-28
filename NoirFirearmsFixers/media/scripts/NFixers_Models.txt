@@ -1,0 +1,15 @@
+module Base
+{
+
+	model GunToolKit
+	{
+		mesh = GunToolKit,
+		texture = tools,
+	}
+	model WMD
+	{
+		mesh = WMD,
+		texture = WMD,
+	}
+
+}
