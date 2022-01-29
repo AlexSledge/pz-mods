@@ -468,7 +468,7 @@ module Base
 
 	
 	/*****			Assembling Rounds 			******/	
-	recipe Make 9mm Round
+	recipe Assemble 9mm Round
 	{
 		Bullets9mm_casing,
 		Bullets9mm_tip,
@@ -484,7 +484,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make .45 Round
+	recipe Assemble .45 Round
 	{
 		Bullets45_casing,
 		Bullets45_tip,
@@ -500,7 +500,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make .44 Round
+	recipe Assemble .44 Round
 	{
 		Bullets44_casing,
 		Bullets44_tip,
@@ -516,7 +516,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make .38 Special Round
+	recipe Assemble .38 Special Round
 	{
 		Bullets38_casing,
 		Bullets38_tip,
@@ -532,7 +532,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make .308 Round
+	recipe Assemble .308 Round
 	{
 		308Bullets_casing,
 		308Bullets_tip,
@@ -547,7 +547,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make .223 Round
+	recipe Assemble .223 Round
 	{
 		223Bullets_casing/556Bullets_casing,
 		223Bullets_tip/556Bullets_tip,
@@ -562,7 +562,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make 5.56 Round
+	recipe Assemble 5.56 Round
 	{
 		556Bullets_casing/223Bullets_casing,
 		556Bullets_tip/223Bullets_tip,
@@ -577,7 +577,7 @@ module Base
 		NeedToBeLearn:true,
 	}
 
-	recipe Make Shotgun Shell
+	recipe Assemble Shotgun Shell
 	{
 		ShotgunShells_casing,
 		ShotgunShells_tip,
@@ -593,8 +593,8 @@ module Base
 	}
 
 
-	/*****			Dismantling			******/
-	recipe Dismantle 9mm Round
+	/*****			Disassemble			******/
+	recipe Disassemble 9mm Round
 	{
 		Bullets9mm,
 		keep GunsmithPliers,
@@ -605,11 +605,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:Bullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle .45 Round
+	recipe Disassemble .45 Round
 	{
 		Bullets45,
 		keep GunsmithPliers,
@@ -620,11 +620,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:Bullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle .44 Round
+	recipe Disassemble .44 Round
 	{
 		Bullets44,
 		keep GunsmithPliers,
@@ -635,11 +635,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:Bullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle .38 Special Round
+	recipe Disassemble .38 Special Round
 	{
 		Bullets38,
 		keep GunsmithPliers,
@@ -650,11 +650,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:Bullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle .223 Round
+	recipe Disassemble .223 Round
 	{
 		223Bullets,
 		keep GunsmithPliers,
@@ -665,11 +665,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:RifleBullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle .308 Round
+	recipe Disassemble .308 Round
 	{
 		308Bullets,
 		keep GunsmithPliers,
@@ -680,11 +680,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:RifleBullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle 5.56 Round
+	recipe Disassemble 5.56 Round
 	{
 		556Bullets,
 		keep GunsmithPliers,
@@ -695,11 +695,11 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:RifleBullet,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 
-	recipe Dismantle Shotgun Shell
+	recipe Disassemble Shotgun Shell
 	{
 		ShotgunShells,
 		keep GunsmithPliers,
@@ -710,7 +710,7 @@ module Base
 		AnimNode:Disassemble,
 		Prop1:GunsmithPliers,
 		Prop2:ShotgunShell,
-		OnCreate:recipe_Dismantle_Ammo,
+		OnCreate:recipe_Disassemble_Ammo,
 		NeedToBeLearn:true,
 	}
 

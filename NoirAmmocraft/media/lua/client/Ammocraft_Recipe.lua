@@ -20,7 +20,7 @@ BulletGunpowder["308Bullets"] = 0.4
 BulletGunpowder["556Bullets"] = 0.4
 BulletGunpowder["ShotgunShells"] = 0.5
 
-function recipe_Dismantle_Ammo(items, result, player)
+function recipe_Disassemble_Ammo(items, result, player)
 	local inv = player:getInventory();
 	local type = items:get(0):getType()
 	
