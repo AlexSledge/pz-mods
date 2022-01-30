@@ -679,7 +679,7 @@ module Base
 		EjectAmmoStartSound = JS2000ShotgunEjectAmmoStart,
         EjectAmmoSound = JS2000ShotgunEjectAmmo,
 		EjectAmmoStopSound = JS2000ShotgunEjectAmmoStop,
-        RackSound = JS2000ShotgunRack,
+        RackSound = M16Rack,
         AmmoType = Base.ShotgunShells,
         WeaponReloadType = boltaction,
         MagazineType = Base.AA12Clip,
