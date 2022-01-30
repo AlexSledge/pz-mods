@@ -5,5 +5,7 @@ ItemName_EN = {
     ItemName_Base.223Silencer = ".223/5.56mm Silencer",
     ItemName_Base.308Silencer = ".308 Silencer",
     ItemName_Base.12gaSilencer = "12ga Silencer",
+    ItemName_Base.AA12 = "AA-12 Shotgun",
+    ItemName_Base.AA12Clip = "AA-12 Magazine",
 
 }

@@ -32,17 +32,21 @@ end
 for i =1 , #armyPawnWeapons do
 
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.223Silencer");
-    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 1);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.308Silencer");
-    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 1);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.9mmSilencer");
-    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 1);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.45Silencer");
-    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 1);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.12gaSilencer");
-    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 1);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "GunLight");
-    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 1);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.AA12");
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.AA12Clip");
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
 end
 
 for i =1 , #policeGunStoresWeapons do
