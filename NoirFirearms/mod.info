@@ -1,5 +1,5 @@
-name=Noir Vanilla FireArms
-id=noirvanillafirearms
+name=Noir FireArms
+id=noirfirearms
 description=
 description=GunLights, Silencers, EFT Sounds
 description= Add gunlights and silencers to some fire arms, some weapons use EFT sounds, keys to toggle gun light on/off (Equip/Turn On/Off Light Source) and change fire mode(Left ALT)

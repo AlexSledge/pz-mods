@@ -47,6 +47,10 @@ for i =1 , #armyPawnWeapons do
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.AA12Clip");
     table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.AA12");
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, "Base.AA12Clip");
+    table.insert(ProceduralDistributions.list[armyPawnWeapons[i]].items, 2);
 end
 
 for i =1 , #policeGunStoresWeapons do

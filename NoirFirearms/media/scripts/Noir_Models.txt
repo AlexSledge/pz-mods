@@ -311,31 +311,29 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
 	}
-
-    model AA12
+	model AA12
 	{
 		mesh = weapons/firearm/AA12,
 		texture = weapons/firearm/AA12,
 
 		attachment silencer
 		{
-			offset = 0.0000 0.5370 0.0300,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 0.0370 0.4410,
+			rotate = -90.0000 180.0000 180.0000,
 		}
 
 		attachment gunlight
 		{
-			offset = 0.0000 0.2920 0.0090,
-			rotate = 0.0000 0.0000 0.0000,
+			offset = 0.0000 -0.0140 0.2270,
+			rotate = -90.0000 180.0000 180.0000,
 		}
 
 		attachment world
 		{
 			offset = 0.0000 0.0000 0.0000,
-			rotate = 0.0000 -90.0000 0.0000,
+			rotate = 180.0000 90.0000 0.0000,
 		}
 	}
-
 	model AA12_mag
 	{
 		mesh = weapons/firearm/AA12_mag,
@@ -347,7 +345,6 @@ module Base
 			rotate = 0.0000 0.0000 0.0000,
 		}
     }
-
 	model Silencer
 	{
 		mesh = weapons/firearm/attachments/Silencer,
@@ -367,10 +364,5 @@ module Base
 	{
 		mesh = weapons/firearm/attachments/Salvo12_wm,
 		texture = weapons/firearm/attachments/Silencer,
-	}
-	
-	model BottleSilencer
-	{
-		mesh = WaterBottle
 	}
 }
