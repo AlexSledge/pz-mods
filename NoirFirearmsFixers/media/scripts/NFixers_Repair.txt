@@ -9,7 +9,7 @@ module Base
       UseWhileEquipped	=	FALSE,
       DisplayName	=	Gun Tool Kit,
       Icon	=	GunToolKit,
-      Tooltip = Tooltip_ServiceFirearms,
+      Tooltip = Tooltip_GunRepair,
       SurvivalGear = TRUE,
       WorldStaticModel = GunToolKit,
     }
@@ -22,7 +22,7 @@ module Base
       UseWhileEquipped	=	FALSE,
       DisplayName	=	WD-40,
       Icon	=	WD40,
-      Tooltip = Tooltip_ServiceFirearms,
+      Tooltip = Tooltip_GunRepair,
       SurvivalGear = TRUE,
       WorldStaticModel = WMD,
     }
@@ -151,6 +151,15 @@ module Base
       Require : AssaultRifle2,
 
       Fixer : GunToolKit=1; Aiming=7,
+      Fixer : GunToolKit=2; Aiming=3,
+      Fixer : Solvent=2; Aiming=1,
+    }
+
+  fixing Fix AA12 Shotgun
+    {
+      Require : AA12,
+
+      Fixer : GunToolKit=1; Aiming=6,
       Fixer : GunToolKit=2; Aiming=3,
       Fixer : Solvent=2; Aiming=1,
     }

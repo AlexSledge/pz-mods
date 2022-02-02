@@ -20,13 +20,17 @@ local policeGunStoresWeapons ={
 
 for i =1 , #safeHouseWeapons do
     table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, "Base.12gaSilencer");
-    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.025);
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.05);
     table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, "Base.9mmSilencer");
-    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.025);
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.05);
     table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, "Base.45Silencer");
-    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.025);
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.05);
     table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, "GunLight");
-    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.025);
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 0.05);
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, "Base.AA12");
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 2);
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, "Base.AA12Clip");
+    table.insert(ProceduralDistributions.list[safeHouseWeapons[i]].items, 2);
 end
 
 for i =1 , #armyPawnWeapons do
@@ -135,3 +139,7 @@ table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, 1);
 table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, "Base.9mmSilencer");
 table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, 1);
 
+table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "Base.AA12");
+table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "0.05");
+table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "Base.AA12Clip");
+table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "0.05");
