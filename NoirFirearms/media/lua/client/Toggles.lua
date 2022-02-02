@@ -24,6 +24,8 @@ local function ToggleFireMode(key)
                item:setFireMode(nextFireMode)
                player:Say(showfireMode(nextFireMode))
                player:playSound("LightSwitch")
+            else 
+                player:Say(showfireMode(currentMode))
             end
 
         end
@@ -90,7 +92,7 @@ end
 
 function showfireMode(fireMode)
     if fireMode == "Auto" then return "-----" end
-    if fireMode == "Single" then return "-" end
+    if fireMode == "Single" or not firemode then return "-" end
 end
 
 Events.OnKeyPressed.Add(ToggleFireMode)

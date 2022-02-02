@@ -291,6 +291,7 @@ module Base
 		Bullets9mm_casing_spent_noprimer,
 		SP_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets9mm_casing,
 		Time:230.0,
@@ -304,6 +305,7 @@ module Base
 		Bullets45_casing_spent_noprimer,
 		LP_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets45_casing,
 		Time:230.0,
@@ -317,6 +319,7 @@ module Base
 		Bullets44_casing_spent_noprimer,
 		LP_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets44_casing,
 		Time:230.0,
@@ -330,6 +333,7 @@ module Base
 		Bullets38_casing_spent_noprimer,
 		SP_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets38_casing,
 		Time:230.0,
@@ -343,6 +347,7 @@ module Base
 		308Bullets_casing_spent_noprimer,
 		R_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:308Bullets_casing,
 		Time:230.0,
@@ -356,6 +361,7 @@ module Base
 		223Bullets_casing_spent_noprimer,
 		R_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:223Bullets_casing,
 		Time:230.0,
@@ -369,6 +375,7 @@ module Base
 		556Bullets_casing_spent_noprimer,
 		R_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:556Bullets_casing,
 		Time:230.0,
@@ -382,6 +389,7 @@ module Base
 		ShotgunShells_casing_spent_noprimer,
 		SG_Primers,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:ShotgunShells_casing,
 		Time:230.0,
@@ -396,6 +404,7 @@ module Base
 		keep Screwdriver,
 		keep Hammer,
 
+		StopOnWalk:true,
 		Result:Matching Primer,
 		RemoveResultItem: true,
 		Time:50.0,
@@ -415,6 +424,7 @@ module Base
 		GunPowder/Matches/Sparklers,
 		keep Screwdriver,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:SP_Primers,
 		Time:230.0,
@@ -429,6 +439,7 @@ module Base
 		GunPowder/Matches/Sparklers=2,
 		keep Screwdriver,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:LP_Primers,
 		Time:230.0,
@@ -443,6 +454,7 @@ module Base
 		GunPowder/Matches/Sparklers=3,
 		keep Screwdriver,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:R_Primers,
 		Time:230.0,
@@ -457,6 +469,7 @@ module Base
 		GunPowder/Matches/Sparklers=3,
 		keep Screwdriver,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:SG_Primers,
 		Time:230.0,
@@ -475,6 +488,7 @@ module Base
 		GunPowder=2,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets9mm,
 		Time:230.0,
@@ -491,6 +505,7 @@ module Base
 		GunPowder=3,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets45,
 		Time:230.0,
@@ -507,6 +522,7 @@ module Base
 		GunPowder=3,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets44,
 		Time:230.0,
@@ -523,6 +539,7 @@ module Base
 		GunPowder=2,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets38,
 		Time:230.0,
@@ -539,6 +556,7 @@ module Base
 		GunPowder=5,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:308Bullets,
 		Time:230.0,
@@ -554,6 +572,7 @@ module Base
 		GunPowder=4,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:223Bullets,
 		Time:230.0,
@@ -569,6 +588,7 @@ module Base
 		GunPowder=5,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:556Bullets,
 		Time:230.0,
@@ -584,6 +604,7 @@ module Base
 		GunPowder=6,
 		keep Reloadingpress,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:ShotgunShells,
 		Time:230.0,
@@ -599,6 +620,7 @@ module Base
 		Bullets9mm,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -614,6 +636,7 @@ module Base
 		Bullets45,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -629,6 +652,7 @@ module Base
 		Bullets44,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -644,6 +668,7 @@ module Base
 		Bullets38,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -659,6 +684,7 @@ module Base
 		223Bullets,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -674,6 +700,7 @@ module Base
 		308Bullets,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -689,6 +716,7 @@ module Base
 		556Bullets,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -704,6 +732,7 @@ module Base
 		ShotgunShells,
 		keep GunsmithPliers,
 
+		StopOnWalk:true,
 		Result:GunPowder,
 		Time:50.0,
 		Category:Ammunition,
@@ -722,13 +751,13 @@ module Base
 		keep 9mmBulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets9mm_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=2,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
 		NeedToBeLearn:true,
 	}
 
@@ -739,13 +768,13 @@ module Base
 		keep 45BulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets45_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=2,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 		NeedToBeLearn:true,
 	}
 
@@ -756,13 +785,13 @@ module Base
 		keep 44BulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets44_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=2,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding20,
 		NeedToBeLearn:true,
 	}
 
@@ -773,13 +802,13 @@ module Base
 		keep 38BulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Bullets38_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=2,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding15,
 		NeedToBeLearn:true,
 	}
 
@@ -790,13 +819,13 @@ module Base
 		keep 308BulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:308Bullets_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=5,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
 		NeedToBeLearn:true,
 	}
 
@@ -807,13 +836,13 @@ module Base
 		keep 223BulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:223Bullets_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=5,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
 		NeedToBeLearn:true,
 	}
 
@@ -824,12 +853,12 @@ module Base
 		keep 556BulletsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:556Bullets_tip,
 		Time:200.0,
 		Category:Welding,
 		SkillRequired:MetalWelding=6,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding25,
 		NeedToBeLearn:true,
 	}
 
@@ -840,17 +869,16 @@ module Base
 		keep ShotgunShellsMold,
 		keep Saucepan/GridlePan/Pan/RoastingPan/BakingPan,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:ShotgunShells_tip,
 		Time:200.0,
 		Category:Welding,
 		AnimNode:Disassemble,
 		SkillRequired:MetalWelding=1,
-		OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
 		NeedToBeLearn:true
 	}
 
-	/*****		Survival	******/
 	recipe Create Homemade Gunpowder
 	{
 		Charcoal=1,
@@ -858,13 +886,15 @@ module Base
 		Sulfur=1,
 		keep MortarPestle,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:GunPowder=5,
 		Time:200.0,
+		Category:Ammunition,
 		NeedToBeLearn:true,
 	}
 
-	recipe Make Saltpeter
+	recipe Create Saltpeter
 	{
 		Coldpack,
 		Water=1,
@@ -873,6 +903,7 @@ module Base
 		CanBeDoneFromFloor:true,
 		Result:Saltpeter,
 		Time:200.0,
+		Category:Ammunition,
 		NeedToBeLearn:true,
 	}
 

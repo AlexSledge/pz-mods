@@ -87,7 +87,7 @@ ItemName_EN = {
     ItemName_Base.ShotgunShellsMold = "Buckshot Mold",
 
     ItemName_Base.Lead = "Lead",
-    ItemName_Base.Saltpeter = "Potassium nitrate",
+    ItemName_Base.Saltpeter = "Saltpeter",
     ItemName_Base.Sulfur = "Sulfur",
 
     ItemName_Base.GunEnthusiast1 = "Gun Enthusiast 'Handgun Edition'",
