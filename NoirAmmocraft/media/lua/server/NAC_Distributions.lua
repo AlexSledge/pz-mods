@@ -142,23 +142,23 @@ for i = 1, #tools, 2 do
 end
 
 for i = 1, #ammoComponents, 2 do
-    table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, tools[i]);
-    table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, tools[i+1]);
+    table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, ammoComponents[i]);
+    table.insert(ProceduralDistributions["list"]["GunStoreCounter"].items, ammoComponents[i+1]);
 
-    table.insert(ProceduralDistributions["list"]["GunStoreDisplayCase"].items, tools[i]);
-    table.insert(ProceduralDistributions["list"]["GunStoreDisplayCase"].items, tools[i+1]);
+    table.insert(ProceduralDistributions["list"]["GunStoreDisplayCase"].items, ammoComponents[i]);
+    table.insert(ProceduralDistributions["list"]["GunStoreDisplayCase"].items, ammoComponents[i+1]);
 
-    table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, tools[i]);
-    table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, tools[i+1]);
+    table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, ammoComponents[i]);
+    table.insert(ProceduralDistributions["list"]["GunStoreShelf"].items, ammoComponents[i+1]);
 
-    table.insert(ProceduralDistributions["list"]["ArmyStorageGuns"].items, tools[i]);
-    table.insert(ProceduralDistributions["list"]["ArmyStorageGuns"].items, tools[i+1]);
+    table.insert(ProceduralDistributions["list"]["ArmyStorageGuns"].items, ammoComponents[i]);
+    table.insert(ProceduralDistributions["list"]["ArmyStorageGuns"].items, ammoComponents[i+1]);
 
-    table.insert(ProceduralDistributions["list"]["PawnShopGunsSpecial"].items, tools[i]);
-    table.insert(ProceduralDistributions["list"]["PawnShopGunsSpecial"].items, tools[i+1]);
+    table.insert(ProceduralDistributions["list"]["PawnShopGunsSpecial"].items, ammoComponents[i]);
+    table.insert(ProceduralDistributions["list"]["PawnShopGunsSpecial"].items, ammoComponents[i+1]);
 
-    table.insert(ProceduralDistributions["list"]["GarageFirearms"].items, tools[i]);
-    table.insert(ProceduralDistributions["list"]["GarageFirearms"].items, tools[i+1]);
+    table.insert(ProceduralDistributions["list"]["GarageFirearms"].items, ammoComponents[i]);
+    table.insert(ProceduralDistributions["list"]["GarageFirearms"].items, ammoComponents[i+1]);
  
 end
 
