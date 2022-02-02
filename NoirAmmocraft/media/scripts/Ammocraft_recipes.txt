@@ -869,6 +869,7 @@ module Base
 		Coldpack,
 		Water=1,
 
+		StopOnWalk:true,
 		CanBeDoneFromFloor:true,
 		Result:Saltpeter,
 		Time:200.0,
