@@ -111,6 +111,12 @@ for i = 1, #molds, 2 do
 
     table.insert(ProceduralDistributions["list"]["GarageFirearms"].items, molds[i]);
     table.insert(ProceduralDistributions["list"]["GarageFirearms"].items, molds[i+1]);
+
+    table.insert(ProceduralDistributions["list"]["ArmyStorageGuns"].items, molds[i]);
+    table.insert(ProceduralDistributions["list"]["ArmyStorageGuns"].items, molds[i+1]*10);
+
+    table.insert(ProceduralDistributions["list"]["PawnShopGunsSpecial"].items, molds[i]);
+    table.insert(ProceduralDistributions["list"]["PawnShopGunsSpecial"].items, molds[i+1]);
  
 end
 
