@@ -9,27 +9,37 @@ ItemStacker.playerId = {};
 ItemStacker.addContainerStackButton = function(playerId)
     ItemStacker.playerId = playerId;
     local playerLoot = getPlayerLoot(playerId);
-    -- Stack: stack only to selected container
-    local textWidth = getTextManager():MeasureStringX(UIFont.Small, getText("UI_StackToSelected"))
+    -- Separator: does nothing
+    local textWidth = getTextManager():MeasureStringX(UIFont.Small, getText("UI_Separator"))
     local buttonX = playerLoot.toggleStove:getRight();
+    local separator = ISButton:new(buttonX, 1, textWidth, 14, getText("UI_Separator"), playerLoot, nil);
+    ItemStacker.initializeButton(separator, playerLoot,true)
+    -- Stack: stack only to selected container
+    textWidth = getTextManager():MeasureStringX(UIFont.Small, getText("UI_StackToSelected"))
+    buttonX = separator:getRight();
     local stackToVisible = ISButton:new(buttonX, 1, textWidth, 14, getText("UI_StackToSelected"), playerLoot, ItemStacker.stackItemsFromCurrentToSelected);
-    ItemStacker.initializeButton(stackToVisible, playerLoot)
+    ItemStacker.initializeButton(stackToVisible, playerLoot,false)
     -- Stack To All: stack to all available to the player at the moment containers
     textWidth = getTextManager():MeasureStringX(UIFont.Small, getText("UI_StackToAll"))
-    local buttonX = stackToVisible:getRight();
+    buttonX = stackToVisible:getRight();
     local stackToAll = ISButton:new(buttonX, 1, textWidth, 14, getText("UI_StackToAll"), playerLoot, ItemStacker.stackItemsFromCurrentToNearby);
-    ItemStacker.initializeButton(stackToAll, playerLoot)
+    ItemStacker.initializeButton(stackToAll, playerLoot,false)
 end
 
-ItemStacker.initializeButton = function(button, parent)
+ItemStacker.initializeButton = function(button, parent, isSeparator)
+    local hoverColor = 0.7
+    if isSeparator then
+        hoverColor = 0.0
+    end 
     button:initialise();
     button.borderColor.a = 0.0;
     button.backgroundColor.a = 0.0;
-    button.backgroundColorMouseOver.a = 0.7;
+    button.backgroundColorMouseOver.a = hoverColor;
     parent:addChild(button);
     button:setVisible(true);
     button:setAnchorRight(false);
     button:setAnchorLeft(true);
+
 end
 
 -- Stacks given items to destination containers, assuming that items are from one of the player's inventories
