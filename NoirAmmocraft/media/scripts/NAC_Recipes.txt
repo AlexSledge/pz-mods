@@ -925,6 +925,7 @@ module Base
 	{
 		223Bullets,
 
+		NeedToBeLearn:true,
 		Result:556Bullets=1,
 		Time:0,
 	}
@@ -933,6 +934,7 @@ module Base
 	{
 		556Bullets,
 
+		NeedToBeLearn:true,
 		Result:223Bullets=1,
 		Time:0,
 	}
