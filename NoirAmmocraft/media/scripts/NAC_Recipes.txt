@@ -912,7 +912,8 @@ module Base
 		LeadPipe,
 		keep Saw/GardenSaw,
 
-		CanBeDoneFromFloor:false,
+		StopOnWalk:true,
+		CanBeDoneFromFloor:true,
 		Result:Lead=20,
 		Time:200.0,
 		AnimNode:SawLog,
@@ -920,4 +921,19 @@ module Base
 		Prop2:LeadPipe,
 	}
 
+	recipe Convert to 5.56
+	{
+		223Bullets,
+
+		Result:556Bullets=1,
+		Time:0,
+	}
+
+	recipe Convert to .223
+	{
+		556Bullets,
+
+		Result:223Bullets=1,
+		Time:0,
+	}
 }
