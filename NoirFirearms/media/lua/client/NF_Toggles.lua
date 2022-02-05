@@ -39,15 +39,14 @@ local function ToggleWeaponLight(key)
         local item = player:getPrimaryHandItem();
         if item and instanceof(item,"HandWeapon") and player:isAiming() then
             local stock = item:getStock()
-            if stock then
-                if gunLights[stock:getType()] ~= nil then
-                    if not item:isActivated() then
-                        item:setActivated(true);
-                    else
-                        item:setActivated(false);
-                    end
-                    player:playSound("LightSwitch")
+            if not stock then return end
+            if gunLights[stock:getType()] ~= nil then
+                if not item:isActivated() then
+                    item:setActivated(true);
+                else
+                    item:setActivated(false);
                 end
+                player:playSound("LightSwitch")
             end
         end
     end
@@ -57,28 +56,29 @@ local function WeaponLightBeam()
 
     local player = getSpecificPlayer(0)
     if player == nil then return end
-        local item = player:getPrimaryHandItem();
-        if item and instanceof(item,"HandWeapon") then
-            local stock = item:getStock()
-            if not stock then
-                item:setActivated(false)
-            end
-            if player:isAiming() then
-                if item:isActivated() then
-                    item:setTorchCone(true);
-                    item:setLightStrength(1);
-                    item:setLightDistance(8);
-                else
-                    item:setTorchCone(false);
-                    item:setLightStrength(0);
-                    item:setLightDistance(0);
-                end
+    local item = player:getPrimaryHandItem();
+    if item and instanceof(item,"HandWeapon") then
+        local stock = item:getStock()
+        if not stock then
+            item:setActivated(false)
+            return
+        end
+        if player:isAiming() then
+            if item:isActivated() then
+                item:setTorchCone(true);
+                item:setLightStrength(1);
+                item:setLightDistance(8);
             else
                 item:setTorchCone(false);
                 item:setLightStrength(0);
                 item:setLightDistance(0);
             end
+        else
+            item:setTorchCone(false);
+            item:setLightStrength(0);
+            item:setLightDistance(0);
         end
+    end
 end
 
 
