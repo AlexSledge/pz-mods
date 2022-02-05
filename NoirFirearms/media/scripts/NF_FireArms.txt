@@ -660,7 +660,7 @@ module Base
 		AimingPerkCritModifier = 4,
 		HitChance = 70,
 		AimingPerkHitChanceModifier = 5,
-		RecoilDelay = 15,
+		RecoilDelay = 10,
 		SoundGain = 2,
         ReloadTime = 25,
         AimingTime = 20,
