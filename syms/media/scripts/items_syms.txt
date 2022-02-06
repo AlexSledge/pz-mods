@@ -7,7 +7,7 @@ module SYMS
 
     item SYMSPaper
     {
-        DisplayCategory = Scrawls,
+        DisplayCategory = Markings,
         DisplayName = Shared Map Symbols,
         Type = Normal,
         Icon = SYMSPaper,

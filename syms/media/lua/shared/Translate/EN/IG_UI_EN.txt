@@ -3,5 +3,5 @@ IG_UI_EN = {
     IGUI_SYMS_CopyElements = "Export Markings",
     IGUI_SYMS_TransferElements = "Import Markings",
     IGUI_SYMS_SelectMarkings = "[--Select Markings--]",
-    IGUI_ItemCat_Scrawls = "Scrawls",
+    IGUI_ItemCat_Markings = "Markings",
 }
