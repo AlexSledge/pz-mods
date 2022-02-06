@@ -3,10 +3,10 @@ module Base
 	recipe Erase Markings
 	{
 		SYMSPaper,
-		Eraser
+		Eraser,
 
 		Sound: MapRemoveMarking,
 		Result:SheetPaper2=1,
-		Time:0,
+		Time:70,
 	}
 }
