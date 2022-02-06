@@ -544,7 +544,7 @@ module Base
 	item ShotgunShells_casing
 	{
 		CanStack	=	TRUE,
-		Weight	=	0.05,
+		Weight	=	0.02,
 		Type	=	Normal,
 		DisplayName	=	Empty Shotgunshell,
 		Icon	=	ShotgunShells_casing,
@@ -555,7 +555,7 @@ module Base
 	item ShotgunShells_casing_spent
 	{
 		CanStack	=	TRUE,
-		Weight	=	0.05,
+		Weight	=	0.02,
 		Type	=	Normal,
 		DisplayName	=	Spent Empty Shotgunshell,
 		Icon	=	ShotgunShells_casing,
@@ -566,7 +566,7 @@ module Base
 	item ShotgunShells_casing_spent_noprimer
 	{
 		CanStack	=	TRUE,
-		Weight	=	0.05,
+		Weight	=	0.02,
 		Type	=	Normal,
 		DisplayName	=	Empty Shotgunshell without Primer,
 		Icon	=	ShotgunShells_casing,
