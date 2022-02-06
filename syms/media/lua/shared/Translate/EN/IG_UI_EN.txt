@@ -1,0 +1,7 @@
+IG_UI_EN = {
+    IGUI_SYMS_Name = "Name:",
+    IGUI_SYMS_CopyElements = "Copy Markings",
+    IGUI_SYMS_TransferElements = "Transfer Markings",
+    IGUI_SYMS_SelectMarkings = "[--Select Markings--]",
+    IGUI_ItemCat_Scrawls = "Scrawls",
+}

@@ -1,0 +1,6 @@
+IG_UI_EN = {
+    IGUI_SYMS_Name = "Название:",
+    IGUI_SYMS_CopyElements = "Скопировать заметки",
+    IGUI_SYMS_TransferElements = "Перенести заметки",
+    IGUI_SYMS_SelectMarkings = "[--Выбрать заметки--]",
+}

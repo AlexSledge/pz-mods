@@ -1,0 +1,13 @@
+module Base
+{
+	recipe Erase Markings
+	{
+		SYMSPaper,
+		Eraser
+
+		Sound: MapRemoveMarking,
+		NeedToBeLearn:true,
+		Result:SheetPaper2=1,
+		Time:0,
+	}
+}
