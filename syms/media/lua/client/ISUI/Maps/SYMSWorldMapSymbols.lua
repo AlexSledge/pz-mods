@@ -7,6 +7,17 @@ local function round(number, decimalPlaces)
     return math.floor(number * multiplier + 0.5) / multiplier
 end
 
+local function generateId(data) 
+    local id = ""
+    if data.symbolID ~= nil then id = id .. data.symbolID end
+    if data.textTranslated ~= nil then id = id .. data.textTranslated end
+    if data.textUntranslated ~= nil then id = id .. data.textUntranslated end
+    if data.worldX ~= nil then id = id .. data.worldX end
+    if data.worldY ~= nil then id = id .. data.worldY end
+
+    return id
+end
+
 -----
 
 ISWorldMapSymbolTool_SYMSCopyMarkings = ISWorldMapSymbolTool:derive("ISWorldMapSymbolTool_SYMSCopyMarkings")
@@ -18,8 +29,10 @@ end
 
 function ISWorldMapSymbolTool_SYMSCopyMarkings:activate()
     local allSymbols = {}
+    local hasMark = false
 
     for i = 1, self.symbolsAPI:getSymbolCount() do
+        hasMark = true
         local symbol = self.symbolsAPI:getSymbolByIndex(i - 1)
 
         local textUntranslated, textTranslated, symbolID
@@ -43,10 +56,10 @@ function ISWorldMapSymbolTool_SYMSCopyMarkings:activate()
             textUntranslated = textUntranslated,
             symbolID = symbolID
         }
-        table.insert(allSymbols, data)
+        allSymbols[generateId(data)] = data
     end
 
-    if #allSymbols > 0 then
+    if hasMark then
         self.modal = ISTextBox:new(0, 0, 280, 150, getText("IGUI_SYMS_Name"), "",
                 self, self.onCopy, self.symbolsUI.character:getPlayerNum(), allSymbols)
         self.modal:setValidateFunction(self, self.validateName)
@@ -117,27 +130,64 @@ function ISWorldMapSymbolTool_SYMSPasteMarkings:onPaste(button, item)
 
     if button.internal ~= "OK" then return end
 
-    local allSymbols = item:getModData().symbols
-    for _, symbol in ipairs(allSymbols) do
-        local newSymbol
-        if symbol.isText then
-            if symbol.textUntranslated then
-                newSymbol = self.symbolsAPI:addUntranslatedText(symbol.textUntranslated, UIFont.Handwritten, symbol.worldX, symbol.worldY)
-            else
-                newSymbol = self.symbolsAPI:addTranslatedText(symbol.textTranslated, UIFont.Handwritten, symbol.worldX, symbol.worldY)
-            end
-            newSymbol:setAnchor(0.0, 0.0)
-        else
-            newSymbol = self.symbolsAPI:addTexture(symbol.symbolID, symbol.worldX, symbol.worldY)
-            newSymbol:setAnchor(0.5, 0.5)
+    local curretSymbols = {}
+    local added = false
+
+    for i = 1, self.symbolsAPI:getSymbolCount() do
+        local symbol = self.symbolsAPI:getSymbolByIndex(i - 1)
+
+        local textUntranslated, textTranslated, symbolID
+        local isText = symbol:isText()
+        if isText then
+            textTranslated = symbol:getTranslatedText()
+            textUntranslated = symbol:getUntranslatedText()
+        elseif symbol:isTexture() then
+            symbolID = symbol:getSymbolID()
         end
 
-        local r, g, b = self:getAvailableColor(symbol.r, symbol.g, symbol.b)
-        newSymbol:setRGBA(r, g, b, symbol.a)
-        newSymbol:setScale(ISMap.SCALE)
+        local data = {
+            isText = isText,
+            worldX = symbol:getWorldX(),
+            worldY = symbol:getWorldY(),
+            r = symbol:getRed(),
+            g = symbol:getGreen(),
+            b = symbol:getBlue(),
+            a = symbol:getAlpha(),
+            textTranslated = textTranslated,
+            textUntranslated = textUntranslated,
+            symbolID = symbolID
+        }
+        curretSymbols[generateId(data)] = data
     end
 
-    self.symbolsUI.character:playSound("MapAddNote")
+
+    local allSymbols = item:getModData().symbols
+    for k, symbol in pairs(allSymbols) do
+        local newSymbol
+
+        if not curretSymbols[k] then 
+            if symbol.isText then
+                if symbol.textUntranslated then
+                    newSymbol = self.symbolsAPI:addUntranslatedText(symbol.textUntranslated, UIFont.Handwritten, symbol.worldX, symbol.worldY)
+                else
+                    newSymbol = self.symbolsAPI:addTranslatedText(symbol.textTranslated, UIFont.Handwritten, symbol.worldX, symbol.worldY)
+                end
+                newSymbol:setAnchor(0.0, 0.0)
+            else
+                newSymbol = self.symbolsAPI:addTexture(symbol.symbolID, symbol.worldX, symbol.worldY)
+                newSymbol:setAnchor(0.5, 0.5)
+            end
+
+            local r, g, b = self:getAvailableColor(symbol.r, symbol.g, symbol.b)
+            newSymbol:setRGBA(r, g, b, symbol.a)
+            newSymbol:setScale(ISMap.SCALE)
+            added = true
+        end    
+    end
+    
+    if added then
+        self.symbolsUI.character:playSound("MapAddNote")
+    end
 end
 
 function ISWorldMapSymbolTool_SYMSPasteMarkings:getAvailableColor(r, g, b)

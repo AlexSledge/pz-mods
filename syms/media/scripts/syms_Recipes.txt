@@ -3,10 +3,19 @@ module Base
 	recipe Erase Markings
 	{
 		SYMSPaper,
-		Eraser,
+		keep Eraser,
 
 		Sound: MapRemoveMarking,
 		Result:SheetPaper2=1,
-		Time:70,
+		Time:40,
 	}
+
+	recipe Get Sheet of paper
+	{
+		Journal/Notebook,
+		
+		Result:SheetPaper2=5,
+		Time:40,
+	}
+	
 }

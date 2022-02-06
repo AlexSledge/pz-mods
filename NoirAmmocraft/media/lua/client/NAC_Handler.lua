@@ -51,7 +51,6 @@ function recipe_Remove_Primer(items, result, player)
 		inv:AddItem(primer)
 	end 
 	inv:AddItem("Base." .. casing .. "_spent_noprimer");
-
 end
 
 function recipe_Open_Jar(items, result, player)
