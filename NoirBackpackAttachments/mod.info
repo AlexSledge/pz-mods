@@ -1,0 +1,6 @@
+name=NoirBackpacksAttachments
+id=noirbackpacksattachments
+require=PwSleepingbags
+description=
+description=Allow attach items to backpacks, no more clutter slots
+poster=poster.png
