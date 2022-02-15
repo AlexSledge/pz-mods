@@ -34,7 +34,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = HRBedroll;HRBottleRight,
+		AttachmentsProvided = HRBedroll;HRBottle,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,
@@ -75,7 +75,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = HRWeapon;HRShoulderTorch;HRBedroll;HRBottleRight;HRTrinket,
+        AttachmentsProvided = HRShortWeapon;HRFlashlight;HRBedroll;HRBottle;HRTrinket,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,	
@@ -158,7 +158,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment HR_shouldertorch {
+		attachment HR_flashlight {
 			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
@@ -243,7 +243,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment HR_shouldertorch {
+		attachment HR_flashlight {
 			offset = -0.0100 0.0800 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,

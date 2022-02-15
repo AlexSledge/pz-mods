@@ -51,7 +51,7 @@ for k,v in pairs(attachments) do
 end
 
 -- Shoulder Handtorch Slot
-TweakItem("HandTorch","AttachmentType", "ShoulderTorch");
+TweakItem("HandTorch","AttachmentType", "Flashlight");
 
 --Trinket Slot
 TweakItem("Doll","AttachmentType", "TrinketDoll");

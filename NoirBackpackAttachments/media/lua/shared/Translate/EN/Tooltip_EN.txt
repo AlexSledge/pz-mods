@@ -3,7 +3,7 @@
 Tooltip_EN = {
 
     Tooltip_SlotsI = "Adds Slots: Bedroll, Water Bottle",
-    Tooltip_SlotsII = "Adds Slots: Short Weapon, Shoulder Torch, Trinket",
+    Tooltip_SlotsII = "Adds Slots: Short Weapon, Flashlight, Trinket",
 
     Tooltip_NomadSlotsI = "Adds Slot: Water Bottle",
 }

@@ -6,7 +6,7 @@ end
 for _,v in pairs(Backpacks) do
 
 	local slot = {
-		type = v.."Weapon",
+		type = v.."ShortWeapon",
 		name = "Short Weapon", -- Name on Slot
 		animset = "back",
 		attachments = {
@@ -21,21 +21,21 @@ for _,v in pairs(Backpacks) do
 	table.insert(ISHotbarAttachDefinition, slot);
 
 	slot = {
-		type = v.."ShoulderTorch",
-		name = "Shoulder Torch", -- Name on Slot
+		type = v.."Flashlight",
+		name = "Flashlight", -- Name on Slot
 		animset = "back",
 		attachments = {
-			ShoulderTorch = v.."ShoulderTorch",
+			Flashlight = v.."Flashlight",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);
 
 	slot = {
-		type = v.."BottleRight",
-		name = "Water Bottle", -- Name on Slot
+		type = v.."Bottle",
+		name = "Bottle", -- Name on Slot
 		animset = "back",
 		attachments = {
-			Bottle = v.."BottleRight",
+			Bottle = v.."Bottle",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

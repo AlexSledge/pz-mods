@@ -34,7 +34,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackBedroll;MilitaryAlicepackBottleRight,
+		AttachmentsProvided = MilitaryAlicepackBedroll;MilitaryAlicepackBottle,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -75,7 +75,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackShoulderTorch;MilitaryAlicepackBedroll;MilitaryAlicepackBottleRight;MilitaryAlicepackTrinket,
+		AttachmentsProvided = MilitaryAlicepackShortWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBedroll;MilitaryAlicepackBottle;MilitaryAlicepackTrinket,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -158,7 +158,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_shouldertorch {
+		attachment MilitaryAlicepack_flashlight {
 			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
@@ -243,7 +243,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_shouldertorch {
+		attachment MilitaryAlicepack_flashlight {
 			offset = -0.0100 0.0700 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,

@@ -32,7 +32,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = SchoolbagBedroll;SchoolbagBottleRight,
+        AttachmentsProvided = SchoolbagBedroll;SchoolbagBottle,
         ReplaceInSecondHand = Bag_Schoolbag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_Schoolbag_RHand holdingbagright,
         WorldStaticModel = SchoolBag_Ground,
@@ -70,7 +70,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = SchoolbagWeapon;SchoolbagShoulderTorch;SchoolbagBedroll;SchoolbagBottleRight;SchoolbagTrinket,
+        AttachmentsProvided = SchoolbagShortWeapon;SchoolbagFlashlight;SchoolbagBedroll;SchoolbagBottle;SchoolbagTrinket,
         ReplaceInSecondHand = Bag_Schoolbag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_Schoolbag_RHand holdingbagright,
         WorldStaticModel = SchoolBag_Ground,
@@ -153,7 +153,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Schoolbag_shouldertorch {
+		attachment Schoolbag_flashlight {
 			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
@@ -238,7 +238,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Schoolbag_shouldertorch {
+		attachment Schoolbag_flashlight {
 			offset = -0.0100 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,

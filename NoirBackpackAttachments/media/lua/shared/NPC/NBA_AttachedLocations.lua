@@ -4,7 +4,7 @@ local group = AttachedLocations.getGroup("Human")
 local attachments = {}
 
 for _,v in pairs(Backpacks) do
-    attachments[v.."BottleRight"] = v.."_bottle";
+    attachments[v.."Bottle"] = v.."_bottle";
     attachments[v.."Bedroll"] = v.."_bedroll";
     attachments[v.."TrinketDoll"] = v.."_trinketdoll";
     attachments[v.."TrinketDogChew"] = v.."_trinketdogchew";
@@ -16,7 +16,7 @@ for _,v in pairs(Backpacks) do
     attachments[v.."TrinketCube"] = v.."_trinketcube";
     attachments[v.."ShortWeapon"] = v.."_shortweapon";
     attachments[v.."Wrench"] = v.."_wrench";
-    attachments[v.."ShoulderTorch"] = v.."_shouldertorch";
+    attachments[v.."Flashlight"] = v.."_flashlight";
 end
 
 for k,v in pairs(attachments) do 

@@ -34,7 +34,7 @@ module Base {
         BloodLocation 			= 	Bag,
         RunSpeedModifier 		= 	0.96,
         AttachmentReplacement 	= 	Bag,
-		AttachmentsProvided  	= 	HikingbagBedroll;HikingbagBottleRight,			
+		AttachmentsProvided  	= 	HikingbagBedroll;HikingbagBottle,			
         ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
         ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
         WorldStaticModel 		= 	HikingBag_Ground,
@@ -74,7 +74,7 @@ module Base {
         BloodLocation 			= 	Bag,
         RunSpeedModifier 		= 	0.96,
         AttachmentReplacement 	= 	Bag,
-		AttachmentsProvided 	= 	HikingbagWeapon;HikingbagShoulderTorch;HikingbagBedroll;HikingbagBottleRight;HikingbagTrinket,	
+		AttachmentsProvided 	= 	HikingbagShortWeapon;HikingbagFlashlight;HikingbagBedroll;HikingbagBottle;HikingbagTrinket,	
         ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
         ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
         WorldStaticModel 		= 	HikingBag_Ground,
@@ -156,7 +156,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Hikingbag_shouldertorch {
+		attachment Hikingbag_flashlight {
 			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
@@ -241,7 +241,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Hikingbag_shouldertorch {
+		attachment Hikingbag_flashlight {
 			offset = -0.0100 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,

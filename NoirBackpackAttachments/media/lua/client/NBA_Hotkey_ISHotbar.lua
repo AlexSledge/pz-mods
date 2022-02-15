@@ -98,3 +98,71 @@ function ISHotbar:activateSlot(slotIndex)
 	end
 	self:equipItem(item)
 end
+
+
+--Remove duplicate CanBeAttached slots tooltip
+function ISHotbar.doMenuFromInventory(playerNum, item, context)
+	local self = getPlayerHotbar(playerNum);
+	if self == nil then return end
+	if self:isInHotbar(item) and item:getAttachmentType() and item:getAttachedSlot() ~= -1 then
+		local slot = self.availableSlot[item:getAttachedSlot()]
+		local slotName = getTextOrNull("IGUI_HotbarAttachment_" .. slot.slotType) or slot.name;
+		context:addOptionOnTop(getText("ContextMenu_RemoveFromHotbar", self.attachedItems[item:getAttachedSlot()]:getDisplayName(), slotName), self, ISHotbar.removeItem, self.attachedItems[item:getAttachedSlot()], true);
+	end
+	if item:getAttachmentType() and not self:isInHotbar(item) and not item:isBroken() and self.replacements[item:getAttachmentType()] ~= "null" then
+		local subOption = context:addOptionOnTop(getText("ContextMenu_Attach"), nil);
+		local subMenuAttach = context:getNew(context);
+		context:addSubMenu(subOption, subMenuAttach);
+		
+		local found = false;
+		for slotIndex, slot in pairs(self.availableSlot) do
+			local slotDef = slot.def;
+			for i, v in pairs(slotDef.attachments) do
+				if item:getAttachmentType() == i then
+					local doIt = true;
+					local name = getTextOrNull("IGUI_HotbarAttachment_" .. slot.slotType) or slot.name;
+					if self.replacements and self.replacements[item:getAttachmentType()] then
+						slot = self.replacements[item:getAttachmentType()];
+						if slot == "null" then
+							doIt = false;
+						end
+					end
+					if doIt then
+						local option = subMenuAttach:addOption(name, self, ISHotbar.attachItem, item, v, slotIndex, slotDef, true);
+						if self.attachedItems[slotIndex] then
+							local tooltip = ISWorldObjectContextMenu.addToolTip();
+							tooltip.description = tooltip.description .. getText("Tooltip_ReplaceWornItems") .. " <LINE> <INDENT:20> "
+							tooltip.description = tooltip.description .. self.attachedItems[slotIndex]:getDisplayName()
+							option.toolTip = tooltip
+						end 
+						found = true;
+					end
+				end
+			end
+		end
+		-- didn't found anything to it, gonna add the possibilities as a tooltip
+		if not found then
+			subOption.notAvailable = true;
+			local tooltip = ISWorldObjectContextMenu.addToolTip();
+			local text = getText("Tooltip_CanBeAttached") .. " <LINE> <INDENT:20> ";
+			local lastValue = "";
+			local typeText = "";
+			for i,v in pairs(ISHotbarAttachDefinition) do
+				if v.attachments then
+					for type,atch in pairs(v.attachments) do
+						if type == item:getAttachmentType() then
+							typeText = getText("IGUI_HotbarAttachment_" .. v.type)
+							if not (lastValue == typeText)  then 
+								text = text .. typeText .. " <LINE> "
+							end
+							lastValue = typeText;
+						end
+					end
+				end
+			end
+			subOption.subOption = nil;
+			tooltip.description = text;
+			subOption.toolTip = tooltip;
+		end
+	end
+end
