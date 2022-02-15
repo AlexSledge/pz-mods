@@ -6,19 +6,16 @@ function ISHotbar:getSlotForKey(key)
 	if key == getCore():getKey("Hotbar 3") then return 3; end
 	if key == getCore():getKey("Hotbar 4") then return 4; end
 	if key == getCore():getKey("Hotbar 5") then return 5; end
-
-	if key == getCore():getKey("Hotbar 6") then return 6; end 
+	if key == getCore():getKey("Hotbar 6") then return 6; end
 	if key == getCore():getKey("Hotbar 7") then return 7; end
 	if key == getCore():getKey("Hotbar 8") then return 8; end
 	if key == getCore():getKey("Hotbar 9") then return 9; end
 	if key == getCore():getKey("Hotbar 10") then return 10; end
-	if key == getCore():getKey("Hotbar 0") then return 10; end
 	if key == getCore():getKey("Hotbar 11") then return 11; end
 	if key == getCore():getKey("Hotbar 12") then return 12; end
-	if key == getCore():getKey("Hotbar 13") then return 13; end
-	if key == getCore():getKey("Hotbar 14") then return 14; end
-	if key == getCore():getKey("Hotbar 15") then return 15; end
-	if key == getCore():getKey("Hotbar 16") then return 16; end 
+	if key == getCore():getKey("Hotbar 13") then return 13; end	
+	if key == getCore():getKey("Hotbar 14") then return 14; end	
+	if key == getCore():getKey("Hotbar 15") then return 15; end	
 
 	return -1
 end
@@ -83,3 +80,21 @@ bind = {};
 bind.value = "Hotbar 16";
 bind.key = 0;
 table.insert(keyBinding, bind);
+
+
+function ISHotbar:activateSlot(slotIndex)
+	local item = self.attachedItems[slotIndex]
+	if not item then return end
+	if item:getAttachedSlot() ~= slotIndex then
+		error "item:getAttachedSlot() ~= slotIndex"
+	end
+	if item:canBeActivated() then
+		item:setActivated(not item:isActivated())
+		getPlayer():playSound("LightSwitch")
+		return
+	end
+	if not instanceof(item, "HandWeapon") then
+		return
+	end
+	self:equipItem(item)
+end

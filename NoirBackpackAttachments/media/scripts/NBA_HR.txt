@@ -1,0 +1,252 @@
+module Base {
+
+    recipe Upgrade HR
+    {
+        HR,
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:HR_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+    }
+
+    item HR_I
+    {
+		DisplayCategory = Bag,	
+        WeightReduction	=	90,
+        Weight	=	1.4,
+        Type	=	Container,
+        Capacity	=	30,
+        DisplayName	=	Field Backpack +,
+        Icon = HR,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = HR,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.97,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = HRBedroll;HRBottleRight,
+        ReplaceInSecondHand = HR_Dop holdingbagleft,
+        ReplaceInPrimaryHand = HR_Osn holdingbagright,
+		WorldStaticModel = WorldItem-Bag_HR_Ground,		
+
+    }
+
+    recipe Upgrade HR
+    {
+        HR_I,
+        LeatherStrips=3,
+        Thread, 
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:HR_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+    }
+
+    item HR_II
+    {
+		DisplayCategory = Bag,	
+        WeightReduction	=	90,
+        Weight	=	1.4,
+        Type	=	Container,
+        Capacity	=	30,
+        DisplayName	=	Field Backpack ++,
+        Icon = HR,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = HR,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.97,
+        AttachmentReplacement = Bag,
+        AttachmentsProvided = HRWeapon;HRShoulderTorch;HRBedroll;HRBottleRight;HRTrinket,
+        ReplaceInSecondHand = HR_Dop holdingbagleft,
+        ReplaceInPrimaryHand = HR_Osn holdingbagright,
+		WorldStaticModel = WorldItem-Bag_HR_Ground,	
+    }
+
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+		attachment HR_bottle
+		{
+			offset = 0.0400 0.1450 -0.0700,
+			rotate = 90.0000 180.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_bedroll {
+			offset = -0.0350 0.0000 0.1100,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketdoll {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketdogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketcattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketrubberducky {
+			offset = 0.0650 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinkettoybear{
+			offset = 0.1050 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinkettoycar{
+			offset = 0.0650 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketyoyo {
+			offset = 0.0750 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketcube {
+			offset = 0.1250 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_shortweapon {
+			offset = 0.0900 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_wrench {
+			offset = 0.0900 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_shouldertorch {
+			offset = -0.0200 0.0600 -0.0150,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+    model MaleBody 
+    {
+        mesh = Skinned/MaleBody,
+
+		attachment HR_bottle
+		{
+			offset = 0.0400 0.1450 -0.0700,
+			rotate = 90.0000 180.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_bedroll {
+			offset = -0.0350 0.0000 0.1100,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketdoll {
+			offset = 0.0450 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketdogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketcattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketrubberducky {
+			offset = 0.0650 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinkettoybear{
+			offset = 0.1050 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinkettoycar{
+			offset = 0.0650 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketyoyo {
+			offset = 0.0750 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketcube {
+			offset = 0.1250 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_shortweapon {
+			offset = 0.0900 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_wrench {
+			offset = 0.0900 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_shouldertorch {
+			offset = -0.0100 0.0800 -0.0150,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+    }
+
+}

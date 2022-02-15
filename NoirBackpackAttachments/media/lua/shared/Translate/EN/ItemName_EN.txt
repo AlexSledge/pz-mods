@@ -1,0 +1,36 @@
+
+ItemName_EN = {
+
+    ItemName_Base.Bag_Schoolbag_I = "Schoolbag +",
+    ItemName_Base.Bag_Schoolbag_II = "Schoolbag ++",
+
+    ItemName_Base.Bag_Alicepack_I = "Large Backpack +",
+    ItemName_Base.Bag_Alicepack_II = "Large Backpack ++",
+    
+    ItemName_Base.Bag_Hikingbag_I = "Hiking bag +",
+    ItemName_Base.Bag_Hikingbag_II = "Hiking bag ++",
+
+    ItemName_Base.Bag_BigHikingbag_I = "Big Hiking bag +",
+    ItemName_Base.Bag_BigHikingbag_II = "Big Hiking bag ++",
+
+    ItemName_Base.KleanBackpack_I = "Clean Up Krew Backpack +",
+    ItemName_Base.KleanBackpack_II = "Clean Up Krew Backpack ++",
+
+    ItemName_Base.NomadBackpack_I = "Nomad Backpack +",
+    ItemName_Base.NomadBackpack_II = "Nomad Backpack ++",
+
+    ItemName_Base.Bag_MilitaryAlicepack_I = "Military Backpack +",
+    ItemName_Base.Bag_MilitaryAlicepack_II = "Military Backpack ++",
+
+    ItemName_Base.RUKSAK2_I = "SPOSN Tortilla Backpack +",
+    ItemName_Base.RUKSAK2_II = "SPOSN Tortilla Backpack ++",
+
+    ItemName_Base.RUKSAK1_I = "Old tourist backpack +",
+    ItemName_Base.RUKSAK1_II = "Old tourist backpack ++",
+
+    ItemName_Base.HR_I = "Field Backpack +",
+    ItemName_Base.HR_II = "Field Backpack ++",
+
+    ItemName_Base.ANAT_I = "Assault Backpack +",
+    ItemName_Base.ANAT_II = "Assault Backpack ++",
+}

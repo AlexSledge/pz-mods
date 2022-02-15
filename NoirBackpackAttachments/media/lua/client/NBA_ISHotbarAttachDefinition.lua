@@ -3,41 +3,69 @@ if not ISHotbarAttachDefinition then
     return
 end
 
+for _,v in pairs(Backpacks) do
 
-local SchoolbagBottleRight = {
-	type = "SchoolbagBottleRight",
-	name = "Water Bottle",  -- Name on Slot
-	animset = "back",
-	attachments = {
-		Bottle = "Schoolbag Bottle Right",
-	},
-}
-table.insert(ISHotbarAttachDefinition, SchoolbagBottleRight);
+	local slot = {
+		type = v.."Weapon",
+		name = "Short Weapon", -- Name on Slot
+		animset = "back",
+		attachments = {
+			Hammer = v.."ShortWeapon",
+			Nightstick = v.."ShortWeapon",
+			MeatCleaver = v.."ShortWeapon",
+			Knife = v.."ShortWeapon",
+			Screwdriver = v.."ShortWeapon",
+			Wrench = v.."Wrench",
+		},
+	}
+	table.insert(ISHotbarAttachDefinition, slot);
+
+	slot = {
+		type = v.."ShoulderTorch",
+		name = "Shoulder Torch", -- Name on Slot
+		animset = "back",
+		attachments = {
+			ShoulderTorch = v.."ShoulderTorch",
+		},
+	}
+	table.insert(ISHotbarAttachDefinition, slot);
+
+	slot = {
+		type = v.."BottleRight",
+		name = "Water Bottle", -- Name on Slot
+		animset = "back",
+		attachments = {
+			Bottle = v.."BottleRight",
+		},
+	}
+	table.insert(ISHotbarAttachDefinition, slot);
+
+	slot = {
+		type = v.."Bedroll",
+		name = "Bedroll", -- Name on Slot
+		animset = "back",
+		attachments = {
+			Bedroll = v.."Bedroll",
+		},
+	}
+	table.insert(ISHotbarAttachDefinition, slot);
 
 
-local SchoolbagBedroll = {
-	type = "SchoolbagBedroll",
-	name = "Bedroll", -- Name on Slot
-	animset = "back",
-	attachments = {
-		Bedroll = "Schoolbag Bedroll",
-	},
-}
-table.insert(ISHotbarAttachDefinition, SchoolbagBedroll);
+	slot = {
+		type = v.."Trinket",
+		name = "Trinket", -- Name on Slot
+		animset = "back",
+		attachments = {
+			TrinketDoll = v.."TrinketDoll",
+			TrinketDogChew  = v.."TrinketDogChew",
+			TrinketCatToy  = v.."TrinketCatToy",
+			TrinketRubberDucky  = v.."TrinketRubberDucky",
+			TrinketToyBear  = v.."TrinketToyBear",
+			TrinketToyCar  = v.."TrinketToyCar",
+			TrinketYoyo  = v.."TrinketYoyo",
+			TrinketCube  = v.."TrinketCube",
+		},
+	}
+	table.insert(ISHotbarAttachDefinition, slot);
 
-local SchoolbagTrinket = {
-	type = "SchoolbagTrinket",
-	name = "Trinket", -- Name on Slot
-	animset = "back",
-	attachments = {
-		TrinketDoll = "Schoolbag Trinket Doll",
-		TrinketDogChew  = "Schoolbag Trinket DogChew",
-		TrinketCatToy  = "Schoolbag Trinket CatToy",
-		TrinketRubberDucky  = "Schoolbag Trinket RubberDucky",
-		TrinketToyBear  = "Schoolbag Trinket ToyBear",
-		TrinketToyCar  = "Schoolbag Trinket ToyCar",
-		TrinketYoyo  = "Schoolbag Trinket Yoyo",
-		TrinketCube  = "Schoolbag Trinket Cube",
-	},
-}
-table.insert(ISHotbarAttachDefinition, SchoolbagTrinket);
+end

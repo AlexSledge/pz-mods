@@ -8,7 +8,6 @@ local function ToggleFireMode(key)
     if player == nil then return end
     if(key == 56) then     -- Left ALT = 56
         availableFireModes = {}
-        player	= getSpecificPlayer(0)
 		local item	= player:getPrimaryHandItem()
 
         if item and instanceof(item,"HandWeapon") and player:isAiming() then
@@ -80,7 +79,6 @@ local function WeaponLightBeam()
         end
     end
 end
-
 
 function nextFireMode(availableFireModes,currentModeIndex)
     local nextFireMode = currentModeIndex+1

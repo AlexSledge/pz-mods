@@ -1,0 +1,16 @@
+
+Recipes_EN = {
+
+    Recipe_Upgrade_Alicepack = "Add Attachment Slots",
+    Recipe_Upgrade_Schoolbag = "Add Attachment Slots",
+    Recipe_Upgrade_Hikingbag = "Add Attachment Slots",
+    Recipe_Upgrade_BigHikingbag = "Add Attachment Slots",
+    Recipe_Upgrade_KleanBackpack = "Add Attachment Slots",
+    Recipe_Upgrade_Military_Alicepack = "Add Attachment Slots",
+    Recipe_Upgrade_NomadBackpack = "Add Attachment Slots",
+    Recipe_Upgrade_HR = "Add Attachment Slots",
+    Recipe_Upgrade_RUKSAK1 = "Add Attachment Slots",
+    Recipe_Upgrade_RUKSAK2 = "Add Attachment Slots",
+    Recipe_Upgrade_ANAT = "Add Attachment Slots",
+
+}

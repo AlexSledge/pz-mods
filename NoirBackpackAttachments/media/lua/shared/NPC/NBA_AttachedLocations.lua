@@ -4,18 +4,23 @@
 
 local group = AttachedLocations.getGroup("Human")
 
-local attachments = {
-    ["Schoolbag Bottle Right"] = "schoolbag_bottle",
-    ["Schoolbag Bedroll"] = "schoolbag_bedroll",
-    ["Schoolbag Trinket Doll"] = "schoolbag_trinketdoll",
-    ["Schoolbag Trinket DogChew"] = "schoolbag_trinketdogchew",
-    ["Schoolbag Trinket CatToy"] = "schoolbag_trinketcattoy",
-    ["Schoolbag Trinket RubberDucky"] = "schoolbag_trinketrubberducky",
-    ["Schoolbag Trinket ToyBear"] = "schoolbag_trinkettoybear",
-    ["Schoolbag Trinket ToyCar"] = "schoolbag_trinkettoycar",
-    ["Schoolbag Trinket Yoyo"] = "schoolbag_trinketyoyo",
-    ["Schoolbag Trinket Cube"] = "schoolbag_trinketcube",
-}
+local attachments = {}
+
+for _,v in pairs(Backpacks) do
+    attachments[v.."BottleRight"] = v.."_bottle";
+    attachments[v.."Bedroll"] = v.."_bedroll";
+    attachments[v.."TrinketDoll"] = v.."_trinketdoll";
+    attachments[v.."TrinketDogChew"] = v.."_trinketdogchew";
+    attachments[v.."TrinketCatToy"] = v.."_trinketcattoy";
+    attachments[v.."TrinketToyCar"] = v.."_trinkettoycar";
+    attachments[v.."TrinketRubberDucky"] = v.."_trinketrubberducky";
+    attachments[v.."TrinketToyBear"] = v.."_trinkettoybear";
+    attachments[v.."TrinketYoyo"] = v.."_trinketyoyo";
+    attachments[v.."TrinketCube"] = v.."_trinketcube";
+    attachments[v.."ShortWeapon"] = v.."_shortweapon";
+    attachments[v.."Wrench"] = v.."_wrench";
+    attachments[v.."ShoulderTorch"] = v.."_shouldertorch";
+end
 
 for k,v in pairs(attachments) do 
     group:getOrCreateLocation(k):setAttachmentName(v)

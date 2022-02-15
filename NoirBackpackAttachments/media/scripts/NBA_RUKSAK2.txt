@@ -1,0 +1,251 @@
+module Base {
+
+  recipe Upgrade RUKSAK2
+    {
+        RUKSAK2,
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:RUKSAK2_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+    }
+
+	item RUKSAK2_I
+    {
+	    DisplayCategory = Bag,		
+        WeightReduction	=	90,
+        Weight	=	1.4,
+        Type	=	Container,
+        Capacity	=	30,
+        DisplayName	=	Big tourist backpack,
+        IconsForTexture = RUKSAK2_1;RUKSAK2_2;RUKSAK2_3;RUKSAK2_4;RUKSAK2_5;RUKSAK2_6;RUKSAK2_7;RUKSAK2_8;RUKSAK2_9;RUKSAK2_10,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = RUKSAK2,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.90,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = RUKSAK2Bedroll;RUKSAK2BottleRight,
+        ReplaceInSecondHand = RUKSAK2_Dop holdingbagleft,
+        ReplaceInPrimaryHand = RUKSAK2_Osn holdingbagright,
+		WorldStaticModel = WorldItem-Bag_RUKSAK2_Ground,		
+    }
+
+
+    recipe Upgrade RUKSAK2
+    {
+        RUKSAK2_I,
+        LeatherStrips=3,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:RUKSAK2_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+    }
+
+    item RUKSAK2_II
+    {
+	    DisplayCategory = Bag,		
+        WeightReduction	=	90,
+        Weight	=	1.4,
+        Type	=	Container,
+        Capacity	=	30,
+        DisplayName	=	Big tourist backpack,
+        IconsForTexture = RUKSAK2_1;RUKSAK2_2;RUKSAK2_3;RUKSAK2_4;RUKSAK2_5;RUKSAK2_6;RUKSAK2_7;RUKSAK2_8;RUKSAK2_9;RUKSAK2_10,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = RUKSAK2,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.90,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = RUKSAK2Weapon;RUKSAK2ShoulderTorch;RUKSAK2Bedroll;RUKSAK2BottleRight;RUKSAK2Trinket,
+        ReplaceInSecondHand = RUKSAK2_Dop holdingbagleft,
+        ReplaceInPrimaryHand = RUKSAK2_Osn holdingbagright,
+		WorldStaticModel = WorldItem-Bag_RUKSAK2_Ground,
+    }
+
+
+	model FemaleBody
+	{
+		
+	attachment RUKSAK2_bottle
+		{
+			offset = 0.0300 0.1450 -0.0700,
+			rotate = 90.0000 180.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_bedroll {
+			offset = -0.0350 0.0000 0.1100,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketdoll {
+			offset = 0.0650 0.0950 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketdogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketcattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketrubberducky {
+			offset = 0.0650 0.0750 -0.0900,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinkettoybear{
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinkettoycar{
+			offset = 0.0650 0.0750 -0.1050,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketyoyo {
+			offset = 0.0850 0.0950 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketcube {
+			offset = 0.1250 0.0750 -0.0850,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_shortweapon {
+			offset = 0.0750 -0.0900 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_wrench {
+			offset = 0.0750 -0.0700 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_shouldertorch {
+			offset = -0.0200 0.0800 -0.0150,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+	}
+
+
+	model MaleBody
+	{
+		
+		attachment RUKSAK2_bottle
+		{
+			offset = 0.0500 0.1450 -0.0700,
+			rotate = 90.0000 180.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_bedroll {
+			offset = -0.0350 0.0000 0.1100,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketdoll {
+			offset = 0.0950 0.0950 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketdogchew {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketcattoy {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketrubberducky {
+			offset = 0.0950 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinkettoybear{
+			offset = 0.1550 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinkettoycar{
+			offset = 0.0950 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketyoyo {
+			offset = 0.1250 0.0950 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_trinketcube {
+			offset = 0.1550 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_shortweapon {
+			offset = 0.1100 -0.0900 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_wrench {
+			offset = 0.1100 -0.0700 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK2_shouldertorch {
+			offset = -0.0200 0.0850 -0.0150,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+}

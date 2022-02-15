@@ -1,0 +1,45 @@
+module Base
+{
+	model sleepingbag
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/Sleepingbag,
+		scale 		= 0.70,
+	}
+	model sleepingbagG
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/SleepingbagG,
+		scale 		= 0.70,
+	}
+	model sleepingbagR
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/SleepingbagR,
+		scale 		= 0.70,
+	}
+	model sleepingbagO
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/SleepingbagO,
+		scale 		= 0.70,
+	}
+	model sleepingbagBK
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/SleepingbagBK,
+		scale 		= 0.70,
+	}
+	model sleepingbagLB
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/SleepingbagLB,
+		scale 		= 0.70,
+	}
+	model sleepingbagP
+	{
+		mesh 		= worlditems/SleepingBag,
+		texture 		= worlditems/SleepingbagP,
+		scale 		= 0.70,
+	}
+}
