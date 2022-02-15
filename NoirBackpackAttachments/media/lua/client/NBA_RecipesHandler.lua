@@ -1,16 +1,16 @@
 
-local modsBackpacks = {
+local modsRecipes = {
 	["Pitstop"] = {"Upgrade KleanBackpack"} ,
 	["2507488373"] = {"Upgrade HR","Upgrade RUKSAK1","Upgrade RUKSAK2","Upgrade ANAT"} ,
 	["UndeadSuvivor"] = {"Upgrade NomadBackpack"} ,
 }
 
 function checkMods()
-	for k,_ in pairs(modsBackpacks) do
+	for k,_ in pairs(modsRecipes) do
 		if getActivatedMods():contains(k) then
-			loadRecipes(modsBackpacks[k],true)
+			loadRecipes(modsRecipes[k],true)
 		else
-			loadRecipes(modsBackpacks[k],false)
+			loadRecipes(modsRecipes[k],false)
 		end
 	end
 end

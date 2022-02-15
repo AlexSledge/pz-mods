@@ -14,6 +14,7 @@ module Base {
         Tooltip: Tooltip_SlotsI,
         Category:Tailoring,
 		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
     }
 
 	item RUKSAK2_I
@@ -54,6 +55,7 @@ module Base {
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
+		SkillRequired:Tailoring=5,
     }
 
     item RUKSAK2_II

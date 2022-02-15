@@ -14,6 +14,7 @@ module Base {
         Tooltip: Tooltip_NomadSlotsI,
         Category:Tailoring,
 		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
     }
 
     item NomadBackpack_I
@@ -52,6 +53,7 @@ module Base {
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
+		SkillRequired:Tailoring=5,
     }
 
     item NomadBackpack_II

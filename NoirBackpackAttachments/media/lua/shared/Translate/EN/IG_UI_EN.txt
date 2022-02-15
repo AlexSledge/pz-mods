@@ -4,55 +4,66 @@ IGUI_EN = {
     IGUI_HotbarAttachment_SchoolbagBottleRight = "Bottle",
     IGUI_HotbarAttachment_SchoolbagBedroll = "Bedroll",
     IGUI_HotbarAttachment_SchoolbagTrinket = "Trinket",
+    IGUI_HotbarAttachment_SchoolbagShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_AlicepackWeapon = "Short Weapon",
     IGUI_HotbarAttachment_AlicepackBottleRight = "Bottle",
     IGUI_HotbarAttachment_AlicepackBedroll = "Bedroll",
     IGUI_HotbarAttachment_AlicepackTrinket = "Trinket",
+    IGUI_HotbarAttachment_AlicepackShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_BigHikingbagWeapon = "Short Weapon",
     IGUI_HotbarAttachment_BigHikingbagBottleRight = "Bottle",
     IGUI_HotbarAttachment_BigHikingbagBedroll = "Bedroll",
     IGUI_HotbarAttachment_BigHikingbagTrinket = "Trinket",
+    IGUI_HotbarAttachment_BigHikingbagShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_HikingbagWeapon = "Short Weapon",
     IGUI_HotbarAttachment_HikingbagBottleRight = "Bottle",
     IGUI_HotbarAttachment_HikingbagBedroll = "Bedroll",
     IGUI_HotbarAttachment_HikingbagTrinket = "Trinket",
+    IGUI_HotbarAttachment_HikingbagShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_MilitaryAlicepackWeapon = "Short Weapon",
     IGUI_HotbarAttachment_MilitaryAlicepackBottleRight = "Bottle",
     IGUI_HotbarAttachment_MilitaryAlicepackBedroll = "Bedroll",
     IGUI_HotbarAttachment_MilitaryAlicepackTrinket = "Trinket",
+    IGUI_HotbarAttachment_MilitaryAlicepackShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_KleanBackpackWeapon = "Short Weapon",
     IGUI_HotbarAttachment_KleanBackpackBottleRight = "Bottle",
     IGUI_HotbarAttachment_KleanBackpackBedroll = "Bedroll",
     IGUI_HotbarAttachment_KleanBackpackTrinket = "Trinket",
+    IGUI_HotbarAttachment_KleanBackpackShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_HRWeapon = "Short Weapon",
     IGUI_HotbarAttachment_HRBottleRight = "Bottle",
     IGUI_HotbarAttachment_HRBedroll = "Bedroll",
     IGUI_HotbarAttachment_HRTrinket = "Trinket",
+    IGUI_HotbarAttachment_HRShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_RUKSAK1Weapon = "Short Weapon",
     IGUI_HotbarAttachment_RUKSAK1BottleRight = "Bottle",
     IGUI_HotbarAttachment_RUKSAK1Bedroll = "Bedroll",
     IGUI_HotbarAttachment_RUKSAK1Trinket = "Trinket",
+    IGUI_HotbarAttachment_RUKSAK1ShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_RUKSAK2Weapon = "Short Weapon",
     IGUI_HotbarAttachment_RUKSAK2BottleRight = "Bottle",
     IGUI_HotbarAttachment_RUKSAK2Bedroll = "Bedroll",
     IGUI_HotbarAttachment_RUKSAK2Trinket = "Trinket",
+    IGUI_HotbarAttachment_RUKSAK2ShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_ANATWeapon = "Short Weapon",
     IGUI_HotbarAttachment_ANATBottleRight = "Bottle",
     IGUI_HotbarAttachment_ANATBedroll = "Bedroll",
     IGUI_HotbarAttachment_ANATTrinket = "Trinket",
+    IGUI_HotbarAttachment_ANATShoulderTorch = "Shoulder Torch",
 
     IGUI_HotbarAttachment_NomadBackpackWeapon = "Short Weapon",
     IGUI_HotbarAttachment_NomadBackpackBottleRight = "Bottle",
     IGUI_HotbarAttachment_NomadBackpackBedroll = "Bedroll",
     IGUI_HotbarAttachment_NomadBackpackTrinket = "Trinket",
+    IGUI_HotbarAttachment_NomadBackpackShoulderTorch = "Shoulder Torch",
 
 }

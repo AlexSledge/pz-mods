@@ -13,6 +13,7 @@ module Base {
 		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsI,
         Category:Tailoring,
+		SkillRequired:Tailoring=2,
     }
 
     item Bag_Alicepack_I
@@ -42,7 +43,7 @@ module Base {
     recipe Upgrade Alicepack
     {
         Bag_Alicepack_I,
-        LeatherStrips=3,
+        LeatherStrips=5,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -52,6 +53,7 @@ module Base {
 		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
+		SkillRequired:Tailoring=5,
     }
 
     item Bag_Alicepack_II
