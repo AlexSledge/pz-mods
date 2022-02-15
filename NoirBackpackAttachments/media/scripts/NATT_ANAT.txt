@@ -43,7 +43,7 @@ module Base {
     recipe Upgrade ANAT
     {
         ANAT_I,
-        LeatherStrips=3,
+        LeatherStrips=5,
         Thread, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,

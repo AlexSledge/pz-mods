@@ -1,13 +1,13 @@
 module Base {
 
-    recipe Upgrade BigHikingbag
+    recipe Upgrade Hikingbag
     {
         Bag_NormalHikingBag,
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:Bag_BigHikingbag_I,
+        Result:Bag_Hikingbag_I,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,
@@ -17,38 +17,38 @@ module Base {
     }
 	
 
-    item Bag_BigHikingbag_I
+    item Bag_Hikingbag_I
     {
-		DisplayCategory = Bag,
-        WeightReduction	=	80,
-        Weight	=	1.5,
-        Type	=	Container,
-        Capacity	=	22,
-        DisplayName	=	Big Hiking Bag,
-        IconsForTexture = BigHiking_Blue;BigHiking_Green;BigHiking_Red,
-        CanBeEquipped = Back,
-        OpenSound   =   OpenBag,
-        CloseSound   =   CloseBag,
-        PutInSound   =   PutItemInBag,
-        ClothingItem = Bag_BigHikingBag,
-        BloodLocation = Bag,
-        RunSpeedModifier = 0.95,
-        AttachmentReplacement = Bag,
-		AttachmentsProvided  	= 	BigHikingbagBedroll;BigHikingbagBottle,	
-        ReplaceInSecondHand = Bag_BigHikingBag_LHand holdingbagleft,
-        ReplaceInPrimaryHand = Bag_BigHikingBag_RHand holdingbagright,
-        WorldStaticModel = BigHikingBag_Ground,
+        DisplayCategory = Bag,		
+        WeightReduction			=	70,
+        Weight					=	1.2,
+        Type					=	Container,
+        Capacity				=	21,
+        DisplayName				=	Hiking Bag - Tier 1,
+        IconsForTexture			=	Hiking_Blue;Hiking_Green;Hiking_Red,
+        CanBeEquipped 			= 	Back,
+        OpenSound   			=   OpenBag,
+        CloseSound   			=   CloseBag,
+        PutInSound   			=   PutItemInBag,
+        ClothingItem 			= 	Bag_HikingBag,
+        BloodLocation 			= 	Bag,
+        RunSpeedModifier 		= 	0.96,
+        AttachmentReplacement 	= 	Bag,
+		AttachmentsProvided  	= 	HikingbagBedroll;HikingbagBottle,			
+        ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
+        WorldStaticModel 		= 	HikingBag_Ground,
     }
 
-    recipe Upgrade BigHikingbag
+    recipe Upgrade Hikingbag
     {
-        Bag_BigHikingbag_I,
-        LeatherStrips=3,
+        Bag_Hikingbag_I,
+        LeatherStrips=5,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
 		OnCreate:keepColorAndItems,
-        Result:Bag_BigHikingbag_II,
+        Result:Bag_Hikingbag_II,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
@@ -57,110 +57,110 @@ module Base {
 		SkillRequired:Tailoring=5,
     }
 
-    item Bag_BigHikingbag_II
+    item Bag_Hikingbag_II
     {
-		DisplayCategory = Bag,
-        WeightReduction	=	80,
-        Weight	=	1.5,
-        Type	=	Container,
-        Capacity	=	22,
-        DisplayName	=	Big Hiking Bag,
-        IconsForTexture = BigHiking_Blue;BigHiking_Green;BigHiking_Red,
-        CanBeEquipped = Back,
-        OpenSound   =   OpenBag,
-        CloseSound   =   CloseBag,
-        PutInSound   =   PutItemInBag,
-        ClothingItem = Bag_BigHikingBag,
-        BloodLocation = Bag,
-        RunSpeedModifier = 0.95,
-        AttachmentReplacement = Bag,
-		AttachmentsProvided 	= BigHikingbagShortWeapon;BigHikingbagFlashlight;BigHikingbagBedroll;BigHikingbagBottle;BigHikingbagTrinket,
-        ReplaceInSecondHand = Bag_BigHikingBag_LHand holdingbagleft,
-        ReplaceInPrimaryHand = Bag_BigHikingBag_RHand holdingbagright,
-        WorldStaticModel = BigHikingBag_Ground,
+        DisplayCategory = Bag,		
+        WeightReduction			=	70,
+        Weight					=	1.2,
+        Type					=	Container,
+        Capacity				=	21,
+        DisplayName				=	Hiking Bag - Tier 1,
+        IconsForTexture			=	Hiking_Blue;Hiking_Green;Hiking_Red,
+        CanBeEquipped 			= 	Back,
+        OpenSound   			=   OpenBag,
+        CloseSound   			=   CloseBag,
+        PutInSound   			=   PutItemInBag,
+        ClothingItem 			= 	Bag_HikingBag,
+        BloodLocation 			= 	Bag,
+        RunSpeedModifier 		= 	0.96,
+        AttachmentReplacement 	= 	Bag,
+		AttachmentsProvided 	= 	HikingbagShortWeapon;HikingbagFlashlight;HikingbagBedroll;HikingbagBottle;HikingbagTrinket,	
+        ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
+        WorldStaticModel 		= 	HikingBag_Ground,
     }
 
 	model FemaleBody
 	{
 		
-		attachment BigHikingbag_bottle
+		attachment Hikingbag_bottle
 		{
 			offset = 0.0400 0.1250 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_bedroll {
+		attachment Hikingbag_bedroll {
 			offset = -0.0350 0.0000 0.1600,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketdoll {
+		attachment Hikingbag_trinketdoll {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketdogchew {
+		attachment Hikingbag_trinketdogchew {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketcattoy {
+		attachment Hikingbag_trinketcattoy {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketrubberducky {
+		attachment Hikingbag_trinketrubberducky {
 			offset = 0.0650 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinkettoybear{
+		attachment Hikingbag_trinkettoybear{
 			offset = 0.1250 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinkettoycar{
+		attachment Hikingbag_trinkettoycar{
 			offset = 0.0650 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketyoyo {
+		attachment Hikingbag_trinketyoyo {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketcube {
+		attachment Hikingbag_trinketcube {
 			offset = 0.1150 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_shortweapon {
+		attachment Hikingbag_shortweapon {
 			offset = 0.0900 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_wrench {
+		attachment Hikingbag_wrench {
 			offset = 0.0900 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_flashlight {
+		attachment Hikingbag_flashlight {
 			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
-		}	
+		}
 
 	}
 
@@ -168,84 +168,84 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment BigHikingbag_bottle
+		attachment Hikingbag_bottle
 		{
 			offset = 0.0400 0.1250 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_bedroll {
+		attachment Hikingbag_bedroll {
 			offset = -0.0250 0.0000 0.1600,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketdoll {
+		attachment Hikingbag_trinketdoll {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketdogchew {
+		attachment Hikingbag_trinketdogchew {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketcattoy {
+		attachment Hikingbag_trinketcattoy {
 			offset = 0.0650 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketrubberducky {
+		attachment Hikingbag_trinketrubberducky {
 			offset = 0.0650 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinkettoybear{
+		attachment Hikingbag_trinkettoybear{
 			offset = 0.1250 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinkettoycar{
+		attachment Hikingbag_trinkettoycar{
 			offset = 0.0650 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketyoyo {
+		attachment Hikingbag_trinketyoyo {
 			offset = 0.0850 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_trinketcube {
+		attachment Hikingbag_trinketcube {
 			offset = 0.1350 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_shortweapon {
+		attachment Hikingbag_shortweapon {
 			offset = 0.1150 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_wrench {
+		attachment Hikingbag_wrench {
 			offset = 0.1150 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_flashlight {
+		attachment Hikingbag_flashlight {
 			offset = -0.0100 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
-		}		
+		}
 
 	}
 

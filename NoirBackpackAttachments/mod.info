@@ -1,6 +1,6 @@
 name=NoirBackpacksAttachments
 id=noirbackpacksattachments
-require=PwSleepingbags
+require=ItemTweakerAPI,PwSleepingbags
 description=
-description=Allow attach items to backpacks, no more clutter slots
+description=Allow useful slots to backpacks and a tricket slot
 poster=poster.png

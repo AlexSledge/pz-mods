@@ -1,13 +1,13 @@
 module Base {
 
-  recipe Upgrade RUKSAK2
+  recipe Upgrade KleanBackpack
     {
-        RUKSAK2,
+        KleanBackPack,
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:RUKSAK2_I,
+        Result:KleanBackpack_I,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,
@@ -17,233 +17,236 @@ module Base {
 		SkillRequired:Tailoring=2,
     }
 
-	item RUKSAK2_I
+    item KleanBackpack_I
     {
-	    DisplayCategory = Bag,		
-        WeightReduction	=	90,
-        Weight	=	1.4,
-        Type	=	Container,
-        Capacity	=	30,
-        DisplayName	=	Big tourist backpack,
-        IconsForTexture = RUKSAK2_1;RUKSAK2_2;RUKSAK2_3;RUKSAK2_4;RUKSAK2_5;RUKSAK2_6;RUKSAK2_7;RUKSAK2_8;RUKSAK2_9;RUKSAK2_10,
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Clean Up Krew Back Pack,
+        ClothingItem = KleanBackPack,
         CanBeEquipped = Back,
+        WeightReduction	=	87,
+        Weight	=	2,
+        Capacity	=	30,
+        Icon	=	CUKJumpsuit,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
-        ClothingItem = RUKSAK2,
         BloodLocation = Bag,
-        RunSpeedModifier = 0.90,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = RUKSAK2Bedroll;RUKSAK2Bottle,
-        ReplaceInSecondHand = RUKSAK2_Dop holdingbagleft,
-        ReplaceInPrimaryHand = RUKSAK2_Osn holdingbagright,
-		WorldStaticModel = WorldItem-Bag_RUKSAK2_Ground,		
+		AttachmentsProvided = KleanBackpackBedroll;KleanBackpackBottle,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+
     }
 
-
-    recipe Upgrade RUKSAK2
+    recipe Upgrade KleanBackpack
     {
-        RUKSAK2_I,
-        LeatherStrips=3,
+        KleanBackpack_I,
+        LeatherStrips=5,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:RUKSAK2_II,
+        Result:KleanBackpack_II,
         Time:300.0,
 		OnCreate:keepColorAndItems,
-		OnTest: checkIsEquipped,		
+		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
 		SkillRequired:Tailoring=5,
     }
 
-    item RUKSAK2_II
+    item KleanBackpack_II
     {
-	    DisplayCategory = Bag,		
-        WeightReduction	=	90,
-        Weight	=	1.4,
-        Type	=	Container,
-        Capacity	=	30,
-        DisplayName	=	Big tourist backpack,
-        IconsForTexture = RUKSAK2_1;RUKSAK2_2;RUKSAK2_3;RUKSAK2_4;RUKSAK2_5;RUKSAK2_6;RUKSAK2_7;RUKSAK2_8;RUKSAK2_9;RUKSAK2_10,
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Clean Up Krew Back Pack,
+        ClothingItem = KleanBackPack,
         CanBeEquipped = Back,
+        WeightReduction	=	87,
+        Weight	=	2,
+        Capacity	=	30,
+        Icon	=	CUKJumpsuit,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
-        ClothingItem = RUKSAK2,
         BloodLocation = Bag,
-        RunSpeedModifier = 0.90,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = RUKSAK2ShortWeapon;RUKSAK2Flashlight;RUKSAK2Bedroll;RUKSAK2Bottle;RUKSAK2Trinket,
-        ReplaceInSecondHand = RUKSAK2_Dop holdingbagleft,
-        ReplaceInPrimaryHand = RUKSAK2_Osn holdingbagright,
-		WorldStaticModel = WorldItem-Bag_RUKSAK2_Ground,
+        AttachmentsProvided = KleanBackpackShortWeapon;KleanBackpackFlashlight;KleanBackpackBedroll;KleanBackpackBottle;KleanBackpackTrinket,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
     }
 
 
 	model FemaleBody
 	{
 		
-	attachment RUKSAK2_bottle
+		attachment KleanBackpack_bottle
 		{
-			offset = 0.0300 0.1450 -0.0700,
+			offset = 0.0400 0.1450 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_bedroll {
+		attachment KleanBackpack_bedroll {
 			offset = -0.0350 0.0000 0.1100,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketdoll {
-			offset = 0.0650 0.0950 -0.1350,
+		attachment KleanBackpack_trinketdoll {
+			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketdogchew {
-			offset = 0.0650 0.0750 -0.1350,
+		attachment KleanBackpack_trinketdogchew {
+			offset = 0.0950 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketcattoy {
-			offset = 0.0650 0.0750 -0.1350,
+		attachment KleanBackpack_trinketcattoy {
+			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketrubberducky {
-			offset = 0.0650 0.0750 -0.0900,
+		attachment KleanBackpack_trinketrubberducky {
+			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinkettoybear{
-			offset = 0.1250 0.0850 -0.1850,
+		attachment KleanBackpack_trinkettoybear{
+			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinkettoycar{
-			offset = 0.0650 0.0750 -0.1050,
+		attachment KleanBackpack_trinkettoycar{
+			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketyoyo {
-			offset = 0.0850 0.0950 -0.1350,
+		attachment KleanBackpack_trinketyoyo {
+			offset = 0.1250 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketcube {
-			offset = 0.1250 0.0750 -0.0850,
+		attachment KleanBackpack_trinketcube {
+			offset = 0.1550 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_shortweapon {
-			offset = 0.0750 -0.0900 0.0600,
+		attachment KleanBackpack_shortweapon {
+			offset = 0.1300 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_wrench {
-			offset = 0.0750 -0.0700 0.0600,
+		attachment KleanBackpack_wrench {
+			offset = 0.1400 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_flashlight {
-			offset = -0.0200 0.0800 -0.0150,
+		attachment KleanBackpack_flashlight {
+			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}
+
 	}
 
 
 	model MaleBody
 	{
 		
-		attachment RUKSAK2_bottle
+		attachment KleanBackpack_bottle
 		{
 			offset = 0.0500 0.1450 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_bedroll {
+		attachment KleanBackpack_bedroll {
 			offset = -0.0350 0.0000 0.1100,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketdoll {
-			offset = 0.0950 0.0950 -0.1350,
+		attachment KleanBackpack_trinketdoll {
+			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketdogchew {
+		attachment KleanBackpack_trinketdogchew {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketcattoy {
+		attachment KleanBackpack_trinketcattoy {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketrubberducky {
+		attachment KleanBackpack_trinketrubberducky {
 			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinkettoybear{
+		attachment KleanBackpack_trinkettoybear{
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinkettoycar{
+		attachment KleanBackpack_trinkettoycar{
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketyoyo {
-			offset = 0.1250 0.0950 -0.1350,
+		attachment KleanBackpack_trinketyoyo {
+			offset = 0.1250 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketcube {
+		attachment KleanBackpack_trinketcube {
 			offset = 0.1550 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_shortweapon {
-			offset = 0.1100 -0.0900 0.0600,
+		attachment KleanBackpack_shortweapon {
+			offset = 0.1500 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_wrench {
-			offset = 0.1100 -0.0700 0.0600,
+		attachment KleanBackpack_wrench {
+			offset = 0.1400 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_flashlight {
-			offset = -0.0200 0.0850 -0.0150,
+		attachment KleanBackpack_flashlight {
+			offset = -0.0100 0.0700 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}

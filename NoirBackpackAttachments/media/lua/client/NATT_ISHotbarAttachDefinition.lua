@@ -50,7 +50,6 @@ for _,v in pairs(Backpacks) do
 	}
 	table.insert(ISHotbarAttachDefinition, slot);
 
-
 	slot = {
 		type = v.."Trinket",
 		name = "Trinket", -- Name on Slot

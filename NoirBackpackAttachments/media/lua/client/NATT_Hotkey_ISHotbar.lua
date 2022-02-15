@@ -20,9 +20,8 @@ function ISHotbar:getSlotForKey(key)
 	return -1
 end
 
-
 local bind = {};
-bind.value = "[Additional NBA Hotkeys]";
+bind.value = "[Additional NATT Hotkeys]";
 table.insert(keyBinding, bind);
 
 bind = {};

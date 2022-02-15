@@ -1,33 +1,32 @@
 module Base {
 
-  recipe Upgrade KleanBackpack
+  recipe Upgrade Military Alicepack
     {
-        KleanBackPack,
+        Bag_ALICEpack_Army,
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:KleanBackpack_I,
+        Result:Bag_MilitaryAlicepack_I,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsI,
         Category:Tailoring,
-		NeedToBeLearn:true,
 		SkillRequired:Tailoring=2,
     }
 
-    item KleanBackpack_I
+    item Bag_MilitaryAlicepack_I
     {
-		DisplayCategory = Bag,
+        DisplayCategory = Bag,
         Type = Container,
-        DisplayName = Clean Up Krew Back Pack,
-        ClothingItem = KleanBackPack,
+        DisplayName = Military Backpack,
+        ClothingItem = Bag_ALICEpack_Army,
         CanBeEquipped = Back,
         WeightReduction	=	87,
         Weight	=	2,
-        Capacity	=	30,
-        Icon	=	CUKJumpsuit,
+        Capacity	=	28,
+        Icon	=	AliceBag_Camo,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
@@ -35,41 +34,40 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = KleanBackpackBedroll;KleanBackpackBottle,
+		AttachmentsProvided = MilitaryAlicepackBedroll;MilitaryAlicepackBottle,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
-
     }
 
-    recipe Upgrade KleanBackpack
+
+    recipe Upgrade Military Alicepack
     {
-        KleanBackpack_I,
-        LeatherStrips=3,
+        Bag_MilitaryAlicepack_I,
+        LeatherStrips=5,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:KleanBackpack_II,
+        Result:Bag_MilitaryAlicepack_II,
         Time:300.0,
 		OnCreate:keepColorAndItems,
-		OnTest: checkIsEquipped,
+		OnTest: checkIsEquipped,		
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
-		NeedToBeLearn:true,
 		SkillRequired:Tailoring=5,
     }
 
-    item KleanBackpack_II
+    item Bag_MilitaryAlicepack_II
     {
-		DisplayCategory = Bag,
+        DisplayCategory = Bag,
         Type = Container,
-        DisplayName = Clean Up Krew Back Pack,
-        ClothingItem = KleanBackPack,
+        DisplayName = Military Backpack,
+        ClothingItem = Bag_ALICEpack_Army,
         CanBeEquipped = Back,
         WeightReduction	=	87,
         Weight	=	2,
-        Capacity	=	30,
-        Icon	=	CUKJumpsuit,
+        Capacity	=	28,
+        Icon	=	AliceBag_Camo,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
@@ -77,7 +75,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = KleanBackpackShortWeapon;KleanBackpackFlashlight;KleanBackpackBedroll;KleanBackpackBottle;KleanBackpackTrinket,
+		AttachmentsProvided = MilitaryAlicepackShortWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBedroll;MilitaryAlicepackBottle;MilitaryAlicepackTrinket,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -87,80 +85,80 @@ module Base {
 	model FemaleBody
 	{
 		
-		attachment KleanBackpack_bottle
+		attachment MilitaryAlicepack_bottle
 		{
 			offset = 0.0400 0.1450 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_bedroll {
+		attachment MilitaryAlicepack_bedroll {
 			offset = -0.0350 0.0000 0.1100,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketdoll {
+		attachment MilitaryAlicepack_trinketdoll {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketdogchew {
+		attachment MilitaryAlicepack_trinketdogchew {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketcattoy {
+		attachment MilitaryAlicepack_trinketcattoy {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketrubberducky {
+		attachment MilitaryAlicepack_trinketrubberducky {
 			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinkettoybear{
+		attachment MilitaryAlicepack_trinkettoybear{
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinkettoycar{
+		attachment MilitaryAlicepack_trinkettoycar{
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketyoyo {
+		attachment MilitaryAlicepack_trinketyoyo {
 			offset = 0.1250 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketcube {
+		attachment MilitaryAlicepack_trinketcube {
 			offset = 0.1550 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_shortweapon {
+		attachment MilitaryAlicepack_shortweapon {
 			offset = 0.1300 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_wrench {
+		attachment MilitaryAlicepack_wrench {
 			offset = 0.1400 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_flashlight {
+		attachment MilitaryAlicepack_flashlight {
 			offset = -0.0200 0.0600 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
@@ -172,80 +170,80 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment KleanBackpack_bottle
+		attachment MilitaryAlicepack_bottle
 		{
 			offset = 0.0500 0.1450 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_bedroll {
+		attachment MilitaryAlicepack_bedroll {
 			offset = -0.0350 0.0000 0.1100,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketdoll {
+		attachment MilitaryAlicepack_trinketdoll {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketdogchew {
+		attachment MilitaryAlicepack_trinketdogchew {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketcattoy {
+		attachment MilitaryAlicepack_trinketcattoy {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketrubberducky {
+		attachment MilitaryAlicepack_trinketrubberducky {
 			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinkettoybear{
+		attachment MilitaryAlicepack_trinkettoybear{
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinkettoycar{
+		attachment MilitaryAlicepack_trinkettoycar{
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketyoyo {
+		attachment MilitaryAlicepack_trinketyoyo {
 			offset = 0.1250 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_trinketcube {
+		attachment MilitaryAlicepack_trinketcube {
 			offset = 0.1550 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_shortweapon {
+		attachment MilitaryAlicepack_shortweapon {
 			offset = 0.1500 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_wrench {
+		attachment MilitaryAlicepack_wrench {
 			offset = 0.1400 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment KleanBackpack_flashlight {
+		attachment MilitaryAlicepack_flashlight {
 			offset = -0.0100 0.0700 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
