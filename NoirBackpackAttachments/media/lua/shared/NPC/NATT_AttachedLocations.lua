@@ -1,4 +1,3 @@
-
 local group = AttachedLocations.getGroup("Human")
 
 local attachments = {}

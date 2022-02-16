@@ -25,7 +25,6 @@ local attachments = {
 	["CatToy"] = "TrinketCatToy",
 	["Rubberducky"] = "TrinketRubberDucky",
 	["Rubberducky2"] = "TrinketRubberDucky",
-
 	["ToyBear"] = "TrinketToyBear",
 	["ToyCar"] = "TrinketToyCar",
 	["Yoyo"] = "TrinketYoyo",
@@ -58,7 +57,6 @@ local staticModels = {
 for k,v in pairs(staticModels) do 
 	TweakItem(k,"StaticModel",v)
 end
-
 
 --Nerf Klean fcking op bag
 if getActivatedMods():contains("Pitstop") then

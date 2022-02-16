@@ -98,8 +98,7 @@ function ISHotbar:activateSlot(slotIndex)
 	self:equipItem(item)
 end
 
-
---Remove duplicate CanBeAttached slots tooltip
+--Remove duplicate CanBeAttached tooltips
 function ISHotbar.doMenuFromInventory(playerNum, item, context)
 	local self = getPlayerHotbar(playerNum);
 	if self == nil then return end

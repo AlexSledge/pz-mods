@@ -29,4 +29,3 @@ function checkBackpacks()
 end
 
 checkBackpacks()
-

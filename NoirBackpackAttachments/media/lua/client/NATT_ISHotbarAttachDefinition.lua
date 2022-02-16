@@ -7,7 +7,7 @@ for _,v in pairs(Backpacks) do
 
 	local slot = {
 		type = v.."ShortWeapon",
-		name = "Short Weapon", -- Name on Slot
+		name = "Short Weapon", 
 		animset = "back",
 		attachments = {
 			Hammer = v.."ShortWeapon",
@@ -22,7 +22,7 @@ for _,v in pairs(Backpacks) do
 
 	slot = {
 		type = v.."Flashlight",
-		name = "Flashlight", -- Name on Slot
+		name = "Flashlight", 
 		animset = "back",
 		attachments = {
 			Flashlight = v.."Flashlight",
@@ -32,7 +32,7 @@ for _,v in pairs(Backpacks) do
 
 	slot = {
 		type = v.."Bottle",
-		name = "Bottle", -- Name on Slot
+		name = "Bottle", 
 		animset = "back",
 		attachments = {
 			Bottle = v.."Bottle",
@@ -42,7 +42,7 @@ for _,v in pairs(Backpacks) do
 
 	slot = {
 		type = v.."Bedroll",
-		name = "Bedroll", -- Name on Slot
+		name = "Bedroll", 
 		animset = "back",
 		attachments = {
 			Bedroll = v.."Bedroll",
@@ -52,7 +52,7 @@ for _,v in pairs(Backpacks) do
 
 	slot = {
 		type = v.."Trinket",
-		name = "Trinket", -- Name on Slot
+		name = "Trinket", 
 		animset = "back",
 		attachments = {
 			TrinketDoll = v.."TrinketDoll",

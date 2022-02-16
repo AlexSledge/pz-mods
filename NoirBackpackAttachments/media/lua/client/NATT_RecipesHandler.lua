@@ -1,4 +1,3 @@
-
 local modsRecipes = {
 	["Pitstop"] = {"Upgrade KleanBackpack"} ,
 	["2507488373"] = {"Upgrade HR","Upgrade RUKSAK1","Upgrade RUKSAK2","Upgrade ANAT"} ,
@@ -34,7 +33,6 @@ function keepColorAndItems(items,result,player)
 	resultVisual:setTextureChoice(backpackVisual:getTextureChoice());
 	result:getItemContainer():setItems(backpack:getItemContainer():getItems());
 end
-
 
 function checkIsEquipped(item,result)
 	return not (item:IsInventoryContainer() and item:isEquipped())
