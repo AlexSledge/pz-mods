@@ -18,42 +18,47 @@ local attachments = {
 	["SleepingbagLBRolled"] = "Bedroll",
 	["SleepingbagPRolled"] = "Bedroll",
 
+	["HandTorch"] = "Flashlight",
+
+	["Doll"] = "TrinketDoll",
+	["DogChew"] = "TrinketDogChew",
+	["CatToy"] = "TrinketCatToy",
+	["Rubberducky"] = "TrinketRubberDucky",
+	["Rubberducky2"] = "TrinketRubberDucky",
+
+	["ToyBear"] = "TrinketToyBear",
+	["ToyCar"] = "TrinketToyCar",
+	["Yoyo"] = "TrinketYoyo",
+	["Cube"] = "TrinketCube",
 }
 
 for k,v in pairs(attachments) do 
 	TweakItem(k,"AttachmentType",v)
 end
 
--- Shoulder Handtorch Slot
-TweakItem("HandTorch","AttachmentType", "Flashlight");
+local staticModels = {
+    ["Doll"] = "Doll",
+    ["DogChew"] = "DogChewToy",
+    ["CatToy"] = "CatToy",
+    ["Rubberducky"] = "Rubberducky",
+    ["Rubberducky2"] = "Rubberducky",
+	["ToyBear"] = "ToyBear",
+	["ToyCar"] = "ToyCar",
+	["Yoyo"] = "Yoyo",
 
---Trinket Slot
-TweakItem("Doll","AttachmentType", "TrinketDoll");
-TweakItem("Doll","StaticModel", "Doll");
-TweakItem("DogChew","AttachmentType", "TrinketDogChew");
-TweakItem("DogChew","StaticModel", "DogChewToy");
-TweakItem("CatToy","AttachmentType", "TrinketCatToy");
-TweakItem("CatToy","StaticModel", "CatToy");
-TweakItem("Rubberducky","AttachmentType", "TrinketRubberDucky");
-TweakItem("Rubberducky","StaticModel", "Rubberducky");
-TweakItem("Rubberducky2","AttachmentType", "TrinketRubberDucky");
-TweakItem("Rubberducky2","StaticModel", "Rubberducky");
-TweakItem("ToyBear","AttachmentType", "TrinketToyBear");
-TweakItem("ToyBear","StaticModel", "ToyBear");
-TweakItem("ToyCar","AttachmentType", "TrinketToyCar");
-TweakItem("ToyCar","StaticModel", "ToyCar");
-TweakItem("Yoyo","AttachmentType", "TrinketYoyo");
-TweakItem("Yoyo","StaticModel", "Yoyo");
-TweakItem("Cube","AttachmentType", "TrinketCube");
+	["SleepingbagRolled"] = "sleepingbag",
+	["SleepingbagGRolled"] = "sleepingbag",
+	["SleepingbagRRolled"] = "sleepingbag",
+	["SleepingbagORolled"] = "sleepingbag",
+	["SleepingbagBKRolled"] = "sleepingbag",
+	["SleepingbagLBRolled"] = "sleepingbag",
+	["SleepingbagPRolled"] = "sleepingbag",
+}
 
---Bedroll
-TweakItem("SleepingbagRolled","StaticModel", "sleepingbag");
-TweakItem("SleepingbagGRolled","StaticModel", "sleepingbag");
-TweakItem("SleepingbagRRolled","StaticModel", "sleepingbag");
-TweakItem("SleepingbagORolled","StaticModel", "sleepingbag");
-TweakItem("SleepingbagBKRolled","StaticModel", "sleepingbag");
-TweakItem("SleepingbagLBRolled","StaticModel", "sleepingbag");
-TweakItem("SleepingbagPRolled","StaticModel", "sleepingbag");
+for k,v in pairs(staticModels) do 
+	TweakItem(k,"StaticModel",v)
+end
+
 
 --Nerf Klean fcking op bag
 if getActivatedMods():contains("Pitstop") then

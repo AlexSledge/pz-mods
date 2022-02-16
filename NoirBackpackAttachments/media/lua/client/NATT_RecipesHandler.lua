@@ -7,11 +7,8 @@ local modsRecipes = {
 
 function checkMods()
 	for k,_ in pairs(modsRecipes) do
-		if getActivatedMods():contains(k) then
-			loadRecipes(modsRecipes[k],true)
-		else
-			loadRecipes(modsRecipes[k],false)
-		end
+		local active = getActivatedMods():contains(k)
+		loadRecipes(modsRecipes[k],active)
 	end
 end
 
@@ -40,10 +37,6 @@ end
 
 
 function checkIsEquipped(item,result)
-	if(item:IsInventoryContainer() and item:isEquipped()) then
-		return false
-	else
-		return true
-	end
+	return not (item:IsInventoryContainer() and item:isEquipped())
 end
 
