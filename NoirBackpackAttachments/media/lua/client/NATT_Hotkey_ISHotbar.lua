@@ -75,11 +75,6 @@ bind.key = 0;
 table.insert(keyBinding, bind);
 
 
-bind = {};
-bind.value = "Hotbar 16";
-bind.key = 0;
-table.insert(keyBinding, bind);
-
 
 function ISHotbar:activateSlot(slotIndex)
 	local item = self.attachedItems[slotIndex]
