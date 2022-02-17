@@ -4,6 +4,7 @@ local modsBackpacks = {
 	["Pitstop"] = {"KleanBackpack"} ,
 	["2507488373"] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,  --Clothes BOX
 	["UndeadSuvivor"] = {"NomadBackpack"} ,
+	["ScrapArmor(new version)"] = {"Rucksack"} ,
 }
 
 Backpacks = {

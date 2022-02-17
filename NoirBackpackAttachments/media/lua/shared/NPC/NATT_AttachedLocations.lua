@@ -13,6 +13,7 @@ for _,v in pairs(Backpacks) do
     attachments[v.."TrinketToyBear"] = v.."_trinkettoybear";
     attachments[v.."TrinketYoyo"] = v.."_trinketyoyo";
     attachments[v.."TrinketCube"] = v.."_trinketcube";
+    attachments[v.."TrinketGasMask"] = v.."_trinketgasmask";
     attachments[v.."ShortWeapon"] = v.."_shortweapon";
     attachments[v.."Wrench"] = v.."_wrench";
     attachments[v.."Flashlight"] = v.."_flashlight";

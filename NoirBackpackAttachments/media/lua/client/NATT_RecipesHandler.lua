@@ -2,6 +2,7 @@ local modsRecipes = {
 	["Pitstop"] = {"Upgrade KleanBackpack"} ,
 	["2507488373"] = {"Upgrade HR","Upgrade RUKSAK1","Upgrade RUKSAK2","Upgrade ANAT"} ,
 	["UndeadSuvivor"] = {"Upgrade NomadBackpack"} ,
+	["ScrapArmor(new version)"] = {"Upgrade Rucksack"} ,
 }
 
 function checkMods()

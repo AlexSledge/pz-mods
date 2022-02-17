@@ -144,6 +144,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment BigHikingbag_trinketgasmask {
+			offset = 0.0350 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment BigHikingbag_shortweapon {
 			offset = 0.0900 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
@@ -226,6 +232,12 @@ module Base {
 		attachment BigHikingbag_trinketcube {
 			offset = 0.1350 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_trinketgasmask {
+			offset = 0.0550 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,
 		}
 

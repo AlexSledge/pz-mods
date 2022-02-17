@@ -33,4 +33,7 @@ ItemName_EN = {
 
     ItemName_Base.ANAT_I = "Assault Backpack +",
     ItemName_Base.ANAT_II = "Assault Backpack ++",
+
+    ItemName_Base.Rucksack_I = "Travel Pack +",
+    ItemName_Base.Rucksack_II = "Travel Pack ++",
 }

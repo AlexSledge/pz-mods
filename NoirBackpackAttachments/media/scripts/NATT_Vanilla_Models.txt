@@ -27,4 +27,10 @@ module Base {
         scale = 0.25,
     }
 
+	model GasMask
+    {
+        mesh = Static/Clothes/F_GasMask,
+		texture = GasMask,
+    }
+
 }

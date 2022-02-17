@@ -9,6 +9,28 @@ local attachments = {
 	["Pop3"] = "Bottle",
 	["WhiskeyFull"] = "Bottle",
 	["WhiskeyEmpty"] = "Bottle",
+	["WhiskeyWaterFull"] = "Bottle",
+
+	["farming.RemouladeFull"] = "Bottle",
+	["farming.RemouladeEmpty"] = "Bottle",
+	["farming.RemouladeWaterFull"] = "Bottle",
+
+	["BeerBottle"] = "Bottle",
+	["BeerFull"] = "Bottle",
+	["BeerEmpty"] = "Bottle",
+	["BeerWaterFull"] = "Bottle",
+
+	["Wine"] = "Bottle",
+	["WineEmpty"] = "Bottle",
+	["Wine2"] = "Bottle",
+	["WineEmpty2"] = "Bottle",
+	["WineWaterFull"] = "Bottle",
+	["BeerEmpty"] = "Bottle",
+	["BeerWaterFull"] = "Bottle",
+
+	["MayonnaiseFull"] = "Bottle",
+	["MayonnaiseEmpty"] = "Bottle",
+	["MayonnaiseWaterFull"] = "Bottle",
 
 	["SleepingbagRolled"] = "Bedroll",
 	["SleepingbagGRolled"] = "Bedroll",
@@ -29,6 +51,7 @@ local attachments = {
 	["ToyCar"] = "TrinketToyCar",
 	["Yoyo"] = "TrinketYoyo",
 	["Cube"] = "TrinketCube",
+	["Hat_GasMask"] = "TrinketGasMask",
 }
 
 for k,v in pairs(attachments) do 
@@ -44,6 +67,7 @@ local staticModels = {
 	["ToyBear"] = "ToyBear",
 	["ToyCar"] = "ToyCar",
 	["Yoyo"] = "Yoyo",
+	["Hat_GasMask"] = "GasMask",
 
 	["SleepingbagRolled"] = "sleepingbag",
 	["SleepingbagGRolled"] = "sleepingbag",
@@ -68,4 +92,9 @@ end
 --Add bedroll attachment to NomadBackpack
 if getActivatedMods():contains("UndeadSuvivor") then
 	TweakItem("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
+end
+
+--Missing WorldStaticModel
+if getActivatedMods():contains("ScrapArmor(new version)") then
+	TweakItem("Rucksack","WorldStaticModel", "Rucksack_Ground");
 end

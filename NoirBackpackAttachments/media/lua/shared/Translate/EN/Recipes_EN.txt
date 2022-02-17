@@ -12,5 +12,6 @@ Recipes_EN = {
     Recipe_Upgrade_RUKSAK1 = "Add Attachment Slots",
     Recipe_Upgrade_RUKSAK2 = "Add Attachment Slots",
     Recipe_Upgrade_ANAT = "Add Attachment Slots",
+    Recipe_Upgrade_Rucksack = "Add Attachment Slots",
 
 }
