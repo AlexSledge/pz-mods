@@ -2,5 +2,5 @@ name=NoirBackpacksAttachments
 id=noirbackpacksattachments
 require=ItemTweakerAPI,PwSleepingbags
 description=
-description=Allow useful slots to backpacks and a tricket slot
+description=Adds useful slots to backpacks and a tricket slot
 poster=poster.png
