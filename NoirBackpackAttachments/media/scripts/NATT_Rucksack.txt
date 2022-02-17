@@ -82,7 +82,7 @@ module Base {
 
 		attachment Rucksack_bottle
 		{
-			offset = 0.0400 0.0950 -0.1300,
+			offset = 0.0400 0.1200 -0.1300,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -148,7 +148,7 @@ module Base {
 		}
 
 		attachment Rucksack_shortweapon {
-			offset = 0.1100 0.0000 0.0600,
+			offset = 0.1050 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
@@ -173,7 +173,7 @@ module Base {
 
 		attachment Rucksack_bottle
 		{
-			offset = 0.0400 0.0950 -0.1300,
+			offset = 0.0400 0.1200 -0.1300,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -239,13 +239,13 @@ module Base {
 		}
 
 		attachment Rucksack_shortweapon {
-			offset = 0.1100 0.0000 0.0600,
+			offset = 0.1050 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment Rucksack_wrench {
-			offset = 0.1100 0.0000 0.0600,
+			offset = 0.1050 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}

@@ -66,4 +66,10 @@ IGUI_EN = {
     IGUI_HotbarAttachment_NomadBackpackTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_NomadBackpackFlashlight = "Flashlight Slot",
 
+    IGUI_HotbarAttachment_RucksackShortWeapon = "Short Weapon Slot",
+    IGUI_HotbarAttachment_RucksackBottle = "Bottle Slot",
+    IGUI_HotbarAttachment_RucksackBedroll = "Bedroll Slot",
+    IGUI_HotbarAttachment_RucksackTrinket = "Trinket Slot",
+    IGUI_HotbarAttachment_RucksackFlashlight = "Flashlight Slot",
+
 }
