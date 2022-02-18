@@ -70,12 +70,12 @@ local staticModels = {
 	["Hat_GasMask"] = "GasMask",
 
 	["SleepingbagRolled"] = "sleepingbag",
-	["SleepingbagGRolled"] = "sleepingbag",
-	["SleepingbagRRolled"] = "sleepingbag",
-	["SleepingbagORolled"] = "sleepingbag",
-	["SleepingbagBKRolled"] = "sleepingbag",
-	["SleepingbagLBRolled"] = "sleepingbag",
-	["SleepingbagPRolled"] = "sleepingbag",
+	["SleepingbagGRolled"] = "sleepingbagG",
+	["SleepingbagRRolled"] = "sleepingbagR",
+	["SleepingbagORolled"] = "sleepingbagO",
+	["SleepingbagBKRolled"] = "sleepingbagBK",
+	["SleepingbagLBRolled"] = "sleepingbagLB",
+	["SleepingbagPRolled"] = "sleepingbagP",
 }
 
 for k,v in pairs(staticModels) do 
@@ -94,7 +94,9 @@ if getActivatedMods():contains("UndeadSuvivor") then
 	TweakItem("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
 end
 
---Missing WorldStaticModel
+--ScrapArmor
 if getActivatedMods():contains("ScrapArmor(new version)") then
 	TweakItem("Rucksack","WorldStaticModel", "Rucksack_Ground");
+	TweakItem("Rucksack","AttachmentReplacement", "Bag");
+	TweakItem("Rucksack","DisplayCategory", "Bag");
 end

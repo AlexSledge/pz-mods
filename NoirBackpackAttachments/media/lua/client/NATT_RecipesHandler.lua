@@ -33,6 +33,7 @@ function keepColorAndItems(items,result,player)
 	local resultVisual = result:getVisual()
 	resultVisual:setTextureChoice(backpackVisual:getTextureChoice());
 	result:getItemContainer():setItems(backpack:getItemContainer():getItems());
+	result:synchWithVisual();
 end
 
 function checkIsEquipped(item,result)

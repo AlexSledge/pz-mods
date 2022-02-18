@@ -19,6 +19,7 @@ module Base {
 
     item Rucksack_I
     {
+		DisplayCategory = Bag,
         WeightReduction	=	85,
         Weight	=	0.9,
         Type	=	Container,
@@ -35,6 +36,7 @@ module Base {
         ReplaceInSecondHand = Rucksack_LEFT_HAND holdingbagleft,
         ReplaceInPrimaryHand = Rucksack_RIGHT_HAND holdingbagright,
         AttachmentsProvided = RucksackBedroll;RucksackBottle,
+		AttachmentReplacement = Bag,
         WorldStaticModel = Rucksack_Ground,
     }
 
@@ -57,6 +59,7 @@ module Base {
 
     item Rucksack_II
     {
+		DisplayCategory = Bag,
 		WeightReduction	=	85,
         Weight	=	0.9,
         Type	=	Container,
@@ -73,6 +76,7 @@ module Base {
         ReplaceInSecondHand = Rucksack_LEFT_HAND holdingbagleft,
         ReplaceInPrimaryHand = Rucksack_RIGHT_HAND holdingbagright,
         AttachmentsProvided = RucksackWeapon;RucksackFlashlight;RucksackBedroll;RucksackBottle;RucksackTrinket,
+		AttachmentReplacement = Bag,
         WorldStaticModel = Rucksack_Ground,
     }
 
@@ -154,7 +158,7 @@ module Base {
 		}
 
 		attachment Rucksack_weaponbig {
-			offset = 0.1150 0.0000 0.0700,
+			offset = 0.1100 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
@@ -287,7 +291,7 @@ module Base {
 		}
 
 		attachment Rucksack_flashlight {
-			offset = -0.0100 0.0700 -0.0150,
+			offset = -0.0050 0.0700 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}

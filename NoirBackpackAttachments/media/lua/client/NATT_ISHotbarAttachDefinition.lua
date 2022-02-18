@@ -18,6 +18,8 @@ for _,v in pairs(Backpacks) do
 			Wrench = v.."Wrench",
 			BigBlade = v.."Weapon",
 			BigWeapon = v.."WeaponBig",
+			Shovel = v.."WeaponBig",
+			Rifle = v.."WeaponBig",
 			Pan = v.."WeaponPan",
 			Saucepan = v.."WeaponSaucePan",
 		},

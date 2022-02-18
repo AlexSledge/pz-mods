@@ -75,7 +75,6 @@ bind.key = 0;
 table.insert(keyBinding, bind);
 
 
-
 function ISHotbar:activateSlot(slotIndex)
 	local item = self.attachedItems[slotIndex]
 	if not item then return end

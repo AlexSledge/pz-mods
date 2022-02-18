@@ -183,7 +183,7 @@ module Base {
 		}
 
 		attachment RUKSAK2_flashlight {
-			offset = -0.0200 0.0800 -0.0150,
+			offset = -0.0100 0.0800 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}
