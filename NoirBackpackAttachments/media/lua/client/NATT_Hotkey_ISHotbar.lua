@@ -192,6 +192,5 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 end
 
 function isBack(slot)
-	print("--> " .. slot)
 	return string.find(slot," Back");
 end
