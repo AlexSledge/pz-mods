@@ -159,3 +159,40 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 		end
 	end
 end
+
+--BigStuff on bag weapon slot hhuehuhue
+function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
+	if doAnim then
+		if self.replacements and self.replacements[item:getAttachmentType()] and isBack(slot) then
+			slot = self.replacements[item:getAttachmentType()];
+		end
+		self:setAttachAnim(item, slotDef);
+		ISInventoryPaneContextMenu.transferIfNeeded(self.chr, item)
+		-- first remove the current equipped one if needed
+		if self.attachedItems[slotIndex] then
+			ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, self.attachedItems[slotIndex]));
+		end
+		ISTimedActionQueue.add(ISAttachItemHotbar:new(self.chr, item, slot, slotIndex, slotDef));
+	else
+		-- add new item
+		-- if the item need to be attached elsewhere than its original emplacement because of a bag for example
+		if self.replacements and self.replacements[item:getAttachmentType()] and isBack(slot) then
+			slot = self.replacements[item:getAttachmentType()];
+			if slot == "null" then
+				self:removeItem(item, false);
+				return;
+			end
+		end
+		self.chr:setAttachedItem(slot, item);
+		item:setAttachedSlot(slotIndex);
+		item:setAttachedSlotType(slotDef.type);
+		item:setAttachedToModel(slot);
+		
+		self:reloadIcons();
+	end
+end
+
+function isBack(slot)
+	print("--> " .. slot)
+	return string.find(slot," Back");
+end

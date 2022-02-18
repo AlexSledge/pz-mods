@@ -75,7 +75,7 @@ module Base {
         CanHaveHoles = false,
         WorldStaticModel = NomadBackpack_ground,
 		AttachmentReplacement = Bag,
-        AttachmentsProvided = NomadBackpackShortWeapon;NomadBackpackFlashlight;NomadBackpackBedroll;NomadBackpackBottle;NomadBackpackTrinket,
+        AttachmentsProvided = NomadBackpackWeapon;NomadBackpackFlashlight;NomadBackpackBedroll;NomadBackpackBottle;NomadBackpackTrinket,
     }
 
 	model FemaleBody
@@ -144,14 +144,32 @@ module Base {
 		}
 
 		attachment NomadBackpack_trinketgasmask {
-			offset = 0.1350 0.0750 -0.1150,
+			offset = 0.1350 0.1150 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment NomadBackpack_shortweapon {
-			offset = 0.1800 0.0000 0.0600,
+		attachment NomadBackpack_weapon {
+			offset = 0.1800 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment NomadBackpack_weaponbig {
+			offset = 0.1900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment NomadBackpack_weaponpan {
+			offset = 0.1850 0.0000 0.0700,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment NomadBackpack_weaponsaucepan {
+			offset = 0.1850 0.0000 0.0700,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -235,14 +253,32 @@ module Base {
 		}
 
 		attachment NomadBackpack_trinketgasmask {
-			offset = 0.1350 0.0750 -0.1150,
+			offset = 0.1350 0.1150 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment NomadBackpack_shortweapon {
-			offset = 0.1800 0.0000 0.0600,
+		attachment NomadBackpack_weapon {
+			offset = 0.1800 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment NomadBackpack_weaponbig {
+			offset = 0.1900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment NomadBackpack_weaponpan {
+			offset = 0.1850 0.0000 0.0700,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment NomadBackpack_weaponsaucepan {
+			offset = 0.1850 0.0000 0.0700,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

@@ -75,7 +75,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackShortWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBedroll;MilitaryAlicepackBottle;MilitaryAlicepackTrinket,
+		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBedroll;MilitaryAlicepackBottle;MilitaryAlicepackTrinket,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -87,13 +87,13 @@ module Base {
 		
 		attachment MilitaryAlicepack_bottle
 		{
-			offset = 0.0400 0.1450 -0.0700,
+			offset = 0.0300 0.1450 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment MilitaryAlicepack_bedroll {
-			offset = -0.0350 0.0000 0.1100,
+			offset = -0.0350 0.0000 0.1300,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
@@ -152,9 +152,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_shortweapon {
-			offset = 0.1300 0.0000 0.0600,
+		attachment MilitaryAlicepack_weapon {
+			offset = 0.1300 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_weaponbig {
+			offset = 0.1300 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_weaponpan {
+			offset = 0.1300 -0.0400 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_weaponsaucepan {
+			offset = 0.1300 -0.0400 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -178,13 +196,13 @@ module Base {
 		
 		attachment MilitaryAlicepack_bottle
 		{
-			offset = 0.0500 0.1450 -0.0700,
+			offset = 0.0300 0.1450 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment MilitaryAlicepack_bedroll {
-			offset = -0.0350 0.0000 0.1100,
+			offset = -0.0250 0.0000 0.1300,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
@@ -243,9 +261,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_shortweapon {
-			offset = 0.1500 0.0000 0.0600,
+		attachment MilitaryAlicepack_weapon {
+			offset = 0.1500 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_weaponbig {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_weaponpan {
+			offset = 0.1400 -0.0400 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_weaponsaucepan {
+			offset = 0.1400 -0.0400 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -259,7 +295,7 @@ module Base {
 			offset = -0.0100 0.0700 -0.0150,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
-		}
+		}		
 
 	}
 

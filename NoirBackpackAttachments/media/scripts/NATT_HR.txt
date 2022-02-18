@@ -75,7 +75,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = HRShortWeapon;HRFlashlight;HRBedroll;HRBottle;HRTrinket,
+        AttachmentsProvided = HRWeapon;HRFlashlight;HRBedroll;HRBottle;HRTrinket,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,	
@@ -152,9 +152,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment HR_shortweapon {
-			offset = 0.0900 0.0000 0.0600,
+		attachment HR_weapon {
+			offset = 0.0900 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_weaponbig {
+			offset = 0.900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_weaponpan {
+			offset = 0.0850 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_weaponsaucepan {
+			offset = 0.0850 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -243,9 +261,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment HR_shortweapon {
-			offset = 0.0900 0.0000 0.0600,
+		attachment HR_weapon {
+			offset = 0.0900 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_weaponbig {
+			offset = 0.900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_weaponpan {
+			offset = 0.0850 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_weaponsaucepan {
+			offset = 0.0850 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

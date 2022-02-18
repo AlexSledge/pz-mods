@@ -74,7 +74,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.95,
         AttachmentReplacement = Bag,
-		AttachmentsProvided 	= BigHikingbagShortWeapon;BigHikingbagFlashlight;BigHikingbagBedroll;BigHikingbagBottle;BigHikingbagTrinket,
+		AttachmentsProvided 	= BigHikingbagWeapon;BigHikingbagFlashlight;BigHikingbagBedroll;BigHikingbagBottle;BigHikingbagTrinket,
         ReplaceInSecondHand = Bag_BigHikingBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_BigHikingBag_RHand holdingbagright,
         WorldStaticModel = BigHikingBag_Ground,
@@ -85,13 +85,13 @@ module Base {
 		
 		attachment BigHikingbag_bottle
 		{
-			offset = 0.0400 0.1250 -0.0700,
+			offset = 0.0200 0.1250 -0.0700,
 			rotate = 90.0000 180.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment BigHikingbag_bedroll {
-			offset = -0.0350 0.0000 0.1600,
+			offset = -0.0350 0.0000 0.1700,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
@@ -150,9 +150,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_shortweapon {
-			offset = 0.0900 0.0000 0.0600,
+		attachment BigHikingbag_weapon {
+			offset = 0.0900 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_weaponbig {
+			offset = 0.0900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_weaponpan {
+			offset = 0.0900 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_weaponsaucepan {
+			offset = 0.0900 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -182,7 +200,7 @@ module Base {
 		}
 
 		attachment BigHikingbag_bedroll {
-			offset = -0.0250 0.0000 0.1600,
+			offset = -0.0150 0.0000 0.1800,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
@@ -241,9 +259,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment BigHikingbag_shortweapon {
-			offset = 0.1150 0.0000 0.0600,
+		attachment BigHikingbag_weapon {
+			offset = 0.1150 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_weaponbig {
+			offset = 0.1150 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_weaponpan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BigHikingbag_weaponsaucepan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

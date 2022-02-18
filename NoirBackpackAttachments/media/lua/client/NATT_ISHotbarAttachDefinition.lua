@@ -6,16 +6,20 @@ end
 for _,v in pairs(Backpacks) do
 
 	local slot = {
-		type = v.."ShortWeapon",
-		name = "Short Weapon", 
+		type = v.."Weapon",
+		name = "Weapon", 
 		animset = "back",
 		attachments = {
-			Hammer = v.."ShortWeapon",
-			Nightstick = v.."ShortWeapon",
-			MeatCleaver = v.."ShortWeapon",
-			Knife = v.."ShortWeapon",
-			Screwdriver = v.."ShortWeapon",
+			Hammer = v.."Weapon",
+			Nightstick = v.."Weapon",
+			MeatCleaver = v.."Weapon",
+			Knife = v.."Weapon",
+			Screwdriver = v.."Weapon",
 			Wrench = v.."Wrench",
+			BigBlade = v.."Weapon",
+			BigWeapon = v.."WeaponBig",
+			Pan = v.."WeaponPan",
+			Saucepan = v.."WeaponSaucePan",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

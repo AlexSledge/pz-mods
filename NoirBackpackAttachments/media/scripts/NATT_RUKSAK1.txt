@@ -77,7 +77,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.90,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = RUKSAK1ShortWeapon;RUKSAK1Flashlight;RUKSAK1Bedroll;RUKSAK1Bottle;RUKSAK1Trinket,
+		AttachmentsProvided = RUKSAK1Weapon;RUKSAK1Flashlight;RUKSAK1Bedroll;RUKSAK1Bottle;RUKSAK1Trinket,
         ReplaceInSecondHand = RUKSAK1_Dop holdingbagleft,
         ReplaceInPrimaryHand = RUKSAK1_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_RUKSAK1_Ground,	
@@ -154,9 +154,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK1_shortweapon {
-			offset = 0.1500 0.0000 0.0600,
+		attachment RUKSAK1_weapon {
+			offset = 0.1500 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK1_weaponbig {
+			offset = 0.1600 0.0000 0.0700,
+			rotate = 90.0000 -0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK1_weaponpan {
+			offset = 0.1550 0.0000 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK1_weaponsaucepan {
+			offset = 0.1550 0.0000 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -173,7 +191,6 @@ module Base {
 		}
 
 	}
-
 
 	model MaleBody
 	{
@@ -245,9 +262,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK1_shortweapon {
-			offset = 0.1500 0.0000 0.0600,
+		attachment RUKSAK1_weapon {
+			offset = 0.1500 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK1_weaponbig {
+			offset = 0.1600 0.0000 0.0700,
+			rotate = 90.0000 -0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK1_weaponpan {
+			offset = 0.1550 0.0000 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment RUKSAK1_weaponsaucepan {
+			offset = 0.1550 0.0000 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

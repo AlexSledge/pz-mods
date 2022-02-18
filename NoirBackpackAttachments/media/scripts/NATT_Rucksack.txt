@@ -72,7 +72,7 @@ module Base {
         RunSpeedModifier = 0.97,
         ReplaceInSecondHand = Rucksack_LEFT_HAND holdingbagleft,
         ReplaceInPrimaryHand = Rucksack_RIGHT_HAND holdingbagright,
-        AttachmentsProvided = RucksackShortWeapon;RucksackFlashlight;RucksackBedroll;RucksackBottle;RucksackTrinket,
+        AttachmentsProvided = RucksackWeapon;RucksackFlashlight;RucksackBedroll;RucksackBottle;RucksackTrinket,
         WorldStaticModel = Rucksack_Ground,
     }
 
@@ -147,9 +147,27 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Rucksack_shortweapon {
+		attachment Rucksack_weapon {
 			offset = 0.1050 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Rucksack_weaponbig {
+			offset = 0.1150 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Rucksack_weaponpan {
+			offset = 0.1100 -0.0200 -0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Rucksack_weaponsaucepan {
+			offset = 0.1100 -0.0200 -0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -238,11 +256,29 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Rucksack_shortweapon {
-			offset = 0.1050 0.0000 0.0600,
+		attachment Rucksack_weapon {
+			offset = 0.1050 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
+		
+		attachment Rucksack_weaponbig {
+			offset = 0.1150 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Rucksack_weaponpan {
+			offset = 0.1100 -0.0200 -0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Rucksack_weaponsaucepan {
+			offset = 0.1100 -0.0200 -0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}	
 
 		attachment Rucksack_wrench {
 			offset = 0.1050 0.0000 0.0600,
