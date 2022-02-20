@@ -283,7 +283,7 @@ module Base {
 
 		attachment KleanBackpack_weaponshovel {
 			offset = 0.1500 0.0000 0.0700,
-			rotate = 90.0000 0.0000 -180.0000,
+			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

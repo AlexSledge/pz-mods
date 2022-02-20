@@ -279,7 +279,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment HR_weaponbig {
+		attachment HR_weaponshovel {
 			offset = 0.900 0.0000 0.0700,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,

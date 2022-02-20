@@ -280,7 +280,7 @@ module Base {
 
 		attachment ANAT_weaponshovel {
 			offset = 0.2000 0.0000 0.0700,
-			rotate = 90.0000 9.0000 -180.0000,
+			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
