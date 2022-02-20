@@ -164,6 +164,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment RUKSAK2_weaponshovel{
+			offset = 0.0850 -0.0700 0.0700,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment RUKSAK2_weaponpan {
 			offset = 0.0800 -0.0700 0.0700,
 			rotate = 90.0000 40.0000 -180.0000,
@@ -183,7 +189,7 @@ module Base {
 		}
 
 		attachment RUKSAK2_flashlight {
-			offset = -0.0100 0.0800 -0.0150,
+			offset = -0.0100 0.0800 0.0000,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}
@@ -272,6 +278,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment RUKSAK2_weaponshovel {
+			offset = 0.1200 -0.0700 0.0700,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment RUKSAK2_weaponpan {
 			offset = 0.1150 -0.0700 0.0700,
 			rotate = 90.0000 40.0000 -180.0000,
@@ -291,7 +303,7 @@ module Base {
 		}
 
 		attachment RUKSAK2_flashlight {
-			offset = -0.0200 0.0850 -0.0150,
+			offset = -0.0200 0.0850 0.0000,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}

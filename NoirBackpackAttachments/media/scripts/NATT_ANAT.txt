@@ -163,6 +163,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment ANAT_weaponshovel {
+			offset = 0.1900 0.0000 0.0700,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment ANAT_weaponpan {
 			offset = 0.1750 -0.0400 0.0700,
 			rotate = 90.0000 40.0000 -180.0000,
@@ -182,7 +188,7 @@ module Base {
 		}
 
 		attachment ANAT_flashlight {
-			offset = -0.0050 0.0650 -0.0150,
+			offset = -0.0050 0.0650 0.0000,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}	
@@ -272,6 +278,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment ANAT_weaponshovel {
+			offset = 0.2000 0.0000 0.0700,
+			rotate = 90.0000 9.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment ANAT_weaponpan {
 			offset = 0.1850 -0.0400 0.0700,
 			rotate = 90.0000 40.0000 -180.0000,
@@ -291,7 +303,7 @@ module Base {
 		}
 
 		attachment ANAT_flashlight {
-			offset = 0.0000 0.0850 -0.0150,
+			offset = 0.0000 0.0850 0.0000,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
 		}		
