@@ -30,6 +30,8 @@ function ISAttachItemHotbar:stop()
 	ISBaseTimedAction.stop(self);
 end
 
+--BigStuff on bag weapon slot and keeps back slot
+--Noir
 function ISAttachItemHotbar:perform()
 	-- remove previous item
 	if self.hotbar.attachedItems[self.slotIndex] then
