@@ -142,4 +142,4 @@ table.insert(ProceduralDistributions["list"]["PlankStashGun"].items, 1);
 table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "Base.AA12");
 table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "0.05");
 table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "Base.AA12Clip");
-table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"]["junk"].items, "0.05");
+table.insert(ProceduralDistributions["list"]["LockerArmyBedroom"].items, "8");
