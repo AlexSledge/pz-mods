@@ -44,7 +44,7 @@ module Base {
     {
         ANAT_I,
         LeatherStrips=8,
-        Thread, 
+        Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
         Result:ANAT_II,
@@ -54,7 +54,7 @@ module Base {
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
-		SkillRequired:Tailoring=5,
+		SkillRequired:Tailoring=4,
     }
 
     item ANAT_II

@@ -44,7 +44,7 @@ module Base {
     {
         Bag_Hikingbag_I,
         LeatherStrips=8,
-        Thread,
+        Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
 		OnCreate:keepColorAndItems,
@@ -54,7 +54,7 @@ module Base {
 		OnTest: checkIsEquipped,		
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
-		SkillRequired:Tailoring=5,
+		SkillRequired:Tailoring=4,
     }
 
     item Bag_Hikingbag_II
