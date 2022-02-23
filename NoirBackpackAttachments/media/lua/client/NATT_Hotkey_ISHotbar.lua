@@ -160,7 +160,7 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 	end
 end
 
---BigStuff on bag weapon slot and keeps back slot
+--Long weapons/firearms on bag weapon slot and keeps back slot
 --Noir 
 function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 	if doAnim then
@@ -192,45 +192,6 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 		self:reloadIcons();
 	end
 end
-
-
-function ISHotbar:removeItem(item, doAnim)
-	if doAnim then
-		self:setAttachAnim(item);
-		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
-	else
-		self.chr:removeAttachedItem(item);
-		setReplacementItem(self.chr,item)
-		item:setAttachedSlot(-1);
-		item:setAttachedSlotType(nil);
-		item:setAttachedToModel(nil);
-		
-		self:reloadIcons();
-	end
-end
-
---Item stay attached when used, depleted or filled
---Noir
-function setReplacementItem(chr,item)
-	local replacementType = nil
-	if instanceof(item, "ComboItem") then
-		if item:getReplaceOnUseOn() then
-			replacementType = string.gsub(item:getReplaceOnUseOn(),"WaterSource%-","")
-		end
-	else
-		replacementType = item:getReplaceOnUse() or item:getReplaceOnDeplete()
-	end
-	
-	if not replacementType then return end
-	local replacementItem = chr:getInventory():getItemFromType(replacementType, true, true);
-	if not replacementItem then return end
-
-	chr:setAttachedItem(item:getAttachedToModel(), replacementItem);
-	replacementItem:setAttachedSlot(item:getAttachedSlot());
-	replacementItem:setAttachedSlotType(item:getAttachedSlotType());
-	replacementItem:setAttachedToModel(item:getAttachedToModel());
-end
-
 function isBack(slot)
 	return string.find(slot," Back");
 end

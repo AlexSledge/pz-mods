@@ -1,10 +1,21 @@
+-- If you change mods ids you need to change it here as well
+-- ["Dont change this one"] = "New mod id need to be here"
+-- Example = ["ScrapArmor"] = "vs69"
+NATTmods = {
+	["Pitstop"] = "Pitstop",
+	["ClothesBox"] = "2507488373",
+	["UndeadSuvivor"] = "UndeadSuvivor",
+	["ScrapArmor"] = "ScrapArmor(new version)",
+}  
+
+
 if not Backpacks then Backpacks = {} end
 
 local modsBackpacks = {
-	["Pitstop"] = {"KleanBackpack"} ,
-	["2507488373"] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,  --Clothes BOX
-	["UndeadSuvivor"] = {"NomadBackpack"} ,
-	["ScrapArmor(new version)"] = {"Rucksack"} ,
+	[NATTmods.Pitstop] = {"KleanBackpack"} ,
+	[NATTmods.ClothesBox] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,
+	[NATTmods.UndeadSuvivor] = {"NomadBackpack"} ,
+	[NATTmods.ScrapArmor] = {"Rucksack"} ,
 }
 
 Backpacks = {

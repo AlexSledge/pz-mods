@@ -83,19 +83,19 @@ for k,v in pairs(staticModels) do
 end
 
 --Nerf Klean fcking op bag
-if getActivatedMods():contains("Pitstop") then
+if getActivatedMods():contains(NATTmods.Pitstop) then
 	TweakItem("KleanBackPack","DisplayName", "Clean Up Krew Backpack");
 	TweakItem("KleanBackPack","WeightReduction", 87);
 	TweakItem("KleanBackPack","Capacity", 30)
 end
 
 --Add bedroll attachment to NomadBackpack
-if getActivatedMods():contains("UndeadSuvivor") then
+if getActivatedMods():contains(NATTmods.UndeadSuvivor) then
 	TweakItem("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
 end
 
 --ScrapArmor
-if getActivatedMods():contains("ScrapArmor(new version)") then
+if getActivatedMods():contains(NATTmods.ScrapArmor) then
 	TweakItem("Rucksack","WorldStaticModel", "Rucksack_Ground");
 	TweakItem("Rucksack","AttachmentReplacement", "Bag");
 	TweakItem("Rucksack","DisplayCategory", "Bag");

@@ -1,8 +1,8 @@
 local modsRecipes = {
-	["Pitstop"] = {"Upgrade KleanBackpack"} ,
-	["2507488373"] = {"Upgrade HR","Upgrade RUKSAK1","Upgrade RUKSAK2","Upgrade ANAT"} ,
-	["UndeadSuvivor"] = {"Upgrade NomadBackpack"} ,
-	["ScrapArmor(new version)"] = {"Upgrade Rucksack"} ,
+	[NATTmods.Pitstop] = {"Upgrade KleanBackpack"} ,
+	[NATTmods.ClothesBox] = {"Upgrade HR","Upgrade RUKSAK1","Upgrade RUKSAK2","Upgrade ANAT"} ,
+	[NATTmods.UndeadSuvivor] = {"Upgrade NomadBackpack"} ,
+	[NATTmods.ScrapArmor] = {"Upgrade Rucksack"} ,
 }
 
 function checkMods()
@@ -39,4 +39,3 @@ end
 function checkIsEquipped(item,result)
 	return not (item:IsInventoryContainer() and item:isEquipped())
 end
-
