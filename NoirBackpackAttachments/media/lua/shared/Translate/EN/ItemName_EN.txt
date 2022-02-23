@@ -13,7 +13,7 @@ ItemName_EN = {
     ItemName_Base.Bag_BigHikingbag_I = "Big Hiking bag +",
     ItemName_Base.Bag_BigHikingbag_II = "Big Hiking bag ++",
 
-    ItemName_Base.KleanBackpack   =  "Clean Up Krew Backpack"
+    ItemName_Base.KleanBackpack   =  "Clean Up Krew Backpack",
     ItemName_Base.KleanBackpack_I = "Clean Up Krew Backpack +",
     ItemName_Base.KleanBackpack_II = "Clean Up Krew Backpack ++",
 

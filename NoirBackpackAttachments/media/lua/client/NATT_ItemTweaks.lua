@@ -84,7 +84,6 @@ end
 
 --Nerf Klean fcking op bag
 if getActivatedMods():contains(NATTmods.Pitstop) then
-	TweakItem("KleanBackPack","DisplayName", "Clean Up Krew Backpack");
 	TweakItem("KleanBackPack","WeightReduction", 87);
 	TweakItem("KleanBackPack","Capacity", 30)
 end
