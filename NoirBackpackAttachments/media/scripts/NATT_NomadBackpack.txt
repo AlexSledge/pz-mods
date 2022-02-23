@@ -42,7 +42,7 @@ module Base {
     recipe Upgrade NomadBackpack
     {
         NomadBackpack_I,
-        LeatherStrips=5,
+        LeatherStrips=8,
         Thread, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,

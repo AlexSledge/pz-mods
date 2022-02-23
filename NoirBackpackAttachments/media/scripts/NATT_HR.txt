@@ -3,7 +3,7 @@ module Base {
     recipe Upgrade HR
     {
         HR,
-        LeatherStrips=2,
+        LeatherStrips=4,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -44,7 +44,7 @@ module Base {
     recipe Upgrade HR
     {
         HR_I,
-        LeatherStrips=5,
+        LeatherStrips=8,
         Thread, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,

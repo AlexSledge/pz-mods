@@ -1,5 +1,6 @@
--- If you change mods ids you need to change it here as well
--- ["Dont change this one"] = "New mod id need to be here"
+-- If you change mods ids for some reason, you need to change it here as well
+-- or some recipes will stop working
+-- ["Dont change this value"] = "New mod id need to be here"
 -- Example = ["ScrapArmor"] = "vs69"
 NATTmods = {
 	["Pitstop"] = "Pitstop",
