@@ -70,6 +70,7 @@ for _,v in pairs(Backpacks) do
 			TrinketYoyo  = v.."TrinketYoyo",
 			TrinketCube  = v.."TrinketCube",
 			TrinketGasMask  = v.."TrinketGasMask",
+			TrinketPlushie  = v.."TrinketPlushie",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

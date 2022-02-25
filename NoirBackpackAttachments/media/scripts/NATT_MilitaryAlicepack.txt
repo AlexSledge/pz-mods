@@ -122,13 +122,13 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoybear{
+		attachment MilitaryAlicepack_trinkettoybear {
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoycar{
+		attachment MilitaryAlicepack_trinkettoycar {
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
@@ -149,6 +149,12 @@ module Base {
 		attachment MilitaryAlicepack_trinketgasmask {
 			offset = 0.0850 0.0750 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_trinketplushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -237,13 +243,13 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoybear{
+		attachment MilitaryAlicepack_trinkettoybear {
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoycar{
+		attachment MilitaryAlicepack_trinkettoycar {
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
@@ -264,6 +270,12 @@ module Base {
 		attachment MilitaryAlicepack_trinketgasmask {
 			offset = 0.1000 0.0750 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_trinketplushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 

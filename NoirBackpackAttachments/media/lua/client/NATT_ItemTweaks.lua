@@ -43,6 +43,7 @@ local attachments = {
 	["HandTorch"] = "Flashlight",
 
 	["Doll"] = "TrinketDoll",
+	["Spiffo"] = "TrinketPlushie",
 	["DogChew"] = "TrinketDogChew",
 	["CatToy"] = "TrinketCatToy",
 	["Rubberducky"] = "TrinketRubberDucky",
@@ -60,6 +61,7 @@ end
 
 local staticModels = {
     ["Doll"] = "Doll",
+	["Spiffo"] = "SpiffoPlushie",
     ["DogChew"] = "DogChewToy",
     ["CatToy"] = "CatToy",
     ["Rubberducky"] = "Rubberducky",

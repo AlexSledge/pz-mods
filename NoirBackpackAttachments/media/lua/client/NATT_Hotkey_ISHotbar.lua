@@ -217,10 +217,10 @@ function ISHotbar:removeItem(item, doAnim)
 	end
 end
 
-function setReplacementItem(chr,item,availableSlot)	
+function setReplacementItem(chr,item,availableSlot)
+	if item:IsWeapon() then return end
 	if not ISHotbar:haveThisSlot(item:getAttachedSlotType(),availableSlot) then return end
 	local replacementType = nil
-	local module = item:getModule()
 	if instanceof(item, "ComboItem") then
 		if item:getReplaceOnUseOn() then
 			replacementType = string.gsub(item:getReplaceOnUseOn(),"WaterSource%-","")
@@ -230,6 +230,7 @@ function setReplacementItem(chr,item,availableSlot)
 	end
 
 	if not replacementType then return end
+	local module = item:getModule()
 	replacementType = module.."."..replacementType;
 	local replacementItem = findReplacementItem(chr,replacementType);
 	if not replacementItem then return end

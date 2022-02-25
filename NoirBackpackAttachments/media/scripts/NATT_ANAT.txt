@@ -121,13 +121,13 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment ANAT_trinkettoybear{
+		attachment ANAT_trinkettoybear {
 			offset = 0.2050 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment ANAT_trinkettoycar{
+		attachment ANAT_trinkettoycar {
 			offset = 0.1550 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
@@ -148,6 +148,12 @@ module Base {
 		attachment ANAT_trinketgasmask {
 			offset = 0.1350 0.0750 -0.0550,
 			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment ANAT_trinketplushie {
+			offset = 0.1650 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -236,13 +242,13 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment ANAT_trinkettoybear{
+		attachment ANAT_trinkettoybear {
 			offset = 0.2050 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment ANAT_trinkettoycar{
+		attachment ANAT_trinkettoycar {
 			offset = 0.1650 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
@@ -263,6 +269,12 @@ module Base {
 		attachment ANAT_trinketgasmask {
 			offset = 0.1450 0.0850 -0.0550,
 			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment ANAT_trinketplushie {
+			offset = 0.1650 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
