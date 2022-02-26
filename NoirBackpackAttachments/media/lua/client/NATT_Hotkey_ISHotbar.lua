@@ -74,8 +74,6 @@ bind.value = "Hotbar 15";
 bind.key = 0;
 table.insert(keyBinding, bind);
 
-local checkReplacement = false
-
 function ISHotbar:activateSlot(slotIndex)
 	local item = self.attachedItems[slotIndex]
 	if not item then return end
@@ -163,7 +161,6 @@ end
 --Noir 
 function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 	if doAnim then
-		checkReplacement = true
 		if self.replacements and self.replacements[item:getAttachmentType()] and isBack(slot) then
 			slot = self.replacements[item:getAttachmentType()];
 		end
