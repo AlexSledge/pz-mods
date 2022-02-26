@@ -32,5 +32,4 @@ module Base {
         mesh = Static/Clothes/F_GasMask,
 		texture = GasMask,
     }
-
 }

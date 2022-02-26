@@ -7,6 +7,9 @@ local attachments = {
 	["Pop"] = "Bottle",
 	["Pop2"] = "Bottle",
 	["Pop3"] = "Bottle",
+	["PopEmpty"] = "Bottle",
+	["Pop2Empty"] = "Bottle",
+	["Pop3Empty"] = "Bottle",
 	["WhiskeyFull"] = "Bottle",
 	["WhiskeyEmpty"] = "Bottle",
 	["WhiskeyWaterFull"] = "Bottle",
@@ -70,6 +73,12 @@ local staticModels = {
 	["ToyCar"] = "ToyCar",
 	["Yoyo"] = "Yoyo",
 	["Hat_GasMask"] = "GasMask",
+
+	["PopEmpty"] = "PopCanDietWorld",
+	["Pop2Empty"] = "PopCanRedWorld",
+	["Pop3Empty"] = "PopCanFizzWorld",
+
+	["PopBottleEmpty"] = "PopBottle",
 
 	["SleepingbagRolled"] = "sleepingbag",
 	["SleepingbagGRolled"] = "sleepingbagG",

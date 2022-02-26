@@ -139,7 +139,6 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 			subOption.notAvailable = true;
 			local tooltip = ISWorldObjectContextMenu.addToolTip();
 			local text = getText("Tooltip_CanBeAttached") .. " <LINE> <INDENT:20> ";
-			local lastValue = "";
 			local typeText = "";
 			for i,v in pairs(ISHotbarAttachDefinition) do
 				if v.attachments then
@@ -149,7 +148,6 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 							if not (string.find(text,typeText.." <LINE> "))  then 
 								text = text .. typeText .. " <LINE> "
 							end
-							lastValue = typeText;
 						end
 					end
 				end
@@ -165,6 +163,7 @@ end
 --Noir 
 function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 	if doAnim then
+		checkReplacement = true
 		if self.replacements and self.replacements[item:getAttachmentType()] and isBack(slot) then
 			slot = self.replacements[item:getAttachmentType()];
 		end
@@ -196,65 +195,4 @@ end
 
 function isBack(slot)
 	return string.find(slot," Back");
-end
-
---Item stay attached when used, depleted or filled
---Noir
-function ISHotbar:removeItem(item, doAnim)
-	if doAnim then
-		self:setAttachAnim(item);
-		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
-	else
-		self.chr:removeAttachedItem(item);
-		if checkReplacement then
-			setReplacementItem(self.chr,item,self.availableSlot)
-		end
-		item:setAttachedSlot(-1);
-		item:setAttachedSlotType(nil);
-		item:setAttachedToModel(nil);
-
-		self:reloadIcons();
-	end
-end
-
-function setReplacementItem(chr,item,availableSlot)
-	if item:IsWeapon() then return end
-	if not ISHotbar:haveThisSlot(item:getAttachedSlotType(),availableSlot) then return end
-	local replacementType = nil
-	if instanceof(item, "ComboItem") then
-		if item:getReplaceOnUseOn() then
-			replacementType = string.gsub(item:getReplaceOnUseOn(),"WaterSource%-","")
-		end
-	else
-		replacementType = item:getReplaceOnUse() or item:getReplaceOnDeplete()
-	end
-
-	if not replacementType then return end
-	local module = item:getModule()
-	replacementType = module.."."..replacementType;
-	local replacementItem = findReplacementItem(chr,replacementType);
-	if not replacementItem then return end
-
-	chr:setAttachedItem(item:getAttachedToModel(), replacementItem);
-	replacementItem:setAttachedSlot(item:getAttachedSlot());
-	replacementItem:setAttachedSlotType(item:getAttachedSlotType());
-	replacementItem:setAttachedToModel(item:getAttachedToModel());
-end
-
-function findReplacementItem(chr,itemType)
-	local items = chr:getInventory():getItemsFromType(itemType, true)
-	for i=0, items:size() - 1 do
-        local item = items:get(i)
-		if item:getAttachedSlotType() == nil then
-			return item
-		end
-	end
-	return nil
-end
-
-local originalRefresh = ISHotbar.refresh;
-function ISHotbar:refresh()
-	checkReplacement = false
-	originalRefresh(self)
-	checkReplacement = true
 end
