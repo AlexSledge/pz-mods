@@ -11,7 +11,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_NomadSlotsI,
+        Tooltip: Tooltip_WaterSlots,
         Category:Tailoring,
 		NeedToBeLearn:true,
 		SkillRequired:Tailoring=2,

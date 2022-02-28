@@ -43,7 +43,7 @@ module Base {
     recipe Upgrade Hikingbag
     {
         Bag_Hikingbag_I,
-        LeatherStrips=8,
+        LeatherStrips=6,
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -52,7 +52,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_SlotsII,
+        Tooltip: Tooltip_MediumSlotsII,
         Category:Tailoring,
 		SkillRequired:Tailoring=4,
     }
@@ -74,7 +74,7 @@ module Base {
         BloodLocation 			= 	Bag,
         RunSpeedModifier 		= 	0.96,
         AttachmentReplacement 	= 	Bag,
-		AttachmentsProvided 	= 	HikingbagWeapon;HikingbagFlashlight;HikingbagBottle;HikingbagBedroll;HikingbagTrinket,	
+		AttachmentsProvided 	= 	HikingbagShortWeapon;HikingbagFlashlight;HikingbagBottle;HikingbagBedroll;HikingbagTrinket,	
         ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
         ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
         WorldStaticModel 		= 	HikingBag_Ground,
@@ -159,18 +159,6 @@ module Base {
 		attachment Hikingbag_weapon {
 			offset = 0.0900 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Hikingbag_weaponbig {
-			offset = 0.0900 0.0000 0.0700,
-			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Hikingbag_weaponshovel {
-			offset = 0.0900 0.0000 0.0700,
-			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -280,18 +268,6 @@ module Base {
 		attachment Hikingbag_weapon {
 			offset = 0.1150 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Hikingbag_weaponbig {
-			offset = 0.1150 0.0000 0.0700,
-			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Hikingbag_weaponshovel {
-			offset = 0.1150 0.0000 0.0700,
-			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

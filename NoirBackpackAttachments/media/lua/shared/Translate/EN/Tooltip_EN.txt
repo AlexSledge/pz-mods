@@ -5,8 +5,8 @@ Tooltip_EN = {
     Tooltip_SlotsI = "Adds Slots: Bedroll, Water Bottle",
     Tooltip_SlotsII = "Adds Slots: Weapon, Flashlight, Trinket",
 
-    Tooltip_NomadSlotsI = "Adds Slot: Water Bottle",
+    Tooltip_WaterSlots = "Adds Slots: Water Bottle",
+    Tooltip_SmallSlotsII = "Adds Slots: Short Weapon, Flashlight",
 
-    Tooltip_PoliceUtilityBagSlotsI = "Adds Slot: Water Bottle",
-    Tooltip_PoliceUtilityBagSlotsII = "Adds Slot: Short Weapon, Flashlight",
+    Tooltip_MediumSlotsII = "Adds Slots: Short Weapon, Flashlight, Trinket"
 }
