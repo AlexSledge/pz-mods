@@ -34,7 +34,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.90,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = RUKSAK2Bedroll;RUKSAK2Bottle,
+		AttachmentsProvided = RUKSAK2Bottle;RUKSAK2Bedroll,
         ReplaceInSecondHand = RUKSAK2_Dop holdingbagleft,
         ReplaceInPrimaryHand = RUKSAK2_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_RUKSAK2_Ground,		
@@ -75,7 +75,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.90,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = RUKSAK2Weapon;RUKSAK2Flashlight;RUKSAK2Bedroll;RUKSAK2Bottle;RUKSAK2Trinket,
+		AttachmentsProvided = RUKSAK2Weapon;RUKSAK2Flashlight;RUKSAK2Bottle;RUKSAK2Bedroll;RUKSAK2Trinket,
         ReplaceInSecondHand = RUKSAK2_Dop holdingbagleft,
         ReplaceInPrimaryHand = RUKSAK2_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_RUKSAK2_Ground,
@@ -88,7 +88,7 @@ module Base {
 	attachment RUKSAK2_bottle
 		{
 			offset = 0.0300 0.1450 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -208,7 +208,7 @@ module Base {
 		attachment RUKSAK2_bottle
 		{
 			offset = 0.0500 0.1450 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

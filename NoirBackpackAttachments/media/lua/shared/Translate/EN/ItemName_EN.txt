@@ -37,4 +37,15 @@ ItemName_EN = {
 
     ItemName_Base.Rucksack_I = "Travel Pack +",
     ItemName_Base.Rucksack_II = "Travel Pack ++",
+
+    ItemName_Base.Bag_PoliceUtilityBag_I = "Black Utility Bag +",
+    ItemName_Base.Bag_PoliceUtilityBag_II = "Black Utility Bag ++",
+
+    ItemName_Base.Bag_PoliceUtilityBagGreen_I = "Green Utility Bag +",
+    ItemName_Base.Bag_PoliceUtilityBagGreen_II = "Green Utility Bag ++",
+
+    ItemName_Base.Bag_CFP90PatrolPack_I = "CFP-90 Patrol Pack +",
+    ItemName_Base.Bag_CFP90PatrolPack_II = "CFP-90 Patrol Pack ++",
+
+    
 }

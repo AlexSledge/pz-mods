@@ -26,6 +26,25 @@ for _,v in pairs(Backpacks) do
 	}
 	table.insert(ISHotbarAttachDefinition, slot);
 
+	if getActivatedMods():contains(NATTmods.SLEO) then
+		slot = {
+			type = v.."ShortWeapon",
+			name = "ShortWeapon", 
+			animset = "back",
+			attachments = {
+				Hammer = v.."Weapon",
+				Nightstick = v.."Weapon",
+				MeatCleaver = v.."Weapon",
+				Knife = v.."Weapon",
+				Screwdriver = v.."Weapon",
+				Wrench = v.."Wrench",
+				Pan = v.."WeaponPan",
+				Saucepan = v.."WeaponSaucePan",
+			},
+		}
+		table.insert(ISHotbarAttachDefinition, slot);
+	end
+
 	slot = {
 		type = v.."Flashlight",
 		name = "Flashlight", 
@@ -42,6 +61,7 @@ for _,v in pairs(Backpacks) do
 		animset = "back",
 		attachments = {
 			Bottle = v.."Bottle",
+			Canteen = v.."Bottle",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

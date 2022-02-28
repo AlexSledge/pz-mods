@@ -37,7 +37,7 @@ module Base {
         ReplaceInSecondHand = ANAT_Dop holdingbagleft,
         ReplaceInPrimaryHand = ANAT_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_ANAT_Ground,	
-		AttachmentsProvided = ANATBedroll;ANATBottle,
+		AttachmentsProvided = ANATBottle;ANATBedroll,
     }
 
     recipe Upgrade ANAT
@@ -77,7 +77,7 @@ module Base {
         ReplaceInSecondHand = ANAT_Dop holdingbagleft,
         ReplaceInPrimaryHand = ANAT_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_ANAT_Ground,
-        AttachmentsProvided = ANATWeapon;ANATFlashlight;ANATBedroll;ANATBottle;ANATTrinket,
+        AttachmentsProvided = ANATWeapon;ANATFlashlight;ANATBottle;ANATBedroll;ANATTrinket,
     }
 
 	model FemaleBody
@@ -87,7 +87,7 @@ module Base {
 		attachment ANAT_bottle
 		{
 			offset = 0.0700 0.1900 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -208,7 +208,7 @@ module Base {
 			attachment ANAT_bottle
 		{
 			offset = 0.0800 0.1900 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

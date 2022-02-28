@@ -34,7 +34,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = HRBedroll;HRBottle,
+		AttachmentsProvided = HRBottle;HRBedroll,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,
@@ -75,7 +75,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = HRWeapon;HRFlashlight;HRBedroll;HRBottle;HRTrinket,
+        AttachmentsProvided = HRWeapon;HRFlashlight;HRBottle;HRBedroll;HRTrinket,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,	
@@ -88,7 +88,7 @@ module Base {
 		attachment HR_bottle
 		{
 			offset = 0.0400 0.1450 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -209,7 +209,7 @@ module Base {
 		attachment HR_bottle
 		{
 			offset = 0.0400 0.1450 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

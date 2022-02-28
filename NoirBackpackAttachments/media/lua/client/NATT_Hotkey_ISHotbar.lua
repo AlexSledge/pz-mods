@@ -74,6 +74,8 @@ bind.value = "Hotbar 15";
 bind.key = 0;
 table.insert(keyBinding, bind);
 
+local checkReplacement = false
+
 function ISHotbar:activateSlot(slotIndex)
 	local item = self.attachedItems[slotIndex]
 	if not item then return end
@@ -193,3 +195,72 @@ end
 function isBack(slot)
 	return string.find(slot," Back");
 end
+
+--Item stay attached when used, depleted or filled
+--Noir
+function ISHotbar:removeItem(item, doAnim)
+	if doAnim then
+		self:setAttachAnim(item);
+		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
+	else
+		self.chr:removeAttachedItem(item);
+		if checkReplacement then
+			setReplacementItem(item,self)
+		end
+		item:setAttachedSlot(-1);
+		item:setAttachedSlotType(nil);
+		item:setAttachedToModel(nil);
+
+		self:reloadIcons();
+	end
+end
+
+function setReplacementItem(item,hotbar)
+	if item:IsWeapon() then return end;
+	if not item:canStoreWater() then return end
+	if not isSlotAvaible(item,hotbar) then return end
+	local chr = hotbar.chr
+	local replacementType = nil
+	if instanceof(item, "ComboItem") then
+		replacementType = string.gsub(item:getReplaceOnUseOn(),"WaterSource%-","")
+	else
+		replacementType = item:getReplaceOnDeplete()
+	end
+
+	if not replacementType then return end
+	replacementType = moduleDotType(item:getModule(), replacementType)
+	local replacementItem = findReplacementItem(chr,replacementType);
+	if not replacementItem then return end
+	
+	chr:setAttachedItem(item:getAttachedToModel(), replacementItem);
+	replacementItem:setAttachedSlot(item:getAttachedSlot());
+	replacementItem:setAttachedSlotType(item:getAttachedSlotType());
+	replacementItem:setAttachedToModel(item:getAttachedToModel());
+end
+
+function isSlotAvaible(item,hotbar)
+	local slotIndex = item:getAttachedSlot()
+	local slotType = item:getAttachedSlotType()
+	local slot = hotbar.availableSlot[slotIndex]
+	if not slot then return false end
+	if not (slot.slotType == slotType) then return false end
+	return true
+end
+
+function findReplacementItem(chr,itemType)
+	local items = chr:getInventory():getItemsFromType(itemType, true)
+	for i=0, items:size() - 1 do
+        local item = items:get(i)
+		if item:getAttachedSlotType() == nil then
+			return item
+		end
+	end
+	return nil
+end
+
+local originalRefresh = ISHotbar.refresh;
+function ISHotbar:refresh()
+	checkReplacement = false
+	originalRefresh(self)
+	checkReplacement = true
+end 

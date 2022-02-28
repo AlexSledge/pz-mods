@@ -36,7 +36,7 @@ module Base {
         CanHaveHoles = false,
         WorldStaticModel = NomadBackpack_ground,
 		AttachmentReplacement = Bag,
-		AttachmentsProvided = NomadBackpackBedroll;NomadBackpackBottle,
+		AttachmentsProvided = NomadBackpackBottle;NomadBackpackBedroll,
     }
 
     recipe Upgrade NomadBackpack
@@ -75,7 +75,7 @@ module Base {
         CanHaveHoles = false,
         WorldStaticModel = NomadBackpack_ground,
 		AttachmentReplacement = Bag,
-        AttachmentsProvided = NomadBackpackWeapon;NomadBackpackFlashlight;NomadBackpackBedroll;NomadBackpackBottle;NomadBackpackTrinket,
+        AttachmentsProvided = NomadBackpackWeapon;NomadBackpackFlashlight;NomadBackpackBottle;NomadBackpackBedroll;NomadBackpackTrinket,
     }
 
 	model FemaleBody
@@ -85,7 +85,7 @@ module Base {
 		attachment NomadBackpack_bottle
 		{
 			offset = 0.0700 0.2000 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -206,7 +206,7 @@ module Base {
 		attachment NomadBackpack_bottle
 		{
 			offset = 0.0700 0.2000 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

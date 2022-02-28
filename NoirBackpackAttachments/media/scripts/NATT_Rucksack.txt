@@ -35,7 +35,7 @@ module Base {
         RunSpeedModifier = 0.97,
         ReplaceInSecondHand = Rucksack_LEFT_HAND holdingbagleft,
         ReplaceInPrimaryHand = Rucksack_RIGHT_HAND holdingbagright,
-        AttachmentsProvided = RucksackBedroll;RucksackBottle,
+        AttachmentsProvided = RucksackBottle;RucksackBedroll,
 		AttachmentReplacement = Bag,
         WorldStaticModel = Rucksack_Ground,
     }
@@ -75,7 +75,7 @@ module Base {
         RunSpeedModifier = 0.97,
         ReplaceInSecondHand = Rucksack_LEFT_HAND holdingbagleft,
         ReplaceInPrimaryHand = Rucksack_RIGHT_HAND holdingbagright,
-        AttachmentsProvided = RucksackWeapon;RucksackFlashlight;RucksackBedroll;RucksackBottle;RucksackTrinket,
+        AttachmentsProvided = RucksackWeapon;RucksackFlashlight;RucksackBottle;RucksackBedroll;RucksackTrinket,
 		AttachmentReplacement = Bag,
         WorldStaticModel = Rucksack_Ground,
     }
@@ -87,7 +87,7 @@ module Base {
 		attachment Rucksack_bottle
 		{
 			offset = 0.0400 0.1200 -0.1300,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -208,7 +208,7 @@ module Base {
 		attachment Rucksack_bottle
 		{
 			offset = 0.0400 0.1200 -0.1300,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

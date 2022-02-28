@@ -1,6 +1,6 @@
 module Base {
 
-  recipe Upgrade Military Alicepack
+  recipe Upgrade MilitaryAlicepack
     {
         Bag_ALICEpack_Army,
         LeatherStrips=4,
@@ -34,14 +34,14 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackBedroll;MilitaryAlicepackBottle,
+		AttachmentsProvided = MilitaryAlicepackBottle;MilitaryAlicepackBedroll,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
     }
 
 
-    recipe Upgrade Military Alicepack
+    recipe Upgrade MilitaryAlicepack
     {
         Bag_MilitaryAlicepack_I,
         LeatherStrips=8,
@@ -75,7 +75,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBedroll;MilitaryAlicepackBottle;MilitaryAlicepackTrinket,
+		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBottle;MilitaryAlicepackBedroll;MilitaryAlicepackTrinket,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -88,7 +88,7 @@ module Base {
 		attachment MilitaryAlicepack_bottle
 		{
 			offset = 0.0300 0.1450 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -209,7 +209,7 @@ module Base {
 		attachment MilitaryAlicepack_bottle
 		{
 			offset = 0.0300 0.1450 -0.0700,
-			rotate = 90.0000 180.0000 0.0000,
+			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

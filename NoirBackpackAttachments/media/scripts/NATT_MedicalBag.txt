@@ -1,0 +1,324 @@
+module Base {
+
+    recipe Upgrade MilitaryMedicalBag
+    {
+        SMUIClothing.Bag_MilitaryMedicalBag,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:Bag_MilitaryMedicalBag_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+	
+
+    item Bag_MilitaryMedicalBag_I
+    {
+        Type	=	Container,
+		DisplayCategory = Bag,
+        WeightReduction	=	50,
+        Weight	=	0.5,
+        Capacity	=	15,
+        DisplayName	= Military Medical Bag +,
+        Icon = MilitaryMedicalBag,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_MilitaryMedicalBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.96,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided  = 	MilitaryMedicalBagBottle;MilitaryMedicalBagBedroll,
+        ReplaceInSecondHand = Bag_MilitaryMedicalBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_MilitaryMedicalBag_RHand holdingbagright,
+        WorldStaticModel = MilitaryMedicalBag_WorldItem,
+    }
+
+    recipe Upgrade MilitaryMedicalBag
+    {
+        Bag_MilitaryMedicalBag_I,
+        LeatherStrips=8,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+		OnCreate:keepColorAndItems,
+        Result:Bag_MilitaryMedicalBag_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		SkillRequired:Tailoring=4,
+    }
+
+    item Bag_MilitaryMedicalBag_II
+    {
+        Type	=	Container,
+		DisplayCategory = Bag,
+        WeightReduction	=	50,
+        Weight	=	0.5,
+        Capacity	=	15,
+        DisplayName	= Military Medical Bag ++,
+        Icon = MilitaryMedicalBag,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_MilitaryMedicalBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.96,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = MilitaryMedicalBagWeapon;MilitaryMedicalBagFlashlight;MilitaryMedicalBagBottle;MilitaryMedicalBagBedroll;MilitaryMedicalBagTrinket,
+        ReplaceInSecondHand = Bag_MilitaryMedicalBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_MilitaryMedicalBag_RHand holdingbagright,
+        WorldStaticModel = MilitaryMedicalBag_WorldItem,
+    }
+
+	model FemaleBody
+	{
+		
+		attachment MilitaryMedicalBag_bottle
+		{
+			offset = 0.0400 0.1050 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_bedroll {
+			offset = -0.0300 0.0000 0.1500,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketdoll {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketdogchew {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketcattoy {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketrubberducky {
+			offset = 0.0850 0.0750 -0.0800,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinkettoybear {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinkettoycar {
+			offset = 0.0950 0.0750 -0.0800,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketyoyo {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketcube {
+			offset = 0.1450 0.0750 -0.0800,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketgasmask {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketplushie {
+			offset = 0.1050 0.0850 -0.1850,
+			rotate = 0.0000 -100.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weapon {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponbig {
+			offset = 0.1000 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponshovel {
+			offset = 0.1000 0.0000 0.0700,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponpan {
+			offset = 0.1000 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponsaucepan {
+			offset = 0.1000 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_wrench {
+			offset = 0.1000 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_flashlight {
+			offset = -0.0100 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+
+	model MaleBody
+	{
+		
+		attachment MilitaryMedicalBag_bottle
+		{
+			offset = 0.0400 0.1050 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_bedroll {
+			offset = -0.0300 0.0000 0.1500,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketdoll {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketdogchew {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketcattoy {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketrubberducky {
+			offset = 0.0850 0.0750 -0.0800,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinkettoybear {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinkettoycar {
+			offset = 0.0950 0.0750 -0.0800,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketyoyo {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketcube {
+			offset = 0.1450 0.0750 -0.0800,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketgasmask {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_trinketplushie {
+			offset = 0.1050 0.0850 -0.1850,
+			rotate = 0.0000 -100.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weapon {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponbig {
+			offset = 0.1000 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponshovel {
+			offset = 0.1000 0.0000 0.0700,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponpan {
+			offset = 0.1000 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_weaponsaucepan {
+			offset = 0.1000 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_wrench {
+			offset = 0.1000 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryMedicalBag_flashlight {
+			offset = 0.0000 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+}
