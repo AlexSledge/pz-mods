@@ -55,7 +55,9 @@ local attachments = {
 	["ToyCar"] = "TrinketToyCar",
 	["Yoyo"] = "TrinketYoyo",
 	["Cube"] = "TrinketCube",
-	["Hat_GasMask"] = "TrinketGasMask",
+	["Hat_GasMask"] = "TrinketMask",
+	["Hat_HockeyMask"] = "TrinketMask",
+	["WeldingMask"] = "TrinketMask",
 }
 
 for k,v in pairs(attachments) do 
@@ -73,6 +75,8 @@ local staticModels = {
 	["ToyCar"] = "ToyCar",
 	["Yoyo"] = "Yoyo",
 	["Hat_GasMask"] = "GasMask",
+	["Hat_HockeyMask"] = "HockeyMask",
+	["WeldingMask"] = "WelderMask",
 
 	["PopEmpty"] = "PopCanDietWorld",
 	["Pop2Empty"] = "PopCanRedWorld",

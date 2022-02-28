@@ -32,4 +32,16 @@ module Base {
         mesh = Static/Clothes/F_GasMask,
 		texture = GasMask,
     }
+
+	model WelderMask
+    {
+        mesh = Static/Clothes/F_WelderMask,
+		texture = WelderMask,
+    }
+
+	model HockeyMask
+    {
+        mesh = Static/Clothes/F_HockeyMask,
+		texture = HockeyMask,
+    }
 }

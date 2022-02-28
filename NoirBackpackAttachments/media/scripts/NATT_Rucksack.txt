@@ -145,7 +145,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Rucksack_trinketgasmask {
+		attachment Rucksack_trinketmask {
 			offset = 0.0550 0.0600 -0.1950,
 			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,
@@ -266,7 +266,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Rucksack_trinketgasmask {
+		attachment Rucksack_trinketmask {
 			offset = 0.0550 0.0600 -0.1950,
 			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,

@@ -89,7 +89,7 @@ for _,v in pairs(Backpacks) do
 			TrinketToyCar  = v.."TrinketToyCar",
 			TrinketYoyo  = v.."TrinketYoyo",
 			TrinketCube  = v.."TrinketCube",
-			TrinketGasMask  = v.."TrinketGasMask",
+			TrinketMask  = v.."TrinketMask",
 			TrinketPlushie  = v.."TrinketPlushie",
 		},
 	}
