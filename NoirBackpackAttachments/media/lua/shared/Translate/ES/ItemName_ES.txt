@@ -52,5 +52,21 @@ ItemName_ES = {
 
     ItemName_Base.Bag_MilitaryMedicalBag_I = "Mochila medica militar +",
     ItemName_Base.Bag_MilitaryMedicalBag_II = "Mochila medica militar ++",
+
+    ItemName_Base.Sleepingbag = "Saco de dormir",
+    ItemName_Base.SleepingbagBK = "Saco de dormir",
+    ItemName_Base.SleepingbagP = "Saco de dormir",
+    ItemName_Base.SleepingbagO = "Saco de dormir",
+    ItemName_Base.SleepingbagLB = "Saco de dormir",
+    ItemName_Base.SleepingbagR = "Saco de dormir",
+    ItemName_Base.SleepingbagG = "Saco de dormir",
+
+    ItemName_Base.SleepingbagRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagBKRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagPRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagORolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagLBRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagRRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagGRolled = "Saco de dormir (Enrollado)",
     
 }

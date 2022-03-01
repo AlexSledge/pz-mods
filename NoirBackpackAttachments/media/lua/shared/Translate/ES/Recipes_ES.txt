@@ -17,4 +17,7 @@ Recipes_ES = {
     Recipe_Upgrade_CFP90PatrolPack = "Agregar Ranuras de Acople",
     Recipe_Upgrade_MilitaryMedicalBag = "Agregar Ranuras de Acople",
 
+    Recipe_Roll_Sleeping_Bag = "Enrollar saco de dormir",
+	Recipe_UnRoll_Sleeping_Bag = "Desenrollar saco de dormir",
+
 }
