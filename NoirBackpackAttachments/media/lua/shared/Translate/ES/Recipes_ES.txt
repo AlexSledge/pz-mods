@@ -1,0 +1,20 @@
+
+Recipes_ES = {
+
+    Recipe_Upgrade_Alicepack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_Schoolbag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_Hikingbag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BigHikingbag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_KleanBackpack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_MilitaryAlicepack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_NomadBackpack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_HR = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_RUKSAK1 = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_RUKSAK2 = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_ANAT = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_Rucksack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_PoliceUtilityBag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_CFP90PatrolPack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_MilitaryMedicalBag = "Agregar Ranuras de Acople",
+
+}

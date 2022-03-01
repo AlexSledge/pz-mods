@@ -1,4 +1,3 @@
-
 ItemName_EN = {
 
     ItemName_Base.Bag_Schoolbag_I = "Schoolbag +",
@@ -26,8 +25,9 @@ ItemName_EN = {
     ItemName_Base.RUKSAK2_I = "SPOSN Tortilla Backpack +",
     ItemName_Base.RUKSAK2_II = "SPOSN Tortilla Backpack ++",
 
-    ItemName_Base.RUKSAK1_I = "Old tourist backpack +",
-    ItemName_Base.RUKSAK1_II = "Old tourist backpack ++",
+    ItemName_Base.RUKSAK1 = "Hunting Backpack",
+    ItemName_Base.RUKSAK1_I = "Hunting Backpack +",
+    ItemName_Base.RUKSAK1_II = "Hunting Backpack ++",
 
     ItemName_Base.HR_I = "Field Backpack +",
     ItemName_Base.HR_II = "Field Backpack ++",
@@ -47,5 +47,7 @@ ItemName_EN = {
     ItemName_Base.Bag_CFP90PatrolPack_I = "CFP-90 Patrol Pack +",
     ItemName_Base.Bag_CFP90PatrolPack_II = "CFP-90 Patrol Pack ++",
 
+    ItemName_Base.Bag_MilitaryMedicalBag_I = "Military Medical Bag +",
+    ItemName_Base.Bag_MilitaryMedicalBag_I = "Military Medical Bag ++",
     
 }

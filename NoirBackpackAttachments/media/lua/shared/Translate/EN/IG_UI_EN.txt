@@ -119,5 +119,5 @@ IGUI_EN = {
     IGUI_HotbarAttachment_MilitaryMedicalBagBedroll = "Bedroll Slot",
     IGUI_HotbarAttachment_MilitaryMedicalBagTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_MilitaryMedicalBagFlashlight = "Flashlight Slot",
-
+    
 }
