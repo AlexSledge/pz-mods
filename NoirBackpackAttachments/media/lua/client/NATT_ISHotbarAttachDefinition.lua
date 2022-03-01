@@ -54,12 +54,23 @@ for _,v in pairs(Backpacks) do
 	table.insert(ISHotbarAttachDefinition, slot);
 
 	slot = {
-		type = v.."Bottle",
-		name = "Bottle", 
+		type = v.."BottleRight",
+		name = "Bottle Right", 
 		animset = "back",
 		attachments = {
-			Bottle = v.."Bottle",
-			Canteen = v.."Bottle",
+			Bottle = v.."BottleRight",
+			Canteen = v.."BottleRight",
+		},
+	}
+	table.insert(ISHotbarAttachDefinition, slot);
+
+	slot = {
+		type = v.."BottleLeft",
+		name = "Bottle Left", 
+		animset = "back",
+		attachments = {
+			Bottle = v.."BottleLeft",
+			Canteen = v.."BottleLeft",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

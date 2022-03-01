@@ -34,7 +34,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackBottle;MilitaryAlicepackBedroll,
+		AttachmentsProvided = MilitaryAlicepackBottleRight;MilitaryAlicepackBedroll,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -44,7 +44,7 @@ module Base {
     recipe Upgrade MilitaryAlicepack
     {
         Bag_MilitaryAlicepack_I,
-        LeatherStrips=8,
+        LeatherStrips=10,
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -75,7 +75,7 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBottle;MilitaryAlicepackBedroll;MilitaryAlicepackTrinket,
+		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBottleRight;MilitaryAlicepackBottleLeft;MilitaryAlicepackBedroll;MilitaryAlicepackTrinket,
         ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
         WorldStaticModel = ALICE_Pack_Ground,
@@ -85,9 +85,16 @@ module Base {
 	model FemaleBody
 	{
 		
-		attachment MilitaryAlicepack_bottle
+		attachment MilitaryAlicepack_bottleright
 		{
-			offset = 0.0300 0.1450 -0.0700,
+			offset = 0.0300 -0.1550 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_bottleleft
+		{
+			offset = 0.0300 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -171,7 +178,7 @@ module Base {
 		}
 
 		attachment MilitaryAlicepack_weaponshovel {
-			offset = 0.1300 0.0000 0.0700,
+			offset = 0.1300 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
@@ -206,9 +213,16 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment MilitaryAlicepack_bottle
+		attachment MilitaryAlicepack_bottleright
 		{
-			offset = 0.0300 0.1450 -0.0700,
+			offset = 0.0300 -0.1550 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment MilitaryAlicepack_bottleleft
+		{
+			offset = 0.0300 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -292,8 +306,8 @@ module Base {
 		}
 
 		attachment MilitaryAlicepack_weaponshovel {
-			offset = 0.1500 0.0000 0.0700,
-			rotate = 90.0000 0.0000 -180.0000,
+			offset = 0.1500 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

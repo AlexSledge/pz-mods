@@ -33,7 +33,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = SchoolbagBottle;SchoolbagBedroll,
+        AttachmentsProvided = SchoolbagBottleRight;SchoolbagBedroll,
         ReplaceInSecondHand = Bag_Schoolbag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_Schoolbag_RHand holdingbagright,
         WorldStaticModel = SchoolBag_Ground,
@@ -42,7 +42,7 @@ module Base {
     recipe Upgrade Schoolbag
     {
         Bag_Schoolbag_I,
-        LeatherStrips=6,
+        LeatherStrips=8,
         Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -72,7 +72,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = SchoolbagShortWeapon;SchoolbagFlashlight;SchoolbagBottle;SchoolbagBedroll;SchoolbagTrinket,
+        AttachmentsProvided = SchoolbagShortWeapon;SchoolbagFlashlight;SchoolbagBottleRight;SchoolbagBottleLeft;SchoolbagBedroll;SchoolbagTrinket,
         ReplaceInSecondHand = Bag_Schoolbag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_Schoolbag_RHand holdingbagright,
         WorldStaticModel = SchoolBag_Ground,
@@ -82,7 +82,14 @@ module Base {
 	{
 		mesh = Skinned/FemaleBody,
 
-		attachment Schoolbag_bottle
+		attachment Schoolbag_bottleright
+		{
+			offset = 0.0200 -0.1050 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Schoolbag_bottleleft
 		{
 			offset = 0.0200 0.0950 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
@@ -191,7 +198,14 @@ module Base {
     {
         mesh = Skinned/MaleBody,
 
-		attachment Schoolbag_bottle
+		attachment Schoolbag_bottleright
+		{
+			offset = 0.0400 -0.1150 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Schoolbag_bottleleft
 		{
 			offset = 0.0400 0.0950 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,

@@ -34,7 +34,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = HRBottle;HRBedroll,
+		AttachmentsProvided = HRBottleRight;HRBedroll,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,
@@ -44,7 +44,7 @@ module Base {
     recipe Upgrade HR
     {
         HR_I,
-        LeatherStrips=8,
+        LeatherStrips=10,
         Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -75,7 +75,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.97,
         AttachmentReplacement = Bag,
-        AttachmentsProvided = HRWeapon;HRFlashlight;HRBottle;HRBedroll;HRTrinket,
+        AttachmentsProvided = HRWeapon;HRFlashlight;HRBottleRight;HRBottleLeft;HRBedroll;HRTrinket,
         ReplaceInSecondHand = HR_Dop holdingbagleft,
         ReplaceInPrimaryHand = HR_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_HR_Ground,	
@@ -85,9 +85,16 @@ module Base {
 	{
 		mesh = Skinned/FemaleBody,
 
-		attachment HR_bottle
+		attachment HR_bottleright
 		{
-			offset = 0.0400 0.1450 -0.0700,
+			offset = 0.0400 -0.1650 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_bottleleft
+		{
+			offset = 0.0400 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -171,7 +178,7 @@ module Base {
 		}
 
 		attachment HR_weaponshovel {
-			offset = 0.900 0.0000 0.0700,
+			offset = 0.900 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
@@ -206,9 +213,16 @@ module Base {
     {
         mesh = Skinned/MaleBody,
 
-		attachment HR_bottle
+		attachment HR_bottleright
 		{
-			offset = 0.0400 0.1450 -0.0700,
+			offset = 0.0400 -0.1650 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_bottleleft
+		{
+			offset = 0.0400 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -292,7 +306,7 @@ module Base {
 		}
 
 		attachment HR_weaponshovel {
-			offset = 0.900 0.0000 0.0700,
+			offset = 0.900 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}

@@ -35,7 +35,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.96,
         AttachmentReplacement = Bag,
-		AttachmentsProvided  = 	MilitaryMedicalBagBottle;MilitaryMedicalBagBedroll,
+		AttachmentsProvided  = 	MilitaryMedicalBagBottleRight;MilitaryMedicalBagBedroll,
         ReplaceInSecondHand = Bag_MilitaryMedicalBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_MilitaryMedicalBag_RHand holdingbagright,
         WorldStaticModel = MilitaryMedicalBag_WorldItem,
@@ -44,7 +44,7 @@ module Base {
     recipe Upgrade MilitaryMedicalBag
     {
         Bag_MilitaryMedicalBag_I,
-        LeatherStrips=6,
+        LeatherStrips=8,
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -76,7 +76,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.96,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryMedicalBagShortWeapon;MilitaryMedicalBagFlashlight;MilitaryMedicalBagBottle;MilitaryMedicalBagBedroll;MilitaryMedicalBagTrinket,
+		AttachmentsProvided = MilitaryMedicalBagShortWeapon;MilitaryMedicalBagFlashlight;MilitaryMedicalBagBottleRight;MilitaryMedicalBagBottleLeft;MilitaryMedicalBagBedroll;MilitaryMedicalBagTrinket,
         ReplaceInSecondHand = Bag_MilitaryMedicalBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_MilitaryMedicalBag_RHand holdingbagright,
         WorldStaticModel = MilitaryMedicalBag_WorldItem,
@@ -84,10 +84,17 @@ module Base {
 
 	model FemaleBody
 	{
-		
-		attachment MilitaryMedicalBag_bottle
+
+		attachment MilitaryMedicalBag_bottleright
 		{
-			offset = 0.0400 0.1050 -0.0700,
+			offset = 0.0400 -0.1250 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment MilitaryMedicalBag_bottleleft
+		{
+			offset = 0.0400 0.0950 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -194,9 +201,16 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment MilitaryMedicalBag_bottle
+		attachment MilitaryMedicalBag_bottleright
 		{
-			offset = 0.0400 0.1050 -0.0700,
+			offset = 0.0400 -0.1250 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment MilitaryMedicalBag_bottleleft
+		{
+			offset = 0.0400 0.0950 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}

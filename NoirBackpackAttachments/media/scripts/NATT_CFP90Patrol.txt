@@ -35,7 +35,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.96,
         AttachmentReplacement = Bag,
-		AttachmentsProvided  = 	CFP90PatrolPackBottle;CFP90PatrolPackBedroll,
+		AttachmentsProvided  = 	CFP90PatrolPackBottleRight;CFP90PatrolPackBedroll,
         ReplaceInSecondHand = Bag_CFP90PatrolPack_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_CFP90PatrolPack_RHand holdingbagright,
         WorldStaticModel = PatrolPack_WorldItem,
@@ -44,7 +44,7 @@ module Base {
     recipe Upgrade CFP90PatrolPack
     {
         Bag_CFP90PatrolPack_I,
-        LeatherStrips=6,
+        LeatherStrips=8,
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -76,7 +76,7 @@ module Base {
         BloodLocation = Bag,
         RunSpeedModifier = 0.96,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = CFP90PatrolPackShortWeapon;CFP90PatrolPackFlashlight;CFP90PatrolPackBottle;CFP90PatrolPackBedroll;CFP90PatrolPackTrinket,	
+		AttachmentsProvided = CFP90PatrolPackShortWeapon;CFP90PatrolPackFlashlight;CFP90PatrolPackBottleRight;CFP90PatrolPackBottleLeft;CFP90PatrolPackBedroll;CFP90PatrolPackTrinket,	
         ReplaceInSecondHand = Bag_CFP90PatrolPack_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_CFP90PatrolPack_RHand holdingbagright,
         WorldStaticModel = PatrolPack_WorldItem,
@@ -84,10 +84,17 @@ module Base {
 
 	model FemaleBody
 	{
-		
-		attachment CFP90PatrolPack_bottle
+
+		attachment CFP90PatrolPack_bottleright
 		{
-			offset = 0.0400 0.1250 -0.0700,
+			offset = 0.0400 -0.1250 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment CFP90PatrolPack_bottleleft
+		{
+			offset = 0.0400 0.1050 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -194,13 +201,19 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment CFP90PatrolPack_bottle
+		attachment CFP90PatrolPack_bottleright
 		{
-			offset = 0.0400 0.1250 -0.0700,
+			offset = 0.0400 -0.1250 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
-
+		
+		attachment CFP90PatrolPack_bottleleft
+		{
+			offset = 0.0400 0.1050 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
 		attachment CFP90PatrolPack_bedroll {
 			offset = -0.0100 0.0000 0.1400,
 			rotate = 0.0000 0.0000 90.0000,

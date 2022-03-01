@@ -34,7 +34,7 @@ module Base {
         BloodLocation 			= 	Bag,
         RunSpeedModifier 		= 	0.96,
         AttachmentReplacement 	= 	Bag,
-		AttachmentsProvided  	= 	HikingbagBottle;HikingbagBedroll,			
+		AttachmentsProvided  	= 	HikingbagBottleRight;HikingbagBedroll,			
         ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
         ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
         WorldStaticModel 		= 	HikingBag_Ground,
@@ -43,7 +43,7 @@ module Base {
     recipe Upgrade Hikingbag
     {
         Bag_Hikingbag_I,
-        LeatherStrips=6,
+        LeatherStrips=8,
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -74,7 +74,7 @@ module Base {
         BloodLocation 			= 	Bag,
         RunSpeedModifier 		= 	0.96,
         AttachmentReplacement 	= 	Bag,
-		AttachmentsProvided 	= 	HikingbagShortWeapon;HikingbagFlashlight;HikingbagBottle;HikingbagBedroll;HikingbagTrinket,	
+		AttachmentsProvided 	= 	HikingbagShortWeapon;HikingbagFlashlight;HikingbagBottleRight;HikingbagBottleLeft;HikingbagBedroll;HikingbagTrinket,	
         ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
         ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
         WorldStaticModel 		= 	HikingBag_Ground,
@@ -83,9 +83,16 @@ module Base {
 	model FemaleBody
 	{
 		
-		attachment Hikingbag_bottle
+		attachment Hikingbag_bottleright
 		{
-			offset = 0.0200 0.1250 -0.0700,
+			offset = 0.0200 -0.1350 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment Hikingbag_bottleleft
+		{
+			offset = 0.0200 0.1150 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -192,9 +199,16 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment Hikingbag_bottle
+		attachment Hikingbag_bottleright
 		{
-			offset = 0.0400 0.1250 -0.0700,
+			offset = 0.0200 -0.1350 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment Hikingbag_bottleleft
+		{
+			offset = 0.0200 0.1150 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}

@@ -1,6 +1,6 @@
 module Base {
 
-    recipe Upgrade Police Utility Bag
+    recipe Upgrade PoliceUtilityBag
     {
         SLEOClothing.Bag_PoliceUtilityBag,
         LeatherStrips=2,
@@ -11,7 +11,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_WaterSlots,
+        Tooltip: Tooltip_PolicyUtilityBagSlotsI,
         Category:Tailoring,
         NeedToBeLearn:true,
 		SkillRequired:Tailoring=2,
@@ -36,10 +36,10 @@ module Base {
         ReplaceInSecondHand = Bag_PoliceUtilityBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_PoliceUtilityBag_RHand holdingbagright,
         WorldStaticModel = PoliceUtilityBag_WorldItem,
-		AttachmentsProvided = PoliceUtilityBagBottle,
+		AttachmentsProvided = PoliceUtilityBagBottleLeft,
     }
 
-    recipe Upgrade Police Utility Bag
+    recipe Upgrade PoliceUtilityBag
     {
         Bag_PoliceUtilityBag_I,
         LeatherStrips=4,
@@ -50,7 +50,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_SmallSlotsII,
+        Tooltip: Tooltip_PolicyUtilityBagSlotsII,
         Category:Tailoring,
         NeedToBeLearn:true,
 		SkillRequired:Tailoring=4,
@@ -75,10 +75,10 @@ module Base {
         ReplaceInSecondHand = Bag_PoliceUtilityBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_PoliceUtilityBag_RHand holdingbagright,
         WorldStaticModel = PoliceUtilityBag_WorldItem,
-        AttachmentsProvided = PoliceUtilityBagShortWeapon;PoliceUtilityBagFlashlight;PoliceUtilityBagBottle,
+        AttachmentsProvided = PoliceUtilityBagShortWeapon;PoliceUtilityBagFlashlight;PoliceUtilityBagBottleLeft,
     }
 
-	recipe Upgrade Police Utility Bag
+	recipe Upgrade PoliceUtilityBag
     {
         SLEOClothing.Bag_PoliceUtilityBagGreen,
         LeatherStrips=2,
@@ -89,7 +89,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_WaterSlots,
+        Tooltip: Tooltip_PolicyUtilityBagSlotsI,
         Category:Tailoring,
         NeedToBeLearn:true,
 		SkillRequired:Tailoring=2,
@@ -114,13 +114,13 @@ module Base {
         ReplaceInSecondHand = Bag_PoliceUtilityBagGreen_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_PoliceUtilityBagGreen_RHand holdingbagright,
         WorldStaticModel = PoliceUtilityBagGreen_WorldItem,
-		AttachmentsProvided = PoliceUtilityBagBottle,
+		AttachmentsProvided = PoliceUtilityBagBottleLeft,
     }
 
-    recipe Upgrade Police Utility Bag
+    recipe Upgrade PoliceUtilityBag
     {
         Bag_PoliceUtilityBagGreen_I,
-        LeatherStrips=4,
+        LeatherStrips=6,
         Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -128,7 +128,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_SmallSlotsII,
+        Tooltip: Tooltip_PolicyUtilityBagSlotsII,
         Category:Tailoring,
         NeedToBeLearn:true,
 		SkillRequired:Tailoring=4,
@@ -153,16 +153,16 @@ module Base {
         ReplaceInSecondHand = Bag_PoliceUtilityBagGreen_LHand holdingbagleft,
         ReplaceInPrimaryHand = Bag_PoliceUtilityBagGreen_RHand holdingbagright,
         WorldStaticModel = PoliceUtilityBagGreen_WorldItem,
-        AttachmentsProvided = PoliceUtilityBagShortWeapon;PoliceUtilityBagFlashlight;PoliceUtilityBagBottle,
+        AttachmentsProvided = PoliceUtilityBagShortWeapon;PoliceUtilityBagFlashlight;PoliceUtilityBagBottleLeft,
     }
 
 	model FemaleBody
 	{
 		mesh = Skinned/FemaleBody,
 
-		attachment PoliceUtilityBag_bottle
+        attachment PoliceUtilityBag_bottleleft
 		{
-			offset = 0.0200 0.0850 -0.0700,
+			offset = 0.0000 0.0850 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -203,9 +203,9 @@ module Base {
     {
         mesh = Skinned/MaleBody,
 
-		attachment PoliceUtilityBag_bottle
+		attachment PoliceUtilityBag_bottleleft
 		{
-			offset = 0.0400 0.0950 -0.0700,
+			offset = 0.0200 0.0950 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}

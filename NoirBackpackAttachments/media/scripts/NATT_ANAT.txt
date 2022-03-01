@@ -37,13 +37,13 @@ module Base {
         ReplaceInSecondHand = ANAT_Dop holdingbagleft,
         ReplaceInPrimaryHand = ANAT_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_ANAT_Ground,	
-		AttachmentsProvided = ANATBottle;ANATBedroll,
+		AttachmentsProvided = ANATBottleRight;ANATBedroll,
     }
 
     recipe Upgrade ANAT
     {
         ANAT_I,
-        LeatherStrips=8,
+        LeatherStrips=10,
         Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
@@ -77,16 +77,23 @@ module Base {
         ReplaceInSecondHand = ANAT_Dop holdingbagleft,
         ReplaceInPrimaryHand = ANAT_Osn holdingbagright,
 		WorldStaticModel = WorldItem-Bag_ANAT_Ground,
-        AttachmentsProvided = ANATWeapon;ANATFlashlight;ANATBottle;ANATBedroll;ANATTrinket,
+        AttachmentsProvided = ANATWeapon;ANATFlashlight;ANATBottleRight;ANATBottleLeft;ANATBedroll;ANATTrinket,
     }
 
 	model FemaleBody
 	{
 		mesh = Skinned/FemaleBody,
 
-		attachment ANAT_bottle
+		attachment ANAT_bottleright
 		{
-			offset = 0.0700 0.1900 -0.0700,
+			offset = 0.0700 -0.2100 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment ANAT_bottleleft
+		{
+			offset = 0.0700 0.1800 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -170,7 +177,7 @@ module Base {
 		}
 
 		attachment ANAT_weaponshovel {
-			offset = 0.1900 0.0000 0.0700,
+			offset = 0.1900 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
@@ -205,9 +212,16 @@ module Base {
     {
         mesh = Skinned/MaleBody,
 
-			attachment ANAT_bottle
+		attachment ANAT_bottleright
 		{
-			offset = 0.0800 0.1900 -0.0700,
+			offset = 0.0700 -0.2100 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment ANAT_bottleleft
+		{
+			offset = 0.0700 0.1800 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -291,7 +305,7 @@ module Base {
 		}
 
 		attachment ANAT_weaponshovel {
-			offset = 0.2000 0.0000 0.0700,
+			offset = 0.2000 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
