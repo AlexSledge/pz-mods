@@ -2,15 +2,15 @@
 
 Tooltip_ES = {
 
-    Tooltip_SlotsI = "Agregar Ranuras: Saco de dormir, Botella Derecha",
-    Tooltip_SlotsII = "Agregar Ranuras: Arma, Linterna, Botella Izquierda, Baratija",
+    Tooltip_SlotsI = "Agrega Ranuras: Saco de dormir, Botella Derecha",
+    Tooltip_SlotsII = "Agrega Ranuras: Arma, Linterna, Botella Izquierda, Baratija",
 
-    Tooltip_WaterSlots = "Agregar Ranuras: Botella Derecha",
-    Tooltip_SmallSlotsII = "Agregar Ranuras: Arma corta, Linterna, Botella Izquierda",
+    Tooltip_WaterSlots = "Agrega Ranuras: Botella Derecha",
+    Tooltip_SmallSlotsII = "Agrega Ranuras: Arma corta, Linterna, Botella Izquierda",
 
-    Tooltip_PolicyUtilityBagSlotsI = "Agregar Ranuras: Botella Izquierda",
-    Tooltip_PolicyUtilityBagSlotsII = "Agregar Ranuras: Arma corta, Linterna",
+    Tooltip_PolicyUtilityBagSlotsI = "Agrega Ranuras: Botella Izquierda",
+    Tooltip_PolicyUtilityBagSlotsII = "Agrega Ranuras: Arma corta, Linterna",
     
-    Tooltip_MediumSlotsII = "Agregar Ranuras: Arma corta, Linterna, Botella Izquierda, Baratija",
+    Tooltip_MediumSlotsII = "Agrega Ranuras: Arma corta, Linterna, Botella Izquierda, Baratija",
 
 }
