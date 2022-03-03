@@ -194,7 +194,7 @@ function isBack(slot)
 	return string.find(slot," Back");
 end
 
---Item stay attached when used, depleted or filled
+--Item stay attached
 --Noir
 local checkReplacement = false
 function ISHotbar:removeItem(item, doAnim)
