@@ -119,5 +119,7 @@ IGUI_ES = {
     IGUI_HotbarAttachment_MilitaryMedicalBagBedroll = "Ranura Saco de Dormir",
     IGUI_HotbarAttachment_MilitaryMedicalBagTrinket = "Ranura Baratija",
     IGUI_HotbarAttachment_MilitaryMedicalBagFlashlight = "Ranura Linterna",
+
+    IGUI_CraftCategory_Tailoring = "Sastreria",
     
 }

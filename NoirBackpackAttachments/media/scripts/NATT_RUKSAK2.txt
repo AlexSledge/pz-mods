@@ -87,8 +87,8 @@ module Base {
 
 		attachment RUKSAK2_bottleright
 		{
-			offset = 0.0200 -0.1650 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0200 -0.1450 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 		
@@ -214,8 +214,8 @@ module Base {
 		
 		attachment RUKSAK2_bottleright
 		{
-			offset = 0.0500 -0.1650 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0500 -0.1450 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 		

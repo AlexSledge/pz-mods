@@ -86,8 +86,8 @@ module Base {
 		
 		attachment Alicepack_bottleright
 		{
-			offset = 0.0300 -0.1550 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0300 -0.1350 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -213,8 +213,8 @@ module Base {
 		
 		attachment Alicepack_bottleright
 		{
-			offset = 0.0300 -0.1550 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0300 -0.1350 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

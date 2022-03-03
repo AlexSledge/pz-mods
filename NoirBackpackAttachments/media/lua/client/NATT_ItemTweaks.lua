@@ -31,9 +31,9 @@ local attachments = {
 	["BeerEmpty"] = "Bottle",
 	["BeerWaterFull"] = "Bottle",
 
-	["MayonnaiseFull"] = "Bottle",
-	["MayonnaiseEmpty"] = "Bottle",
-	["MayonnaiseWaterFull"] = "Bottle",
+	["farming.MayonnaiseFull"] = "Bottle",
+	["farming.MayonnaiseEmpty"] = "Bottle",
+	["farming.MayonnaiseWaterFull"] = "Bottle",
 
 	["SleepingbagRolled"] = "Bedroll",
 	["SleepingbagGRolled"] = "Bedroll",

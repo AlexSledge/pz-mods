@@ -5,6 +5,7 @@ local modsRecipes = {
 	[NATTmods.ScrapArmor] = {"Upgrade Rucksack"} , 
 	[NATTmods.SLEO] = {"Upgrade PoliceUtilityBag"},
 	[NATTmods.SMUI] = {"Upgrade CFP90PatrolPack","Upgrade MilitaryMedicalBag"},
+	[NATTmods.MoreTraits] = {"Upgrade PackerBag","Upgrade SmallHikingbag"},
 }
 
 function checkMods()

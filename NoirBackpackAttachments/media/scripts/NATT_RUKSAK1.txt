@@ -25,7 +25,7 @@ module Base {
         Weight	=	1.0,
         Type	=	Container,
         Capacity	=	30,
-        DisplayName	=	Old tourist backpack +,
+        DisplayName	=	Hunting Backpack +,
         IconsForTexture = RUKSAK1_1;RUKSAK1_2;RUKSAK1_3;RUKSAK1_4;RUKSAK1_5;RUKSAK1_6,
         CanBeEquipped = Back,
         OpenSound   =   OpenBag,
@@ -67,7 +67,7 @@ module Base {
         Weight	=	1.0,
         Type	=	Container,
         Capacity	=	30,
-        DisplayName	=	Old tourist backpack ++,
+        DisplayName	=	Hunting Backpack ++,
         IconsForTexture = RUKSAK1_1;RUKSAK1_2;RUKSAK1_3;RUKSAK1_4;RUKSAK1_5;RUKSAK1_6,
         CanBeEquipped = Back,
         OpenSound   =   OpenBag,
@@ -89,14 +89,14 @@ module Base {
 		
 		attachment RUKSAK1_bottleright
 		{
-			offset = 0.0400 -0.1650 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0400 -0.1400 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment RUKSAK1_bottleleft
 		{
-			offset = 0.0400 0.1450 -0.0700,
+			offset = 0.0400 0.1400 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -216,14 +216,14 @@ module Base {
 		
 		attachment RUKSAK1_bottleright
 		{
-			offset = 0.0500 -0.1650 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0500 -0.1400 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment RUKSAK1_bottleleft
 		{
-			offset = 0.0500 0.1450 -0.0700,
+			offset = 0.0500 0.1400 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}

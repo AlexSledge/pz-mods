@@ -120,4 +120,6 @@ IGUI_EN = {
     IGUI_HotbarAttachment_MilitaryMedicalBagTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_MilitaryMedicalBagFlashlight = "Flashlight Slot",
     
+    IGUI_CraftCategory_Tailoring = "Tailoring",
+
 }

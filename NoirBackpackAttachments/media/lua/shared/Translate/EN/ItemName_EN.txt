@@ -49,5 +49,11 @@ ItemName_EN = {
 
     ItemName_Base.Bag_MilitaryMedicalBag_I = "Military Medical Bag +",
     ItemName_Base.Bag_MilitaryMedicalBag_I = "Military Medical Bag ++",
+
+    ItemName_Base.PackerBag_I = "Packer Bag +",
+    ItemName_Base.PackerBag_II = "Packer Bag ++",
+
+    ItemName_Base.Bag_SmallHikingBag_I = "Small Hiking Bag +",
+    ItemName_Base.Bag_SmallHikingBag_II = "Small Hiking Bag ++",
     
 }

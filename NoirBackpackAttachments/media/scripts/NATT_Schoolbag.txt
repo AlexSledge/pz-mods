@@ -84,8 +84,8 @@ module Base {
 
 		attachment Schoolbag_bottleright
 		{
-			offset = 0.0200 -0.1050 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0200 -0.0950 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -200,8 +200,8 @@ module Base {
 
 		attachment Schoolbag_bottleright
 		{
-			offset = 0.0400 -0.1150 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0400 -0.0950 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

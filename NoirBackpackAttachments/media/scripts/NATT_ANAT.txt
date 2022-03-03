@@ -86,8 +86,8 @@ module Base {
 
 		attachment ANAT_bottleright
 		{
-			offset = 0.0700 -0.2100 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0700 -0.1800 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -214,8 +214,8 @@ module Base {
 
 		attachment ANAT_bottleright
 		{
-			offset = 0.0700 -0.2100 -0.0700,
-			rotate = 90.0000 90.0000 0.0000,
+			offset = 0.0700 -0.1800 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

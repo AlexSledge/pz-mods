@@ -78,7 +78,7 @@ function ISHotbar:activateSlot(slotIndex)
 	local item = self.attachedItems[slotIndex]
 	if not item then return end
 	if item:getAttachedSlot() ~= slotIndex then
-		error "item:getAttachedSlot() ~= slotIndex"
+		return
 	end
 	if item:canBeActivated() then
 		item:setActivated(not item:isActivated())
@@ -262,4 +262,4 @@ function ISHotbar:refresh()
 	checkReplacement = false
 	originalRefresh(self)
 	checkReplacement = true
-end 
+end
