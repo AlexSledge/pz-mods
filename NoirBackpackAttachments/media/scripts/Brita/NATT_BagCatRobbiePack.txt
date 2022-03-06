@@ -1,0 +1,424 @@
+module Base {
+
+    recipe Upgrade BagCatPack
+    {
+        Bag_Cat_Pack,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagCatPack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+
+    item BagCatPack_I
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Bushcraft Kitty Pack +,
+        ClothingItem = Bag_Cat_Pack,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	3,
+        Capacity	=	38,
+        Icon	=	Bag_Cat_Pack,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Cat_Pack,
+		AttachmentsProvided = BagCatPackBottleLeft;BagCatPackBedroll,
+    }
+
+    recipe Upgrade BagCatPack
+    {
+        BagCatPack_I,
+        LeatherStrips=10,
+        Thread=2, 
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagCatPack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=4,
+    }
+
+    item BagCatPack_II
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Bushcraft Kitty Pack ++,
+        ClothingItem = Bag_Cat_Pack,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	3,
+        Capacity	=	38,
+        Icon	=	Bag_Cat_Pack,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Cat_Pack,
+        AttachmentsProvided = BagCatPackWeapon;BagCatPackFlashlight;BagCatPackBottleRight;BagCatPackBottleLeft;BagCatPackBedroll;BagCatPackTrinket,
+    }
+
+
+    recipe Upgrade BagRobbiePack
+    {
+        Bag_Robbie_Pack,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagRobbiePack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+
+    item BagRobbiePack_I
+    {
+        DisplayCategory = Bag,
+		Type = Container,
+        DisplayName = Robbie the Rabbit Pack +,
+        ClothingItem = Bag_Robbie_Pack,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	3,
+        Capacity	=	38,
+        Icon	=	Bag_Robbie_Pack,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Robbie_Pack,
+		AttachmentsProvided = BagCatPackBottleLeft;BagCatPackBedroll,
+    }
+
+    recipe Upgrade BagRobbiePack
+    {
+        BagRobbiePack_I,
+        LeatherStrips=10,
+        Thread=2, 
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagRobbiePack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=4,
+    }
+
+    item BagRobbiePack_II
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Robbie the Rabbit Pack ++,
+        ClothingItem = Bag_Robbie_Pack,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	3,
+        Capacity	=	38,
+        Icon	=	Bag_Robbie_Pack,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Robbie_Pack,
+        AttachmentsProvided = BagCatPackWeapon;BagCatPackFlashlight;BagCatPackBottleRight;BagCatPackBottleLeft;BagCatPackBedroll;BagCatPackTrinket,
+    }
+
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+         attachment BagCatPack_bottleright
+		{
+			offset = 0.0000 -0.0850 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_bottleleft
+		{
+			offset = 0.0000 0.0850 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_bedroll {
+			offset = -0.0250 0.0000 0.1300,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_trinketdoll {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketdogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketcattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketrubberducky {
+			offset = 0.0650 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinkettoybear {
+			offset = 0.1550 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinkettoycar {
+			offset = 0.0650 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketyoyo {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketcube {
+			offset = 0.1250 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketmask {
+			offset = 0.0550 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketplushie {
+			offset = 0.0550 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_weapon {
+			offset = 0.0600 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_weaponbig {
+			offset = 0.0600 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_weaponshovel {
+			offset = 0.0600 -0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_weaponpan {
+			offset = 0.0500 0.0000 0.0500,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_weaponsaucepan {
+			offset = 0.0500 0.0000 0.0500,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_wrench {
+			offset = 0.0600 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_flashlight {
+			offset = -0.0150 0.0500 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+    model MaleBody 
+    {
+        mesh = Skinned/MaleBody,
+
+        attachment BagCatPack_bottleright
+		{
+			offset = 0.0100 -0.0950 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_bottleleft
+		{
+			offset = 0.0000 0.0950 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_bedroll {
+			offset = -0.0250 0.0000 0.1300,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_trinketdoll {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketdogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketcattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketrubberducky {
+			offset = 0.0650 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinkettoybear {
+			offset = 0.1350 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinkettoycar {
+			offset = 0.0650 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketyoyo {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketcube {
+			offset = 0.1250 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketmask {
+			offset = 0.0550 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_trinketplushie {
+			offset = 0.0550 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_weapon {
+			offset = 0.0850 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_weaponbig {
+			offset = 0.0850 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment BagCatPack_weaponshovel {
+			offset = 0.0850 -0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_weaponpan {
+			offset = 0.0850 0.0000 0.0500,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_weaponsaucepan {
+			offset = 0.0850 0.0000 0.0500,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_wrench {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagCatPack_flashlight {
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+    }
+
+}

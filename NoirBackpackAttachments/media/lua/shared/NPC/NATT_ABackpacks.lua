@@ -10,6 +10,7 @@ NATTmods = {
 	["SLEO"] = "SLEO",
 	["SMUI"] = "SMUI",
 	["MoreTraits"] = "ToadTraits",
+	["BritaArmor"] = "Brita_2",
 }  
 
 
@@ -22,6 +23,9 @@ local modsBackpacks = {
 	[NATTmods.ScrapArmor] = {"Rucksack"} ,
 	[NATTmods.SLEO] = {"PoliceUtilityBag"} ,
 	[NATTmods.SMUI] = {"CFP90PatrolPack","MilitaryMedicalBag"} ,
+	[NATTmods.BritaArmor] = {"BagSniperPack","ARVNRucksack","BagST53Set","BagSCBA",
+							 "BagZIP","BagSSO","BagSavotta","BagBush","BagHunting",
+							 "BagRadioPack","BagTacticalAlice","BagCatPack","BagM2A1Pack"} ,
 }
 
 Backpacks = {

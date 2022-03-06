@@ -1,0 +1,346 @@
+module Base {
+
+    recipe Upgrade BagSCBA
+    {
+        Bag_SCBA,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagSCBA_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+	
+
+    item BagSCBA_I
+    {
+        
+		DisplayCategory = Bag,
+		Type = Container,
+        DisplayName = MSA Safety SCBA Set +,
+        ClothingItem = Bag_SCBA,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	2,
+        Capacity	=	38,
+        Icon	=	Bag_SCBA,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_SCBA,
+		AttachmentsProvided  = 	BagSCBABottleRight;BagSCBABedroll,
+        
+    }
+
+    recipe Upgrade BagSCBA
+    {
+        BagSCBA_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+		OnCreate:keepColorAndItems,
+        Result:BagSCBA_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=4,
+    }
+
+    item BagSCBA_II
+    {
+        
+		DisplayCategory = Bag,
+		Type = Container,
+        DisplayName = MSA Safety SCBA Set ++,
+        ClothingItem = Bag_SCBA,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	2,
+        Capacity	=	38,
+        Icon	=	Bag_SCBA,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_SCBA,
+		AttachmentsProvided = BagSCBAWeapon;BagSCBAFlashlight;BagSCBABottleRight;BagSCBABottleLeft;BagSCBABedroll;BagSCBATrinket,
+     
+    }
+
+	model FemaleBody
+	{
+
+		attachment BagSCBA_bottleright
+		{
+			offset = 0.0400 -0.0750 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment BagSCBA_bottleleft
+		{
+			offset = 0.0400 0.0750 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_bedroll {
+			offset = -0.0300 0.0000 0.1500,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketdoll {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketdogchew {
+			offset = 0.0850 0.0550 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketcattoy {
+			offset = 0.0850 0.0550 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketrubberducky {
+			offset = 0.0850 0.0550 -0.0800,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinkettoybear {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinkettoycar {
+			offset = 0.0950 0.0550 -0.0800,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketyoyo {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketcube {
+			offset = 0.1450 0.0550 -0.0800,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketmask {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketplushie {
+			offset = 0.1050 0.0850 -0.1850,
+			rotate = 0.0000 -100.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weapon {
+			offset = 0.1050 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponpan {
+			offset = 0.1000 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponbig {
+			offset = 0.1000 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponshovel {
+			offset = 0.1000 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponsaucepan {
+			offset = 0.1000 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_wrench {
+			offset = 0.1000 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_flashlight {
+			offset = -0.0100 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+
+	model MaleBody
+	{
+		
+		attachment BagSCBA_bottleright
+		{
+			offset = 0.0500 -0.0750 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment BagSCBA_bottleleft
+		{
+			offset = 0.0500 0.0750 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_bedroll {
+			offset = -0.0200 0.0000 0.1500,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketdoll {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketdogchew {
+			offset = 0.0850 0.0550 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketcattoy {
+			offset = 0.0850 0.0550 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketrubberducky {
+			offset = 0.0850 0.0550 -0.0800,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinkettoybear {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinkettoycar {
+			offset = 0.0950 0.0550 -0.0800,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketyoyo {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketcube {
+			offset = 0.1450 0.0550 -0.0800,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketmask {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_trinketplushie {
+			offset = 0.1050 0.0850 -0.1850,
+			rotate = 0.0000 -100.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weapon {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponbig {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponshovel {
+			offset = 0.1150 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponpan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_weaponsaucepan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_wrench {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSCBA_flashlight {
+			offset = 0.0000 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+}

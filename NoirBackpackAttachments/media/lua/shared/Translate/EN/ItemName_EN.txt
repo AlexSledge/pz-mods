@@ -55,5 +55,47 @@ ItemName_EN = {
 
     ItemName_Base.Bag_SmallHikingBag_I = "Small Hiking Bag +",
     ItemName_Base.Bag_SmallHikingBag_II = "Small Hiking Bag ++",
+
+    ItemName_Base.BagSniperPack_I = "G3 Phantom Sniper Pack +",
+    ItemName_Base.BagSniperPack_II = "G3 Phantom Sniper Pack ++",
+
+    ItemName_Base.ARVNRucksack_I = "ARVN Rucksack +",
+    ItemName_Base.ARVNRucksack_II = "ARVN Rucksack ++",
+
+    ItemName_Base.BagST53Set_I = "Avon Protection ST53 SCBA Set +",
+    ItemName_Base.BagST53Set_II = "Avon Protection ST53 SCBA Set ++",
+
+    ItemName_Base.BagSCBA_I = "MSA Safety SCBA Set +",
+    ItemName_Base.BagSCBA_II = "MSA Safety SCBA Set ++",
+
+    ItemName_Base.BagZIP_I = "Y-ZIP City Assault Backpack +",
+    ItemName_Base.BagZIP_II = "Y-ZIP City Assault Backpack ++",
+
+    ItemName_Base.BagSSO_I = "SPOSN SSO Bober-M Assault Backpack, +",
+    ItemName_Base.BagSSO_II = "SPOSN SSO Bober-M Assault Backpack, ++",
+
+    ItemName_Base.BagSavotta_I = "Savotta Jaakari S Backpack +",
+    ItemName_Base.BagSavotta_II = "Savotta Jaakari S Backpack ++",
+
+    ItemName_Base.BagBush_I = "Survival Bushcraft Backpack+",
+    ItemName_Base.BagBush_II = "Survival Bushcraft Backpack ++",
+
+    ItemName_Base.BagHunting_I = "Survival Bushcraft Backpack w/ Axe +",
+    ItemName_Base.BagHunting_II = "Survival Bushcraft Backpack w/ Axe ++",
+
+    ItemName_Base.BagRadioPack_I = "AN/PRC-77 Radio Man Pack +",
+    ItemName_Base.BagRadioPack_II = "AN/PRC-77 Radio Man Pack ++",
+
+    ItemName_Base.BagTacticalAlice_I = "Military Alice Backpack +",
+    ItemName_Base.BagTacticalAlice_II = "Military Alice Backpack ++",
+
+    ItemName_Base.BagCatPack_I = "Bushcraft Kitty Pack +",
+    ItemName_Base.BagCatPack_II = "Bushcraft Kitty Pack ++",
+
+    ItemName_Base.BagRobbiePack_I = "Robbie the Rabbit Pack +",
+    ItemName_Base.BagRobbiePack_II = "Robbie the Rabbit Pack ++",
+
+    ItemName_Base.BagM2A1Pack_I = "M2-2 Flamethrower Backpack +",
+    ItemName_Base.BagM2A1Pack_II = "M2-2 Flamethrower Backpack ++",
     
 }

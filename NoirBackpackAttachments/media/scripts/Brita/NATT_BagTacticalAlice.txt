@@ -1,32 +1,33 @@
 module Base {
 
-  recipe Upgrade MilitaryAlicepack
+  recipe Upgrade BagTacticalAlice
     {
-        Bag_ALICEpack_Army,
+        Bag_Tactical_Alice,
         LeatherStrips=4,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:Bag_MilitaryAlicepack_I,
+        Result:BagTacticalAlice_I,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsI,
         Category:Tailoring,
+		NeedToBeLearn:true,
 		SkillRequired:Tailoring=2,
     }
 
-    item Bag_MilitaryAlicepack_I
+    item BagTacticalAlice_I
     {
-        DisplayCategory = Bag,
-        Type = Container,
-        DisplayName = Military Backpack,
-        ClothingItem = Bag_ALICEpack_Army,
+		DisplayCategory = Bag,
+		Type = Container,
+        DisplayName = Military Alice Backpack +,
+        ClothingItem = Bag_Tactical_Alice,
         CanBeEquipped = Back,
-        WeightReduction	=	87,
-        Weight	=	2,
-        Capacity	=	28,
-        Icon	=	AliceBag_Camo,
+        WeightReduction	=	85,
+        Weight	=	3,
+        Capacity	=	38,
+        Icon	=	Bag_Tactical_Alice,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
@@ -34,40 +35,41 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackBottleRight;MilitaryAlicepackBedroll,
-        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
-        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
-        WorldStaticModel = ALICE_Pack_Ground,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Tactical_Alice,
+		AttachmentsProvided = BagTacticalAliceBottleRight;BagTacticalAliceBedroll,
+
     }
 
-
-    recipe Upgrade MilitaryAlicepack
+    recipe Upgrade BagTacticalAlice
     {
-        Bag_MilitaryAlicepack_I,
+        BagTacticalAlice_I,
         LeatherStrips=10,
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:Bag_MilitaryAlicepack_II,
+        Result:BagTacticalAlice_II,
         Time:300.0,
 		OnCreate:keepColorAndItems,
-		OnTest: checkIsEquipped,		
+		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
+		NeedToBeLearn:true,
 		SkillRequired:Tailoring=4,
     }
 
-    item Bag_MilitaryAlicepack_II
+    item BagTacticalAlice_II
     {
-        DisplayCategory = Bag,
-        Type = Container,
-        DisplayName = Military Backpack,
-        ClothingItem = Bag_ALICEpack_Army,
+		DisplayCategory = Bag,
+		Type = Container,
+        DisplayName = Military Alice Backpack ++,
+        ClothingItem = Bag_Tactical_Alice,
         CanBeEquipped = Back,
-        WeightReduction	=	87,
-        Weight	=	2,
-        Capacity	=	28,
-        Icon	=	AliceBag_Camo,
+        WeightReduction	=	85,
+        Weight	=	3,
+        Capacity	=	38,
+        Icon	=	Bag_Tactical_Alice,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
@@ -75,133 +77,134 @@ module Base {
         RunSpeedModifier = 0.94,
         CanHaveHoles = false,
         AttachmentReplacement = Bag,
-		AttachmentsProvided = MilitaryAlicepackWeapon;MilitaryAlicepackFlashlight;MilitaryAlicepackBottleRight;MilitaryAlicepackBottleLeft;MilitaryAlicepackBedroll;MilitaryAlicepackTrinket,
-        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
-        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
-        WorldStaticModel = ALICE_Pack_Ground,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Tactical_Alice,
+        AttachmentsProvided = BagTacticalAliceWeapon;BagTacticalAliceFlashlight;BagTacticalAliceBottleRight;BagTacticalAliceBottleLeft;BagTacticalAliceBedroll;BagTacticalAliceTrinket,
+
     }
 
 
 	model FemaleBody
 	{
 		
-		attachment MilitaryAlicepack_bottleright
+		attachment BagTacticalAlice_bottleright
 		{
 			offset = 0.0300 -0.1350 -0.0700,
 			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_bottleleft
+		attachment BagTacticalAlice_bottleleft
 		{
 			offset = 0.0300 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_bedroll {
+		attachment BagTacticalAlice_bedroll {
 			offset = -0.0350 0.0000 0.1300,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketdoll {
+		attachment BagTacticalAlice_trinketdoll {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketdogchew {
+		attachment BagTacticalAlice_trinketdogchew {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketcattoy {
+		attachment BagTacticalAlice_trinketcattoy {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketrubberducky {
+		attachment BagTacticalAlice_trinketrubberducky {
 			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoybear {
+		attachment BagTacticalAlice_trinkettoybear {
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoycar {
+		attachment BagTacticalAlice_trinkettoycar {
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketyoyo {
+		attachment BagTacticalAlice_trinketyoyo {
 			offset = 0.1250 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketcube {
+		attachment BagTacticalAlice_trinketcube {
 			offset = 0.1550 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketmask {
+		attachment BagTacticalAlice_trinketmask {
 			offset = 0.0850 0.0750 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketplushie {
+		attachment BagTacticalAlice_trinketplushie {
 			offset = 0.1150 0.1050 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weapon {
+		attachment BagTacticalAlice_weapon {
 			offset = 0.1300 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponbig {
+		attachment BagTacticalAlice_weaponbig {
 			offset = 0.1300 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponshovel {
+		attachment BagTacticalAlice_weaponshovel {
 			offset = 0.1300 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponpan {
+		attachment BagTacticalAlice_weaponpan {
 			offset = 0.1300 -0.0400 -0.0200,
 			rotate = 90.0000 40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponsaucepan {
+		attachment BagTacticalAlice_weaponsaucepan {
 			offset = 0.1300 -0.0400 -0.0200,
 			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_wrench {
+		attachment BagTacticalAlice_wrench {
 			offset = 0.1400 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_flashlight {
+		attachment BagTacticalAlice_flashlight {
 			offset = -0.0050 0.0600 0.0000,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
@@ -213,123 +216,123 @@ module Base {
 	model MaleBody
 	{
 		
-		attachment MilitaryAlicepack_bottleright
+		attachment BagTacticalAlice_bottleright
 		{
 			offset = 0.0300 -0.1350 -0.0700,
 			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_bottleleft
+		attachment BagTacticalAlice_bottleleft
 		{
 			offset = 0.0300 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_bedroll {
+		attachment BagTacticalAlice_bedroll {
 			offset = -0.0250 0.0000 0.1300,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketdoll {
+		attachment BagTacticalAlice_trinketdoll {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketdogchew {
+		attachment BagTacticalAlice_trinketdogchew {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketcattoy {
+		attachment BagTacticalAlice_trinketcattoy {
 			offset = 0.0950 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketrubberducky {
+		attachment BagTacticalAlice_trinketrubberducky {
 			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoybear {
+		attachment BagTacticalAlice_trinkettoybear {
 			offset = 0.1550 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinkettoycar {
+		attachment BagTacticalAlice_trinkettoycar {
 			offset = 0.0950 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketyoyo {
+		attachment BagTacticalAlice_trinketyoyo {
 			offset = 0.1250 0.0750 -0.1350,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketcube {
+		attachment BagTacticalAlice_trinketcube {
 			offset = 0.1550 0.0750 -0.0950,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketmask {
+		attachment BagTacticalAlice_trinketmask {
 			offset = 0.1000 0.0750 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_trinketplushie {
+		attachment BagTacticalAlice_trinketplushie {
 			offset = 0.1150 0.1050 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weapon {
+		attachment BagTacticalAlice_weapon {
+			offset = 0.1550 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagTacticalAlice_weaponbig {
 			offset = 0.1500 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponbig {
-			offset = 0.1500 0.0000 0.0700,
-			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment MilitaryAlicepack_weaponshovel {
+		attachment BagTacticalAlice_weaponshovel {
 			offset = 0.1500 0.0000 0.1500,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponpan {
+		attachment BagTacticalAlice_weaponpan {
 			offset = 0.1400 -0.0400 -0.0200,
 			rotate = 90.0000 40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_weaponsaucepan {
+		attachment BagTacticalAlice_weaponsaucepan {
 			offset = 0.1400 -0.0400 -0.0200,
 			rotate = 90.0000 -40.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_wrench {
+		attachment BagTacticalAlice_wrench {
 			offset = 0.1400 0.0000 0.0600,
 			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 
-		attachment MilitaryAlicepack_flashlight {
+		attachment BagTacticalAlice_flashlight {
 			offset = -0.0050 0.0700 0.0000,
 			rotate = 90.0000 0.0000 0.0000,
 			bone = Bip01_Head,
