@@ -2,7 +2,7 @@ module Base {
 
   recipe Upgrade ARVNRucksack
     {
-        Bag_Sniper_Pack,
+        Bag_ARVN_Rucksack,
         LeatherStrips=4,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,

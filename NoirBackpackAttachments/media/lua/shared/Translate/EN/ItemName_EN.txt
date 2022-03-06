@@ -71,8 +71,8 @@ ItemName_EN = {
     ItemName_Base.BagZIP_I = "Y-ZIP City Assault Backpack +",
     ItemName_Base.BagZIP_II = "Y-ZIP City Assault Backpack ++",
 
-    ItemName_Base.BagSSO_I = "SPOSN SSO Bober-M Assault Backpack, +",
-    ItemName_Base.BagSSO_II = "SPOSN SSO Bober-M Assault Backpack, ++",
+    ItemName_Base.BagSSO_I = "SPOSN SSO Bober-M Assault Backpack +",
+    ItemName_Base.BagSSO_II = "SPOSN SSO Bober-M Assault Backpack ++",
 
     ItemName_Base.BagSavotta_I = "Savotta Jaakari S Backpack +",
     ItemName_Base.BagSavotta_II = "Savotta Jaakari S Backpack ++",

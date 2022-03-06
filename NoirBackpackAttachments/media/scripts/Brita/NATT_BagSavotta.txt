@@ -2,7 +2,7 @@ module Base {
 
     recipe Upgrade BagSavotta
     {
-        Bag_SSO,
+        Bag_Savotta,
         LeatherStrips=4,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,

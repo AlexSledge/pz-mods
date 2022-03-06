@@ -35,10 +35,10 @@ Recipes_EN = {
     Recipe_Upgrade_BagRadioPack = "Add Attachment Slots",
     Recipe_Upgrade_BagSavotta= "Add Attachment Slots",
     Recipe_Upgrade_BagSCBA = "Add Attachment Slots",
-    Recipe_Upgrade_BagSniperPack" = "Add Attachment Slots",
+    Recipe_Upgrade_BagSniperPack = "Add Attachment Slots",
     Recipe_Upgrade_BagSSO = "Add Attachment Slots",
     Recipe_Upgrade_BagST53Set= "Add Attachment Slots",
     Recipe_Upgrade_BagTacticalAlice = "Add Attachment Slots",
-    Recipe_Upgrade_Upgrade BagZIP = "Add Attachment Slots",
+    Recipe_Upgrade_BagZIP = "Add Attachment Slots",
 
 }
