@@ -89,14 +89,14 @@ module Base {
 		
 		attachment KleanBackpack_bottleright
 		{
-			offset = 0.0300 -0.1350 -0.0700,
+			offset = 0.0300 -0.1250 -0.0700,
 			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment KleanBackpack_bottleleft
 		{
-			offset = 0.0300 0.1350 -0.0700,
+			offset = 0.0300 0.1250 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
@@ -217,14 +217,14 @@ module Base {
 		
 		attachment KleanBackpack_bottleright
 		{
-			offset = 0.0300 -0.1350 -0.0700,
+			offset = 0.0300 -0.1250 -0.0700,
 			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment KleanBackpack_bottleleft
 		{
-			offset = 0.0300 0.1350 -0.0700,
+			offset = 0.0300 0.1250 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
