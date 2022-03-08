@@ -98,9 +98,6 @@ ItemName_EN = {
     ItemName_Base.BagM2A1Pack_I = "M2-2 Flamethrower Backpack +",
     ItemName_Base.BagM2A1Pack_II = "M2-2 Flamethrower Backpack ++",
 
-    ItemName_Base.BagM2A1Pack_I = "M2-2 Flamethrower Backpack +",
-    ItemName_Base.BagM2A1Pack_II = "M2-2 Flamethrower Backpack ++",
-
     ItemName_Base.PoliceBag_I = "Police Bag +",
     ItemName_Base.PoliceBag_II = "Police Bag ++",
 
