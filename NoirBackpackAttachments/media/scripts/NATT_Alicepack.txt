@@ -95,6 +95,7 @@ module Base {
         Tooltip: Tooltip_SlotsI,
         Category:Tailoring,
 		SkillRequired:Tailoring=2,
+		NeedToBeLearn:true,
     }
 
     item PoliceBag_I
@@ -135,6 +136,7 @@ module Base {
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		SkillRequired:Tailoring=4,
+		NeedToBeLearn:true,
     }
 
     item PoliceBag_II
