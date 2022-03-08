@@ -10,6 +10,7 @@ NATTmods = {
 	["SLEO"] = "SLEO",
 	["SMUI"] = "SMUI",
 	["MoreTraits"] = "ToadTraits",
+	["SWATPack"] = "Swatpack",
 	["BritaArmor"] = "Brita_2",
 }  
 
