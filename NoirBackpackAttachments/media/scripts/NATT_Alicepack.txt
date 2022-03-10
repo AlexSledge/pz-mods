@@ -80,6 +80,87 @@ module Base {
         WorldStaticModel = ALICE_Pack_Ground,
     }
 
+	recipe Upgrade MilitaryAlicepack
+    {
+        Bag_ALICEpack_Army,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:Bag_MilitaryAlicepack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+    item Bag_MilitaryAlicepack_I
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Military Backpack,
+        ClothingItem = Bag_ALICEpack_Army,
+        CanBeEquipped = Back,
+        WeightReduction	=	87,
+        Weight	=	2,
+        Capacity	=	28,
+        Icon	=	AliceBag_Camo,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+    }
+
+
+    recipe Upgrade MilitaryAlicepack
+    {
+        Bag_MilitaryAlicepack_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:Bag_MilitaryAlicepack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		SkillRequired:Tailoring=4,
+    }
+
+    item Bag_MilitaryAlicepack_II
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Military Backpack,
+        ClothingItem = Bag_ALICEpack_Army,
+        CanBeEquipped = Back,
+        WeightReduction	=	87,
+        Weight	=	2,
+        Capacity	=	28,
+        Icon	=	AliceBag_Camo,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+    }
+
 
 	recipe Upgrade PoliceBag
     {
@@ -163,6 +244,89 @@ module Base {
     }
 
 
+	recipe Upgrade KleanBackpack
+    {
+        KleanBackPack,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:KleanBackpack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+
+    item KleanBackpack_I
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Clean Up Krew Back Pack,
+        ClothingItem = KleanBackPack,
+        CanBeEquipped = Back,
+        WeightReduction	=	87,
+        Weight	=	2,
+        Capacity	=	30,
+        Icon	=	CUKJumpsuit,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+    }
+
+    recipe Upgrade KleanBackpack
+    {
+        KleanBackpack_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:KleanBackpack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=4,
+    }
+
+    item KleanBackpack_II
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Clean Up Krew Back Pack,
+        ClothingItem = KleanBackPack,
+        CanBeEquipped = Back,
+        WeightReduction	=	87,
+        Weight	=	2,
+        Capacity	=	30,
+        Icon	=	CUKJumpsuit,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+    }
+
+
 	model FemaleBody
 	{
 		
@@ -243,6 +407,12 @@ module Base {
 		attachment Alicepack_trinketplushie {
 			offset = 0.1150 0.1050 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_trinketnewplushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -370,6 +540,12 @@ module Base {
 		attachment Alicepack_trinketplushie {
 			offset = 0.1150 0.1050 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_trinketnewplushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 

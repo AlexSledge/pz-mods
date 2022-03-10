@@ -171,6 +171,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment BagSSO_trinketnewplushie {
+			offset = 0.0850 0.0850 -0.1850,
+			rotate = 180.0000 100.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment BagSSO_weapon {
 			offset = 0.0750 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
@@ -296,6 +302,12 @@ module Base {
 		attachment BagSSO_trinketplushie {
 			offset = 0.0850 0.0850 -0.1850,
 			rotate = 0.0000 -100.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSSO_trinketnewplushie {
+			offset = 0.0850 0.0850 -0.1850,
+			rotate = 180.0000 100.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 

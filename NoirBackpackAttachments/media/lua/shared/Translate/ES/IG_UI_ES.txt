@@ -122,4 +122,5 @@ IGUI_ES = {
 
     IGUI_CraftCategory_Tailoring = "Sastreria",
     
+    IGUI_Set_Sleepingbag = "Colocar Saco de dormir",
 }

@@ -156,6 +156,18 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment Schoolbag_trinketplushie {
+			offset = 0.0450 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Schoolbag_trinketnewplushie {
+			offset = 0.0450 0.0850 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment Schoolbag_trinkettoybear {
 			offset = 0.0450 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
@@ -275,6 +287,12 @@ module Base {
 		attachment Schoolbag_trinketplushie {
 			offset = 0.0650 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Schoolbag_trinketnewplushie {
+			offset = 0.0650 0.0850 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 

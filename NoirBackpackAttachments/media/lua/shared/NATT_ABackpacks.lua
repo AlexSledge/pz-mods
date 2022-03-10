@@ -18,7 +18,6 @@ NATTmods = {
 if not Backpacks then Backpacks = {} end
 
 local modsBackpacks = {
-	[NATTmods.Pitstop] = {"KleanBackpack"} ,
 	[NATTmods.ClothesBox] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,
 	[NATTmods.UndeadSuvivor] = {"NomadBackpack"} ,
 	[NATTmods.ScrapArmor] = {"Rucksack"} ,
@@ -34,7 +33,6 @@ Backpacks = {
 	"Alicepack",
 	"BigHikingbag",
 	"Hikingbag",
-	"MilitaryAlicepack",
 }
 
 function loadBackpacks(bps)

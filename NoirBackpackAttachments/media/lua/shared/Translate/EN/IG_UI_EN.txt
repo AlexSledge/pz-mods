@@ -226,4 +226,6 @@ IGUI_EN = {
     
     IGUI_CraftCategory_Tailoring = "Tailoring",
 
+    IGUI_Set_Sleepingbag = "Set Sleeping bag",
+
 }

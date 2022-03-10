@@ -1,3 +1,10 @@
+local function Tweaker(item,property,value)
+	local item = ScriptManager.instance:getItem(item)
+	if item then 
+		item:DoParam(property.." = "..value)
+	end
+end
+
 local attachments = {
     ["WaterBottleFull"] = "Bottle",
     ["WaterBottleEmpty"] = "Bottle",
@@ -43,10 +50,26 @@ local attachments = {
 	["SleepingbagLBRolled"] = "Bedroll",
 	["SleepingbagPRolled"] = "Bedroll",
 
+	["Sleepingbag"] = "Bedroll",
+	["SleepingbagG"] = "Bedroll",
+	["SleepingbagR"] = "Bedroll",
+	["SleepingbagO"] = "Bedroll",
+	["SleepingbagBK"] = "Bedroll",
+	["SleepingbagLB"] = "Bedroll",
+	["SleepingbagP"] = "Bedroll",
+
 	["HandTorch"] = "Flashlight",
 
 	["Doll"] = "TrinketDoll",
 	["Spiffo"] = "TrinketPlushie",
+	["BorisBadger"] = "TrinketNewPlushie",
+	["JacquesBeaver"] = "TrinketNewPlushie",
+	["FreddyFox"] = "TrinketNewPlushie",
+	["PancakeHedgehog"] = "TrinketNewPlushie",
+	["MoleyMole"] = "TrinketNewPlushie",
+	["FluffyfootBunny"] = "TrinketNewPlushie",
+	["FurbertSquirrel"] = "TrinketNewPlushie",
+
 	["DogChew"] = "TrinketDogChew",
 	["CatToy"] = "TrinketCatToy",
 	["Rubberducky"] = "TrinketRubberDucky",
@@ -61,12 +84,21 @@ local attachments = {
 }
 
 for k,v in pairs(attachments) do 
-	TweakItem(k,"AttachmentType",v)
+	Tweaker(k,"AttachmentType",v)
 end
 
 local staticModels = {
     ["Doll"] = "Doll",
 	["Spiffo"] = "SpiffoPlushie",
+
+	["BorisBadger"] = "PlushieBadger_Ground",
+	["JacquesBeaver"] = "PlushieBeaver_Ground",
+	["FreddyFox"] = "PlushieFox_Ground",
+	["PancakeHedgehog"] = "PlushieHedgehog_Ground",
+	["MoleyMole"] = "PlushieMole_Ground",
+	["FluffyfootBunny"] = "PlushieRabbit_Ground",
+	["FurbertSquirrel"] = "PlushieSquirrel_Ground",
+
     ["DogChew"] = "DogChewToy",
     ["CatToy"] = "CatToy",
     ["Rubberducky"] = "Rubberducky",
@@ -94,23 +126,23 @@ local staticModels = {
 }
 
 for k,v in pairs(staticModels) do 
-	TweakItem(k,"StaticModel",v)
+	Tweaker(k,"StaticModel",v)
 end
 
 --Nerf Klean fcking op bag
 if getActivatedMods():contains(NATTmods.Pitstop) then
-	TweakItem("KleanBackPack","WeightReduction", 87);
-	TweakItem("KleanBackPack","Capacity", 30)
+	Tweaker("KleanBackPack","WeightReduction", 87);
+	Tweaker("KleanBackPack","Capacity", 30)
 end
 
 --Add bedroll attachment to NomadBackpack
 if getActivatedMods():contains(NATTmods.UndeadSuvivor) then
-	TweakItem("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
+	Tweaker("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
 end
 
 --ScrapArmor
 if getActivatedMods():contains(NATTmods.ScrapArmor) then
-	TweakItem("Rucksack","WorldStaticModel", "Rucksack_Ground");
-	TweakItem("Rucksack","AttachmentReplacement", "Bag");
-	TweakItem("Rucksack","DisplayCategory", "Bag");
+	Tweaker("Rucksack","WorldStaticModel", "Rucksack_Ground");
+	Tweaker("Rucksack","AttachmentReplacement", "Bag");
+	Tweaker("Rucksack","DisplayCategory", "Bag");
 end

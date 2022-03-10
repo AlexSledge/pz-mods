@@ -165,6 +165,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment HR_trinketnewplushie {
+			offset = 0.0650 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment HR_weapon {
 			offset = 0.0900 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
@@ -290,6 +296,12 @@ module Base {
 		attachment HR_trinketplushie {
 			offset = 0.0650 0.1050 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment HR_trinketnewplushie {
+			offset = 0.0650 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
 

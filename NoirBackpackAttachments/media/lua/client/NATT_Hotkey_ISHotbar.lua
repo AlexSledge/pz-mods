@@ -157,9 +157,30 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 	end
 end
 
+local sleepingbags = {
+    ["Sleepingbag"] = "SleepingbagRolled",
+    ["SleepingbagG"] = "SleepingbagGRolled",
+    ["SleepingbagR"] = "SleepingbagRRolled",
+    ["SleepingbagO"] = "SleepingbagORolled",
+    ["SleepingbagBK"] = "SleepingbagBKRolled",
+    ["SleepingbagLB"] = "SleepingbagLBRolled",
+    ["SleepingbagP"]= "SleepingbagPRolled",
+}
+
+local function setSleepingBag(item,chr)
+	local itemType = item:getType()
+	local newType = sleepingbags[itemType]
+	if not newType then return item end
+	chr:getInventory():Remove(itemType);
+	local sleepingbag = InventoryItemFactory.CreateItem(newType)
+	chr:getInventory():AddItem(sleepingbag);
+	return sleepingbag;
+end
+
 --Long weapons/firearms on bag weapon slot and keeps back slot
 --Noir 
 function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
+	item = setSleepingBag(item,self.chr)
 	if doAnim then
 		if self.replacements and self.replacements[item:getAttachmentType()] and isBack(slot) then
 			slot = self.replacements[item:getAttachmentType()];
