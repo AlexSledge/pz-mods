@@ -52,11 +52,6 @@ module Base
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
-		attachment gunlight
-		{
-			offset = 0.0000 0.2430 0.0090,
-			rotate = 0.0000 0.0000 0.0000,
-		}
 	}
 	model Handgun02
 	{
@@ -161,11 +156,6 @@ module Base
 			rotate = 180.0000 0.0000 180.0000,
 		}
 
-		attachment gunlight
-		{
-			offset = 0.0000 0.2060 0.0090,
-			rotate = 0.0000 0.0000 0.0000,
-		}
 	}
 	model VarmintRifle
 	{
@@ -304,12 +294,6 @@ module Base
 			offset = 0.0000 0.5370 0.0300,
 			rotate = 0.0000 0.0000 0.0000,
 		}
-
-		attachment gunlight
-		{
-			offset = 0.0000 0.2920 0.0090,
-			rotate = 0.0000 0.0000 0.0000,
-		}
 	}
 	model AA12
 	{
@@ -319,12 +303,6 @@ module Base
 		attachment silencer
 		{
 			offset = 0.0000 0.0370 0.4410,
-			rotate = -90.0000 180.0000 180.0000,
-		}
-
-		attachment gunlight
-		{
-			offset = 0.0000 -0.0140 0.2270,
 			rotate = -90.0000 180.0000 180.0000,
 		}
 

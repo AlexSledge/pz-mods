@@ -72,21 +72,4 @@ module Base
 		WorldStaticModel = Salvo12_wm,
 	}
 	
-
-    item GunLight
-    {
-        DisplayCategory = WeaponPart,
-        Type = WeaponPart,
-        DisplayName = Gun Light,
-        Icon = RedDot,
-        Weight = 0.2,
-        WeightModifier = 0.2,
-        AimingTimeModifier = 5,
-        MountOn = Pistol; Pistol2; Shotgun; AssaultRifle; AssaultRifle2; AA12,
-        PartType = Stock,
-        StaticModel = GunLight,
-        MetalValue = 15,
-        WorldStaticModel = Handgun_Light_Ground,
-    }
-
 }

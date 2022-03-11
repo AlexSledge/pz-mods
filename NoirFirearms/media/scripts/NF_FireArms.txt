@@ -88,7 +88,6 @@ module Base
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
         ModelWeaponPart = Laser Laser laser laser,
         ModelWeaponPart = 223Silencer Silencer silencer silencer,
-        ModelWeaponPart = GunLight GunLight gunlight gunlight,
         StopPower = 2,
     }
 
@@ -178,7 +177,6 @@ module Base
         ModelWeaponPart = RecoilPad RecoilPad recoilpad recoilpad,
         ModelWeaponPart = Laser Laser laser laser,
         ModelWeaponPart = 308Silencer Silencer silencer silencer,
-        ModelWeaponPart = GunLight GunLight gunlight gunlight,
         StopPower = 2,
     }
 
@@ -262,7 +260,6 @@ module Base
         ModelWeaponPart = IronSight IronSight scope scope,
         ModelWeaponPart = Laser Laser laser laser,
         ModelWeaponPart = 9mmSilencer Silencer silencer silencer,
-        ModelWeaponPart = GunLight GunLight light light,
         AttachmentType = Holster,
         StopPower = 5,
 
@@ -349,7 +346,6 @@ module Base
         ModelWeaponPart = IronSight IronSight scope scope,
         ModelWeaponPart = Laser Laser laser laser,
         ModelWeaponPart = 45Silencer Silencer silencer silencer,
-        ModelWeaponPart = GunLight GunLight light light,
         StopPower = 7,
     }
 
@@ -608,7 +604,6 @@ module Base
         ModelWeaponPart = ChokeTubeFull ChokeTube choketube choketube,
         ModelWeaponPart = ChokeTubeImproved ChokeTube choketube choketube,
         ModelWeaponPart = 12gaSilencer Salvo12 silencer silencer,
-        ModelWeaponPart = GunLight GunLight gunlight gunlight,
         StopPower = 20,
 	}
 
@@ -691,7 +686,6 @@ module Base
         FireMode = Single,
         FireModePossibilities = Auto/Single,
         ModelWeaponPart = 12gaSilencer Salvo12 silencer silencer,
-        ModelWeaponPart = GunLight GunLight gunlight gunlight,
         StopPower = 20,
 	}
 
