@@ -12,7 +12,8 @@ local function ToggleFireMode(key)
     
     gunFireModes = {}
     local item	= player:getPrimaryHandItem()
-    if not item:IsWeapon() or not item:isRanged() then return; end
+    if not item then return end
+    if not item:IsWeapon() or not item:isRanged() then return end
     local currentMode= item:getFireMode()
     local currentModeIndex = nil
     if item:getFireModePossibilities() then
