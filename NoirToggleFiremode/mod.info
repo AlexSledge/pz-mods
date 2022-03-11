@@ -1,0 +1,4 @@
+name=NoirToggleFiremode
+id=ntogglefm
+description= Toggle gun fire mode (Left ALT by default, can be change in keybinds options)
+poster=poster.png
