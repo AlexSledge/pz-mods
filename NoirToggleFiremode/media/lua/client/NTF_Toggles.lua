@@ -10,10 +10,11 @@ local function ToggleFireMode(key)
     if player == nil then return end
     if not (key == getCore():getKey("Toggle Firemode")) then return end
     
-    gunFireModes = {}
+    if not player:isAiming() then return end
     local item	= player:getPrimaryHandItem()
     if not item then return end
     if not item:IsWeapon() or not item:isRanged() then return end
+    gunFireModes = {}
     local currentMode= item:getFireMode()
     local currentModeIndex = nil
     if item:getFireModePossibilities() then
