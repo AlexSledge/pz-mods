@@ -21,7 +21,7 @@ function ISHotbar:getSlotForKey(key)
 end
 
 local bind = {};
-bind.value = "[Additional NATT Hotkeys]";
+bind.value = "[NATTKeys]";
 table.insert(keyBinding, bind);
 
 bind = {};

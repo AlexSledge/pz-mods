@@ -32,22 +32,6 @@ IGUI_EN = {
     IGUI_HotbarAttachment_HikingbagTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_HikingbagFlashlight = "Flashlight Slot",
 
-    IGUI_HotbarAttachment_MilitaryAlicepackWeapon = "Weapon Slot",
-    IGUI_HotbarAttachment_MilitaryAlicepackShortWeapon = "Short Weapon Slot",
-    IGUI_HotbarAttachment_MilitaryAlicepackBottleLeft = "Bottle Left Slot",
-    IGUI_HotbarAttachment_MilitaryAlicepackBottleRight = "Bottle Right Slot",
-    IGUI_HotbarAttachment_MilitaryAlicepackBedroll = "Bedroll Slot",
-    IGUI_HotbarAttachment_MilitaryAlicepackTrinket = "Trinket Slot",
-    IGUI_HotbarAttachment_MilitaryAlicepackFlashlight = "Flashlight Slot",
-
-    IGUI_HotbarAttachment_KleanBackpackWeapon = "Weapon Slot",
-    IGUI_HotbarAttachment_KleanBackpackShortWeapon = "Short Weapon Slot",
-    IGUI_HotbarAttachment_KleanBackpackBottleLeft = "Bottle Left Slot",
-    IGUI_HotbarAttachment_KleanBackpackBottleRight = "Bottle Right Slot",
-    IGUI_HotbarAttachment_KleanBackpackBedroll = "Bedroll Slot",
-    IGUI_HotbarAttachment_KleanBackpackTrinket = "Trinket Slot",
-    IGUI_HotbarAttachment_KleanBackpackFlashlight = "Flashlight Slot",
-
     IGUI_HotbarAttachment_HRWeapon = "Weapon Slot",
     IGUI_HotbarAttachment_HRShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_HRBottleLeft = "Bottle Left Slot",
@@ -227,5 +211,6 @@ IGUI_EN = {
     IGUI_CraftCategory_Tailoring = "Tailoring",
 
     IGUI_Set_Sleepingbag = "Set Sleeping bag",
+    IGUI_PickUp_Sleepingbag = "Pick Up Sleeping bag",
 
 }

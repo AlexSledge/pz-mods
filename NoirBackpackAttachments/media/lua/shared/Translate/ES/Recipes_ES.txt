@@ -5,17 +5,44 @@ Recipes_ES = {
     Recipe_Upgrade_Schoolbag = "Agregar Ranuras de Acople",
     Recipe_Upgrade_Hikingbag = "Agregar Ranuras de Acople",
     Recipe_Upgrade_BigHikingbag = "Agregar Ranuras de Acople",
-    Recipe_Upgrade_KleanBackpack = "Agregar Ranuras de Acople",
     Recipe_Upgrade_MilitaryAlicepack = "Agregar Ranuras de Acople",
+
+    Recipe_Upgrade_KleanBackpack = "Agregar Ranuras de Acople",
+
     Recipe_Upgrade_NomadBackpack = "Agregar Ranuras de Acople",
+
     Recipe_Upgrade_HR = "Agregar Ranuras de Acople",
     Recipe_Upgrade_RUKSAK1 = "Agregar Ranuras de Acople",
     Recipe_Upgrade_RUKSAK2 = "Agregar Ranuras de Acople",
     Recipe_Upgrade_ANAT = "Agregar Ranuras de Acople",
+
     Recipe_Upgrade_Rucksack = "Agregar Ranuras de Acople",
+
     Recipe_Upgrade_PoliceUtilityBag = "Agregar Ranuras de Acople",
+    
     Recipe_Upgrade_CFP90PatrolPack = "Agregar Ranuras de Acople",
     Recipe_Upgrade_MilitaryMedicalBag = "Agregar Ranuras de Acople",
+
+    Recipe_Upgrade_PackerBag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_SmallHikingbag = "Agregar Ranuras de Acople",
+
+    Recipe_Upgrade_ARVNRucksack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagBush = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagCatPack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagRobbiePack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagHunting = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagM2A1Pack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagRadioPack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagSavotta= "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagSCBA = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagSniperPack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagSSO = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagST53Set= "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagTacticalAlice = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_BagZIP = "Agregar Ranuras de Acople",
+
+    Recipe_Upgrade_BigSwatBag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_PoliceBag = "Agregar Ranuras de Acople",
 
     Recipe_Roll_Sleeping_Bag = "Enrollar saco de dormir",
 	Recipe_UnRoll_Sleeping_Bag = "Desenrollar saco de dormir",

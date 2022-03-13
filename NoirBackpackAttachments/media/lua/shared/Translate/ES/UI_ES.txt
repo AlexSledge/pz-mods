@@ -1,0 +1,15 @@
+UI_ES = {
+
+    UI_optionscreen_binding_NATTKeys = "Teclas de acceso rápido extras",
+    UI_optionscreen_binding_Hotbar 6 = "Barra de acceso rápido 6",
+    UI_optionscreen_binding_Hotbar 7 = "Barra de acceso rápido 7",
+    UI_optionscreen_binding_Hotbar 8 = "Barra de acceso rápido 8",
+    UI_optionscreen_binding_Hotbar 9 = "Barra de acceso rápido 9",
+    UI_optionscreen_binding_Hotbar 10 = "Barra de acceso rápido 10",
+    UI_optionscreen_binding_Hotbar 11 = "Barra de acceso rápido 11",
+    UI_optionscreen_binding_Hotbar 12 = "Barra de acceso rápido 12",
+    UI_optionscreen_binding_Hotbar 13 = "Barra de acceso rápido 13",
+    UI_optionscreen_binding_Hotbar 14 = "Barra de acceso rápido 14",
+    UI_optionscreen_binding_Hotbar 15 = "Barra de acceso rápido 15",
+
+}

@@ -1,5 +1,4 @@
 local group = AttachedLocations.getGroup("Human")
-
 local attachments = {}
 
 for _,v in pairs(Backpacks) do

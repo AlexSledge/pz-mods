@@ -33,8 +33,6 @@ function loadRecipes(recipes, learn)
 	end
 end
 
-Events.OnGameStart.Add(checkMods)
-
 function keepColorAndItems(items,result,player)
 	local backpack = items:get(0)
 	local backpackVisual = backpack:getVisual()
@@ -47,3 +45,5 @@ end
 function checkIsEquipped(item,result)
 	return not (item:IsInventoryContainer() and item:isEquipped())
 end
+
+Events.OnGameStart.Add(checkMods)

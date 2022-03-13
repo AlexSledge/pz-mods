@@ -56,7 +56,7 @@ module Base {
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_MediumSlotsII,
+        Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
 		SkillRequired:Tailoring=4,
