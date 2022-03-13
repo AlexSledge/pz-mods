@@ -45,7 +45,7 @@ end
 
 local function pickUpSleepingBag(worldobjects, playerObj,clickedSquare,sprite)
     local mo = ISMoveableCursor:new(playerObj);
-    getCell():setDrag(mo, mo.player);
+    getCell():setDrag(nil, mo.player);
     mo:setMoveableMode("pickup");
     mo.cursorFacing = true
     local props = ISMoveableSpriteProps.new(sprite)
