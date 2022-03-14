@@ -9,5 +9,6 @@
 	<m_AttachBone></m_AttachBone>
 	<textureChoices>alicepack_camo</textureChoices>
 	<textureChoices>alicepack_camo_desert</textureChoices>
+	<textureChoices>alicepack_camo_pink</textureChoices>
 	<textureChoices>alicepack_camo_urban</textureChoices>
 </clothingItem>

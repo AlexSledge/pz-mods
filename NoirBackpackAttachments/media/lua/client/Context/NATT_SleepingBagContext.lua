@@ -44,14 +44,12 @@ local function getSleepingbagInInventory(playerObj)
 end
 
 local function pickUpSleepingBag(worldobjects, playerObj,clickedSquare,sprite)
-    local mo = ISMoveableCursor:new(playerObj);
-    getCell():setDrag(nil, mo.player);
-    mo:setMoveableMode("pickup");
-    mo.cursorFacing = true
+    local sbc = SleepingBagCursor:new(playerObj);
+    getCell():setDrag(nil, sbc.player);
     local props = ISMoveableSpriteProps.new(sprite)
     props.isMoveable = true
     if luautils.walkAdj(playerObj, clickedSquare) then
-        ISTimedActionQueue.add(ISMoveablesAction:new(playerObj, clickedSquare, props, "pickup", sprite, mo));
+        ISTimedActionQueue.add(ISMoveablesAction:new(playerObj, clickedSquare, props, "pickup", sprite, sbc));
     end
 end
 
@@ -64,17 +62,16 @@ local function setSleepingBag(worldobjects, playerObj, item)
         playerObj:getInventory():AddItem(sleepingbag);
         item = sleepingbag
     end
-    local mo = ISMoveableCursor:new(playerObj);
-    getCell():setDrag(mo, mo.player);
-    mo:setMoveableMode("place");
-    mo:tryInitialItem(item);
-    mo.cursorFacing = true;
+    local sbc = SleepingBagCursor:new(playerObj);
+    getCell():setDrag(sbc, sbc.player);
+    sbc:setMoveableMode("place");
+    sbc:tryInitialItem(item);
 end
 
 local function OnFillWorldObjectContextMenu(player, context, worldobjects, test)
     if test then return; end;
     local playerObj = getSpecificPlayer(player);
-
+    if(playerObj:getVehicle() ~= nil) then return end
     local placedSleepingBag = nil
     for i,v in ipairs(worldobjects) do
         placedSleepingBag = findSleepingBag(v:getSquare())
