@@ -10,7 +10,7 @@ function ISMoveableCursor:create(_x, _y, _z, _north, _sprite)
     end
     self.joypadFacing = nil;
     self.objectListCache = nil;
-    if(string.find(self.origSpriteName,"sleepingbag")) then return end
+    if self.origSpriteName and string.find(self.origSpriteName,"sleepingbag") then return end
     self.cursorFacing = nil;
 
 end

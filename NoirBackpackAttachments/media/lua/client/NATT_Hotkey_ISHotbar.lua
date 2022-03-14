@@ -171,7 +171,11 @@ local function setSleepingBag(item,chr)
 	local itemType = item:getType()
 	local newType = sleepingbags[itemType]
 	if not newType then return item end
-	chr:getInventory():Remove(itemType);
+	if item:getContainer():getType() == "none" then
+		chr:getInventory():Remove(itemType);
+	else
+		item:getContainer():Remove(itemType)
+	end
 	local sleepingbag = InventoryItemFactory.CreateItem(newType)
 	chr:getInventory():AddItem(sleepingbag);
 	return sleepingbag;
