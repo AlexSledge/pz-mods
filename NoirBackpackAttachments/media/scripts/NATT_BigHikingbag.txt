@@ -2,7 +2,7 @@ module Base {
 
     recipe Upgrade BigHikingbag
     {
-        Bag_NormalHikingBag,
+        Bag_BigHikingBag,
         LeatherStrips=4,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
