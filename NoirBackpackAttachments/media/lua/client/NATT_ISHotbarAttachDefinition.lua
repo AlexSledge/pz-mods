@@ -49,6 +49,9 @@ for _,v in pairs(Backpacks) do
 		animset = "back",
 		attachments = {
 			Flashlight = v.."Flashlight",
+			HandTorchSmall = v.."Flashlight",
+			HandTorch = v.."Flashlight",
+			Torchb = v.."Flashlight",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

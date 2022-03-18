@@ -7,6 +7,7 @@ local modsRecipes = {
 	[NATTmods.SMUI] = {"Upgrade CFP90PatrolPack","Upgrade MilitaryMedicalBag"},
 	[NATTmods.MoreTraits] = {"Upgrade PackerBag","Upgrade SmallHikingbag"},
 	[NATTmods.SWATPack] = {"Upgrade BigSwatBag","Upgrade PoliceBag"},
+	[NATTmods.DeluxeHikingBag] = {"Upgrade DeluxeHikingBag"},
 	[NATTmods.BritaArmor] = {"Upgrade ARVNRucksack","Upgrade BagBush","Upgrade BagCatPack","Upgrade BagRobbiePack",
 							 "Upgrade BagHunting","Upgrade BagM2A1Pack","Upgrade BagRadioPack","Upgrade BagSavotta",
 							 "Upgrade BagSCBA","Upgrade BagSniperPack","Upgrade BagSSO","Upgrade BagST53Set",

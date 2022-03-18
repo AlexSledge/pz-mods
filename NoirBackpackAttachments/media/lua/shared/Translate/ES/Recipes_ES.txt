@@ -43,6 +43,7 @@ Recipes_ES = {
 
     Recipe_Upgrade_BigSwatBag = "Agregar Ranuras de Acople",
     Recipe_Upgrade_PoliceBag = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_DeluxeHikingBag = "Agregar Ranuras de Acople",
 
     Recipe_Roll_Sleeping_Bag = "Enrollar saco de dormir",
 	Recipe_UnRoll_Sleeping_Bag = "Desenrollar saco de dormir",

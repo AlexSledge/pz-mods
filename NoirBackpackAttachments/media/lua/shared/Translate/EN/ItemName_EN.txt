@@ -104,4 +104,7 @@ ItemName_EN = {
     ItemName_Base.BigSwatBag_I = "Swat Bag +",
     ItemName_Base.BigSwatBag_II = "Swat Bag ++",
 
+    ItemName_Base.DeluxeHikingBag_I = "Deluxe Hiking Bag +",
+    ItemName_Base.DeluxeHikingBag_II = "Deluxe Hiking Bag ++",
+
 }

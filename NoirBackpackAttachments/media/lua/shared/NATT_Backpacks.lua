@@ -11,6 +11,7 @@ NATTmods = {
 	["SMUI"] = "SMUI",
 	["MoreTraits"] = "ToadTraits",
 	["SWATPack"] = "Swatpack",
+	["DeluxeHikingBag"] = "DHB_jarris",
 	["BritaArmor"] = "Brita_2",
 }  
 

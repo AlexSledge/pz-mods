@@ -44,4 +44,5 @@ Recipes_EN = {
     Recipe_Upgrade_BigSwatBag = "Add Attachment Slots",
     Recipe_Upgrade_PoliceBag = "Add Attachment Slots",
 
+    Recipe_Upgrade_DeluxeHikingBag = "Add Attachment Slots",
 }

@@ -196,7 +196,7 @@ module Base {
         ReplaceInSecondHand = BigSwatBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = BigSwatBag_RHand holdingbagright,
         WorldStaticModel = BigHikingBag_Ground,
-		AttachmentsProvided  	= 	BigHikingbagBottleRight;BigHikingbagBedroll,
+		AttachmentsProvided  = 	BigHikingbagBottleRight;BigHikingbagBedroll,
         
     }
 
@@ -237,8 +237,88 @@ module Base {
         ReplaceInSecondHand = BigSwatBag_LHand holdingbagleft,
         ReplaceInPrimaryHand = BigSwatBag_RHand holdingbagright,
         WorldStaticModel = BigHikingBag_Ground,
-		AttachmentsProvided 	= BigHikingbagWeapon;BigHikingbagFlashlight;BigHikingbagBottleRight;BigHikingbagBottleLeft;BigHikingbagBedroll;BigHikingbagTrinket,
+		AttachmentsProvided = BigHikingbagWeapon;BigHikingbagFlashlight;BigHikingbagBottleRight;BigHikingbagBottleLeft;BigHikingbagBedroll;BigHikingbagTrinket,
     }
+
+	recipe Upgrade DeluxeHikingBag
+    {
+        DeluxeHikingBag,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result: DeluxeHikingBag_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+		NeedToBeLearn:true,
+    }
+
+	item DeluxeHikingBag_I {
+        DisplayCategory 	= Bag,
+        WeightReduction	    = 90,
+		Weight	            = 0.5,
+		Type            	= Container,
+		Capacity        	= 27,
+		DisplayName     	= Deluxe Hiking Bag +,
+		Icon	            = DeluxeHikingBag,
+        CanBeEquipped 		= Back,
+        AttachmentReplacement = Bag,
+        OpenSound   		= OpenBag,
+        CloseSound   		= CloseBag,
+        PutInSound   		= PutItemInBag,
+        BloodLocation 		= Bag,
+        RunSpeedModifier 	= 0.99,
+        ClothingItem 		= DeluxeHikingBag,
+        ReplaceInSecondHand = DeluxeHikingBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = DeluxeHikingBag_RHand holdingbagright,
+        WorldStaticModel    = BigHikingBag_Ground,
+		AttachmentsProvided  = 	BigHikingbagBottleRight;BigHikingbagBedroll,
+    }
+
+	recipe Upgrade DeluxeHikingBag
+    {
+        DeluxeHikingBag_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+		OnCreate:keepColorAndItems,
+        Result:DeluxeHikingBag_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		SkillRequired:Tailoring=4,
+		NeedToBeLearn:true,
+    }
+
+	item DeluxeHikingBag_II {
+        DisplayCategory 	= Bag,
+        WeightReduction	    = 90,
+		Weight	            = 0.5,
+		Type            	= Container,
+		Capacity        	= 27,
+		DisplayName     	= Deluxe Hiking Bag ++,
+		Icon	            = DeluxeHikingBag,
+        CanBeEquipped 		= Back,
+        AttachmentReplacement = Bag,
+        OpenSound   		= OpenBag,
+        CloseSound   		= CloseBag,
+        PutInSound   		= PutItemInBag,
+        BloodLocation 		= Bag,
+        RunSpeedModifier 	= 0.99,
+        ClothingItem 		= DeluxeHikingBag,
+        ReplaceInSecondHand = DeluxeHikingBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand = DeluxeHikingBag_RHand holdingbagright,
+        WorldStaticModel    = BigHikingBag_Ground,
+		AttachmentsProvided = BigHikingbagWeapon;BigHikingbagFlashlight;BigHikingbagBottleRight;BigHikingbagBottleLeft;BigHikingbagBedroll;BigHikingbagTrinket,
+    }
+
 
 	model FemaleBody
 	{
