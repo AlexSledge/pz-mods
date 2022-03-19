@@ -1,0 +1,20 @@
+module Base {	
+    
+	model SwatGasMask
+    {
+        mesh = Static/Clothes/M_Hat_SwatGasMask,
+		texture = clothes/hat/Hat_SwatGasMask,
+    }
+
+	model M17Mask
+    {
+        mesh = Static/Clothes/F_M17,
+		texture = clothes/hat/Hat_M17,
+    }
+
+	model M40Mask
+    {
+        mesh = Static/Clothes/F_M40,
+		texture = clothes/hat/Hat_M40,
+    }
+}
