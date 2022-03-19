@@ -80,15 +80,27 @@ function ISHotbar:activateSlot(slotIndex)
 	if item:getAttachedSlot() ~= slotIndex then
 		return
 	end
+
+	if item:getCategory() == "Clothing" then
+		if item:isEquipped() then
+			ISTimedActionQueue.add(ISUnequipAction:new(self.chr, item, 50))
+		else
+			ISTimedActionQueue.add(ISWearClothing:new(self.chr, item, 50))
+		end
+		return
+	end
+
 	if item:canBeActivated() then
 		item:setActivated(not item:isActivated())
 		getPlayer():playSound("LightSwitch")
 		return
 	end
-	if not instanceof(item, "HandWeapon") then
-		return
+
+	local scriptItem = item:getScriptItem()
+	if instanceof(item, "HandWeapon") or scriptItem:getType() == Type.Radio then
+		self:equipItem(item)
 	end
-	self:equipItem(item)
+	
 end
 
 --Remove duplicate CanBeAttached tooltips
