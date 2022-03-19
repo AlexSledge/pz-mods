@@ -50,6 +50,14 @@ local attachments = {
 	["SleepingbagLBRolled"] = "Bedroll",
 	["SleepingbagPRolled"] = "Bedroll",
 
+	["Sleepingbag"] = "Bedroll",
+	["SleepingbagG"] = "Bedroll",
+	["SleepingbagR"] = "Bedroll",
+	["SleepingbagO"] = "Bedroll",
+	["SleepingbagBK"] = "Bedroll",
+	["SleepingbagLB"] = "Bedroll",
+	["SleepingbagP"] = "Bedroll",
+
 	["HandTorch"] = "Flashlight",
 
 	["Doll"] = "TrinketDoll",
