@@ -81,6 +81,7 @@ local attachments = {
 	["Hat_GasMask"] = "TrinketMask",
 	["Hat_HockeyMask"] = "TrinketMask",
 	["WeldingMask"] = "TrinketMask",
+
 }
 
 for k,v in pairs(attachments) do 
@@ -138,6 +139,19 @@ end
 --Add bedroll attachment to NomadBackpack
 if getActivatedMods():contains(NATTmods.UndeadSuvivor) then
 	Tweaker("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
+end
+
+if getActivatedMods():contains(NATTmods.SMUI) then
+	Tweaker("SMUIClothing.Hat_M17","StaticModel", "M17Mask");
+	Tweaker("SMUIClothing.Hat_M40","StaticModel", "M40Mask");
+
+	Tweaker("SMUIClothing.Hat_M17","AttachmentType", "TrinketMask");
+	Tweaker("SMUIClothing.Hat_M40","AttachmentType", "TrinketMask");
+end
+
+if getActivatedMods():contains(NATTmods.SWATPack) then
+	Tweaker("Hat_SwatGasMask","StaticModel", "SwatGasMask");
+	Tweaker("Hat_SwatGasMask","AttachmentType", "TrinketMask");
 end
 
 --ScrapArmor
