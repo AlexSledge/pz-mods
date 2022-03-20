@@ -130,25 +130,22 @@ for k,v in pairs(staticModels) do
 	Tweaker(k,"StaticModel",v)
 end
 
---Nerf Klean fcking op bag
 if getActivatedMods():contains(NATTmods.Pitstop) then
 	Tweaker("KleanBackPack","WeightReduction", 87);
 	Tweaker("KleanBackPack","Capacity", 30)
 end
 
---Add bedroll attachment to NomadBackpack
 if getActivatedMods():contains(NATTmods.UndeadSuvivor) then
 	Tweaker("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
 end
 
 if getActivatedMods():contains(NATTmods.SMUI) then
-	Tweaker("SMUIClothing.Hat_M17","StaticModel", "M17Mask");
-	Tweaker("SMUIClothing.Hat_M40","StaticModel", "M40Mask");
+	Tweaker("SMUIClothing.Hat_M17","StaticModel", "M17GasMask");
+	Tweaker("SMUIClothing.Hat_M40","StaticModel", "M40GasMask");
 
 	Tweaker("SMUIClothing.Hat_M17","AttachmentType", "TrinketMask");
 	Tweaker("SMUIClothing.Hat_M40","AttachmentType", "TrinketMask");
 end
-
 
 if getActivatedMods():contains(NATTmods.BritaArmor) then
 	Tweaker("Hat_MCU_GasMask","StaticModel", "MCUGasMask");
@@ -166,14 +163,11 @@ if getActivatedMods():contains(NATTmods.BritaArmor) then
 	Tweaker("Hat_MSA_Gas_Mask_AMP","AttachmentType", "TrinketMask");
 end
 
-
-
 if getActivatedMods():contains(NATTmods.SWATPack) then
 	Tweaker("Hat_SwatGasMask","StaticModel", "SwatGasMask");
 	Tweaker("Hat_SwatGasMask","AttachmentType", "TrinketMask");
 end
 
---ScrapArmor
 if getActivatedMods():contains(NATTmods.ScrapArmor) then
 	Tweaker("Rucksack","WorldStaticModel", "Rucksack_Ground");
 	Tweaker("Rucksack","AttachmentReplacement", "Bag");
@@ -181,4 +175,7 @@ if getActivatedMods():contains(NATTmods.ScrapArmor) then
 
 	Tweaker("Hat_WelderMask2","StaticModel", "WelderMaskScrap");
 	Tweaker("Hat_WelderMask2","AttachmentType", "TrinketMask");
+
+	Tweaker("Hat_Rebreather","StaticModel", "Rebreather");
+	Tweaker("Hat_Rebreather","AttachmentType", "TrinketMask");
 end

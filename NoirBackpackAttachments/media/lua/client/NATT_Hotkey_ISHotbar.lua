@@ -103,8 +103,6 @@ function ISHotbar:activateSlot(slotIndex)
 	
 end
 
---Remove duplicate CanBeAttached tooltips
---Noir
 function ISHotbar.doMenuFromInventory(playerNum, item, context)
 	local self = getPlayerHotbar(playerNum);
 	if self == nil then return end
@@ -144,7 +142,6 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 				end
 			end
 		end
-		-- didn't found anything to it, gonna add the possibilities as a tooltip
 		if not found then
 			subOption.notAvailable = true;
 			local tooltip = ISWorldObjectContextMenu.addToolTip();
@@ -198,8 +195,6 @@ local function setSleepingBag(item,chr)
 	return sleepingbag;
 end
 
---Long weapons/firearms on bag weapon slot and keeps back slot
---Noir 
 function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 	item = setSleepingBag(item,self.chr)
 	if doAnim then
@@ -208,14 +203,11 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 		end
 		self:setAttachAnim(item, slotDef);
 		ISInventoryPaneContextMenu.transferIfNeeded(self.chr, item)
-		-- first remove the current equipped one if needed
 		if self.attachedItems[slotIndex] then
 			ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, self.attachedItems[slotIndex]));
 		end
 		ISTimedActionQueue.add(ISAttachItemHotbar:new(self.chr, item, slot, slotIndex, slotDef));
 	else
-		-- add new item
-		-- if the item need to be attached elsewhere than its original emplacement because of a bag for example
 		if self.replacements and self.replacements[item:getAttachmentType()] and isBack(slot) then
 			slot = self.replacements[item:getAttachmentType()];
 			if slot == "null" then
@@ -236,8 +228,6 @@ function isBack(slot)
 	return string.find(slot," Back");
 end
 
---Item stay attached
---Noir
 local checkReplacement = false
 function ISHotbar:removeItem(item, doAnim)
 	if doAnim then

@@ -65,4 +65,10 @@ module Base {
         mesh = Static/Clothes/Hat_WelderMask2,
         texture = clothes/hat/Hat_WelderMask2,
     }
+
+    model Rebreather
+    {
+        mesh = Static/Clothes/kate_Rebreather,
+        texture = clothes/hat/Hat_Rebreather,
+    }
 }

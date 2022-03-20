@@ -1,6 +1,4 @@
 require "BuildingObjects/ISBuildingObject"
--- TIS forgive me for this dirty hack 
--- Noir
 SleepingBagCursor = ISBuildingObject:derive("SleepingBagCursor");
 SleepingBagCursor.mode = {};
 SleepingBagCursor.normalColor = { r=0.5, g=0.5, b=0.5 };
@@ -183,24 +181,24 @@ end
 
 function SleepingBagCursor:rotateMouse(x, y)
     if self.currentSquare then
-        -- we start to get the direction the mouse is compared to the selected square for the item
+
         local difx = x - self.currentSquare:getX();
         local dify = y - self.currentSquare:getY();
-        -- west
+   
         if difx < 0 and math.abs(difx) > math.abs(dify) then
-            self.cursorFacing = 2;-- "W";
+            self.cursorFacing = 2;
         end
-        -- east
+
         if difx > 0 and math.abs(difx) > math.abs(dify) then
-            self.cursorFacing = 4; --"E";
+            self.cursorFacing = 4;
         end
-        -- north
+
         if dify < 0 and math.abs(difx) < math.abs(dify) then
-            self.cursorFacing = 1; --"N";
+            self.cursorFacing = 1; 
         end
-        -- south
+
         if dify > 0 and math.abs(difx) < math.abs(dify) then
-            self.cursorFacing = 3; --"S";
+            self.cursorFacing = 3; 
         end
     end
 end
