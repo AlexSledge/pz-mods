@@ -149,6 +149,25 @@ if getActivatedMods():contains(NATTmods.SMUI) then
 	Tweaker("SMUIClothing.Hat_M40","AttachmentType", "TrinketMask");
 end
 
+
+if getActivatedMods():contains(NATTmods.BritaArmor) then
+	Tweaker("Hat_MCU_GasMask","StaticModel", "MCUGasMask");
+	Tweaker("Hat_M45_GasMask","StaticModel", "M45GasMask");
+	Tweaker("Hat_FM53","StaticModel", "FM53GasMask");
+	Tweaker("Hat_M50","StaticModel", "M50GasMask");
+	Tweaker("Hat_MSA_Gas_Mask","StaticModel", "MSAGasMask");
+	Tweaker("Hat_MSA_Gas_Mask_AMP","StaticModel", "MSAGasMaskAMP");
+
+	Tweaker("Hat_MCU_GasMask","AttachmentType", "TrinketMask");
+	Tweaker("Hat_M45_GasMask","AttachmentType", "TrinketMask");
+	Tweaker("Hat_FM53","AttachmentType", "TrinketMask");
+	Tweaker("Hat_M50","AttachmentType", "TrinketMask");
+	Tweaker("Hat_MSA_Gas_Mask","AttachmentType", "TrinketMask");
+	Tweaker("Hat_MSA_Gas_Mask_AMP","AttachmentType", "TrinketMask");
+end
+
+
+
 if getActivatedMods():contains(NATTmods.SWATPack) then
 	Tweaker("Hat_SwatGasMask","StaticModel", "SwatGasMask");
 	Tweaker("Hat_SwatGasMask","AttachmentType", "TrinketMask");
@@ -159,4 +178,7 @@ if getActivatedMods():contains(NATTmods.ScrapArmor) then
 	Tweaker("Rucksack","WorldStaticModel", "Rucksack_Ground");
 	Tweaker("Rucksack","AttachmentReplacement", "Bag");
 	Tweaker("Rucksack","DisplayCategory", "Bag");
+
+	Tweaker("Hat_WelderMask2","StaticModel", "WelderMaskScrap");
+	Tweaker("Hat_WelderMask2","AttachmentType", "TrinketMask");
 end
