@@ -134,50 +134,47 @@ function SleepingBagCursor:isValid( _square )
 
     self.canSeeCurrentSquare = _square and _square:isCouldSee(self.player);
 
-    if SleepingBagCursor.mode[self.player] == "place" then
-        local objects = self.objectListCache or self:getObjectList();
-        self.objectListCache = objects;
+    local objects = self.objectListCache or self:getObjectList();
+    self.objectListCache = objects;
 
-        if #objects > 0 then
-            if self.objectIndex > #objects or self.objectIndex < 1 then self.objectIndex = 1 end
-            if self.objectIndex >= 1 and self.objectIndex <= #objects then
-                local item = objects[self.objectIndex].object;
-                local moveProps = objects[self.objectIndex].moveProps;
-                self.origMoveProps = moveProps;
-                local origName = moveProps.spriteName;
+    if #objects > 0 then
+        if self.objectIndex > #objects or self.objectIndex < 1 then self.objectIndex = 1 end
+        if self.objectIndex >= 1 and self.objectIndex <= #objects then
+            local item = objects[self.objectIndex].object;
+            local moveProps = objects[self.objectIndex].moveProps;
+            self.origMoveProps = moveProps;
+            local origName = moveProps.spriteName;
 
-                if moveProps and moveProps:hasFaces() then
-                    local faceIndex;
-                    faceIndex = self.cursorFacing or moveProps:snapFaceToSquare( _square );
-                    if faceIndex and moveProps:getIndexedFaces()[faceIndex] then
-                        local tryMoveProps = ISMoveableSpriteProps.new( moveProps:getIndexedFaces()[faceIndex] );
-                        if tryMoveProps and tryMoveProps.isMoveable and tryMoveProps.sprite then
-                            moveProps = tryMoveProps;
-                        end
+            if moveProps and moveProps:hasFaces() then
+                local faceIndex;
+                faceIndex = self.cursorFacing or moveProps:snapFaceToSquare( _square );
+                if faceIndex and moveProps:getIndexedFaces()[faceIndex] then
+                    local tryMoveProps = ISMoveableSpriteProps.new( moveProps:getIndexedFaces()[faceIndex] );
+                    if tryMoveProps and tryMoveProps.isMoveable and tryMoveProps.sprite then
+                        moveProps = tryMoveProps;
                     end
                 end
-
-                if moveProps and moveProps.sprite then
-                    self.currentMoveProps       = moveProps;
-                    self.canCreate              = moveProps:canPlaceMoveable( self.character, _square, item );
-                    self.colorMod               = self.canCreate and SleepingBagCursor.normalColor or SleepingBagCursor.invalidColor;
-                    self.cacheInvObjectSprite   = item:getWorldSprite();
-                    self.objectSprite           = moveProps.sprite;
-                    self.origSpriteName         = origName;
-                    self.yOffset                = moveProps:getYOffsetCursor(); 
-                    return true;
-                end
-
             end
+
+            if moveProps and moveProps.sprite then
+                self.currentMoveProps       = moveProps;
+                self.canCreate              = moveProps:canPlaceMoveable( self.character, _square, item );
+                self.colorMod               = self.canCreate and SleepingBagCursor.normalColor or SleepingBagCursor.invalidColor;
+                self.cacheInvObjectSprite   = item:getWorldSprite();
+                self.objectSprite           = moveProps.sprite;
+                self.origSpriteName         = origName;
+                self.yOffset                = moveProps:getYOffsetCursor(); 
+                return true;
+            end
+
         end
-    end    
+    end  
     self.cursorFacing = nil;
     return false;
 end
 
 function SleepingBagCursor:rotateMouse(x, y)
     if self.currentSquare then
-
         local difx = x - self.currentSquare:getX();
         local dify = y - self.currentSquare:getY();
    
@@ -197,19 +194,6 @@ function SleepingBagCursor:rotateMouse(x, y)
             self.cursorFacing = 3; 
         end
     end
-end
-
-function SleepingBagCursor:getRotateableObject()
-    local square = self.currentSquare;
-    if not square then return false end
-    for i = square:getObjects():size(),1,-1 do
-        local obj = square:getObjects():get(i-1);
-        local moveProps = ISMoveableSpriteProps.new(obj:getSprite());
-        if moveProps and moveProps:canManuallyRotate() then
-            return { object = obj, moveProps = moveProps };
-        end
-    end
-    return false;
 end
 
 function SleepingBagCursor:getObjectList()
