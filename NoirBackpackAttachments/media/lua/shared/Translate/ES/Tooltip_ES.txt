@@ -1,5 +1,3 @@
-
-
 Tooltip_ES = {
 
     Tooltip_SlotsI = "Agrega Ranuras: Saco de dormir, Botella Derecha",
