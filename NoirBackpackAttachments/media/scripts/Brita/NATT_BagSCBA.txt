@@ -305,7 +305,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment BagSCBA_trinketmask {
+		attachment BagSCBA_trinketmaskground {
 			offset = 0.0750 0.0750 -0.1150,
 			rotate = 0.0000 180.0000 -90.0000,
 			bone = Bip01_BackPack,
