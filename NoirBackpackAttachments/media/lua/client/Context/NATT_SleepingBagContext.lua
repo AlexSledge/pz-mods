@@ -64,7 +64,6 @@ local function setSleepingBag(worldobjects, playerObj, item)
     end
     local sbc = SleepingBagCursor:new(playerObj);
     getCell():setDrag(sbc, sbc.player);
-    sbc:setMoveableMode("place");
     sbc:tryInitialItem(item);
 end
 

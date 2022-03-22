@@ -1,9 +1,10 @@
 require "BuildingObjects/ISBuildingObject"
+
 SleepingBagCursor = ISBuildingObject:derive("SleepingBagCursor");
-SleepingBagCursor.mode = {};
 SleepingBagCursor.normalColor = { r=0.5, g=0.5, b=0.5 };
 SleepingBagCursor.validColor = { r=0.5, g=1, b=0.5 };
 SleepingBagCursor.invalidColor = { r=1, g=0, b=0 };
+
 function SleepingBagCursor.exitCursorKey( _key )
     if getCell() and getCell():getDrag(0) and getCell():getDrag(0).Type and getCell():getDrag(0).Type == "SleepingBagCursor" then
         local disable = false;
@@ -45,25 +46,15 @@ function SleepingBagCursor:clearCache()
     self.cacheObject = nil;
 end
 
-function SleepingBagCursor:getMoveableMode()
-    return SleepingBagCursor.mode[self.player];
-end
-
 function SleepingBagCursor:tryInitialItem( _item )
     self.tryInitialInvItem = _item;
-end
-
-function SleepingBagCursor:setMoveableMode( _mode )
-    if _mode then
-        SleepingBagCursor.mode[self.player] = _mode; 
-    end
 end
 
 function SleepingBagCursor:create(_x, _y, _z, _north, _sprite)
     if self.canCreate and self.currentMoveProps and self.origSpriteName then
         if self.currentMoveProps then
-            if ISMoveableDefinitions.cheat or self.currentMoveProps:walkToAndEquip( self.character, self.currentSquare, SleepingBagCursor.mode[self.player] ) then
-                ISTimedActionQueue.add(ISMoveablesAction:new(self.character, self.currentSquare, self.currentMoveProps, SleepingBagCursor.mode[self.player], self.origSpriteName, self ));
+            if ISMoveableDefinitions.cheat or self.currentMoveProps:walkToAndEquip( self.character, self.currentSquare, "place" ) then
+                ISTimedActionQueue.add(ISMoveablesAction:new(self.character, self.currentSquare, self.currentMoveProps, "place", self.origSpriteName, self ));
             end
         end
     end
