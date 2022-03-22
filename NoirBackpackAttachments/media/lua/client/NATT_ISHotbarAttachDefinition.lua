@@ -102,6 +102,7 @@ for _,v in pairs(Backpacks) do
 			TrinketYoyo  = v.."TrinketYoyo",
 			TrinketCube  = v.."TrinketCube",
 			TrinketMask  = v.."TrinketMask",
+			TrinketMaskGround  = v.."TrinketMaskGround",
 			TrinketPlushie  = v.."TrinketPlushie",
 			TrinketNewPlushie  = v.."TrinketNewPlushie",
 		},

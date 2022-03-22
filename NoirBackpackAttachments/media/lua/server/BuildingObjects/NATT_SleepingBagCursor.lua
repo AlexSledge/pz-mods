@@ -68,7 +68,6 @@ function SleepingBagCursor:create(_x, _y, _z, _north, _sprite)
         end
     end
     self.cursorFacing = nil;
-    self.joypadFacing = nil;
     self.objectListCache = nil;
     getCell():setDrag(nil, 0);
 end
@@ -121,13 +120,11 @@ function SleepingBagCursor:isValid( _square )
 
     if self.currentSquare == nil then
         self.cursorFacing = nil;
-        self.joypadFacing = nil;
         return false;
     end
 
     if getPlayerRadialMenu(self.player) and getPlayerRadialMenu(self.player):isReallyVisible() then
         self.cursorFacing = nil
-        self.joypadFacing = nil
         return false
     end
 
@@ -138,7 +135,7 @@ function SleepingBagCursor:isValid( _square )
     self.canSeeCurrentSquare = _square and _square:isCouldSee(self.player);
 
     if SleepingBagCursor.mode[self.player] == "place" then
-        local objects = self.objectListCache or self:getInventoryObjectList();
+        local objects = self.objectListCache or self:getObjectList();
         self.objectListCache = objects;
 
         if #objects > 0 then
@@ -175,7 +172,6 @@ function SleepingBagCursor:isValid( _square )
         end
     end    
     self.cursorFacing = nil;
-    self.joypadFacing = nil;
     return false;
 end
 
@@ -216,60 +212,15 @@ function SleepingBagCursor:getRotateableObject()
     return false;
 end
 
-function SleepingBagCursor:getInventoryObjectList()
-    local objects           = {};
+function SleepingBagCursor:getObjectList()
+    local objects = {};
     local spriteBuffer	= {};
-    local items 			= self.character:getInventory():getItems();
-    local items_size 		= items:size();
-    for i=0,items_size-1, 1 do
-        local item = items:get(i);
-        if instanceof(item, "Moveable") then
-            if self.character:getPrimaryHandItem() ~= item and self.character:getSecondaryHandItem() ~= item then
-                local moveProps = ISMoveableSpriteProps.new( item:getWorldSprite() );
-                if moveProps.isMoveable then
-                    local ignoreMulti = false
-                    if moveProps.isMultiSprite then
-                        local anchorSprite = moveProps.sprite:getSpriteGrid():getAnchorSprite()
-                        if spriteBuffer[anchorSprite] then
-                            ignoreMulti = true
-                        else
-                            spriteBuffer[anchorSprite] = true
-                            if moveProps.sprite ~= anchorSprite then
-                                moveProps = ISMoveableSpriteProps.new(anchorSprite)
-                            end
-                        end
-                    end
-                    if not ignoreMulti then
-                        table.insert(objects, { object = item, moveProps = moveProps });
-                        if self.cacheInvObjectSprite and self.cacheInvObjectSprite == item:getWorldSprite() then
-                            self.objectIndex = #objects;
-                        end
-                    end
-                end
-            end
-        end
+    local item = self.tryInitialInvItem
+    local moveProps = ISMoveableSpriteProps.new(item:getWorldSprite());
+    table.insert(objects, { object = item, moveProps = moveProps });
+    if self.cacheInvObjectSprite and self.cacheInvObjectSprite == item:getWorldSprite() then
+        self.objectIndex = #objects;
     end
-
-    if self.tryInitialInvItem then
-        if instanceof(self.tryInitialInvItem, "Moveable") then
-            local moveProps = ISMoveableSpriteProps.new(self.tryInitialInvItem:getWorldSprite());
-            local sprite = moveProps.sprite;
-            if moveProps.isMultiSprite then
-                local spriteGrid = moveProps.sprite:getSpriteGrid();
-                sprite = spriteGrid:getAnchorSprite();
-            end
-            local spriteName = sprite:getName();
-            for index,table in ipairs(objects) do
-                if table.moveProps.sprite == sprite then
-                    self.objectIndex = index;
-                    self.cacheInvObjectSprite = spriteName;
-                    break;
-                end
-            end
-        end
-        self.tryInitialInvItem = nil;
-    end
-
     return objects;
 end
 
@@ -286,7 +237,7 @@ function SleepingBagCursor:new(_character)
     o.isYButtonResetCursor = true;
     o.noNeedHammer = false;
     o.skipWalk = true;
-    o.renderFloorHelper = true;
+    o.renderFloorHelper = false;
     o.objectIndex = 1;
     o.subObjectIndex = 1;
     o.cacheInvObjectSprite = "";

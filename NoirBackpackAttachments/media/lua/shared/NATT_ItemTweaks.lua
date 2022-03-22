@@ -137,6 +137,9 @@ end
 
 if getActivatedMods():contains(NATTmods.UndeadSuvivor) then
 	Tweaker("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
+
+	Tweaker("UndeadSurvivor.StalkerMask","StaticModel", "StalkerMask_Ground");
+	Tweaker("UndeadSurvivor.StalkerMask","AttachmentType", "TrinketMaskGround");
 end
 
 if getActivatedMods():contains(NATTmods.SMUI) then

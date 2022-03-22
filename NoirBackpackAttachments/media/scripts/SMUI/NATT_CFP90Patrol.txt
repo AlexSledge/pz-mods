@@ -159,6 +159,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment CFP90PatrolPack_trinketmaskground {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment CFP90PatrolPack_trinketplushie {
 			offset = 0.0550 0.1050 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
@@ -277,6 +283,12 @@ module Base {
 		attachment CFP90PatrolPack_trinketmask {
 			offset = 0.0750 0.0750 -0.1150,
 			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_trinketmaskground {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
 			bone = Bip01_BackPack,
 		}
 
