@@ -189,7 +189,6 @@ end
 
 function SleepingBagCursor:getObjectList()
     local objects = {};
-    local spriteBuffer	= {};
     local item = self.tryInitialInvItem
     local moveProps = ISMoveableSpriteProps.new(item:getWorldSprite());
     table.insert(objects, { object = item, moveProps = moveProps });
