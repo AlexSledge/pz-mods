@@ -3,16 +3,16 @@
 -- ["Dont change this value"] = "New mod id need to be here"
 -- Example = ["ScrapArmor"] = "vs69"
 NATTmods = {
-	["Pitstop"] = "Pitstop",
-	["ClothesBox"] = "2507488373",
-	["UndeadSuvivor"] = "UndeadSuvivor",
-	["ScrapArmor"] = "ScrapArmor(new version)",
-	["SLEO"] = "SLEO",
-	["SMUI"] = "SMUI",
-	["MoreTraits"] = "ToadTraits",
-	["SWATPack"] = "Swatpack",
-	["DeluxeHikingBag"] = "DHB_jarris",
-	["BritaArmor"] = "Brita_2",
+	Pitstop = "Pitstop",
+	ClothesBox = "2507488373",
+	UndeadSuvivor = "UndeadSuvivor",
+	ScrapArmor = "ScrapArmor(new version)",
+	SLEO = "SLEO",
+	SMUI = "SMUI",
+	MoreTraits = "ToadTraits",
+	SWATPack = "Swatpack",
+	DeluxeHikingBag = "DHB_jarris",
+	BritaArmor = "Brita_2",
 }  
 
 

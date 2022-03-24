@@ -167,13 +167,13 @@ function ISHotbar.doMenuFromInventory(playerNum, item, context)
 end
 
 local sleepingbags = {
-    ["Sleepingbag"] = "SleepingbagRolled",
-    ["SleepingbagG"] = "SleepingbagGRolled",
-    ["SleepingbagR"] = "SleepingbagRRolled",
-    ["SleepingbagO"] = "SleepingbagORolled",
-    ["SleepingbagBK"] = "SleepingbagBKRolled",
-    ["SleepingbagLB"] = "SleepingbagLBRolled",
-    ["SleepingbagP"]= "SleepingbagPRolled",
+    Sleepingbag = "SleepingbagRolled",
+    SleepingbagG = "SleepingbagGRolled",
+    SleepingbagR = "SleepingbagRRolled",
+    SleepingbagO = "SleepingbagORolled",
+    SleepingbagBK = "SleepingbagBKRolled",
+    SleepingbagLB = "SleepingbagLBRolled",
+    SleepingbagP = "SleepingbagPRolled",
 }
 
 local function setSleepingBag(item,chr)
