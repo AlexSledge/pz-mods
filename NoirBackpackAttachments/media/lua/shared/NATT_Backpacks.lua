@@ -35,13 +35,13 @@ Backpacks = {
 	"Hikingbag",
 }
 
-function loadBackpacks(bps)
+local function loadBackpacks(bps)
 	for _,backpack in ipairs(bps) do
 		table.insert(Backpacks,backpack)
 	end
 end
 
-function checkBackpacks()
+local function checkBackpacks()
 	for k,_ in pairs(modsBackpacks) do
 		if getActivatedMods():contains(k) then
 			loadBackpacks(modsBackpacks[k])

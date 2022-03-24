@@ -246,7 +246,7 @@ function ISHotbar:removeItem(item, doAnim)
 	end
 end
 
-function setReplacementItem(item,hotbar)
+local function setReplacementItem(item,hotbar)
 	if item:IsWeapon() then return end;
 	if not item:canStoreWater() then return end
 	if not isSlotAvaible(item,hotbar) then return end
@@ -269,7 +269,7 @@ function setReplacementItem(item,hotbar)
 	replacementItem:setAttachedToModel(item:getAttachedToModel());
 end
 
-function isSlotAvaible(item,hotbar)
+local function isSlotAvaible(item,hotbar)
 	local slotIndex = item:getAttachedSlot()
 	local slotType = item:getAttachedSlotType()
 	local slot = hotbar.availableSlot[slotIndex]
@@ -278,7 +278,7 @@ function isSlotAvaible(item,hotbar)
 	return true
 end
 
-function findReplacementItem(chr,itemType)
+local function findReplacementItem(chr,itemType)
 	local items = chr:getInventory():getItemsFromType(itemType, true)
 	for i=0, items:size() - 1 do
         local item = items:get(i)
