@@ -1,9 +1,22 @@
+local availableFireModes = {
+    Auto = "-----", 
+    Single = "-", 
+}
+
 local gunFireModes = {}
 
-local availableFireModes = {
-    ["Auto"] = "-----", 
-    ["Single"] = "-", 
-}
+local function nextFireMode(gunFireModes,currentModeIndex)
+    if not gunFireModes[currentModeIndex+1] then
+        nextFireMode = 1
+    end
+    return gunFireModes[nextFireMode]
+end
+
+local function showfireMode(mode)
+    local s = availableFireModes[mode];
+    if not s then return "-" end
+    return s;
+end
 
 local function ToggleFireMode(key)
     local player = getSpecificPlayer(0)
@@ -30,20 +43,6 @@ local function ToggleFireMode(key)
     else 
         player:Say(showfireMode(currentMode))
     end
-end
-
-function nextFireMode(gunFireModes,currentModeIndex)
-    local nextFireMode = currentModeIndex+1
-    if not gunFireModes[nextFireMode] then
-        nextFireMode = 1
-    end
-    return gunFireModes[nextFireMode]
-end
-
-function showfireMode(mode)
-    local s = availableFireModes[mode];
-    if not s then return "-" end
-    return s;
 end
 
 Events.OnKeyPressed.Add(ToggleFireMode)

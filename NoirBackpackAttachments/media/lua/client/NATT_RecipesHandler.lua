@@ -14,13 +14,6 @@ local modsRecipes = {
 						     "Upgrade BagTacticalAlice","Upgrade BagZIP"},
 }
 
-local function checkMods()
-	for k,_ in pairs(modsRecipes) do
-		local active = getActivatedMods():contains(k)
-		loadRecipes(modsRecipes[k],active)
-	end
-end
-
 local function loadRecipes(recipes, learn)
 	local player = getPlayer()
 	for _,recipe in ipairs(recipes) do
@@ -31,6 +24,13 @@ local function loadRecipes(recipes, learn)
 		else
 			player:getKnownRecipes():remove(recipe);
 		end	
+	end
+end
+
+local function checkMods()
+	for k,_ in pairs(modsRecipes) do
+		local active = getActivatedMods():contains(k)
+		loadRecipes(modsRecipes[k],active)
 	end
 end
 

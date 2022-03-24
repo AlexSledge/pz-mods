@@ -1,6 +1,6 @@
 UI_ES = {
 
     UI_optionscreen_binding_NTFKeys = "Armas de fuego",
-    UI_optionscreen_binding_Toggle Firemode= "Alternar modo de disparo (mientras se apunta )",
+    UI_optionscreen_binding_Toggle Firemode= "Alternar modo de disparo (mientras se apunta)",
     
 }
