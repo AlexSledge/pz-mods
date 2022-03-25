@@ -62,13 +62,13 @@ local attachments = {
 
 	Doll= "TrinketDoll",
 	Spiffo= "TrinketPlushie",
-	BorisBadger= "TrinketNewPlushie",
-	JacquesBeaver= "TrinketNewPlushie",
-	FreddyFox= "TrinketNewPlushie",
-	PancakeHedgehog= "TrinketNewPlushie",
-	MoleyMole= "TrinketNewPlushie",
-	FluffyfootBunny= "TrinketNewPlushie",
-	FurbertSquirrel= "TrinketNewPlushie",
+	BorisBadger= "TrinketPAWSPlushie",
+	JacquesBeaver= "TrinketPAWSPlushie",
+	FreddyFox= "TrinketPAWSPlushie",
+	PancakeHedgehog= "TrinketPAWSPlushie",
+	MoleyMole= "TrinketPAWSPlushie",
+	FluffyfootBunny= "TrinketPAWSPlushie",
+	FurbertSquirrel= "TrinketPAWSPlushie",
 
 	DogChew= "TrinketDogChew",
 	CatToy= "TrinketCatToy",
@@ -81,6 +81,12 @@ local attachments = {
 	Hat_GasMask= "TrinketMask",
 	Hat_HockeyMask= "TrinketMask",
 	WeldingMask= "TrinketMask",
+
+	Pills = "PillBottle",
+	PillsAntiDep = "PillBottle",
+	PillsAntiDep = "PillBottle",
+	PillsSleepingTablets = "PillBottle",
+	PillsVitamins = "PillBottle",
 
 }
 

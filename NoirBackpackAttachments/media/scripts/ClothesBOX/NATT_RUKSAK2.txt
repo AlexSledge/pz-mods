@@ -123,6 +123,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment RUKSAK2_trinketballon {
+			offset = 0.0350 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment RUKSAK2_trinketrubberducky {
 			offset = 0.0650 0.0750 -0.0900,
 			rotate = 180.0000 0.0000 90.0000,
@@ -171,7 +177,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketnewplushie {
+		attachment RUKSAK2_trinketpawsplushie {
 			offset = 0.0650 0.1050 -0.1850,
 			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,
@@ -262,6 +268,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment RUKSAK2_trinketballon {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment RUKSAK2_trinketrubberducky {
 			offset = 0.0950 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
@@ -310,7 +322,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment RUKSAK2_trinketnewplushie {
+		attachment RUKSAK2_trinketpawsplushie {
 			offset = 0.0950 0.1050 -0.1850,
 			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,

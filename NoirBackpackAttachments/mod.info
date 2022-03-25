@@ -1,5 +1,4 @@
 name=NoirBackpacksAttachments
 id=noirbackpacksattachments
-require=PwSleepingbags
 description=Adds useful slots to backpacks and a tricket slot
 poster=poster.png

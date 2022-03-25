@@ -123,6 +123,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment ARVNRucksack_trinketballon {
+			offset = 0.1050 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment ARVNRucksack_trinketrubberducky {
 			offset = 0.1250 0.0750 -0.0700,
 			rotate = 180.0000 0.0000 90.0000,
@@ -171,7 +177,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment ARVNRucksack_trinketnewplushie {
+		attachment ARVNRucksack_trinketpawsplushie {
 			offset = 0.1450 0.1050 -0.1850,
 			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,
@@ -263,6 +269,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment ARVNRucksack_trinketballon {
+			offset = 0.1150 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment ARVNRucksack_trinketrubberducky {
 			offset = 0.1350 0.0750 -0.100,
 			rotate = 180.0000 0.0000 90.0000,
@@ -311,7 +323,7 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment ARVNRucksack_trinketnewplushie {
+		attachment ARVNRucksack_trinketpawsplushie {
 			offset = 0.1450 0.1050 -0.1850,
 			rotate = 180.0000 90.0000 90.0000,
 			bone = Bip01_BackPack,

@@ -63,6 +63,9 @@ for _,v in pairs(Backpacks) do
 		attachments = {
 			Bottle = v.."BottleRight",
 			Canteen = v.."BottleRight",
+			WaterBottle = v.."BottleRight",
+			Sodacan = v.."BottleRight",
+			PillBottle = v.."BottleRight",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);
@@ -74,6 +77,9 @@ for _,v in pairs(Backpacks) do
 		attachments = {
 			Bottle = v.."BottleLeft",
 			Canteen = v.."BottleLeft",
+			WaterBottle = v.."BottleLeft",
+			Sodacan = v.."BottleLeft",
+			PillBottle = v.."BottleLeft",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);
@@ -104,7 +110,12 @@ for _,v in pairs(Backpacks) do
 			TrinketMask  = v.."TrinketMask",
 			TrinketMaskGround  = v.."TrinketMaskGround",
 			TrinketPlushie  = v.."TrinketPlushie",
-			TrinketNewPlushie  = v.."TrinketNewPlushie",
+			SpiffoPlushie = v.."TrinketPlushie",
+			TrinketPAWSPlushie  = v.."TrinketPAWSPlushie",
+			BalloonSlot = v.."TrinketBallon",
+			Doll = v.."TrinketDoll",
+			RubberDuck = v.."TrinketRubberDucky",
+			TeddyBear = v.."TrinketToyBear",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);

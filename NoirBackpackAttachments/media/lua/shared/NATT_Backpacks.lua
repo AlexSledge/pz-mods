@@ -12,6 +12,7 @@ NATTmods = {
 	SWATPack = "Swatpack",
 	DeluxeHikingBag = "DHB_jarris",
 	BritaArmor = "Brita_2",
+	Sleepingbag = "PwSleepingbags",
 }  
 
 
