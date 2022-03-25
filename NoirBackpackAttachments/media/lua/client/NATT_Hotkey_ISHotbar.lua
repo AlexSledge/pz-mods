@@ -228,22 +228,24 @@ function isBack(slot)
 	return string.find(slot," Back");
 end
 
-local checkReplacement = false
-function ISHotbar:removeItem(item, doAnim)
-	if doAnim then
-		self:setAttachAnim(item);
-		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
-	else
-		self.chr:removeAttachedItem(item);
-		if checkReplacement then
-			setReplacementItem(item,self)
-		end
-		item:setAttachedSlot(-1);
-		item:setAttachedSlotType(nil);
-		item:setAttachedToModel(nil);
+local function isSlotAvaible(item,hotbar)
+	local slotIndex = item:getAttachedSlot()
+	local slotType = item:getAttachedSlotType()
+	local slot = hotbar.availableSlot[slotIndex]
+	if not slot then return false end
+	if not (slot.slotType == slotType) then return false end
+	return true
+end
 
-		self:reloadIcons();
+local function findReplacementItem(chr,itemType)
+	local items = chr:getInventory():getItemsFromType(itemType, true)
+	for i=0, items:size() - 1 do
+        local item = items:get(i)
+		if item:getAttachedSlotType() == nil then
+			return item
+		end
 	end
+	return nil
 end
 
 local function setReplacementItem(item,hotbar)
@@ -269,24 +271,22 @@ local function setReplacementItem(item,hotbar)
 	replacementItem:setAttachedToModel(item:getAttachedToModel());
 end
 
-local function isSlotAvaible(item,hotbar)
-	local slotIndex = item:getAttachedSlot()
-	local slotType = item:getAttachedSlotType()
-	local slot = hotbar.availableSlot[slotIndex]
-	if not slot then return false end
-	if not (slot.slotType == slotType) then return false end
-	return true
-end
-
-local function findReplacementItem(chr,itemType)
-	local items = chr:getInventory():getItemsFromType(itemType, true)
-	for i=0, items:size() - 1 do
-        local item = items:get(i)
-		if item:getAttachedSlotType() == nil then
-			return item
+local checkReplacement = false
+function ISHotbar:removeItem(item, doAnim)
+	if doAnim then
+		self:setAttachAnim(item);
+		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
+	else
+		self.chr:removeAttachedItem(item);
+		if checkReplacement then
+			setReplacementItem(item,self)
 		end
+		item:setAttachedSlot(-1);
+		item:setAttachedSlotType(nil);
+		item:setAttachedToModel(nil);
+
+		self:reloadIcons();
 	end
-	return nil
 end
 
 local originalRefresh = ISHotbar.refresh;
