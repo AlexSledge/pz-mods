@@ -42,22 +42,6 @@ local attachments = {
 	BeerEmpty= "Bottle",
 	BeerWaterFull= "Bottle",
 
-	SleepingbagRolled= "Bedroll",
-	SleepingbagGRolled= "Bedroll",
-	SleepingbagRRolled= "Bedroll",
-	SleepingbagORolled= "Bedroll",
-	SleepingbagBKRolled= "Bedroll",
-	SleepingbagLBRolled= "Bedroll",
-	SleepingbagPRolled= "Bedroll",
-
-	Sleepingbag= "Bedroll",
-	SleepingbagG= "Bedroll",
-	SleepingbagR= "Bedroll",
-	SleepingbagO= "Bedroll",
-	SleepingbagBK= "Bedroll",
-	SleepingbagLB= "Bedroll",
-	SleepingbagP= "Bedroll",
-
 	HandTorch= "Flashlight",
 
 	Doll= "TrinketDoll",
@@ -87,6 +71,22 @@ local attachments = {
 	PillsAntiDep = "PillBottle",
 	PillsSleepingTablets = "PillBottle",
 	PillsVitamins = "PillBottle",
+
+	SleepingbagRolled= "Bedroll",
+	SleepingbagGRolled= "Bedroll",
+	SleepingbagRRolled= "Bedroll",
+	SleepingbagORolled= "Bedroll",
+	SleepingbagBKRolled= "Bedroll",
+	SleepingbagLBRolled= "Bedroll",
+	SleepingbagPRolled= "Bedroll",
+
+	Sleepingbag= "Bedroll",
+	SleepingbagG= "Bedroll",
+	SleepingbagR= "Bedroll",
+	SleepingbagO= "Bedroll",
+	SleepingbagBK= "Bedroll",
+	SleepingbagLB= "Bedroll",
+	SleepingbagP= "Bedroll",
 
 }
 
@@ -136,19 +136,19 @@ for k,v in pairs(staticModels) do
 	Tweaker(k,"StaticModel",v)
 end
 
-if getActivatedMods():contains(NATTmods.Pitstop) then
+if isModActived(NATTmods.Pitstop) then
 	Tweaker("KleanBackPack","WeightReduction", 87);
 	Tweaker("KleanBackPack","Capacity", 30)
 end
 
-if getActivatedMods():contains(NATTmods.UndeadSuvivor) then
+if isModActived(NATTmods.UndeadSuvivor) then
 	Tweaker("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
 
 	Tweaker("UndeadSurvivor.StalkerMask","StaticModel", "StalkerMask_Ground");
 	Tweaker("UndeadSurvivor.StalkerMask","AttachmentType", "TrinketMaskGround");
 end
 
-if getActivatedMods():contains(NATTmods.SMUI) then
+if isModActived(NATTmods.SMUI) then
 	Tweaker("SMUIClothing.Hat_M17","StaticModel", "M17GasMask");
 	Tweaker("SMUIClothing.Hat_M40","StaticModel", "M40GasMask");
 
@@ -156,7 +156,7 @@ if getActivatedMods():contains(NATTmods.SMUI) then
 	Tweaker("SMUIClothing.Hat_M40","AttachmentType", "TrinketMask");
 end
 
-if getActivatedMods():contains(NATTmods.BritaArmor) then
+if isModActived(NATTmods.BritaArmor) then
 	Tweaker("Hat_MCU_GasMask","StaticModel", "MCUGasMask");
 	Tweaker("Hat_M45_GasMask","StaticModel", "M45GasMask");
 	Tweaker("Hat_FM53","StaticModel", "FM53GasMask");
@@ -172,12 +172,12 @@ if getActivatedMods():contains(NATTmods.BritaArmor) then
 	Tweaker("Hat_MSA_Gas_Mask_AMP","AttachmentType", "TrinketMask");
 end
 
-if getActivatedMods():contains(NATTmods.SWATPack) then
+if isModActived(NATTmods.SWATPack) then
 	Tweaker("Hat_SwatGasMask","StaticModel", "SwatGasMask");
 	Tweaker("Hat_SwatGasMask","AttachmentType", "TrinketMask");
 end
 
-if getActivatedMods():contains(NATTmods.ScrapArmor) then
+if isModActived(NATTmods.ScrapArmor) then
 	Tweaker("Rucksack","WorldStaticModel", "Rucksack_Ground");
 	Tweaker("Rucksack","AttachmentReplacement", "Bag");
 	Tweaker("Rucksack","DisplayCategory", "Bag");
@@ -187,4 +187,9 @@ if getActivatedMods():contains(NATTmods.ScrapArmor) then
 
 	Tweaker("Hat_Rebreather","StaticModel", "Rebreather");
 	Tweaker("Hat_Rebreather","AttachmentType", "TrinketMask");
+end
+
+if isModActived(NATTmods.FNAF6) then
+	Tweaker("Bag_Schoolbag_I","IconsForTexture", "Backpack_Black;Backpack_Blue;Backpack_Spiffo;Backpack_Fnaf,");
+	Tweaker("Bag_Schoolbag_II","IconsForTexture", "Backpack_Black;Backpack_Blue;Backpack_Spiffo;Backpack_Fnaf,");
 end

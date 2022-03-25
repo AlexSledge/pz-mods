@@ -29,7 +29,7 @@ end
 
 local function checkMods()
 	for k,_ in pairs(modsRecipes) do
-		local active = getActivatedMods():contains(k)
+		local active = isModActived(k)
 		loadRecipes(modsRecipes[k],active)
 	end
 end

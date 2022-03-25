@@ -7,16 +7,16 @@ local function Tweaker(model,property,value)
 end
 
 local sleepingbags = {
-	sleepingbag = 0.6,
-	sleepingbagG = 0.6,
-	sleepingbagR = 0.6,
-	sleepingbagO = 0.6,
-	sleepingbagBK = 0.6,
-	sleepingbagLP = 0.6,
-	sleepingbagB = 0.6,	
+	sleepingbag = 0.65,
+	sleepingbagG = 0.65,
+	sleepingbagR = 0.65,
+	sleepingbagO = 0.65,
+	sleepingbagBK = 0.65,
+	sleepingbagLP = 0.65,
+	sleepingbagB = 0.65,	
 }
 
-if getActivatedMods():contains(NATTmods.Sleepingbag) then
+if isModActived(NATTmods.PwSleepingbags) then
 	for k,v in pairs(sleepingbags) do 
 		Tweaker(k,"scale",v)
 	end

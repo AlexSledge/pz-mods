@@ -12,11 +12,10 @@ NATTmods = {
 	SWATPack = "Swatpack",
 	DeluxeHikingBag = "DHB_jarris",
 	BritaArmor = "Brita_2",
-	Sleepingbag = "PwSleepingbags",
+	PwSleepingbags = "PwSleepingbags",
+	FNAF6 = "FnafToys",
 }  
 
-
-if not Backpacks then Backpacks = {} end
 
 local modsBackpacks = {
 	[NATTmods.ClothesBox] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,
@@ -36,6 +35,14 @@ Backpacks = {
 	"Hikingbag",
 }
 
+activatedModsCache = nil
+function isModActived(modName)
+	if not activatedModsCache then
+		activatedModsCache = getActivatedMods()
+	end
+	return activatedModsCache:contains(modName)
+end
+
 local function loadBackpacks(bps)
 	for _,backpack in ipairs(bps) do
 		table.insert(Backpacks,backpack)
@@ -44,7 +51,7 @@ end
 
 local function checkBackpacks()
 	for k,_ in pairs(modsBackpacks) do
-		if getActivatedMods():contains(k) then
+		if isModActived(k) then
 			loadBackpacks(modsBackpacks[k])
 		end
 	end
