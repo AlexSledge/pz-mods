@@ -68,7 +68,7 @@ local attachments = {
 
 	Pills = "PillBottle",
 	PillsAntiDep = "PillBottle",
-	PillsAntiDep = "PillBottle",
+	PillsBeta = "PillBottle",
 	PillsSleepingTablets = "PillBottle",
 	PillsVitamins = "PillBottle",
 
@@ -134,11 +134,6 @@ end
 
 for k,v in pairs(staticModels) do 
 	Tweaker(k,"StaticModel",v)
-end
-
-if isModActived(NATTmods.Pitstop) then
-	Tweaker("KleanBackPack","WeightReduction", 87);
-	Tweaker("KleanBackPack","Capacity", 30)
 end
 
 if isModActived(NATTmods.UndeadSuvivor) then
