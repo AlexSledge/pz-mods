@@ -55,8 +55,8 @@ end
 
 local function setSleepingBag(worldobjects, playerObj, item)
     local itemType = item:getType()
-    local unrolled,_ = string.gsub(itemType,"Rolled","")
-    if unrolled then
+    local unrolled,replaced = string.gsub(itemType,"Rolled","")
+    if replaced > 0 then
         playerObj:getInventory():Remove(itemType);
         local sleepingbag = InventoryItemFactory.CreateItem(unrolled)
         playerObj:getInventory():AddItem(sleepingbag);
