@@ -1,7 +1,7 @@
 local modsRecipes = {
 	[NATTmods.Pitstop] = {"Upgrade KleanBackpack"} ,
 	[NATTmods.ClothesBox] = {"Upgrade HR","Upgrade RUKSAK1","Upgrade RUKSAK2","Upgrade ANAT"} ,
-	[NATTmods.UndeadSuvivor] = {"Upgrade NomadBackpack"} ,
+	[NATTmods.UndeadSuvivor] = {"Upgrade NomadBackpack","Upgrade PrepperVestPacked"} ,
 	[NATTmods.ScrapArmor] = {"Upgrade Rucksack"} , 
 	[NATTmods.SLEO] = {"Upgrade PoliceUtilityBag"},
 	[NATTmods.SMUI] = {"Upgrade CFP90PatrolPack","Upgrade MilitaryMedicalBag"},

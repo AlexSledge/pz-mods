@@ -8,6 +8,9 @@ Tooltip_EN = {
 
     Tooltip_PolicyUtilityBagSlotsI = "Adds Slots: Bottle Left",
     Tooltip_PolicyUtilityBagSlotsII = "Adds Slots: Short Weapon, Flashlight",
+
+    Tooltip_PepperBagSlotsI = "Adds Slots: Bottle Left",
+    Tooltip_PepperBagSlotsII = "Adds Slots: Short Weapon",
     
     Tooltip_MediumSlotsII = "Adds Slots: Short Weapon, Flashlight, Bottle Left, Trinket",
     

@@ -8,6 +8,9 @@ Tooltip_ES = {
 
     Tooltip_PolicyUtilityBagSlotsI = "Agrega Ranuras: Botella Izquierda",
     Tooltip_PolicyUtilityBagSlotsII = "Agrega Ranuras: Arma corta, Linterna",
+
+    Tooltip_PepperBagSlotsI = "Agrega Ranuras: Botella Izquierda",
+    Tooltip_PepperBagSlotsII = "Agrega Ranuras: Arma corta",
     
     Tooltip_MediumSlotsII = "Agrega Ranuras: Arma corta, Linterna, Botella Izquierda, Baratija",
 

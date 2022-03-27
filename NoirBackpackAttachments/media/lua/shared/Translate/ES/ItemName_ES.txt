@@ -19,6 +19,9 @@ ItemName_ES = {
     ItemName_Base.NomadBackpack_I = "Mochila de Nomada +",
     ItemName_Base.NomadBackpack_II = "Mochila de Nomada ++",
 
+    ItemName_Base.PrepperVestPacked_I = "Prepper Vest with bags +",
+    ItemName_Base.PrepperVestPacked_II = "Prepper Vest with bags +++",
+
     ItemName_Base.Bag_MilitaryAlicepack_I = "Mochila militar +",
     ItemName_Base.Bag_MilitaryAlicepack_II = "Mochila militar ++",
 

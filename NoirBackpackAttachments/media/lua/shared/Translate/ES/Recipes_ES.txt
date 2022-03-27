@@ -9,6 +9,7 @@ Recipes_ES = {
     Recipe_Upgrade_KleanBackpack = "Agregar Ranuras de Acople",
 
     Recipe_Upgrade_NomadBackpack = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_PrepperVestPacked = "Agregar Ranuras de Acople",
 
     Recipe_Upgrade_HR = "Agregar Ranuras de Acople",
     Recipe_Upgrade_RUKSAK1 = "Agregar Ranuras de Acople",

@@ -19,7 +19,7 @@ NATTmods = {
 
 local modsBackpacks = {
 	[NATTmods.ClothesBox] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,
-	[NATTmods.UndeadSuvivor] = {"NomadBackpack"} ,
+	[NATTmods.UndeadSuvivor] = {"NomadBackpack","PrepperVestPacked"} ,
 	[NATTmods.ScrapArmor] = {"Rucksack"} ,
 	[NATTmods.SLEO] = {"PoliceUtilityBag"} ,
 	[NATTmods.SMUI] = {"CFP90PatrolPack","MilitaryMedicalBag"} ,

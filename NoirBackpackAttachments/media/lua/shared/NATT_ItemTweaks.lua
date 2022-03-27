@@ -141,6 +141,9 @@ if isModActived(NATTmods.UndeadSuvivor) then
 
 	Tweaker("UndeadSurvivor.StalkerMask","StaticModel", "StalkerMask_Ground");
 	Tweaker("UndeadSurvivor.StalkerMask","AttachmentType", "TrinketMaskGround");
+
+	Tweaker("UndeadSurvivor.PrepperMask","StaticModel", "PrepperMask_Ground");
+	Tweaker("UndeadSurvivor.PrepperMask","AttachmentType", "TrinketMaskGround");
 end
 
 if isModActived(NATTmods.SMUI) then

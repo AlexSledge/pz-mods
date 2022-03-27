@@ -207,6 +207,14 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagM2A1PackBedroll = "Bedroll Slot",
     IGUI_HotbarAttachment_BagM2A1PackTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_BagM2A1PackFlashlight = "Flashlight Slot",
+
+    IGUI_HotbarAttachment_PrepperVestPackedWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedShortWeapon = "Short Weapon Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedBottleLeft = "Bottle Left Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedBottleRight = "Bottle Right Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedBedroll = "Bedroll Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedTrinket = "Trinket Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedFlashlight = "Flashlight Slot",
     
     IGUI_CraftCategory_Tailoring = "Tailoring",
 
