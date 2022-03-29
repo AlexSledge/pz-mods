@@ -71,23 +71,6 @@ local attachments = {
 	PillsBeta = "PillBottle",
 	PillsSleepingTablets = "PillBottle",
 	PillsVitamins = "PillBottle",
-
-	SleepingbagRolled= "Bedroll",
-	SleepingbagGRolled= "Bedroll",
-	SleepingbagRRolled= "Bedroll",
-	SleepingbagORolled= "Bedroll",
-	SleepingbagBKRolled= "Bedroll",
-	SleepingbagLBRolled= "Bedroll",
-	SleepingbagPRolled= "Bedroll",
-
-	Sleepingbag= "Bedroll",
-	SleepingbagG= "Bedroll",
-	SleepingbagR= "Bedroll",
-	SleepingbagO= "Bedroll",
-	SleepingbagBK= "Bedroll",
-	SleepingbagLB= "Bedroll",
-	SleepingbagP= "Bedroll",
-
 }
 
 local staticModels = {
@@ -118,14 +101,6 @@ local staticModels = {
 	Pop3Empty= "PopCanFizzWorld",
 
 	PopBottleEmpty= "PopBottle",
-
-	SleepingbagRolled= "sleepingbag",
-	SleepingbagGRolled= "sleepingbagG",
-	SleepingbagRRolled= "sleepingbagR",
-	SleepingbagORolled= "sleepingbagO",
-	SleepingbagBKRolled= "sleepingbagBK",
-	SleepingbagLBRolled= "sleepingbagLB",
-	SleepingbagPRolled= "sleepingbagP",
 }
 
 for k,v in pairs(attachments) do 
@@ -134,6 +109,33 @@ end
 
 for k,v in pairs(staticModels) do 
 	Tweaker(k,"StaticModel",v)
+end
+
+
+if isModActived(NATTmods.PwSleepingbags) then
+	Tweaker("SleepingbagRolled","StaticModel", "sleepingbag");
+	Tweaker("SleepingbagGRolled","StaticModel", "sleepingbagG");
+	Tweaker("SleepingbagRRolled","StaticModel", "sleepingbagR");
+	Tweaker("SleepingbagORolled","StaticModel", "sleepingbagO");
+	Tweaker("SleepingbagBKRolled","StaticModel", "sleepingbagBK");
+	Tweaker("SleepingbagLBRolled","StaticModel", "sleepingbagLB");
+	Tweaker("SleepingbagPRolled","StaticModel", "sleepingbagP");
+
+	Tweaker("SleepingbagRolled","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagGRolled","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagRRolled","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagORolled","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagBKRolled","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagLBRolled","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagPRolled","AttachmentType", "Bedroll");
+
+	Tweaker("Sleepingbag","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagG","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagR","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagO","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagBK","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagLB","AttachmentType", "Bedroll");
+	Tweaker("SleepingbagP","AttachmentType", "Bedroll");
 end
 
 if isModActived(NATTmods.UndeadSuvivor) then
