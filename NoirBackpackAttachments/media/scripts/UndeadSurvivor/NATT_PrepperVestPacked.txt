@@ -2,12 +2,12 @@ module Base {
 
     recipe Upgrade PrepperVestPacked
     {
-        UndeadSurvivor.Bag_PrepperVestPacked,
+        UndeadSurvivor.PrepperVestPacked,
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:Bag_PrepperVestPacked_I,
+        Result:PrepperVestPacked_I,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
@@ -17,7 +17,7 @@ module Base {
 		SkillRequired:Tailoring=2,
     }
 
-    item Bag_PrepperVestPacked_I
+    item PrepperVestPacked_I
     {
 		WeightReduction	=	95,
         Weight	=	1,
@@ -41,12 +41,12 @@ module Base {
 
     recipe Upgrade PrepperVestPacked
     {
-        Bag_PrepperVestPacked_I,
+        PrepperVestPacked_I,
         LeatherStrips=4,
         Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:Bag_PrepperVestPacked_II,
+        Result:PrepperVestPacked_II,
         Time:300.0,
 		OnCreate:keepColorAndItems,
 		OnTest: checkIsEquipped,		
@@ -56,7 +56,7 @@ module Base {
 		SkillRequired:Tailoring=4,
     }
 
-    item Bag_PrepperVestPacked_II
+    item PrepperVestPacked_II
     {
 		WeightReduction	=	95,
         Weight	=	1,
