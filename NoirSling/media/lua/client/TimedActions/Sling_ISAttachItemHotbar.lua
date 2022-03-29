@@ -1,3 +1,5 @@
+if getActivatedMods():contains("noirbackpacksattachments") then return end
+
 function ISAttachItemHotbar:perform()
 	if self.hotbar.attachedItems[self.slotIndex] then
 		self.hotbar.chr:removeAttachedItem(self.hotbar.attachedItems[self.slotIndex]);

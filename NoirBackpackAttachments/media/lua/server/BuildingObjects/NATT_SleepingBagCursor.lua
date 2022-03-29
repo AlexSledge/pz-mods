@@ -1,5 +1,3 @@
-require "BuildingObjects/ISBuildingObject"
-
 SleepingBagCursor = ISBuildingObject:derive("SleepingBagCursor");
 SleepingBagCursor.normalColor = { r=0.5, g=0.5, b=0.5 };
 SleepingBagCursor.validColor = { r=0.5, g=1, b=0.5 };

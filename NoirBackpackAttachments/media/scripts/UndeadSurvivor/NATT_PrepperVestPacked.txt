@@ -21,7 +21,7 @@ module Base {
     {
 		WeightReduction	=	95,
         Weight	=	1,
-        Capacity	=	10,
+        Capacity	=	12,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
@@ -60,7 +60,7 @@ module Base {
     {
 		WeightReduction	=	95,
         Weight	=	1,
-        Capacity	=	10,
+        Capacity	=	12,
         OpenSound   =   OpenBag,
         CloseSound   =   CloseBag,
         PutInSound   =   PutItemInBag,
@@ -75,7 +75,7 @@ module Base {
         BloodLocation = Trousers;Jumper,
         AttachmentReplacement = Bag,
         WorldStaticModel = PrepperVestPacked_Ground,
-        AttachmentsProvided = PrepperVestKnife;PrepperVestFlashlight;PrepperVestPackedShortWeapon;PrepperVestPackedBottleLeft;PrepperGunMagazine1;PrepperGunMagazine2;PrepperGunMagazine3;PrepperGunMagazine4,
+        AttachmentsProvided = PrepperVestKnife;PrepperVestPackedShortWeapon;PrepperVestFlashlight;PrepperVestPackedBottleLeft;PrepperGunMagazine1;PrepperGunMagazine2;PrepperGunMagazine3;PrepperGunMagazine4,
     }
   
 	model FemaleBody

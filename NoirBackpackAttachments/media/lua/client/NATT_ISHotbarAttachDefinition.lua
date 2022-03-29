@@ -1,4 +1,3 @@
-require "Hotbar/ISHotbarAttachDefinition"
 if not ISHotbarAttachDefinition then
     return
 end

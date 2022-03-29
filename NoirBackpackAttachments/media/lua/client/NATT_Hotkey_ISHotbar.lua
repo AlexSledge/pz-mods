@@ -1,5 +1,3 @@
-require "ISUI/ISPanelJoypad"
-
 function ISHotbar:getSlotForKey(key)
 	if key == getCore():getKey("Hotbar 1") then return 1; end
 	if key == getCore():getKey("Hotbar 2") then return 2; end
