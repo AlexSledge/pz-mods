@@ -10,7 +10,6 @@ local sleepingbags = {
 	sleepingbag = 0.65,
 	sleepingbagG = 0.65,
 	sleepingbagR = 0.65,
-	sleepingbagR = 0.65,
 	sleepingbagO = 0.65,
 	sleepingbagBK = 0.65,
 	sleepingbagLB = 0.65,
