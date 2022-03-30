@@ -1,12 +1,13 @@
 local availableFireModes = {
-    Auto = "-----", 
-    Single = "-", 
+    ["Auto"] = "-----", 
+    ["Single"] = "-", 
 }
 
 local gunFireModes = {}
 
-local function nextFireMode(gunFireModes,currentModeIndex)
-    if not gunFireModes[currentModeIndex+1] then
+local function getNextFireMode(gunFireModes,currentModeIndex)
+    local nextFireMode = currentModeIndex+1
+    if not gunFireModes[nextFireMode] then
         nextFireMode = 1
     end
     return gunFireModes[nextFireMode]
@@ -36,7 +37,7 @@ local function ToggleFireMode(key)
             if(currentMode==firemode) then currentModeIndex = i+1; end
             table.insert(gunFireModes,firemode);
         end
-        local nextFireMode = nextFireMode(gunFireModes,currentModeIndex)
+        local nextFireMode = getNextFireMode(gunFireModes,currentModeIndex)
         item:setFireMode(nextFireMode)
         player:Say(showfireMode(nextFireMode))
         player:playSound("LightSwitch")
