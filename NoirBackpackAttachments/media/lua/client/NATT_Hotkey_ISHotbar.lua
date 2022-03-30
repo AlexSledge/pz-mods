@@ -219,6 +219,7 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 		item:setAttachedToModel(slot);
 		
 		self:reloadIcons();
+		NATTwh.applyBackpackWR(self.chr,item)
 	end
 end
 
@@ -226,7 +227,7 @@ function isBack(slot)
 	return string.find(slot," Back");
 end
 
-local function isSlotAvaible(item,hotbar)
+local function isSlotAvailable(item,hotbar)
 	local slotIndex = item:getAttachedSlot()
 	local slotType = item:getAttachedSlotType()
 	local slot = hotbar.availableSlot[slotIndex]
@@ -249,7 +250,7 @@ end
 local function setReplacementItem(item,hotbar)
 	if item:IsWeapon() then return end;
 	if not item:canStoreWater() then return end
-	if not isSlotAvaible(item,hotbar) then return end
+	if not isSlotAvailable(item,hotbar) then return end
 	local chr = hotbar.chr
 	local replacementType = nil
 	if instanceof(item, "ComboItem") then
@@ -267,10 +268,12 @@ local function setReplacementItem(item,hotbar)
 	replacementItem:setAttachedSlot(item:getAttachedSlot());
 	replacementItem:setAttachedSlotType(item:getAttachedSlotType());
 	replacementItem:setAttachedToModel(item:getAttachedToModel());
+	NATTwh.applyBackpackWR(chr,replacementItem)
 end
 
 local checkReplacement = false
 function ISHotbar:removeItem(item, doAnim)
+	NATTwh.restoreWeight(item)
 	if doAnim then
 		self:setAttachAnim(item);
 		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
