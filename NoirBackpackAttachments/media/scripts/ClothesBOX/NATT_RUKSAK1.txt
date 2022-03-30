@@ -102,7 +102,7 @@ module Base {
 		}
 
 		attachment RUKSAK1_bedroll {
-			offset = -0.0350 0.0000 0.1100,
+			offset = -0.0350 0.0000 0.1300,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}

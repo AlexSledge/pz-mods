@@ -10,10 +10,11 @@ local sleepingbags = {
 	sleepingbag = 0.65,
 	sleepingbagG = 0.65,
 	sleepingbagR = 0.65,
+	sleepingbagR = 0.65,
 	sleepingbagO = 0.65,
 	sleepingbagBK = 0.65,
 	sleepingbagLB = 0.65,
-	sleepingbagB = 0.65,	
+	sleepingbagP = 0.65,	
 }
 
 if isModActived(NATTmods.PwSleepingbags) then
