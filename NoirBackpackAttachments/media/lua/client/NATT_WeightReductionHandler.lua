@@ -10,7 +10,9 @@ local function getAttachmentsProvided(item)
 	end
 	local attachmentsProvided = item:getAttachmentsProvided()
 	for i=0, attachmentsProvided:size()-1 do
-		attachmentsProvidedCache[itemType][attachmentsProvided:get(i)] = true
+		if not string.find(attachmentsProvided:get(i),"Bottle") then
+			attachmentsProvidedCache[itemType][attachmentsProvided:get(i)] = true
+		end
 	end
 end
 
@@ -52,12 +54,11 @@ NATTwh.equipPrimary = function (chr, item)
  	end
 end
 
-NATTwh.OnClothingUpdated = function(player)
-	local hotbar = getPlayerHotbar(player:getPlayerNum());
+NATTwh.OnClothingUpdated = function(chr)
+	local hotbar = getPlayerHotbar(chr:getPlayerNum());
 	if not hotbar then return end;
-	local attachedItems = hotbar.attachedItems
-	for _,item in pairs(attachedItems) do
-		if player:isEquipped(item) then
+	for _,item in pairs(hotbar.attachedItems) do
+		if chr:isEquipped(item) then
 			NATTwh.restoreWeight(item)
 		end
 	end
