@@ -25,9 +25,9 @@ NATTwh.applyBackpackWR = function(chr,item)
 		getAttachmentsProvided(backpack)
 		local backpackType = backpack:getType()
 		if not attachmentsProvidedCache[backpackType][slotType] then return end
-		local defaultWeightReduction = 0.7
-		local backpackWeighReduction = backpack:getWeightReduction()
-		local newWeight = (item:getWeight() * (100-backpackWeighReduction)/100) / defaultWeightReduction
+		local defaultWR = 0.7
+		local backpackWR = backpack:getWeightReduction()
+		local newWeight = (item:getWeight() * (100-backpackWR)/100) / defaultWR
 		local modData = item:getModData()
 		modData.oWeight = item:getWeight()
 		item:setActualWeight(newWeight)
