@@ -94,6 +94,16 @@ function ISAttachItemHotbar:stop()
 	NATTwh.restoreWeight(self.item)
 end
 
+local oldISInventoryPaneGetActualItems = ISInventoryPane.getActualItems
+function ISInventoryPane.getActualItems(items)
+
+	local itemsTmp = oldISInventoryPaneGetActualItems(items)
+	for _,item in ipairs(itemsTmp) do
+		NATTwh.restoreWeight(item)
+	end
+	return itemsTmp
+end
+
 local oldISInventoryPaneDraggedItemsReset = ISInventoryPaneDraggedItems.reset
 function ISInventoryPaneDraggedItems:reset()
     if self.items then
