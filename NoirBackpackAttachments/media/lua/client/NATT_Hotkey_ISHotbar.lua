@@ -219,7 +219,7 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 		item:setAttachedToModel(slot);
 		
 		self:reloadIcons();
-		NATTwh.applyBackpackWR(self.chr,item)
+		NATTwrh.applyBackpackWR(self.chr,item)
 	end
 end
 
@@ -268,12 +268,12 @@ local function setReplacementItem(item,hotbar)
 	replacementItem:setAttachedSlot(item:getAttachedSlot());
 	replacementItem:setAttachedSlotType(item:getAttachedSlotType());
 	replacementItem:setAttachedToModel(item:getAttachedToModel());
-	NATTwh.applyBackpackWR(chr,replacementItem)
+	NATTwrh.applyBackpackWR(chr,replacementItem)
 end
 
 local checkReplacement = false
 function ISHotbar:removeItem(item, doAnim)
-	NATTwh.restoreWeight(item)
+	NATTwrh.restoreWeight(item)
 	if doAnim then
 		self:setAttachAnim(item);
 		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
