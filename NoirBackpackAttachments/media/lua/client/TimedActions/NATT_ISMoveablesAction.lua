@@ -1,5 +1,3 @@
-require "TimedActions/ISBaseTimedAction"
-
 local originalStart= ISMoveablesAction.start;
 function ISMoveablesAction:start()
 	if self.origSpriteName and string.find(self.origSpriteName,"sleepingbag") then 

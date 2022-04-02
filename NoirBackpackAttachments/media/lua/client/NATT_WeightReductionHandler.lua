@@ -9,10 +9,11 @@ local function getAttachmentsProvided(item)
 		attachmentsProvidedCache[itemType] = {}
 	end
 	local attachmentsProvided = item:getAttachmentsProvided()
+	if not attachmentsProvided then return end
 	for i=0, attachmentsProvided:size()-1 do
-		local attachemnt = attachmentsProvided:get(i)
-		if not string.find(attachemnt,"Bottle") then
-			attachmentsProvidedCache[itemType][attachemnt] = true
+		local attachment = attachmentsProvided:get(i)
+		if not string.find(attachment,"Bottle") then
+			attachmentsProvidedCache[itemType][attachment] = true
 		end
 	end
 end
