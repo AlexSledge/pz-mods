@@ -19,6 +19,7 @@ local function getAttachmentsProvided(item)
 end
 
 NATTwrh.applyBackpackWR = function(chr,item)
+	if item:IsClothing() then return end;
 	local slotType = item:getAttachedSlotType()
 	if not slotType then return end
 	local backpack = chr:getClothingItem_Back() 
@@ -37,6 +38,7 @@ end
 
 NATTwrh.restoreWeight = function (item)
 	if not item then return end;
+	if item:IsClothing() then return end;
 	local modData = item:getModData()
 	if modData.oWeight then
 		item:setActualWeight(modData.oWeight)
@@ -97,7 +99,6 @@ end
 
 local oldISInventoryPaneGetActualItems = ISInventoryPane.getActualItems
 function ISInventoryPane.getActualItems(items)
-
 	local itemsTmp = oldISInventoryPaneGetActualItems(items)
 	for _,item in ipairs(itemsTmp) do
 		NATTwrh.restoreWeight(item)
