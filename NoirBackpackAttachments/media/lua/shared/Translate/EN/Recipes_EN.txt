@@ -45,4 +45,11 @@ Recipes_EN = {
     Recipe_Upgrade_PoliceBag = "Add Attachment Slots",
 
     Recipe_Upgrade_DeluxeHikingBag = "Add Attachment Slots",
+
+    Recipe_Upgrade_SnakeAlice = "Add Attachment Slots",
+    Recipe_Add_Frame_SnakeAlice = "Add frame to Alice backpack",
+    Recipe_Remove_Frame_SnakeAlice  = "Remove frame from Alice backpack",
+    Recipe_Add_Pouch_SnakeAlice = "Add dump pouch to Alice backpack",
+    Recipe_Remove_Pouch_SnakeAlice = "Remove dump pouch from Alice backpack",
+
 }

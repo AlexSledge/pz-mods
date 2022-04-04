@@ -110,4 +110,17 @@ ItemName_EN = {
     ItemName_Base.DeluxeHikingBag_I = "Deluxe Hiking Bag +",
     ItemName_Base.DeluxeHikingBag_II = "Deluxe Hiking Bag ++",
 
+    ItemName_Base.sAlicePack_I = "Jungle Alice Backpack +",
+    ItemName_Base.sAlicePack_II = "Jungle Alice Backpack ++",
+	ItemName_Base.UpgradedAlicePack1_I = "Alice backpack (Frame) +",
+    ItemName_Base.UpgradedAlicePack1_II = "Alice backpack (Frame) ++",
+	ItemName_Base.UpgradedAlicePack2_I = "Alice backpack (Frame + Pouch) +",
+    ItemName_Base.UpgradedAlicePack2_II = "Alice backpack (Frame + Pouch) ++",
+	ItemName_Base.UpgradedAlicePack2b_I = "Alice backpack (Frame + Pouch) +",
+    ItemName_Base.UpgradedAlicePack2b_II = "Alice backpack (Frame + Pouch) ++",
+	ItemName_Base.UpgradedAlicePack3_I = "Alice backpack (Pouch) +",
+    ItemName_Base.UpgradedAlicePack3_II = "Alice backpack (Pouch) ++",
+	ItemName_Base.UpgradedAlicePack3b_I = "Alice backpack (Pouch) +",
+    ItemName_Base.UpgradedAlicePack3b_II = "Alice backpack (Pouch) ++",
+
 }

@@ -8,6 +8,7 @@ local modsRecipes = {
 	[NATTmods.MoreTraits] = {"Upgrade PackerBag","Upgrade SmallHikingbag"},
 	[NATTmods.SWATPack] = {"Upgrade BigSwatBag","Upgrade PoliceBag"},
 	[NATTmods.DeluxeHikingBag] = {"Upgrade DeluxeHikingBag"},
+	[NATTmods.SnakeAlice] = {"Upgrade SnakeAlice","Add Frame SnakeAlice","Remove Frame SnakeAlice","Add Pouch SnakeAlice","Remove Pouch SnakeAlice"},
 	[NATTmods.BritaArmor] = {"Upgrade ARVNRucksack","Upgrade BagBush","Upgrade BagCatPack","Upgrade BagRobbiePack",
 							 "Upgrade BagHunting","Upgrade BagM2A1Pack","Upgrade BagRadioPack","Upgrade BagSavotta",
 							 "Upgrade BagSCBA","Upgrade BagSniperPack","Upgrade BagSSO","Upgrade BagST53Set",
@@ -34,7 +35,7 @@ local function checkMods()
 	end
 end
 
-function keepColorAndItems(items,result,player)
+function keepColorAndItems(items,result)
 	local backpack = items:get(0)
 	local backpackVisual = backpack:getVisual()
 	local resultVisual = result:getVisual()
@@ -45,6 +46,101 @@ end
 
 function checkIsEquipped(item,result)
 	return not (item:IsInventoryContainer() and item:isEquipped())
+end
+
+local snakeBackpacksI = {
+	AlicePack = "sAlicePack_I",
+	UpgradedAlicePack1 = "UpgradedAlicePack1_I",
+	UpgradedAlicePack2 = "UpgradedAlicePack2_I",
+	UpgradedAlicePack2b = "UpgradedAlicePack2b_I",
+	UpgradedAlicePack3 = "UpgradedAlicePack3_I",
+	UpgradedAlicePack3b = "UpgradedAlicePack3b_I",
+}
+function addSlotsSnakebackpackI(items,result,player)
+	keepColorAndItems(items,result)
+	local item = items:get(0)
+	local newBackpack = snakeBackpacksI[item:getType()]
+	player:getInventory():AddItem(newBackpack);
+end
+
+local snakeBackpacksII = {
+	sAlicePack_I= "sAlicePack_II",
+	UpgradedAlicePack1_I= "UpgradedAlicePack1_II",
+	UpgradedAlicePack2_I= "UpgradedAlicePack2_II",
+	UpgradedAlicePack2b_I= "UpgradedAlicePack2b_II",
+	UpgradedAlicePack3_I= "UpgradedAlicePack3_II",
+	UpgradedAlicePack3b_I= "UpgradedAlicePack3b_II",
+}
+function addSlotsSnakebackpackII(items,result,player)
+	keepColorAndItems(items,result)
+	local item = items:get(0)
+	local newBackpack = snakeBackpacksII[item:getType()]
+	player:getInventory():AddItem(newBackpack);
+end
+
+local snakeFrameBackpacks = {
+	sAlicePack_I= "UpgradedAlicePack1_I",
+	UpgradedAlicePack3_I= "UpgradedAlicePack2_I",
+	UpgradedAlicePack3b_I= "UpgradedAlicePack2b_I",
+	UpgradedAlicePack1_I= "sAlicePack_I",
+	UpgradedAlicePack2_I= "UpgradedAlicePack3_I",
+	UpgradedAlicePack2b_I= "UpgradedAlicePack3b_I",
+	sAlicePack_II= "UpgradedAlicePack1_II",
+	UpgradedAlicePack3_II= "UpgradedAlicePack2_II",
+	UpgradedAlicePack3b_II= "UpgradedAlicePack2b_II",
+	UpgradedAlicePack1_II= "sAlicePack_II",
+	UpgradedAlicePack2_II= "UpgradedAlicePack3_II",
+	UpgradedAlicePack2b_II= "UpgradedAlicePack3b_II",
+}
+function snakeAddFrameBackpack(items,result,player)
+	local item = items:get(0)
+	local newType = snakeFrameBackpacks[item:getType()]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)	
+	player:getInventory():AddItem(newBackpack);
+end
+
+function snakeRemoveFrameBackpack(items,result,player)
+	local item = items:get(0)
+	local newType = snakeFrameBackpacks[item:getType()]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)	
+	player:getInventory():AddItem(newBackpack);
+	player:getInventory():AddItem("AliceBP.SupportBackpack");
+end
+
+local snakePouchBackpacks = {
+	UpgradedAlicePack1_I = {MilitiaPouch1 = "UpgradedAlicePack2_I", MilitiaPouch2 = "UpgradedAlicePack2b_I"},
+	sAlicePack_I = {MilitiaPouch1 = "UpgradedAlicePack3_I", MilitiaPouch2 = "UpgradedAlicePack3b_I"},
+	UpgradedAlicePack3_I = {backpack = "sAlicePack_I" , pouch = "AliceBP.MilitiaPouch1"},
+	UpgradedAlicePack3b_I = {backpack = "sAlicePack_I" , pouch = "AliceBP.MilitiaPouch2"},
+	UpgradedAlicePack2_I = {backpack = "UpgradedAlicePack1_I" , pouch = "AliceBP.MilitiaPouch1"},
+	UpgradedAlicePack2b_I = {backpack = "UpgradedAlicePack1_I" , pouch = "AliceBP.MilitiaPouch2"},
+	UpgradedAlicePack1_II = {MilitiaPouch1 = "UpgradedAlicePack2_II", MilitiaPouch2 = "UpgradedAlicePack2b_II"},
+	sAlicePack_II = {MilitiaPouch1 = "UpgradedAlicePack3_II", MilitiaPouch2 = "UpgradedAlicePack3b_II"},
+	UpgradedAlicePack3_II = {backpack = "sAlicePack_II" , pouch = "AliceBP.MilitiaPouch1"},
+	UpgradedAlicePack3b_II = {backpack = "sAlicePack_II" , pouch = "AliceBP.MilitiaPouch2"},
+	UpgradedAlicePack2_II = {backpack = "UpgradedAlicePack1_II" , pouch = "AliceBP.MilitiaPouch1"},
+	UpgradedAlicePack2b_II = {backpack = "UpgradedAlicePack1_II" , pouch = "AliceBP.MilitiaPouch2"},
+}
+
+function snakeAddPouchBackpack(items,result,player)
+	local backpackType = items:get(0):getType();
+	local pouchType = items:get(1):getType();
+	local newType = snakePouchBackpacks[backpackType][pouchType]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)	
+	player:getInventory():AddItem(newBackpack);
+end
+
+function snakeRemovePounchBackpack(items,result,player)
+	local backpackType = items:get(0):getType();
+	local newType = snakePouchBackpacks[backpackType]["backpack"]
+	local pouch = snakePouchBackpacks[backpackType]["pouch"]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)	
+	player:getInventory():AddItem(newBackpack);
+	player:getInventory():AddItem(pouch);
 end
 
 Events.OnGameStart.Add(checkMods)

@@ -14,15 +14,15 @@ NATTmods = {
 	BritaArmor = "Brita_2",
 	PwSleepingbags = "PwSleepingbags",
 	FNAF6 = "FnafToys",
+	SnakeAlice = "AliceSPack",
 }  
-
 
 local modsBackpacks = {
 	[NATTmods.ClothesBox] = {"HR","RUKSAK1","RUKSAK2","ANAT"} ,
 	[NATTmods.UndeadSuvivor] = {"NomadBackpack","PrepperVestPacked"} ,
 	[NATTmods.ScrapArmor] = {"Rucksack"} ,
 	[NATTmods.SLEO] = {"PoliceUtilityBag"} ,
-	[NATTmods.SMUI] = {"CFP90PatrolPack","MilitaryMedicalBag"} ,
+	[NATTmods.SMUI] = {"CFP90PatrolPack","MilitaryMedicalBag"},
 	[NATTmods.BritaArmor] = {"BagSniperPack","ARVNRucksack","BagST53Set","BagSCBA",
 							 "BagZIP","BagSSO","BagSavotta","BagBush","BagHunting",
 							 "BagRadioPack","BagTacticalAlice","BagCatPack","BagM2A1Pack"} ,
