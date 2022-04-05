@@ -268,7 +268,6 @@ local function setReplacementItem(item,hotbar)
 	replacementItem:setAttachedSlot(item:getAttachedSlot());
 	replacementItem:setAttachedSlotType(item:getAttachedSlotType());
 	replacementItem:setAttachedToModel(item:getAttachedToModel());
-	NATTwrh.applyBackpackWR(chr,replacementItem)
 end
 
 local checkReplacement = false
