@@ -69,6 +69,9 @@ ItemName_ES = {
 	ItemName_Base.UpgradedAlicePack3b_I = "Mochila militar Alice (Bolsa) +",
     ItemName_Base.UpgradedAlicePack3b_II = "Mochila militar Alice (Bolsa) ++",
 
+    ItemName_Base.AlicepackPouch = "Mochila militar Alice correspondiente",
+    ItemName_Base.AlicepackNonPouch = "Mochila militar Alice correspondiente",
+
     ItemName_Base.Sleepingbag = "Saco de dormir",
     ItemName_Base.SleepingbagBK = "Saco de dormir",
     ItemName_Base.SleepingbagP = "Saco de dormir",

@@ -57,9 +57,10 @@ local snakeBackpacksI = {
 	UpgradedAlicePack3b = "UpgradedAlicePack3b_I",
 }
 function addSlotsSnakebackpackI(items,result,player)
-	keepColorAndItems(items,result)
 	local item = items:get(0)
-	local newBackpack = snakeBackpacksI[item:getType()]
+	local newType = snakeBackpacksI[item:getType()]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)
 	player:getInventory():AddItem(newBackpack);
 end
 
@@ -72,9 +73,10 @@ local snakeBackpacksII = {
 	UpgradedAlicePack3b_I= "UpgradedAlicePack3b_II",
 }
 function addSlotsSnakebackpackII(items,result,player)
-	keepColorAndItems(items,result)
 	local item = items:get(0)
-	local newBackpack = snakeBackpacksII[item:getType()]
+	local newType = snakeBackpacksII[item:getType()]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)
 	player:getInventory():AddItem(newBackpack);
 end
 
@@ -123,7 +125,6 @@ local snakePouchBackpacks = {
 	UpgradedAlicePack2_II = {backpack = "UpgradedAlicePack1_II" , pouch = "AliceBP.MilitiaPouch1"},
 	UpgradedAlicePack2b_II = {backpack = "UpgradedAlicePack1_II" , pouch = "AliceBP.MilitiaPouch2"},
 }
-
 function snakeAddPouchBackpack(items,result,player)
 	local backpackType = items:get(0):getType();
 	local pouchType = items:get(1):getType();

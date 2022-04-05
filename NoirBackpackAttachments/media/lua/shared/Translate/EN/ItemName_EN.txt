@@ -123,4 +123,7 @@ ItemName_EN = {
 	ItemName_Base.UpgradedAlicePack3b_I = "Alice backpack (Pouch) +",
     ItemName_Base.UpgradedAlicePack3b_II = "Alice backpack (Pouch) ++",
 
+    ItemName_Base.AlicepackPouch = "Matching Alice backpack",
+    ItemName_Base.AlicepackNonPouch = "Matching Alice backpack",
+
 }

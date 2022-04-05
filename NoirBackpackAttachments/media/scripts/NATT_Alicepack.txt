@@ -143,7 +143,6 @@ module Base {
         WorldStaticModel = ALICE_Pack_Ground,
     }
 
-
     recipe Upgrade MilitaryAlicepack
     {
         Bag_MilitaryAlicepack_I,
@@ -356,7 +355,7 @@ module Base {
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:KleanBackpack_I,
+        Result:AlicepackNonPouch,
         Time:300.0,
 		OnCreate:addSlotsSnakebackpackI,
 		OnTest: checkIsEquipped,
@@ -374,7 +373,7 @@ module Base {
         Thread=2,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
-        Result:KleanBackpack_II,
+        Result:AlicepackNonPouch,
         Time:300.0,
 		OnCreate:addSlotsSnakebackpackII,
 		OnTest: checkIsEquipped,
@@ -390,7 +389,7 @@ module Base {
         sAlicePack_I/UpgradedAlicePack3_I/UpgradedAlicePack3b_I/sAlicePack_II/UpgradedAlicePack3_II/UpgradedAlicePack3b_II,
         AliceBP.SupportBackpack=1,
         keep Screwdriver,
-        Result:KleanBackpack_II,
+        Result:AlicepackNonPouch,
         Time:80.0,
 
 		OnCreate:snakeAddFrameBackpack,
@@ -404,7 +403,7 @@ module Base {
     {
         UpgradedAlicePack1_I/UpgradedAlicePack2_I/UpgradedAlicePack2b_I/UpgradedAlicePack1_II/UpgradedAlicePack2_II/UpgradedAlicePack2b_II,
         keep Screwdriver,
-        Result:KleanBackpack_II,
+        Result:AlicepackNonPouch,
 
         Time:80.0,
 		OnCreate:snakeRemoveFrameBackpack,
@@ -420,7 +419,7 @@ module Base {
        destroy AliceBP.MilitiaPouch1/AliceBP.MilitiaPouch2,
        keep Screwdriver,
 	   
-       Result:AliceBP.UpgradedAlicePack3b,
+       Result:AlicepackPouch,
        Time:80.0,
 	   OnTest: checkIsEquipped,
        OnCreate:snakeAddPouchBackpack,
@@ -433,13 +432,31 @@ module Base {
        UpgradedAlicePack3_I/UpgradedAlicePack3b_I/UpgradedAlicePack2_I/UpgradedAlicePack2b_I/UpgradedAlicePack3_II/UpgradedAlicePack3b_II/UpgradedAlicePack2_II/UpgradedAlicePack2b_II,
        keep Screwdriver,
 	   
-       Result:AliceBP.UpgradedAlicePack3b,
+       Result:AlicepackNonPouch,
        Time:80.0,
 	   OnTest: checkIsEquipped,
        OnCreate:snakeRemovePounchBackpack,
        RemoveResultItem:true,
 	   NeedToBeLearn:true,
     }
+
+	item AlicepackPouch
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Matching Alicepack,
+		Icon	=	Alice3,
+	}
+
+    item AlicepackNonPouch
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Matching Alicepack,
+		Icon	=	AlicePackMulticam,
+	}
 
     item sAlicePack_I
 	{
