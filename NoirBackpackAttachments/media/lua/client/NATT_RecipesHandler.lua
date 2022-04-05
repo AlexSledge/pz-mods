@@ -48,23 +48,13 @@ function checkIsEquipped(item,result)
 	return not (item:IsInventoryContainer() and item:isEquipped())
 end
 
-local snakeBackpacksI = {
+local snakeBackpacksSlots = {
 	AlicePack = "sAlicePack_I",
 	UpgradedAlicePack1 = "UpgradedAlicePack1_I",
 	UpgradedAlicePack2 = "UpgradedAlicePack2_I",
 	UpgradedAlicePack2b = "UpgradedAlicePack2b_I",
 	UpgradedAlicePack3 = "UpgradedAlicePack3_I",
 	UpgradedAlicePack3b = "UpgradedAlicePack3b_I",
-}
-function addSlotsSnakebackpackI(items,result,player)
-	local item = items:get(0)
-	local newType = snakeBackpacksI[item:getType()]
-	local newBackpack = InventoryItemFactory.CreateItem(newType)
-	keepColorAndItems(items,newBackpack)
-	player:getInventory():AddItem(newBackpack);
-end
-
-local snakeBackpacksII = {
 	sAlicePack_I= "sAlicePack_II",
 	UpgradedAlicePack1_I= "UpgradedAlicePack1_II",
 	UpgradedAlicePack2_I= "UpgradedAlicePack2_II",
@@ -72,15 +62,23 @@ local snakeBackpacksII = {
 	UpgradedAlicePack3_I= "UpgradedAlicePack3_II",
 	UpgradedAlicePack3b_I= "UpgradedAlicePack3b_II",
 }
-function addSlotsSnakebackpackII(items,result,player)
+function addSlotsSnakebackpackI(items,result,player)
 	local item = items:get(0)
-	local newType = snakeBackpacksII[item:getType()]
+	local newType = snakeBackpacksSlots[item:getType()]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)
 	player:getInventory():AddItem(newBackpack);
 end
 
-local snakeFrameBackpacks = {
+function addSlotsSnakebackpackII(items,result,player)
+	local item = items:get(0)
+	local newType = snakeBackpacksSlots[item:getType()]
+	local newBackpack = InventoryItemFactory.CreateItem(newType)
+	keepColorAndItems(items,newBackpack)
+	player:getInventory():AddItem(newBackpack);
+end
+
+local snakeBackpacksFrame = {
 	sAlicePack_I= "UpgradedAlicePack1_I",
 	UpgradedAlicePack3_I= "UpgradedAlicePack2_I",
 	UpgradedAlicePack3b_I= "UpgradedAlicePack2b_I",
@@ -96,7 +94,7 @@ local snakeFrameBackpacks = {
 }
 function snakeAddFrameBackpack(items,result,player)
 	local item = items:get(0)
-	local newType = snakeFrameBackpacks[item:getType()]
+	local newType = snakeBackpacksFrame[item:getType()]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)	
 	player:getInventory():AddItem(newBackpack);
@@ -104,14 +102,14 @@ end
 
 function snakeRemoveFrameBackpack(items,result,player)
 	local item = items:get(0)
-	local newType = snakeFrameBackpacks[item:getType()]
+	local newType = snakeBackpacksFrame[item:getType()]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)	
 	player:getInventory():AddItem(newBackpack);
 	player:getInventory():AddItem("AliceBP.SupportBackpack");
 end
 
-local snakePouchBackpacks = {
+local snakeBackpacksPouch = {
 	UpgradedAlicePack1_I = {MilitiaPouch1 = "UpgradedAlicePack2_I", MilitiaPouch2 = "UpgradedAlicePack2b_I"},
 	sAlicePack_I = {MilitiaPouch1 = "UpgradedAlicePack3_I", MilitiaPouch2 = "UpgradedAlicePack3b_I"},
 	UpgradedAlicePack3_I = {backpack = "sAlicePack_I" , pouch = "AliceBP.MilitiaPouch1"},
@@ -128,7 +126,7 @@ local snakePouchBackpacks = {
 function snakeAddPouchBackpack(items,result,player)
 	local backpackType = items:get(0):getType();
 	local pouchType = items:get(1):getType();
-	local newType = snakePouchBackpacks[backpackType][pouchType]
+	local newType = snakeBackpacksPouch[backpackType][pouchType]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)	
 	player:getInventory():AddItem(newBackpack);
@@ -136,8 +134,8 @@ end
 
 function snakeRemovePounchBackpack(items,result,player)
 	local backpackType = items:get(0):getType();
-	local newType = snakePouchBackpacks[backpackType]["backpack"]
-	local pouch = snakePouchBackpacks[backpackType]["pouch"]
+	local newType = snakeBackpacksPouch[backpackType]["backpack"]
+	local pouch = snakeBackpacksPouch[backpackType]["pouch"]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)	
 	player:getInventory():AddItem(newBackpack);
