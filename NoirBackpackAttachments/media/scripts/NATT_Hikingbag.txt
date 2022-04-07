@@ -80,87 +80,6 @@ module Base {
         WorldStaticModel 		= 	HikingBag_Ground,
     }
 
-	recipe Upgrade SmallHikingbag
-    {	
-        MoreTraits.Bag_SmallHikingBag,
-        LeatherStrips=4,
-        Thread,
-        keep KitchenKnife/HuntingKnife/Scissors,
-        keep Needle,
-        Result:Bag_SmallHikingBag_I,
-        Time:300.0,
-		OnCreate:keepColorAndItems,
-		OnTest: checkIsEquipped,
-        Tooltip: Tooltip_SlotsI,
-        Category:Tailoring,
-		SkillRequired:Tailoring=2,
-		NeedToBeLearn:true,
-    }
-
-	 item Bag_SmallHikingBag_I
-    {
-        DisplayCategory = Bag,
-        WeightReduction	=	60,
-        Weight	=	0.8,
-        Type	=	Container,
-        Capacity	=	8,
-        DisplayName	=	Small Hiking Bag +,
-        IconsForTexture	=	Hiking_Blue;Hiking_Green;Hiking_Red,
-        CanBeEquipped = Back,
-        OpenSound   =   OpenBag,
-        CloseSound   =   CloseBag,
-        PutInSound   =   PutItemInBag,
-        ClothingItem = Bag_SmallHikingBag,
-        BloodLocation = Bag,
-        RunSpeedModifier = 0.9,
-        AttachmentReplacement = Bag,
-		AttachmentsProvided  = HikingbagBottleRight;HikingbagBedroll,
-        ReplaceInSecondHand = Bag_HikingBag_LHand holdingbagleft,
-        ReplaceInPrimaryHand = Bag_HikingBag_RHand holdingbagright,
-        WorldStaticModel = HikingBag_Ground,
-    }
-
-	recipe Upgrade SmallHikingbag
-    {	
-        Bag_SmallHikingBag_I,
-        LeatherStrips=8,
-        Thread=2,
-        keep KitchenKnife/HuntingKnife/Scissors,
-        keep Needle,
-		OnCreate:keepColorAndItems,
-        Result:Bag_SmallHikingBag_II,
-        Time:300.0,
-		OnCreate:keepColorAndItems,
-		OnTest: checkIsEquipped,		
-        Tooltip: Tooltip_MediumSlotsII,
-        Category:Tailoring,
-		SkillRequired:Tailoring=4,
-		NeedToBeLearn:true,
-    }
-
-	item Bag_SmallHikingBag_II
-    {
-        DisplayCategory = Bag,
-        WeightReduction	=	60,
-        Weight	=	0.8,
-        Type	=	Container,
-        Capacity	=	8,
-        DisplayName	=	Small Hiking Bag ++,
-        IconsForTexture	=	Hiking_Blue;Hiking_Green;Hiking_Red,
-        CanBeEquipped = Back,
-        OpenSound   =   OpenBag,
-        CloseSound   =   CloseBag,
-        PutInSound   =   PutItemInBag,
-        ClothingItem = Bag_SmallHikingBag,
-        BloodLocation = Bag,
-        RunSpeedModifier = 0.9,
-        AttachmentReplacement = Bag,
-		AttachmentsProvided = HikingbagShortWeapon;HikingbagFlashlight;HikingbagBottleRight;HikingbagBottleLeft;HikingbagBedroll;HikingbagTrinket,
-        ReplaceInSecondHand = Bag_HikingBag_LHand holdingbagleft,
-        ReplaceInPrimaryHand = Bag_HikingBag_RHand holdingbagright,
-        WorldStaticModel = HikingBag_Ground,
-    }
-
 	model FemaleBody
 	{
 		
@@ -217,6 +136,12 @@ module Base {
 		attachment Hikingbag_trinkettoybear {
 			offset = 0.1250 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_trinketdawn{
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
@@ -351,6 +276,12 @@ module Base {
 		attachment Hikingbag_trinkettoybear {
 			offset = 0.1250 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_trinketdawn{
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

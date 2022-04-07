@@ -71,6 +71,8 @@ local attachments = {
 	PillsBeta = "PillBottle",
 	PillsSleepingTablets = "PillBottle",
 	PillsVitamins = "PillBottle",
+
+	DawnPlushie= "TrinketDawn",
 }
 
 local staticModels = {
@@ -101,6 +103,8 @@ local staticModels = {
 	Pop3Empty= "PopCanFizzWorld",
 
 	PopBottleEmpty= "PopBottle",
+	
+	DawnPlushie = "DawnPlush",
 }
 
 for k,v in pairs(attachments) do 

@@ -62,15 +62,8 @@ local snakeBackpacksSlots = {
 	UpgradedAlicePack3_I= "UpgradedAlicePack3_II",
 	UpgradedAlicePack3b_I= "UpgradedAlicePack3b_II",
 }
-function addSlotsSnakebackpackI(items,result,player)
-	local item = items:get(0)
-	local newType = snakeBackpacksSlots[item:getType()]
-	local newBackpack = InventoryItemFactory.CreateItem(newType)
-	keepColorAndItems(items,newBackpack)
-	player:getInventory():AddItem(newBackpack);
-end
 
-function addSlotsSnakebackpackII(items,result,player)
+function addSlotsSnakebackpack(items,result,player)
 	local item = items:get(0)
 	local newType = snakeBackpacksSlots[item:getType()]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
@@ -92,6 +85,7 @@ local snakeBackpacksFrame = {
 	UpgradedAlicePack2_II= "UpgradedAlicePack3_II",
 	UpgradedAlicePack2b_II= "UpgradedAlicePack3b_II",
 }
+
 function snakeAddFrameBackpack(items,result,player)
 	local item = items:get(0)
 	local newType = snakeBackpacksFrame[item:getType()]
@@ -123,23 +117,35 @@ local snakeBackpacksPouch = {
 	UpgradedAlicePack2_II = {backpack = "UpgradedAlicePack1_II" , pouch = "AliceBP.MilitiaPouch1"},
 	UpgradedAlicePack2b_II = {backpack = "UpgradedAlicePack1_II" , pouch = "AliceBP.MilitiaPouch2"},
 }
+
+local function transferItemsToInventory(container,player)
+	local items = container:getItemContainer():getItems()
+	if not items then return end
+	local playerInv = player:getInventory()
+	for i=1,items:size() do
+		playerInv:addItem(items:get(i-1))
+	end
+end
+
 function snakeAddPouchBackpack(items,result,player)
-	local backpackType = items:get(0):getType();
-	local pouchType = items:get(1):getType();
+	local backpackType = items:get(0):getType()
+	local pouch = items:get(1)
+	local pouchType = pouch:getType()
 	local newType = snakeBackpacksPouch[backpackType][pouchType]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
-	keepColorAndItems(items,newBackpack)	
-	player:getInventory():AddItem(newBackpack);
+	keepColorAndItems(items,newBackpack)
+	transferItemsToInventory(pouch,player)
+	player:getInventory():AddItem(newBackpack)
 end
 
 function snakeRemovePounchBackpack(items,result,player)
-	local backpackType = items:get(0):getType();
+	local backpackType = items:get(0):getType()
 	local newType = snakeBackpacksPouch[backpackType]["backpack"]
 	local pouch = snakeBackpacksPouch[backpackType]["pouch"]
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)	
-	player:getInventory():AddItem(newBackpack);
-	player:getInventory():AddItem(pouch);
+	player:getInventory():AddItem(newBackpack)
+	player:getInventory():AddItem(pouch)
 end
 
 Events.OnGameStart.Add(checkMods)

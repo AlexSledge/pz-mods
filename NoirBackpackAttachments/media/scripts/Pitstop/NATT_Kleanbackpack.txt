@@ -1,0 +1,85 @@
+module Base {
+
+    recipe Upgrade KleanBackpack
+    {
+        KleanBackPack,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:KleanBackpack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+
+    item KleanBackpack_I
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Clean Up Krew Back Pack,
+        ClothingItem = KleanBackPack,
+        CanBeEquipped = Back,
+        WeightReduction	=	100,
+        Weight	=	2,
+        Capacity	=	40,
+        Icon	=	CUKJumpsuit,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+    }
+
+    recipe Upgrade KleanBackpack
+    {
+        KleanBackpack_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:KleanBackpack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=4,
+    }
+
+    item KleanBackpack_II
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Clean Up Krew Back Pack,
+        ClothingItem = KleanBackPack,
+        CanBeEquipped = Back,
+        WeightReduction	=	100,
+        Weight	=	2,
+        Capacity	=	40,
+        Icon	=	CUKJumpsuit,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_Army_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Army_RHand holdingbagright,
+        WorldStaticModel = ALICE_Pack_Ground,
+		AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+    }
+
+}

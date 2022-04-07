@@ -1,0 +1,413 @@
+module Base {
+
+    recipe Upgrade SnakeAlice
+    {
+        AliceBP.AlicePack/AliceBP.UpgradedAlicePack1/AliceBP.UpgradedAlicePack2/AliceBP.UpgradedAlicePack2b/AliceBP.UpgradedAlicePack3/AliceBP.UpgradedAlicePack3b,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:AlicepackNonPouch,
+        Time:300.0,
+		OnCreate:addSlotsSnakebackpack,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+        RemoveResultItem:true,
+    }
+
+    recipe Upgrade SnakeAlice
+    {
+        sAlicePack_I/UpgradedAlicePack1_I/UpgradedAlicePack2_I/UpgradedAlicePack2b_I/UpgradedAlicePack3_I/UpgradedAlicePack3b_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:AlicepackNonPouch,
+        Time:300.0,
+		OnCreate:addSlotsSnakebackpack,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=4,
+        RemoveResultItem:true,
+    }
+
+    recipe Add Frame SnakeAlice
+    {
+        sAlicePack_I/UpgradedAlicePack3_I/UpgradedAlicePack3b_I/sAlicePack_II/UpgradedAlicePack3_II/UpgradedAlicePack3b_II,
+        AliceBP.SupportBackpack=1,
+        keep Screwdriver,
+        Result:AlicepackNonPouch,
+        Time:80.0,
+
+		OnCreate:snakeAddFrameBackpack,
+		OnTest: checkIsEquipped,
+        Category:Tailoring,
+        RemoveResultItem:true,
+		NeedToBeLearn:true,
+    }
+
+    recipe Remove Frame SnakeAlice
+    {
+        UpgradedAlicePack1_I/UpgradedAlicePack2_I/UpgradedAlicePack2b_I/UpgradedAlicePack1_II/UpgradedAlicePack2_II/UpgradedAlicePack2b_II,
+        keep Screwdriver,
+        Result:AlicepackNonPouch,
+
+        Time:80.0,
+		OnCreate:snakeRemoveFrameBackpack,
+		OnTest: checkIsEquipped,
+        Category:Tailoring,
+        RemoveResultItem:true,
+		NeedToBeLearn:true,
+    }
+
+     recipe Add Pouch SnakeAlice
+    {
+       sAlicePack_I/UpgradedAlicePack1_I/sAlicePack_II/UpgradedAlicePack1_II,
+       destroy AliceBP.MilitiaPouch1/AliceBP.MilitiaPouch2,
+       keep Screwdriver,
+	   
+       Result:AlicepackPouch,
+       Time:80.0,
+	   OnTest: checkIsEquipped,
+       OnCreate:snakeAddPouchBackpack,
+       RemoveResultItem:true,
+	   NeedToBeLearn:true,
+    }
+
+     recipe Remove Pouch SnakeAlice
+    {
+       UpgradedAlicePack3_I/UpgradedAlicePack3b_I/UpgradedAlicePack2_I/UpgradedAlicePack2b_I/UpgradedAlicePack3_II/UpgradedAlicePack3b_II/UpgradedAlicePack2_II/UpgradedAlicePack2b_II,
+       keep Screwdriver,
+	   
+       Result:AlicepackNonPouch,
+       Time:80.0,
+	   OnTest: checkIsEquipped,
+       OnCreate:snakeRemovePounchBackpack,
+       RemoveResultItem:true,
+	   NeedToBeLearn:true,
+    }
+
+	item AlicepackPouch
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Matching Alicepack,
+		Icon	=	Alice3,
+	}
+
+    item AlicepackNonPouch
+	{
+		CanStack	=	TRUE,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Matching Alicepack,
+		Icon	=	AlicePackMulticam,
+	}
+
+    item sAlicePack_I
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_AlicePack,
+		WeightReduction	=	90,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Mochila militar Alice +,
+		Icon			=	AlicePackMulticam,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+	}
+
+     item sAlicePack_II
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_AlicePack,
+		WeightReduction	=	90,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Mochila militar Alice ++,
+		Icon			=	AlicePackMulticam,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+	}
+
+	item UpgradedAlicePack1_I
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_UpgradedAlicePack1,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.4,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Mochila militar Alice (Soporte) +,
+		Icon			=	AlicePackMulticamU,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+	}
+
+    item UpgradedAlicePack1_II
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_UpgradedAlicePack1,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.4,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Mochila militar Alice (Soporte) ++,
+		Icon			=	AlicePackMulticamU,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+	}
+
+	item UpgradedAlicePack2_I
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_UpgradedAlicePack2,
+		ClothingItem = UpgradedAlicePack2,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.5,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Soporte + Bolsa) +,
+		Icon			=	AlicePackMulticamUp1,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = UpgradedAlicePack2_LHand holdingbagleft,
+        ReplaceInPrimaryHand = UpgradedAlicePack2_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+	}
+
+    item UpgradedAlicePack2_II
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_UpgradedAlicePack2,
+		ClothingItem = UpgradedAlicePack2,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.5,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Soporte + Bolsa) ++,
+		Icon			=	AlicePackMulticamUp1,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = UpgradedAlicePack2_LHand holdingbagleft,
+        ReplaceInPrimaryHand = UpgradedAlicePack2_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+	}
+
+	item UpgradedAlicePack2b_I
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack2b,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.5,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Soporte + Bolsa) +,
+		Icon			=	AlicePackMulticamUp2,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+	}
+
+    item UpgradedAlicePack2b_II
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack2b,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.5,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Soporte + Bolsa) ++,
+		Icon			=	AlicePackMulticamUp2,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+	}
+
+	item UpgradedAlicePack3_I
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack3,
+		ClothingItem = UpgradedAlicePack2,
+		CanBeEquipped = Back,
+		WeightReduction	=	90,
+		Weight			=	1.1,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Bolsa) +,
+		Icon			=	Alice3,	
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = UpgradedAlicePack2_LHand holdingbagleft,
+        ReplaceInPrimaryHand = UpgradedAlicePack2_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+	}
+
+    item UpgradedAlicePack3_II
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack3,
+		ClothingItem = UpgradedAlicePack2,
+		CanBeEquipped = Back,
+		WeightReduction	=	90,
+		Weight			=	1.1,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Bolsa) ++,
+		Icon			=	Alice3,	
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = UpgradedAlicePack2_LHand holdingbagleft,
+        ReplaceInPrimaryHand = UpgradedAlicePack2_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+	}
+
+	item UpgradedAlicePack3b_I
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack3b,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		WeightReduction	=	90,
+		Weight			=	1.1,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Bolsa) +,
+		Icon			=	Alice3b,
+		CanBeEquipped   = 	Back,	
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackBottleRight;AlicepackBedroll,
+	}
+
+    item UpgradedAlicePack3b_II
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack3b,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		WeightReduction	=	90,
+		Weight			=	1.1,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Bolsa) ++,
+		Icon			=	Alice3b,
+		CanBeEquipped   = 	Back,	
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+        AttachmentsProvided = AlicepackWeapon;AlicepackFlashlight;AlicepackBottleRight;AlicepackBottleLeft;AlicepackBedroll;AlicepackTrinket,
+	}
+
+}

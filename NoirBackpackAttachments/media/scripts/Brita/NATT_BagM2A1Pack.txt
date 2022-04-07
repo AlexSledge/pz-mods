@@ -144,6 +144,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment BagM2A1Pack_trinketdawn {
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment BagM2A1Pack_trinkettoycar {
 			offset = 0.0750 0.0750 -0.1150,
 			rotate = 90.0000 0.0000 90.0000,
@@ -287,6 +293,12 @@ module Base {
 		attachment BagM2A1Pack_trinkettoybear {
 			offset = 0.1350 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagM2A1Pack_trinketdawn {
+			offset = 0.1350 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

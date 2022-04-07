@@ -141,6 +141,12 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment CFP90PatrolPack_trinketdawn {
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment CFP90PatrolPack_trinkettoycar {
 			offset = 0.0750 0.0750 -0.0800,
 			rotate = 90.0000 0.0000 90.0000,
@@ -271,6 +277,12 @@ module Base {
 		attachment CFP90PatrolPack_trinkettoybear {
 			offset = 0.1450 0.0850 -0.1850,
 			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_trinketdawn {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 

@@ -115,6 +115,7 @@ for _,v in pairs(Backpacks) do
 			Doll = v.."TrinketDoll",
 			RubberDuck = v.."TrinketRubberDucky",
 			TeddyBear = v.."TrinketToyBear",
+			TrinketDawn  = v.."TrinketDawn",
 		},
 	}
 	table.insert(ISHotbarAttachDefinition, slot);
