@@ -15,6 +15,7 @@ NATTmods = {
 	PwSleepingbags = "PwSleepingbags",
 	FNAF6 = "FnafToys",
 	SnakeAlice = "AliceSPack",
+	DawnTime = "DawnTime",
 }  
 
 local modsBackpacks = {

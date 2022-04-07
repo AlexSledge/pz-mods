@@ -71,8 +71,6 @@ local attachments = {
 	PillsBeta = "PillBottle",
 	PillsSleepingTablets = "PillBottle",
 	PillsVitamins = "PillBottle",
-
-	DawnPlushie= "TrinketDawn",
 }
 
 local staticModels = {
@@ -103,8 +101,6 @@ local staticModels = {
 	Pop3Empty= "PopCanFizzWorld",
 
 	PopBottleEmpty= "PopBottle",
-	
-	DawnPlushie = "DawnPlush",
 }
 
 for k,v in pairs(attachments) do 
@@ -196,4 +192,9 @@ end
 if isModActived(NATTmods.FNAF6) then
 	Tweaker("Bag_Schoolbag_II","IconsForTexture", "Backpack_Black;Backpack_Blue;Backpack_Spiffo;Backpack_Fnaf");
 	Tweaker("Bag_Schoolbag_I","IconsForTexture", "Backpack_Black;Backpack_Blue;Backpack_Spiffo;Backpack_Fnaf");
+end
+
+if isModActived(NATTmods.DawnTime) then
+	Tweaker("DawnPlushie","StaticModel", "DawnPlush");
+	Tweaker("DawnPlushie","AttachmentType", "TrinketDawn");
 end
