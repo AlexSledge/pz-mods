@@ -16,8 +16,13 @@ local function getAttachmentsProvided(item)
 	end
 end
 
+local function excludeItem(item)
+	if item:IsClothing() or item:isWaterSource() or item:IsFood() then return true end
+	return false
+end
+
 NATTwrh.applyBackpackWR = function(chr,item)
-	if item:IsClothing() or item:isWaterSource() then return end;
+	if excludeItem(item) then return end;
 	local slotType = item:getAttachedSlotType()
 	if not slotType then return end
 	local backpack = chr:getClothingItem_Back() 
@@ -36,7 +41,7 @@ end
 
 NATTwrh.restoreWeight = function (item)
 	if not item then return end;
-	if item:IsClothing() or item:isWaterSource() then return end;
+	if excludeItem(item) then return end;
 	local modData = item:getModData()
 	if modData.oWeight then
 		item:setActualWeight(modData.oWeight)
