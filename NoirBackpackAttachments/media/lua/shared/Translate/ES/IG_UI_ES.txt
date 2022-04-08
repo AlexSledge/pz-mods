@@ -72,6 +72,14 @@ IGUI_ES = {
     IGUI_HotbarAttachment_NomadBackpackTrinket = "Ranura Baratija",
     IGUI_HotbarAttachment_NomadBackpackFlashlight = "Ranura Linterna",
 
+    IGUI_HotbarAttachment_PrepperVestPackedWeapon = "Ranura Arma",
+    IGUI_HotbarAttachment_PrepperVestPackedShortWeapon = "Ranura Arma Corta",
+    IGUI_HotbarAttachment_PrepperVestPackedBottleLeft = "Ranura Botella Izquierda",
+    IGUI_HotbarAttachment_PrepperVestPackedBottleRight = "Ranura Botella Derecha",
+    IGUI_HotbarAttachment_PrepperVestPackedBedroll = "Ranura Saco de Dormir",
+    IGUI_HotbarAttachment_PrepperVestPackedTrinket = "Ranura Baratija",
+    IGUI_HotbarAttachment_PrepperVestPackedFlashlight = "Ranura Linterna",
+
     IGUI_HotbarAttachment_RucksackWeapon = "Ranura Arma",
     IGUI_HotbarAttachment_RucksackShortWeapon = "Ranura Arma Corta",
     IGUI_HotbarAttachment_RucksackBottleLeft = "Ranura Botella Izquierda",
@@ -208,13 +216,13 @@ IGUI_ES = {
     IGUI_HotbarAttachment_BagM2A1PackTrinket = "Ranura Baratija",
     IGUI_HotbarAttachment_BagM2A1PackFlashlight = "Ranura Linterna",
 
-    IGUI_HotbarAttachment_PrepperVestPackedWeapon = "Ranura Arma",
-    IGUI_HotbarAttachment_PrepperVestPackedShortWeapon = "Ranura Arma Corta",
-    IGUI_HotbarAttachment_PrepperVestPackedBottleLeft = "Ranura Botella Izquierda",
-    IGUI_HotbarAttachment_PrepperVestPackedBottleRight = "Ranura Botella Derecha",
-    IGUI_HotbarAttachment_PrepperVestPackedBedroll = "Ranura Saco de Dormir",
-    IGUI_HotbarAttachment_PrepperVestPackedTrinket = "Ranura Baratija",
-    IGUI_HotbarAttachment_PrepperVestPackedFlashlight = "Ranura Linterna",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackWeapon = "Ranura Arma",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackShortWeapon = "Ranura Arma Corta",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackBottleLeft = "Ranura Botella Izquierda",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackBottleRight = "Ranura Botella Derecha",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackBedroll = "Ranura Saco de Dormir",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackTrinket = "Ranura Baratija",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackFlashlight = "Ranura Linterna",
 
     IGUI_CraftCategory_Tailoring = "Sastreria",
     

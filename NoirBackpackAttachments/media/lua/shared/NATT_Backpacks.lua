@@ -15,6 +15,7 @@ NATTmods = {
 	PwSleepingbags = "PwSleepingbags",
 	FNAF6 = "FnafToys",
 	SnakeAlice = "AliceSPack",
+	SnakeClothing = "SnakeClothingMod",
 	DawnTime = "DawnTime",
 }  
 
@@ -24,9 +25,11 @@ local modsBackpacks = {
 	[NATTmods.ScrapArmor] = {"Rucksack"} ,
 	[NATTmods.SLEO] = {"PoliceUtilityBag"} ,
 	[NATTmods.SMUI] = {"CFP90PatrolPack","MilitaryMedicalBag"},
+	[NATTmods.SnakeClothing] = {"sBigSpiffoBackpack"},
 	[NATTmods.BritaArmor] = {"BagSniperPack","ARVNRucksack","BagST53Set","BagSCBA",
 							 "BagZIP","BagSSO","BagSavotta","BagBush","BagHunting",
 							 "BagRadioPack","BagTacticalAlice","BagCatPack","BagM2A1Pack"} ,
+							 
 }
 
 Backpacks = {

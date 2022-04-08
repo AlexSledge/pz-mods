@@ -72,6 +72,9 @@ ItemName_ES = {
     ItemName_Base.AlicepackPouch = "Mochila militar Alice correspondiente",
     ItemName_Base.AlicepackNonPouch = "Mochila militar Alice correspondiente",
 
+    ItemName_Base.sBigSpiffoBackpack_I = "Mochila grande Spiffo +",
+    ItemName_Base.sBigSpiffoBackpack_II = "Mochila grande Spiffo ++",
+
     ItemName_Base.Sleepingbag = "Saco de dormir",
     ItemName_Base.SleepingbagBK = "Saco de dormir",
     ItemName_Base.SleepingbagP = "Saco de dormir",

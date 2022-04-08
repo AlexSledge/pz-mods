@@ -87,14 +87,14 @@ module Base {
 
 		attachment HR_bottleright
 		{
-			offset = 0.0400 -0.1350 -0.0700,
+			offset = 0.0300 -0.1350 -0.0700,
 			rotate = 90.0000 -90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
 
 		attachment HR_bottleleft
 		{
-			offset = 0.0400 0.1350 -0.0700,
+			offset = 0.0300 0.1350 -0.0700,
 			rotate = 90.0000 90.0000 0.0000,
 			bone = Bip01_BackPack,
 		}
