@@ -12,14 +12,12 @@ local function getAttachmentsProvided(item)
 	if not attachmentsProvided then return end
 	for i=0, attachmentsProvided:size()-1 do
 		local attachment = attachmentsProvided:get(i)
-		if not string.find(attachment,"Bottle") then
-			attachmentsProvidedCache[itemType][attachment] = true
-		end
+		attachmentsProvidedCache[itemType][attachment] = true
 	end
 end
 
 NATTwrh.applyBackpackWR = function(chr,item)
-	if item:IsClothing() then return end;
+	if item:IsClothing() or item:isWaterSource() then return end;
 	local slotType = item:getAttachedSlotType()
 	if not slotType then return end
 	local backpack = chr:getClothingItem_Back() 
@@ -38,7 +36,7 @@ end
 
 NATTwrh.restoreWeight = function (item)
 	if not item then return end;
-	if item:IsClothing() then return end;
+	if item:IsClothing() or item:isWaterSource() then return end;
 	local modData = item:getModData()
 	if modData.oWeight then
 		item:setActualWeight(modData.oWeight)
