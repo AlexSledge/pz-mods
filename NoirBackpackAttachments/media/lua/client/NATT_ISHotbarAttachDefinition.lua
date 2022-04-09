@@ -2,7 +2,7 @@ if not ISHotbarAttachDefinition then
     return
 end
 
-for _,v in pairs(Backpacks) do
+for _,v in pairs(NATTBackpacks) do
 
 	local slot = {
 		type = v.."Weapon",

@@ -32,7 +32,7 @@ local modsBackpacks = {
 							 
 }
 
-Backpacks = {
+NATTBackpacks = {
 	"Schoolbag",
 	"Alicepack",
 	"BigHikingbag",
@@ -49,7 +49,7 @@ end
 
 local function loadBackpacks(bps)
 	for _,backpack in ipairs(bps) do
-		table.insert(Backpacks,backpack)
+		table.insert(NATTBackpacks,backpack)
 	end
 end
 
