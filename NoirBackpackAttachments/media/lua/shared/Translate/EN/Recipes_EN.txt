@@ -52,4 +52,7 @@ Recipes_EN = {
     Recipe_Add_Pouch_SnakeAlice = "Add dump pouch to Alice backpack",
     Recipe_Remove_Pouch_SnakeAlice = "Remove dump pouch from Alice backpack",
 
+    Recipe_Upgrade_AliceDito = "Add Attachment Slots",
+    Recipe_Upgrade_sBigSpiffoBackpack = "Add Attachment Slots",
+
 }

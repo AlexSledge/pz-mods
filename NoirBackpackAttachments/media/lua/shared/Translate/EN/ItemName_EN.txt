@@ -20,7 +20,7 @@ ItemName_EN = {
     ItemName_Base.NomadBackpack_II = "Nomad Backpack ++",
 
     ItemName_Base.PrepperVestPacked_I = "Prepper Vest with bags +",
-    ItemName_Base.PrepperVestPacked_II = "Prepper Vest with bags +++",
+    ItemName_Base.PrepperVestPacked_II = "Prepper Vest with bags ++",
 
     ItemName_Base.Bag_MilitaryAlicepack_I = "Military Backpack +",
     ItemName_Base.Bag_MilitaryAlicepack_II = "Military Backpack ++",
@@ -125,6 +125,9 @@ ItemName_EN = {
 
     ItemName_Base.sBigSpiffoBackpack_I = "Big Spiffo Backpack +",
     ItemName_Base.sBigSpiffoBackpack_II = "Big Spiffo Backpack ++",
+
+    ItemName_Base.AlicePackDito_I = "Unique Backpack Ditoseadio +",
+    ItemName_Base.AlicePackDito_II = "Unique Backpack Ditoseadio ++",
 
     ItemName_Base.AlicepackPouch = "Matching Alice backpack",
     ItemName_Base.AlicepackNonPouch = "Matching Alice backpack",

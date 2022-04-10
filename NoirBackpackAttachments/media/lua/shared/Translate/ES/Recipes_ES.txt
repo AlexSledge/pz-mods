@@ -54,4 +54,7 @@ Recipes_ES = {
     Recipe_Add_Pouch_SnakeAlice = "Agregar bolsa de almacenaje a mochila Alice",
     Recipe_Remove_Pouch_SnakeAlice = "Quitar bolsa de almacenaje a mochila Alice",
 
+    Recipe_Upgrade_AliceDito = "Agregar Ranuras de Acople",
+    Recipe_Upgrade_sBigSpiffoBackpack = "Agregar Ranuras de Acople",
+
 }
