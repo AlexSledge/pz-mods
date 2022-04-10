@@ -53,7 +53,7 @@ module Base {
 		OnTest: checkIsEquipped,
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item Bag_Alicepack_II
@@ -156,7 +156,7 @@ module Base {
 		OnTest: checkIsEquipped,		
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item Bag_MilitaryAlicepack_II

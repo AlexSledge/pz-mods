@@ -103,8 +103,8 @@ end
 
 function snakeRemovePounchBackpack(items,result,player)
 	local backpackType = items:get(0):getType()
-	local newType = snakeBackpacksPouch[backpackType]["backpack"]
-	local pouch = snakeBackpacksPouch[backpackType]["pouch"]
+	local newType = snakeBackpacksPouch[backpackType].backpack
+	local pouch = snakeBackpacksPouch[backpackType].pouch
 	local newBackpack = InventoryItemFactory.CreateItem(newType)
 	keepColorAndItems(items,newBackpack)	
 	player:getInventory():AddItem(newBackpack)

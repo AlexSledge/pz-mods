@@ -55,7 +55,7 @@ module Base {
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item KleanBackpack_II

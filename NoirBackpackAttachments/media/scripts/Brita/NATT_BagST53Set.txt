@@ -59,7 +59,7 @@ module Base {
         Tooltip: Tooltip_SlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item BagST53Set_II
@@ -106,7 +106,7 @@ module Base {
 		}
 
 		attachment BagST53Set_bedroll {
-			offset = -0.0300 0.0000 0.1500,
+			offset = -0.0100 0.0000 0.1500,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}
@@ -258,7 +258,7 @@ module Base {
 		}
 
 		attachment BagST53Set_bedroll {
-			offset = -0.0300 0.0000 0.1500,
+			offset = -0.0100 0.0000 0.1500,
 			rotate = 0.0000 0.0000 90.0000,
 			bone = Bip01_BackPack,
 		}

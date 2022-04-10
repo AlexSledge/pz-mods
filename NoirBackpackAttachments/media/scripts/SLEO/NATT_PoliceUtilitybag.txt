@@ -53,7 +53,7 @@ module Base {
         Tooltip: Tooltip_PolicyUtilityBagSlotsII,
         Category:Tailoring,
         NeedToBeLearn:true,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item Bag_PoliceUtilityBag_II
@@ -131,7 +131,7 @@ module Base {
         Tooltip: Tooltip_PolicyUtilityBagSlotsII,
         Category:Tailoring,
         NeedToBeLearn:true,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item Bag_PoliceUtilityBagGreen_II

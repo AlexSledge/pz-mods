@@ -56,7 +56,7 @@ module Base {
         Tooltip: Tooltip_MediumSlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item Bag_MilitaryMedicalBag_II

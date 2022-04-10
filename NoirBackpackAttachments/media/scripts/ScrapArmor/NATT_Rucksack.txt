@@ -54,7 +54,7 @@ module Base {
         Tooltip: Tooltip_MediumSlotsII,
         Category:Tailoring,
 		NeedToBeLearn:true,
-		SkillRequired:Tailoring=4,
+		SkillRequired:Tailoring=3,
     }
 
     item Rucksack_II
