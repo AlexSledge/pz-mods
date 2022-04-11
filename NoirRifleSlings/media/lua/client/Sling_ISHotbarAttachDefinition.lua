@@ -8,6 +8,9 @@ local slot = {
 	animset = "belt left",
 	attachments = {
 		Rifle = "SlingRifle",
+		BigBlade = "SlingWeapon",
+		BigWeapon = "SlingWeapon",
+		Shovel = "SlingShovel",
 	},
 }
 table.insert(ISHotbarAttachDefinition, slot);
@@ -18,6 +21,9 @@ slot = {
 	animset = "belt left",
 	attachments = {
 		Rifle = "SlingRifle2",
+		BigBlade = "SlingWeapon2",
+		BigWeapon = "SlingWeapon2",
+		Shovel = "SlingShovel2",
 	},
 }
 table.insert(ISHotbarAttachDefinition, slot);
@@ -28,6 +34,9 @@ slot = {
 	animset = "belt left",
 	attachments = {
 		Rifle = "SlingRifle3",
+		BigBlade = "SlingWeapon3",
+		BigWeapon = "SlingWeapon3",
+		Shovel = "SlingShovel3",
 	},
 }
 table.insert(ISHotbarAttachDefinition, slot);

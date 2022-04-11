@@ -53,8 +53,8 @@ module Base
 
 	recipe Make Rifle Sling
     {
-        Belt2=2,
-        LeatherStrips=3,
+        Belt2=1,
+        LeatherStrips=4,
         Thread=2, 
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
