@@ -43,6 +43,27 @@ module Base
 			rotate = 300.0000 075.0000 65.0000,
 			bone = Bip01_Spine,
 		}
+		
+		attachment sling_shovel
+		{
+			offset = 0.2600 -0.0600 0.0900,
+			rotate = 0.0000 0.0000 65.0000,
+			bone = Bip01_Spine,
+		}
+
+		attachment sling_shovel2
+		{
+			offset = -0.0700 -0.1000 0.0900,
+			rotate = 0.0000 0.0000 -60.0000,
+			bone = Bip01_Spine,
+		}
+
+		attachment sling_shovel3
+		{
+			offset = 0.0800 -0.2200 0.0700,
+			rotate = 0.0000 0.0000 5.0000,
+			bone = Bip01_Spine,
+		}
 	}
 
 	model MaleBody
