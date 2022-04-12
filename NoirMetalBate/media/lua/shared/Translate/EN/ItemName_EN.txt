@@ -1,5 +1,0 @@
-ItemName_EN = {
-	ItemName_MetalBat.MetalBaseballBat = "Metal Baseball Bat",
-	ItemName_MetalBat.Bgrip = "Pro Bat Grip",
-	ItemName_MetalBat.Bsock = "Pro Bat Swing Sock",
-}

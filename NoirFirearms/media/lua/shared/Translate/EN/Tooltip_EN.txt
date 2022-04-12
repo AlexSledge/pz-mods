@@ -1,6 +1,0 @@
-
-Tooltip_EN = {
-
-  Tooltip_Silencer = "Reduces gunshot noise."
-  
-}
