@@ -1,0 +1,125 @@
+module Base
+{
+
+
+    sound 9mmShoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/9mm_shoot.wav,
+            distanceMax = 80
+        }
+    }
+
+    sound 9mmShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/9mm_shoot_silenced.wav,
+            distanceMax = 70
+        }
+    }
+
+    sound 45Shoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/45_shoot.wav,
+            distanceMax = 100
+        }
+    }
+
+    sound 45ShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/45_shoot_silenced.wav,
+            distanceMax = 90
+        }
+    }
+
+    sound 223Shoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/223_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound 223ShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/223_shoot_silenced.wav,
+            distanceMax = 130
+        }
+    }
+
+    sound 308Shoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound 308ShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/308_shoot_silenced.wav,
+            distanceMax = 130
+        }
+    }
+
+    sound 5x45mmShoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/5x45mm_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound 5x45mmShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/5x45mm_shoot_silenced.wav,
+            distanceMax = 130
+        }
+    }
+
+    sound 12gaShoot
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/12ga_shoot.wav,
+            distanceMax = 140
+        }
+    }
+
+    sound 12gaShootSilenced
+    {
+        category = Item,
+        clip
+        {
+            file = media/sound/12ga_shoot_silenced.wav,
+            distanceMax = 130
+        }
+    }
+
+}

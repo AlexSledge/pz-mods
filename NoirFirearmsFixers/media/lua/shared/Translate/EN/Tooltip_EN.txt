@@ -1,0 +1,6 @@
+
+Tooltip_EN = {
+
+  Tooltip_GunRepair  = "It can be used to repair firearms.",
+
+}
