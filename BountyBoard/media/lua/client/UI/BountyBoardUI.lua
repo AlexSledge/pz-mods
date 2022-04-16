@@ -14,6 +14,8 @@ local function showBountyBoard(_object, _x, _y)
         BountyBoardUI.instance:initialise();
         BountyBoardUI.instance:instantiate();
     end
+    BountyBoardUI.instance.pinButton:setVisible(false)
+    BountyBoardUI.instance.collapseButton:setVisible(false)
     BountyBoardUI.instance:addToUIManager();
     BountyBoardUI.instance:setVisible(true);
     return BountyBoardUI.instance;

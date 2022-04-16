@@ -12,6 +12,8 @@ function NewBountyUI:showNewBountyUI(_object, _x, _y)
         NewBountyUI.instance:initialise();
         NewBountyUI.instance:instantiate();
     end
+    NewBountyUI.instance.pinButton:setVisible(false)
+    NewBountyUI.instance.collapseButton:setVisible(false)
     NewBountyUI.instance:addToUIManager();
     NewBountyUI.instance:setVisible(true);
     return NewBountyUI.instance;
@@ -34,13 +36,39 @@ function NewBountyUI:createChildren()
     self:addChild(self.bountyTitleLabel);
 
     local width = 200
-    self.bountyTitleEntry = ISTextEntryBox:new("", bountyTitleX+40, bountyTitleY, width, fontHgtSmall);
+    self.bountyTitleEntry = ISTextEntryBox:new("", bountyTitleX+70, bountyTitleY, width, fontHgtSmall);
     self.bountyTitleEntry:initialise();
     self.bountyTitleEntry:instantiate();
-    self.bountyTitleEntry:setText("aaaaa");
+    self.bountyTitleEntry:setText("");
     self.bountyTitleEntry:setClearButton(true);
     self:addChild(self.bountyTitleEntry);
     self.lastText = self.bountyTitleEntry:getInternalText();
+
+    self.bountyDescriptionLabel = ISLabel:new(bountyTitleX, bountyTitleY+30, entryHgt, "Description:",1,1,1,1,UIFont.Small, true);
+    self:addChild(self.bountyDescriptionLabel);
+
+    self.bountyDescriptionEntry = ISTextEntryBox:new("", bountyTitleX+70, bountyTitleY+30, width, 100);
+    self.bountyDescriptionEntry:initialise();
+    self.bountyDescriptionEntry:instantiate();
+    self.bountyDescriptionEntry:setMultipleLine(true);
+    self.bountyDescriptionEntry.javaObject:setMaxLines(7);
+    self.bountyDescriptionEntry.javaObject:setMaxTextLength(250);
+    self.bountyDescriptionEntry:setText("");
+    self.bountyDescriptionEntry:setClearButton(false);
+    self:addChild(self.bountyDescriptionEntry);
+
+    self.bountyRewardLabel = ISLabel:new(bountyTitleX, bountyTitleY+140, entryHgt, "Reward:",1,1,1,1,UIFont.Small, true);
+    self:addChild(self.bountyRewardLabel);
+
+    self.bountyRewardCombo = ISComboBox:new(bountyTitleX+70, bountyTitleY+140, width, 20)
+	self.bountyRewardCombo.font = UIFont.Small
+	self.bountyRewardCombo:initialise()
+	self.bountyRewardCombo:instantiate()
+	self:addChild(self.bountyRewardCombo)
+	
+	self.bountyRewardCombo:addOption("Muldraugh",{})
+	self.bountyRewardCombo:addOption("Westpoint",{})
+
 end
 
 function NewBountyUI:new(x, y, width, height, player)
@@ -67,7 +95,7 @@ function NewBountyUI:new(x, y, width, height, player)
     o.anchorTop = true;
     o.anchorBottom = false;
     o.pin = true;
-    o.isCollapsed = true;
+    o.isCollapsed = false;
     o.collapseCounter = 0;
     o.title = "New Bounty";
     o.resizable = false;
