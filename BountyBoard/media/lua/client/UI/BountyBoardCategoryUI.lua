@@ -10,10 +10,10 @@ end
 
 function BountyBoardCategoryUI:prerender()
     self.bounties.backgroundColor.a = 0.8
-    self.bounties.doDrawItem = BountyBoardCategoryUI.drawRecipesMap
+    self.bounties.doDrawItem = BountyBoardCategoryUI.doDrawItem
 end
 
-function BountyBoardCategoryUI:drawRecipesMap(y, item, alt)
+function BountyBoardCategoryUI:doDrawItem(y, item, alt)
     local baseItemDY = 0
     if item.item.name then
         baseItemDY = self.SMALL_FONT_HGT
@@ -48,21 +48,20 @@ function BountyBoardCategoryUI:create()
     local fontHgtSmall = self.SMALL_FONT_HGT
     local entryHgt = fontHgtSmall + 2 * 2
 
-    self.bounties = ISScrollingListBox:new(1, entryHgt + 25, self.width / 3, self.height - (entryHgt + 25));
+    self.bounties = ISScrollingListBox:new(1, entryHgt + 35, self.width / 3, self.height - (entryHgt + 25));
     self.bounties:initialise();
     self.bounties:instantiate();
-    self.bounties:setAnchorRight(false) -- resize in update()
+    self.bounties:setAnchorRight(false)
     self.bounties:setAnchorBottom(true)
     self.bounties.itemheight = 2 + self.MEDIUM_FONT_HGT + 32 + 4;
     self.bounties.selected = 0;
     self.bounties.joypadParent = self;
     self.bounties.drawBorder = false;
-    self.bounties.doDrawItem = BountyBoardCategoryUI.drawRecipesMap;
+    self.bounties.doDrawItem = BountyBoardCategoryUI.doDrawItem;
     self:addChild(self.bounties);
 
     self.bounties.SMALL_FONT_HGT = self.SMALL_FONT_HGT
     self.bounties.MEDIUM_FONT_HGT = self.MEDIUM_FONT_HGT
-
 
     self.filterLabel = ISLabel:new(4, 2, entryHgt, getText("IGUI_CraftUI_Name_Filter"),1,1,1,1,UIFont.Small, true);
     self:addChild(self.filterLabel);

@@ -19,7 +19,7 @@ local function showBountyBoard(_object, _x, _y)
     return BountyBoardUI.instance;
 end
 
-function BountyBoardUI:onActivateView()
+function BountyBoardUI:onActivateView(viewName)
     print("onActivateView")
 end
 
@@ -40,7 +40,7 @@ local bountyStatus = {
 local bounty = {
     name = "Kill Kira",
     requestedItem = "Kira's ears",
-    description = "Kira life needs to end now, you have 2 days to bring me his ears to prove it, good luck",
+    description = "Kira life needs to end now, you have 2 days to bring me his/her ears to prove it, good luck",
     reward = "10,000 credits",
     status = 1,
 }
@@ -63,10 +63,6 @@ function BountyBoardUI:createCategories()
     end
 end
 
-function BountyBoardUI:refresh()
-    self.createCategories()
-end
-
 function BountyBoardUI:createChildren()
     ISCollapsableWindow.createChildren(self);
     local th = self:titleBarHeight();
@@ -82,6 +78,11 @@ function BountyBoardUI:createChildren()
     self:addChild(self.panel);
     self:createCategories()
 
+
+    self.newButton = ISButton:new(0, self.height-BountyBoardUI.bottomInfoHeight-20-15, 50,25,"New Bounty",self, BountyBoardUI.newBounty);
+    self.newButton:initialise()
+    self:addChild(self.newButton);
+
     self.acceptButton = ISButton:new(0, self.height-BountyBoardUI.bottomInfoHeight-20-15, 50,25,"Accept",self, BountyBoardUI.acceptBounty);
     self.acceptButton:initialise()
     self:addChild(self.acceptButton);
@@ -91,6 +92,11 @@ function BountyBoardUI:createChildren()
 	self.noteRichText.textDirty = true
 end
 
+
+function BountyBoardUI:newBounty()
+    print("NewBounty")
+    NewBountyUI:showNewBountyUI()
+end
 
 function BountyBoardUI:acceptBounty()
     print("Accepted")
@@ -136,10 +142,14 @@ function BountyBoardUI:render()
     end
     self.noteRichText:setText(bounty.description)
     local noteY = self:getHeight()- 400
-    self.noteRichText:render(noteX, noteY, self)
+    self.noteRichText:render(noteX-10, noteY, self)
     self.acceptButton:setX(x + 150);
     self.acceptButton:setY(noteY+self.noteRichText.height+30);
     self.acceptButton:setVisible(true);
+
+    self.newButton:setX(100);
+    self.newButton:setY(60);
+    self.newButton:setVisible(true);
 end
 
 local function OnFillWorldObjectContextMenu(player, context, worldobjects, test)
