@@ -1,0 +1,97 @@
+ItemName_ES = {
+
+    ItemName_Base.Bag_Schoolbag_I = "Mochila escolar +",
+    ItemName_Base.Bag_Schoolbag_II = "Mochila escolar ++",
+
+    ItemName_Base.Bag_Alicepack_I = "Mochila grande +",
+    ItemName_Base.Bag_Alicepack_II = "Mochila grande ++",
+    
+    ItemName_Base.Bag_Hikingbag_I = "Mochila de senderismo +",
+    ItemName_Base.Bag_Hikingbag_II = "Mochila de senderismo ++",
+
+    ItemName_Base.Bag_BigHikingbag_I = "Mochila de excursion grande +",
+    ItemName_Base.Bag_BigHikingbag_II = "Mochila de excursion grande ++",
+
+    ItemName_Base.KleanBackPack   =  "Mochila Clean Up Krew",
+    ItemName_Base.KleanBackpack_I = "Mochila Clean Up Krew +",
+    ItemName_Base.KleanBackpack_II = "Mochila Clean Up Krew ++",
+
+    ItemName_Base.NomadBackpack_I = "Mochila de Nomada +",
+    ItemName_Base.NomadBackpack_II = "Mochila de Nomada ++",
+
+    ItemName_Base.PrepperVestPacked_I = "Prepper Vest with bags +",
+    ItemName_Base.PrepperVestPacked_II = "Prepper Vest with bags ++",
+
+    ItemName_Base.Bag_MilitaryAlicepack_I = "Mochila militar +",
+    ItemName_Base.Bag_MilitaryAlicepack_II = "Mochila militar ++",
+
+    ItemName_Base.RUKSAK2_I = "Mochila Tortilla SPOSN +",
+    ItemName_Base.RUKSAK2_II = "Mochila Tortilla SPOSN ++",
+
+    ItemName_Base.RUKSAK1 = "Mochila de caza",
+    ItemName_Base.RUKSAK1_I = "Mochila de caza +",
+    ItemName_Base.RUKSAK1_II = "Mochila de caza ++",
+
+    ItemName_Base.HR_I = "Mochila de campo +",
+    ItemName_Base.HR_II = "Mochila de campo ++",
+
+    ItemName_Base.ANAT_I = "Mochila de asalto +",
+    ItemName_Base.ANAT_II = "Mochila de asalto ++",
+
+    ItemName_Base.Rucksack = "Mochila de viaje",
+    ItemName_Base.Rucksack_I = "Mochila de viaje +",
+    ItemName_Base.Rucksack_II = "Mochila de viaje ++",
+
+    ItemName_SLEOClothing.Bag_PoliceUtilityBag = "Mochila utilitaria negra",
+    ItemName_Base.Bag_PoliceUtilityBag_I = "Mochila utilitaria negra +",
+    ItemName_Base.Bag_PoliceUtilityBag_II = "Mochila utilitaria negra ++",
+
+    ItemName_SLEOClothing.Bag_PoliceUtilityBagGreen = "Mochila utilitaria verde",
+    ItemName_Base.Bag_PoliceUtilityBagGreen_I = "Mochila utilitaria verde +",
+    ItemName_Base.Bag_PoliceUtilityBagGreen_II = "Mochila utilitaria verde ++",
+
+    ItemName_Base.Bag_CFP90PatrolPack_I = "Mochila de patrulla CFP-90 +",
+    ItemName_Base.Bag_CFP90PatrolPack_II = "Mochila de patrulla CFP-90 ++",
+
+    ItemName_Base.Bag_MilitaryMedicalBag_I = "Mochila medica militar +",
+    ItemName_Base.Bag_MilitaryMedicalBag_II = "Mochila medica militar ++",
+
+    ItemName_Base.sAlicePack_I = "Mochila militar Alice +",
+    ItemName_Base.sAlicePack_II = "Mochila militar Alice ++",
+	ItemName_Base.UpgradedAlicePack1_I = "Mochila militar Alice (Soporte) +",
+    ItemName_Base.UpgradedAlicePack1_II = "Mochila militar Alice (Soporte) ++",
+	ItemName_Base.UpgradedAlicePack2_I = "Mochila militar Alice (Soporte + Bolsa) +",
+    ItemName_Base.UpgradedAlicePack2_II = "Mochila militar Alice (Soporte + Bolsa) ++",
+	ItemName_Base.UpgradedAlicePack2b_I = "Mochila militar Alice (Soporte + Bolsa) +",
+    ItemName_Base.UpgradedAlicePack2b_II = "Mochila militar Alice (Soporte + Bolsa) ++",
+	ItemName_Base.UpgradedAlicePack3_I = "Mochila militar Alice (Bolsa) +",
+    ItemName_Base.UpgradedAlicePack3_II = "Mochila militar Alice (Bolsa) ++",
+	ItemName_Base.UpgradedAlicePack3b_I = "Mochila militar Alice (Bolsa) +",
+    ItemName_Base.UpgradedAlicePack3b_II = "Mochila militar Alice (Bolsa) ++",
+
+    ItemName_Base.AlicepackPouch = "Mochila militar Alice correspondiente",
+    ItemName_Base.AlicepackNonPouch = "Mochila militar Alice correspondiente",
+
+    ItemName_Base.BigSpiffoBackpack_I = "Mochila grande Spiffo +",
+    ItemName_Base.BigSpiffoBackpack_II = "Mochila grande Spiffo ++",
+
+    ItemName_Base.AlicePackDito_I = "Mochila Unica Ditoseadio +",
+    ItemName_Base.AlicePackDito_II = "Mochila Unica Ditoseadio ++",
+
+    ItemName_Base.Sleepingbag = "Saco de dormir",
+    ItemName_Base.SleepingbagBK = "Saco de dormir",
+    ItemName_Base.SleepingbagP = "Saco de dormir",
+    ItemName_Base.SleepingbagO = "Saco de dormir",
+    ItemName_Base.SleepingbagLB = "Saco de dormir",
+    ItemName_Base.SleepingbagR = "Saco de dormir",
+    ItemName_Base.SleepingbagG = "Saco de dormir",
+
+    ItemName_Base.SleepingbagRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagBKRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagPRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagORolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagLBRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagRRolled = "Saco de dormir (Enrollado)",
+    ItemName_Base.SleepingbagGRolled = "Saco de dormir (Enrollado)",
+    
+}

@@ -1,0 +1,48 @@
+module Base {	
+    
+    model ToyBear
+	{
+		mesh = WorldItems/ToyBear,
+		texture = WorldItems/ToyBear,
+		scale = 0.35,
+	}
+
+	model Rubberducky
+	{
+		mesh = WorldItems/Rubberducky,
+		texture = WorldItems/RubberDuck,
+		scale = 0.5,
+	}
+
+	model HandTorch
+    {
+        mesh = HandTorch,
+		scale = 0.7,
+    }
+
+	model HandTorchGround
+    {
+        mesh = WorldItems/HandTorch,
+        texture = HandTorch,
+        scale = 0.25,
+    }
+
+	model GasMask
+    {
+        mesh = Static/Clothes/F_GasMask,
+		texture = GasMask,
+    }
+
+	model WelderMask
+    {
+        mesh = Static/Clothes/F_WelderMask,
+		texture = WelderMask,
+    }
+
+	model HockeyMask
+    {
+        mesh = Static/Clothes/F_HockeyMask,
+		texture = HockeyMask,
+    }
+
+}

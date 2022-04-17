@@ -1,0 +1,363 @@
+module Base {
+
+    recipe Upgrade CFP90PatrolPack
+    {
+        SMUIClothing.Bag_CFP90PatrolPack,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:Bag_CFP90PatrolPack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+	
+
+    item Bag_CFP90PatrolPack_I
+    {
+        Type	=	Container,
+		DisplayCategory = Bag,
+        WeightReduction	=	75,
+        Weight	=	0.5,
+        Capacity	=	17,
+        DisplayName	= CFP-90 Patrol Pack +,
+        Icon = PatrolPack,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_CFP90PatrolPack,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.96,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided  = 	CFP90PatrolPackRight;CFP90PatrolPackBedroll,
+        ReplaceInSecondHand = Bag_CFP90PatrolPack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_CFP90PatrolPack_RHand holdingbagright,
+        WorldStaticModel = PatrolPack_WorldItem,
+    }
+
+    recipe Upgrade CFP90PatrolPack
+    {
+        Bag_CFP90PatrolPack_I,
+        LeatherStrips=8,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+		OnCreate:keepColorAndItems,
+        Result:Bag_CFP90PatrolPack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_MediumSlotsII,
+        Category:Tailoring,
+		NeedToBeLearn:true,
+		SkillRequired:Tailoring=3,
+    }
+
+    item Bag_CFP90PatrolPack_II
+    {
+        Type	=	Container,
+		DisplayCategory = Bag,
+        WeightReduction	=	75,
+        Weight	=	0.5,
+        Capacity	=	17,
+        DisplayName	= CFP-90 Patrol Pack ++,
+        Icon = PatrolPack,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_CFP90PatrolPack,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.96,
+        AttachmentReplacement = Bag,
+		AttachmentsProvided = CFP90PatrolPackShortWeapon;CFP90PatrolPackFlashlight;CFP90PatrolPackRight;CFP90PatrolPackLeft;CFP90PatrolPackBedroll;CFP90PatrolPackTrinket,	
+        ReplaceInSecondHand = Bag_CFP90PatrolPack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_CFP90PatrolPack_RHand holdingbagright,
+        WorldStaticModel = PatrolPack_WorldItem,
+    }
+
+	model FemaleBody
+	{
+
+		attachment CFP90PatrolPack_right
+		{
+			offset = 0.0400 -0.1050 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment CFP90PatrolPack_left
+		{
+			offset = 0.0400 0.1050 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_bedroll {
+			offset = -0.0300 0.0000 0.1200,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_doll {
+			offset = 0.0750 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_dogchew {
+			offset = 0.0750 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_cattoy {
+			offset = 0.0750 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_ballon {
+			offset = 0.0450 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_rubberducky {
+			offset = 0.0750 0.0750 -0.0800,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_toybear {
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_dawn {
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_toycar {
+			offset = 0.0750 0.0750 -0.0800,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_yoyo {
+			offset = 0.0750 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_cube {
+			offset = 0.1250 0.0750 -0.0800,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_mask {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_maskground {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_plushie {
+			offset = 0.0550 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_pawsplushie {
+			offset = 0.0550 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_weapon {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_weaponpan {
+			offset = 0.0850 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_weaponsaucepan {
+			offset = 0.0850 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_wrench {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_flashlight {
+			offset = -0.0200 0.0700 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+
+	model MaleBody
+	{
+		
+		attachment CFP90PatrolPack_right
+		{
+			offset = 0.0400 -0.1050 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment CFP90PatrolPack_left
+		{
+			offset = 0.0400 0.1050 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		attachment CFP90PatrolPack_bedroll {
+			offset = -0.0100 0.0000 0.1400,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_doll {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_dogchew {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_cattoy {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_ballon {
+			offset = 0.0550 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_rubberducky {
+			offset = 0.0850 0.0750 -0.0800,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_toybear {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_dawn {
+			offset = 0.1450 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_toycar {
+			offset = 0.0950 0.0750 -0.0800,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_yoyo {
+			offset = 0.1050 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_cube {
+			offset = 0.1550 0.0750 -0.0800,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_mask {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_maskground {
+			offset = 0.0750 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_plushie {
+			offset = 0.1050 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_pawsplushie {
+			offset = 0.1050 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_weapon {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_weaponpan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_weaponsaucepan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_wrench {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment CFP90PatrolPack_flashlight {
+			offset = 0.0000 0.0700 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+}

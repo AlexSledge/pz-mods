@@ -1,0 +1,362 @@
+module Base {
+
+    recipe Upgrade Hikingbag
+    {
+        Bag_NormalHikingBag,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:Bag_Hikingbag_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+	
+
+    item Bag_Hikingbag_I
+    {
+        DisplayCategory = Bag,		
+        WeightReduction			=	70,
+        Weight					=	1.2,
+        Type					=	Container,
+        Capacity				=	21,
+        DisplayName				=	Hiking Bag - Tier 1,
+        IconsForTexture			=	Hiking_Blue;Hiking_Green;Hiking_Red,
+        CanBeEquipped 			= 	Back,
+        OpenSound   			=   OpenBag,
+        CloseSound   			=   CloseBag,
+        PutInSound   			=   PutItemInBag,
+        ClothingItem 			= 	Bag_HikingBag,
+        BloodLocation 			= 	Bag,
+        RunSpeedModifier 		= 	0.96,
+        AttachmentReplacement 	= 	Bag,
+		AttachmentsProvided  	= 	HikingbagRight;HikingbagBedroll,	
+        ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
+        WorldStaticModel 		= 	HikingBag_Ground,
+    }
+
+    recipe Upgrade Hikingbag
+    {
+        Bag_Hikingbag_I,
+        LeatherStrips=8,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+		OnCreate:keepColorAndItems,
+        Result:Bag_Hikingbag_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_MediumSlotsII,
+        Category:Tailoring,
+		SkillRequired:Tailoring=3,
+    }
+
+    item Bag_Hikingbag_II
+    {
+        DisplayCategory = Bag,		
+        WeightReduction			=	70,
+        Weight					=	1.2,
+        Type					=	Container,
+        Capacity				=	21,
+        DisplayName				=	Hiking Bag - Tier 1,
+        IconsForTexture			=	Hiking_Blue;Hiking_Green;Hiking_Red,
+        CanBeEquipped 			= 	Back,
+        OpenSound   			=   OpenBag,
+        CloseSound   			=   CloseBag,
+        PutInSound   			=   PutItemInBag,
+        ClothingItem 			= 	Bag_HikingBag,
+        BloodLocation 			= 	Bag,
+        RunSpeedModifier 		= 	0.96,
+        AttachmentReplacement 	= 	Bag,
+		AttachmentsProvided 	= 	HikingbagShortWeapon;HikingbagFlashlight;HikingbagRight;HikingbagLeft;HikingbagBedroll;HikingbagTrinket,	
+        ReplaceInSecondHand 	= 	Bag_HikingBag_LHand holdingbagleft,
+        ReplaceInPrimaryHand 	= 	Bag_HikingBag_RHand holdingbagright,
+        WorldStaticModel 		= 	HikingBag_Ground,
+    }
+
+	model FemaleBody
+	{
+		
+		attachment Hikingbag_right
+		{
+			offset = 0.0200 -0.1150 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment Hikingbag_left
+		{
+			offset = 0.0200 0.1150 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_bedroll {
+			offset = -0.0350 0.0000 0.1600,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_doll {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_dogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_cattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_ballon {
+			offset = 0.0350 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_rubberducky {
+			offset = 0.0650 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_toybear {
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_dawn{
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_toycar {
+			offset = 0.0650 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_yoyo {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_cube {
+			offset = 0.1150 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_mask {
+			offset = 0.0350 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_maskground {
+			offset = 0.0350 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_plushie {
+			offset = 0.0850 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_pawsplushie {
+			offset = 0.0850 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weapon {
+			offset = 0.0900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponpan {
+			offset = 0.0900 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponsaucepan {
+			offset = 0.0900 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_wrench {
+			offset = 0.0900 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_flashlight {
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+
+	model MaleBody
+	{
+		
+		attachment Hikingbag_right
+		{
+			offset = 0.0200 -0.1150 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+		
+		attachment Hikingbag_left
+		{
+			offset = 0.0200 0.1150 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_bedroll {
+			offset = -0.0100 0.0000 0.1700,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_doll {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_dogchew {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_cattoy {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_ballon {
+			offset = 0.0350 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_rubberducky {
+			offset = 0.0650 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_toybear {
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_dawn{
+			offset = 0.1250 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_toycar {
+			offset = 0.0650 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_yoyo {
+			offset = 0.0850 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_cube {
+			offset = 0.1350 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_mask {
+			offset = 0.0550 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_maskground {
+			offset = 0.0550 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_plushie {
+			offset = 0.0850 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_pawsplushie {
+			offset = 0.0850 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weapon {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponpan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponsaucepan {
+			offset = 0.1150 0.0000 -0.0300,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_wrench {
+			offset = 0.1150 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_flashlight {
+			offset = -0.0100 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+}

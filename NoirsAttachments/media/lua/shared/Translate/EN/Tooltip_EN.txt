@@ -1,0 +1,16 @@
+Tooltip_EN = {
+
+    Tooltip_SlotsI = "Adds Slots: Bedroll, Bottle Right",
+    Tooltip_SlotsII = "Adds Slots: Weapon, Flashlight, Bottle Left, Trinket",
+
+    Tooltip_WaterSlots = "Adds Slots: Bottle Right",
+
+    Tooltip_PolicyUtilityBagSlotsI = "Adds Slots: Bottle Left",
+    Tooltip_PolicyUtilityBagSlotsII = "Adds Slots: Short Weapon, Flashlight",
+
+    Tooltip_PepperBagSlotsI = "Adds Slots: Bottle Left",
+    Tooltip_PepperBagSlotsII = "Adds Slots: Short Weapon",
+    
+    Tooltip_MediumSlotsII = "Adds Slots: Short Weapon, Flashlight, Bottle Left, Trinket",
+    
+}

@@ -1,0 +1,390 @@
+module Base {
+
+  recipe Upgrade BagSniperPack
+    {
+        Bag_Sniper_Pack,
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagSniperPack_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,
+        Tooltip: Tooltip_SlotsI,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+		NeedToBeLearn:true,
+    }
+
+    item BagSniperPack_I
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = G3 Phantom Sniper Pack +,
+        ClothingItem = Bag_Sniper_Pack,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	2,
+        Capacity	=	38,
+        Icon	=	Bag_Sniper_Pack,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Sniper_Pack,
+		AttachmentsProvided = BagSniperPackRight;BagSniperPackBedroll,
+    }
+
+
+    recipe Upgrade BagSniperPack
+    {
+        BagSniperPack_I,
+        LeatherStrips=10,
+        Thread=2,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagSniperPack_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_SlotsII,
+        Category:Tailoring,
+		SkillRequired:Tailoring=3,
+		NeedToBeLearn:true,
+    }
+
+    item BagSniperPack_II
+    {
+        DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = G3 Phantom Sniper Pack ++,
+        ClothingItem = Bag_Sniper_Pack,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	2,
+        Capacity	=	38,
+        Icon	=	Bag_Sniper_Pack,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Sniper_Pack,
+		AttachmentsProvided = BagSniperPackWeapon;BagSniperPackFlashlight;BagSniperPackRight;BagSniperPackLeft;BagSniperPackBedroll;BagSniperPackTrinket,
+    }
+
+
+	model FemaleBody
+	{
+		
+		attachment BagSniperPack_right
+		{
+			offset = 0.0300 -0.1350 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_left
+		{
+			offset = 0.0300 0.1350 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_bedroll {
+			offset = -0.0250 0.0000 0.1300,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_doll {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_dogchew {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_cattoy {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_ballon {
+			offset = 0.950 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_rubberducky {
+			offset = 0.1150 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_toybear {
+			offset = 0.1650 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_dawn {
+			offset = 0.1650 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_toycar {
+			offset = 0.1250 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_yoyo {
+			offset = 0.1350 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_cube {
+			offset = 0.1850 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_mask {
+			offset = 0.1050 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_maskground {
+			offset = 0.1050 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_plushie {
+			offset = 0.1250 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_plushie {
+			offset = 0.1250 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weapon {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponbig {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponshovel {
+			offset = 0.1500 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponpan {
+			offset = 0.1500 -0.0400 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponsaucepan {
+			offset = 0.1500 -0.0400 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_wrench {
+			offset = 0.1500 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_flashlight {
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+
+	model MaleBody
+	{
+		
+		attachment BagSniperPack_right
+		{
+			offset = 0.0300 -0.1350 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_left
+		{
+			offset = 0.0300 0.1350 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_bedroll {
+			offset = -0.0150 0.0000 0.1300,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_doll {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_dogchew {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_cattoy {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_ballon {
+			offset = 0.950 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_rubberducky {
+			offset = 0.1150 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_toybear {
+			offset = 0.1750 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_dawn {
+			offset = 0.1750 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_toycar {
+			offset = 0.1250 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_yoyo {
+			offset = 0.1450 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_cube {
+			offset = 0.1750 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_mask {
+			offset = 0.1200 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_maskground {
+			offset = 0.1200 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_plushie {
+			offset = 0.1250 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_pawsplushie {
+			offset = 0.1250 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weapon {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponbig {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponshovel {
+			offset = 0.1500 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponpan {
+			offset = 0.1500 -0.0400 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_weaponsaucepan {
+			offset = 0.1500 -0.0400 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_wrench {
+			offset = 0.1500 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagSniperPack_flashlight {
+			offset = -0.0050 0.0700 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}		
+
+	}
+
+}

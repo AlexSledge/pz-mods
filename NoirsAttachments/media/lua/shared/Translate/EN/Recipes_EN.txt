@@ -1,0 +1,58 @@
+Recipes_EN = {
+
+    Recipe_Upgrade_Alicepack = "Add Attachment Slots",
+    Recipe_Upgrade_Schoolbag = "Add Attachment Slots",
+    Recipe_Upgrade_Hikingbag = "Add Attachment Slots",
+    Recipe_Upgrade_BigHikingbag = "Add Attachment Slots",
+    Recipe_Upgrade_MilitaryAlicepack = "Add Attachment Slots",
+
+    Recipe_Upgrade_KleanBackpack = "Add Attachment Slots",
+
+    Recipe_Upgrade_NomadBackpack = "Add Attachment Slots",
+    Recipe_Upgrade_PrepperVestPacked = "Add Attachment Slots",
+
+    Recipe_Upgrade_HR = "Add Attachment Slots",
+    Recipe_Upgrade_RUKSAK1 = "Add Attachment Slots",
+    Recipe_Upgrade_RUKSAK2 = "Add Attachment Slots",
+    Recipe_Upgrade_ANAT = "Add Attachment Slots",
+
+    Recipe_Upgrade_Rucksack = "Add Attachment Slots",
+
+    Recipe_Upgrade_PoliceUtilityBag = "Add Attachment Slots",
+    
+    Recipe_Upgrade_CFP90PatrolPack = "Add Attachment Slots",
+    Recipe_Upgrade_MilitaryMedicalBag = "Add Attachment Slots",
+
+    Recipe_Upgrade_PackerBag = "Add Attachment Slots",
+    Recipe_Upgrade_SmallHikingbag = "Add Attachment Slots",
+
+    Recipe_Upgrade_ARVNRucksack = "Add Attachment Slots",
+    Recipe_Upgrade_BagBush = "Add Attachment Slots",
+    Recipe_Upgrade_BagCatPack = "Add Attachment Slots",
+    Recipe_Upgrade_BagRobbiePack = "Add Attachment Slots",
+    Recipe_Upgrade_BagHunting = "Add Attachment Slots",
+    Recipe_Upgrade_BagM2A1Pack = "Add Attachment Slots",
+    Recipe_Upgrade_BagRadioPack = "Add Attachment Slots",
+    Recipe_Upgrade_BagSavotta= "Add Attachment Slots",
+    Recipe_Upgrade_BagSCBA = "Add Attachment Slots",
+    Recipe_Upgrade_BagSniperPack = "Add Attachment Slots",
+    Recipe_Upgrade_BagSSO = "Add Attachment Slots",
+    Recipe_Upgrade_BagST53Set= "Add Attachment Slots",
+    Recipe_Upgrade_BagTacticalAlice = "Add Attachment Slots",
+    Recipe_Upgrade_BagZIP = "Add Attachment Slots",
+
+    Recipe_Upgrade_BigSwatBag = "Add Attachment Slots",
+    Recipe_Upgrade_PoliceBag = "Add Attachment Slots",
+
+    Recipe_Upgrade_DeluxeHikingBag = "Add Attachment Slots",
+
+    Recipe_Upgrade_SnakeAlice = "Add Attachment Slots",
+    Recipe_Add_Frame_SnakeAlice = "Add frame to Alice backpack",
+    Recipe_Remove_Frame_SnakeAlice  = "Remove frame from Alice backpack",
+    Recipe_Add_Pouch_SnakeAlice = "Add dump pouch to Alice backpack",
+    Recipe_Remove_Pouch_SnakeAlice = "Remove dump pouch from Alice backpack",
+
+    Recipe_Upgrade_AliceDito = "Add Attachment Slots",
+    Recipe_Upgrade_BigSpiffoBackpack = "Add Attachment Slots",
+
+}

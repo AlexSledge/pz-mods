@@ -1,0 +1,39 @@
+module Base {
+
+	recipe Add Weapon Slot
+    {
+        [recipeBackpacks],
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:NATT_Weapon,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+	recipe Remove Weapon Slot
+    {
+        [recipeBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+        Result:NATT_Weapon,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+
+    item NATT_Weapon
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= NATT Weapon,
+		Icon	=	Alice3,
+	}
+}

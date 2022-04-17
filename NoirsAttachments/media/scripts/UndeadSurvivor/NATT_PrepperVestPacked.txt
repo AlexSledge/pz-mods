@@ -1,0 +1,155 @@
+module Base {
+
+    recipe Upgrade PrepperVestPacked
+    {
+        UndeadSurvivor.PrepperVestPacked,
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:PrepperVestPacked_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_PepperBagSlotsI,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+
+    item PrepperVestPacked_I
+    {
+		WeightReduction	=	95,
+        Weight	=	1,
+        Capacity	=	12,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        CanBeEquipped = Back,
+        DisplayCategory = Clothing,
+        Type	=	Container,
+        DisplayName = Prepper Vest with bags +,
+        ClothingItem = PrepperVestPacked,
+        BodyLocation = TorsoExtra,
+        Icon = PrepperVestPacked,
+		CanHaveHoles = false,
+        BloodLocation = Trousers;Jumper,
+        AttachmentReplacement = Bag,
+        WorldStaticModel = PrepperVestPacked_Ground,
+		AttachmentsProvided = PrepperVestKnife;PrepperVestFlashlight;PrepperVestPackedLeft;PrepperGunMagazine1;PrepperGunMagazine2;PrepperGunMagazine3;PrepperGunMagazine4,
+    }
+
+    recipe Upgrade PrepperVestPacked
+    {
+        PrepperVestPacked_I,
+        LeatherStrips=4,
+        Thread=2, 
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:PrepperVestPacked_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_PepperBagSlotsII,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=3,
+    }
+
+    item PrepperVestPacked_II
+    {
+		WeightReduction	=	95,
+        Weight	=	1,
+        Capacity	=	12,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        CanBeEquipped = Back,
+        DisplayCategory = Clothing,
+        Type	=	Container,
+        DisplayName = Prepper Vest with bags ++,
+        ClothingItem = PrepperVestPacked,
+        BodyLocation = TorsoExtra,
+        Icon = PrepperVestPacked,
+		CanHaveHoles = false,
+        BloodLocation = Trousers;Jumper,
+        AttachmentReplacement = Bag,
+        WorldStaticModel = PrepperVestPacked_Ground,
+        AttachmentsProvided = PrepperVestKnife;PrepperVestPackedShortWeapon;PrepperVestFlashlight;PrepperVestPackedLeft;PrepperGunMagazine1;PrepperGunMagazine2;PrepperGunMagazine3;PrepperGunMagazine4,
+    }
+  
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+        attachment PrepperVestPacked_left
+		{
+			offset = 0.0000 0.0750 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_weapon {
+			offset = 0.0450 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_weaponpan {
+			offset = 0.0500 0.0000 0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_weaponsaucepan {
+			offset = 0.0400 0.0000 0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_wrench {
+			offset = 0.0450 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+	}
+
+    model MaleBody 
+    {
+        mesh = Skinned/MaleBody,
+
+		attachment PrepperVestPacked_left
+		{
+			offset = 0.0200 0.0950 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_weapon {
+			offset = 0.0800 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_weaponpan {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_weaponsaucepan {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PrepperVestPacked_wrench {
+			offset = 0.0800 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+    }
+
+}

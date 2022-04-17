@@ -1,0 +1,173 @@
+module Base {
+
+    recipe Upgrade BagBush
+    {
+        Bag_Bush,
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagBush_I,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_PolicyUtilityBagSlotsI,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=2,
+    }
+
+    item BagBush_I
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Survival Bushcraft Backpack +,
+        ClothingItem = Bag_Bush,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	2,
+        Capacity	=	38,
+        Icon	=	Bag_Bush,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Bush,
+		AttachmentsProvided = BagBushLeft,
+    }
+
+    recipe Upgrade BagBush
+    {
+        BagBush_I,
+        LeatherStrips=4,
+        Thread=2, 
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+        Result:BagBush_II,
+        Time:300.0,
+		OnCreate:keepColorAndItems,
+		OnTest: checkIsEquipped,		
+        Tooltip: Tooltip_PolicyUtilityBagSlotsII,
+        Category:Tailoring,
+        NeedToBeLearn:true,
+		SkillRequired:Tailoring=3,
+    }
+
+    item BagBush_II
+    {
+		DisplayCategory = Bag,
+        Type = Container,
+        DisplayName = Survival Bushcraft Backpack ++,
+        ClothingItem = Bag_Bush,
+        CanBeEquipped = Back,
+        WeightReduction	=	85,
+        Weight	=	2,
+        Capacity	=	38,
+        Icon	=	Bag_Bush,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.94,
+        CanHaveHoles = false,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_RHand holdingbagright,
+        WorldStaticModel= W_Bag_Bush,
+        AttachmentsProvided = BagBushShortWeapon;BagBushFlashlight;BagBushLeft,
+    }
+
+	
+
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+        attachment BagBush_left
+		{
+			offset = 0.0000 0.0850 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_weapon {
+			offset = 0.0500 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_weaponpan {
+			offset = 0.0500 0.0000 0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_weaponsaucepan {
+			offset = 0.0500 0.0000 0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_wrench {
+			offset = 0.0500 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_flashlight {
+			offset = -0.0150 0.0650 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+    model MaleBody 
+    {
+        mesh = Skinned/MaleBody,
+
+		attachment BagBush_left
+		{
+			offset = 0.0200 0.0750 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_weapon {
+			offset = 0.0750 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_weaponpan {
+			offset = 0.0750 0.0000 0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_weaponsaucepan {
+			offset = 0.0750 0.0000 0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_wrench {
+			offset = 0.0750 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment BagBush_flashlight {
+			offset = -0.0050 0.0650 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+    }
+
+}

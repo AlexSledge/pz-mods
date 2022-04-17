@@ -1,0 +1,305 @@
+module Base {
+
+	model FemaleBody
+	{
+		
+		attachment Alicepack_right
+		{
+			offset = 0.0300 -0.1250 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_left
+		{
+			offset = 0.0300 0.1250 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_bedroll {
+			offset = -0.0350 0.0000 0.1300,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_doll {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_dogchew {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_cattoy {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment Alicepack_ballon {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_rubberducky {
+			offset = 0.0950 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_toybear {
+			offset = 0.1550 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_dawn {
+			offset = 0.1550 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_toycar {
+			offset = 0.0950 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_yoyo {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_cube {
+			offset = 0.1550 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_mask {
+			offset = 0.0850 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment Alicepack_maskground {
+			offset = 0.0850 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_plushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_pawsplushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weapon {
+			offset = 0.1300 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponbig {
+			offset = 0.1300 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponshovel {
+			offset = 0.1300 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponpan {
+			offset = 0.1300 -0.0400 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponsaucepan {
+			offset = 0.1300 -0.0400 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_wrench {
+			offset = 0.1400 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_flashlight {
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+	model MaleBody
+	{
+		
+		attachment Alicepack_right
+		{
+			offset = 0.0300 -0.1250 -0.0700,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_left
+		{
+			offset = 0.0300 0.1250 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_bedroll {
+			offset = -0.0250 0.0000 0.1300,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_doll {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_dogchew {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_cattoy {
+			offset = 0.0950 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment Alicepack_ballon {
+			offset = 0.0650 0.0750 -0.1350,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_rubberducky {
+			offset = 0.0950 0.0750 -0.100,
+			rotate = 180.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_toybear {
+			offset = 0.1550 0.0850 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_dawn {
+			offset = 0.1550 0.0850 -0.1850,
+			rotate = 90.0000 -90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_toycar {
+			offset = 0.0950 0.0750 -0.1150,
+			rotate = 90.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_yoyo {
+			offset = 0.1250 0.0750 -0.1350,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_cube {
+			offset = 0.1550 0.0750 -0.0950,
+			rotate = 0.0000 0.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_mask {
+			offset = 0.1000 0.0750 -0.1150,
+			rotate = 0.0000 90.0000 170.0000,
+			bone = Bip01_BackPack,
+		}
+
+        attachment Alicepack_maskground {
+			offset = 0.1000 0.0750 -0.1150,
+			rotate = 0.0000 180.0000 -90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_plushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 0.0000 -90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_pawsplushie {
+			offset = 0.1150 0.1050 -0.1850,
+			rotate = 180.0000 90.0000 90.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weapon {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponbig {
+			offset = 0.1500 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponshovel {
+			offset = 0.1500 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponpan {
+			offset = 0.1400 -0.0400 -0.0200,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_weaponsaucepan {
+			offset = 0.1400 -0.0400 -0.0200,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_wrench {
+			offset = 0.1400 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Alicepack_flashlight {
+			offset = -0.0050 0.0700 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}		
+
+	}
+
+}
