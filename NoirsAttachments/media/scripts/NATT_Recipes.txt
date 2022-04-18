@@ -7,19 +7,21 @@ module Base {
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
         keep Needle,
+
         Result:NATT_Weapon,
         Time:300.0,
 		OnCreate:AddAttachmentSlot,
 		RemoveResultItem:true,
 		OnTest: checkIsValidAdd,
         Category:Tailoring,
-		SkillRequired:Tailoring=2,
+		SkillRequired:Tailoring=3,
     }
 
 	recipe Remove Weapon Slot
     {
         [recipeBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
+
         Result:NATT_Weapon,
         Time:300.0,
 		OnCreate:RemoveAttachmentSlot,
@@ -28,12 +30,204 @@ module Base {
         Category:Tailoring,
     }
 
-
     item NATT_Weapon
 	{
 		Weight	=	0.01,
 		Type	=	Normal,
-		DisplayName	= NATT Weapon,
-		Icon	=	Alice3,
+		DisplayName	= Weapon Slot,
+		Icon	=	AttachmentSlot,
 	}
+
+    recipe Add Left Slot
+    {
+        [recipeBackpacks],
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+
+        Result:NATT_Left,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+	recipe Remove Left Slot
+    {
+        [recipeBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+
+        Result:NATT_Left,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+    item NATT_Left
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Left Slot,
+		Icon	=	AttachmentSlot,
+	}
+
+    recipe Add Right Slot
+    {
+        [recipeBackpacks],
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+
+        Result:NATT_Right,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+	recipe Remove Right Slot
+    {
+        [recipeBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+
+        Result:NATT_Right,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+    item NATT_Right
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Right Slot,
+		Icon	=	AttachmentSlot,
+	}
+
+    recipe Add FlashLight Slot
+    {
+        [recipeBackpacks],
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+
+        Result:NATT_FlashLight,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+	recipe Remove FlashLight Slot
+    {
+        [recipeBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+
+
+        Result:NATT_FlashLight,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+    item NATT_FlashLight
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= FlashLight Slot,
+		Icon	=	AttachmentSlot,
+	}
+
+    recipe Add Bedroll Slot
+    {
+        [recipeBackpacks],
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+
+        Result:NATT_Bedroll,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+	recipe Remove Bedroll Slot
+    {
+        [recipeBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+
+        Result:NATT_Bedroll,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+    item NATT_Bedroll
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Bedroll Slot,
+		Icon	=	AttachmentSlot,
+	}
+
+
+    recipe Add Trinket Slot
+    {
+        [recipeBackpacks],
+        LeatherStrips=2,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+
+        Result:NATT_Trinket,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=2,
+    }
+
+	recipe Remove Trinket Slot
+    {
+        [recipeBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+
+        Result:NATT_Trinket,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+    item NATT_Trinket
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Trinket Slot,
+		Icon	=	AttachmentSlot,
+	}
+
 }

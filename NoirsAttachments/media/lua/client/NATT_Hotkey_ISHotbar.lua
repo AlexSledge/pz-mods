@@ -289,26 +289,30 @@ function ISHotbar:removeItem(item, doAnim)
 	end
 end
 
-local function loadAttachmentsProvided(item)
+local function loadAttachmentsProvided(chr)
+	local item = chr:getClothingItem_Back()
+	if not item then return end
 	local modData = item:getModData()
+	local attsList = ArrayList.new();
 	if modData.attachmentsProvided then
-		local attsList = ArrayList.new();
 		for k,v in pairs(modData.attachmentsProvided) do
 			if v then 
 				attsList:add(k)
 			end
 		end
-		item:setAttachmentsProvided(attsList)
+		local attachmentsProvided = item:getAttachmentsProvided() 
+		if attachmentsProvided then
+			item:getAttachmentsProvided():addAll(attsList)
+		else
+			item:setAttachmentsProvided(attsList)
+		end
  	end
 end
 
 local originalRefresh = ISHotbar.refresh;
 function ISHotbar:refresh()
 	checkReplacement = false
-	local backpack = self.chr:getClothingItem_Back()
-	if backpack then 
-		loadAttachmentsProvided(backpack)
-	end
+	loadAttachmentsProvided(self.chr)
 	originalRefresh(self)
 	checkReplacement = true
 end
