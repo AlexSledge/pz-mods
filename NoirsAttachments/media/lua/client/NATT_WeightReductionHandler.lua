@@ -1,18 +1,14 @@
 NATTwrh = {}
 
-local attachmentsProvidedCache = {}
+local attachmentsProvided = {}
 local function getAttachmentsProvided(item)
 	local itemType = item:getType()
-	if attachmentsProvidedCache[itemType] then
-		return attachmentsProvidedCache[itemType]
-	else
-		attachmentsProvidedCache[itemType] = {}
-	end
-	local attachmentsProvided = item:getAttachmentsProvided()
-	if not attachmentsProvided then return end
-	for i=0, attachmentsProvided:size()-1 do
-		local attachment = attachmentsProvided:get(i)
-		attachmentsProvidedCache[itemType][attachment] = true
+	attachmentsProvided[itemType] = {}
+	local backpackAttachmentsProvided = item:getAttachmentsProvided()
+	if not backpackAttachmentsProvided then return end
+	for i=0, backpackAttachmentsProvided:size()-1 do
+		local attachment = backpackAttachmentsProvided:get(i)
+		attachmentsProvided[itemType][attachment] = true
 	end
 end
 
@@ -29,7 +25,7 @@ NATTwrh.applyBackpackWR = function(chr,item)
 	if backpack and instanceof(backpack, "InventoryContainer") then 
 		getAttachmentsProvided(backpack)
 		local backpackType = backpack:getType()
-		if not attachmentsProvidedCache[backpackType][slotType] then return end
+		if not attachmentsProvided[backpackType][slotType] then return end
 		local defaultWR = 0.7
 		local backpackWR = backpack:getWeightReduction()
 		local newWeight = (item:getWeight() * (100-backpackWR)/100) / defaultWR

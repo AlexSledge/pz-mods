@@ -3,7 +3,6 @@ Recipes_ES = {
     Recipe_Roll_Sleeping_Bag = "Enrollar saco de dormir",
 	Recipe_UnRoll_Sleeping_Bag = "Desenrollar saco de dormir",
 
-    Recipe_Upgrade_SnakeAlice = "Agregar Ranuras de Acople",
     Recipe_Add_Frame_SnakeAlice = "Agregar soporte a mochila Alice",
     Recipe_Remove_Frame_SnakeAlice  = "Quitar soporte a mochila Alice",
     Recipe_Add_Pouch_SnakeAlice = "Agregar bolsa de almacenaje a mochila Alice",

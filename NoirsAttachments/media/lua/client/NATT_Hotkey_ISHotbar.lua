@@ -219,8 +219,8 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 		item:setAttachedToModel(slot);
 		
 		self:reloadIcons();
-		NATTwrh.applyBackpackWR(self.chr,item)
 	end
+	NATTwrh.applyBackpackWR(self.chr,item)
 end
 
 function isBack(slot)

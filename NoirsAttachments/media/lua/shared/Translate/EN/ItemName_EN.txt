@@ -3,4 +3,11 @@ ItemName_EN = {
     ItemName_Base.AlicepackPouch = "Matching Alice backpack",
     ItemName_Base.AlicepackNonPouch = "Matching Alice backpack",
 
+    ItemName_Base.NATT_Trinket = "Trinket Slot",
+    ItemName_Base.NATT_Weapon= "Weapon Slot",
+    ItemName_Base.NATT_Flashlight = "Flashlight Slot",
+    ItemName_Base.NATT_Left  = "Left Slot",
+    ItemName_Base.NATT_Right  = "Right Slot",
+    ItemName_Base.NATT_Bedroll  = "Bedroll Slot",
+
 }

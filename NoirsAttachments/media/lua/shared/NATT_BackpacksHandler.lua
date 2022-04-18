@@ -31,14 +31,9 @@ local modsBackpacks = {
     },
     [NATTmods.UndeadSuvivor] = {
         ["UndeadSurvivor.NomadBackpack"] = "NomadBackpack",
-        ["UndeadSurvivor.PrepperVestPacked"] = "PrepperVestPacked",
     },
     [NATTmods.ScrapArmor] = {
         Rucksack = "Rucksack",
-    },
-    [NATTmods.SLEO] = {
-        ["SLEOClothing.Bag_PoliceUtilityBag"] = "PoliceUtilityBag",
-        ["SLEOClothing.Bag_PoliceUtilityBagGreen"] = "PoliceUtilityBag",
     },
     [NATTmods.SMUI] = {
         ["SMUIClothing.Bag_CFP90PatrolPack"] = "CFP90PatrolPack",

@@ -1,3 +1,24 @@
+local function keepProperties(item,result)
+	local backpackVisual = item:getVisual()
+	local resultVisual = result:getVisual()
+	resultVisual:setTextureChoice(backpackVisual:getTextureChoice());
+	result:getItemContainer():setItems(item:getItemContainer():getItems());
+	result:synchWithVisual();
+	local modData = item:getModData()
+	if modData.attachmentsProvided then
+		result:getModData().attachmentsProvided = modData.attachmentsProvided
+	end
+end
+
+local function transferItemsToInventory(container,player)
+	local items = container:getItemContainer():getItems()
+	if not items then return end
+	local playerInv = player:getInventory()
+	for i=1,items:size() do
+		playerInv:addItem(items:get(i-1))
+	end
+end
+
 local function getAttachmentName(baseWord,item)
 	local prefix = string.gsub(item:getFullType(),"Base.","")
 	return NATTBackpacks[prefix]..baseWord
@@ -61,38 +82,6 @@ function recipeBackpacks(scriptItems)
 	for k,v in pairs(NATTBackpacks) do
 		local scriptItem = getScriptManager():FindItem(k)
 		scriptItems:add(scriptItem)
-	end
-end
-
-function keepProperties(item,result)
-	local backpackVisual = item:getVisual()
-	local resultVisual = result:getVisual()
-	resultVisual:setTextureChoice(backpackVisual:getTextureChoice());
-	result:getItemContainer():setItems(item:getItemContainer():getItems());
-	result:synchWithVisual();
-	local modData = item:getModData()
-	if modData.attachmentsProvided then
-		result:getModData().attachmentsProvided = modData.attachmentsProvided
-	end
-end
-
-function checkIsEquipped(item)
-	return not (item:IsInventoryContainer() and item:isEquipped())
-end
-
-local function keepModData(item,target)
-	local modData = item:getModData()
-	if modData.attachmentsProvided then
-		target:getModData().attachmentsProvided = modData.attachmentsProvided
-	end
-end
-
-local function transferItemsToInventory(container,player)
-	local items = container:getItemContainer():getItems()
-	if not items then return end
-	local playerInv = player:getInventory()
-	for i=1,items:size() do
-		playerInv:addItem(items:get(i-1))
 	end
 end
 

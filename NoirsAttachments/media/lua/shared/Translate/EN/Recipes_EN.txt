@@ -6,4 +6,12 @@ Recipes_EN = {
     Recipe_Add_Pouch_SnakeAlice = "Add dump pouch to Alice backpack",
     Recipe_Remove_Pouch_SnakeAlice = "Remove dump pouch from Alice backpack",
 
+
+    Recipe_Add_Weapon_Slot = "Add Weapon Slot",
+    Recipe_Add_Trinket_Slot = "Add Trinket Slot",
+    Recipe_Add_Left_Slot = "Add Left Slot",
+    Recipe_Add_Right_Slot = "Add Right Slot",
+    Recipe_Add_Bedroll_Slot = "Add Bedroll Slot",
+    Recipe_Add_Flashlight_Slot = "Add Flashlight Slot",
+
 }
