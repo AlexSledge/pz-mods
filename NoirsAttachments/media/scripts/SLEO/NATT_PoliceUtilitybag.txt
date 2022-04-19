@@ -1,0 +1,89 @@
+module Base {
+
+	model FemaleBody
+	{
+		mesh = Skinned/FemaleBody,
+
+        attachment PoliceUtilityBag_bottleleft
+		{
+			offset = 0.0000 0.0850 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_weapon {
+			offset = 0.0450 -0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_weaponpan {
+			offset = 0.0500 0.0000 0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_weaponsaucepan {
+			offset = 0.0400 0.0000 0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_wrench {
+			offset = 0.0450 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_flashlight {
+			offset = -0.0150 0.0500 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+	}
+
+    model MaleBody 
+    {
+        mesh = Skinned/MaleBody,
+
+		attachment PoliceUtilityBag_bottleleft
+		{
+			offset = 0.0200 0.0950 -0.0700,
+			rotate = 90.0000 90.0000 0.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_weapon {
+			offset = 0.0800 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_weaponpan {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_weaponsaucepan {
+			offset = 0.0850 0.0000 0.0600,
+			rotate = 90.0000 -40.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_wrench {
+			offset = 0.0800 0.0000 0.0600,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment PoliceUtilityBag_flashlight {
+			offset = -0.0050 0.0600 0.0000,
+			rotate = 90.0000 0.0000 0.0000,
+			bone = Bip01_Head,
+		}
+
+    }
+
+}

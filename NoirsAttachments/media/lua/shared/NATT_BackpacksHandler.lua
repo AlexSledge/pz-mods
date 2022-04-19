@@ -7,6 +7,7 @@ NATTmods = {
 	UndeadSuvivor = "UndeadSuvivor",
 	ScrapArmor = "ScrapArmor(new version)",
 	SMUI = "SMUI",
+    SLEO = "SLEO",
 	MoreTraits = "ToadTraits",
 	SWATPack = "Swatpack",
 	DeluxeHikingBag = "DHB_jarris",
@@ -42,6 +43,10 @@ local modsBackpacks = {
     },
     [NATTmods.ScrapArmor] = {
         Rucksack = "Rucksack",
+    },
+    [NATTmods.SLEO] = {
+        ["SLEOClothing.Bag_PoliceUtilityBag"] = "Bag_PoliceUtilityBag",
+        ["SLEOClothing.Bag_PoliceUtilityBagGreen"] = "Bag_PoliceUtilityBag",
     },
     [NATTmods.SMUI] = {
         ["SMUIClothing.Bag_CFP90PatrolPack"] = "CFP90PatrolPack",

@@ -5,8 +5,8 @@ local function keepProperties(item,result)
 	result:getItemContainer():setItems(item:getItemContainer():getItems());
 	result:synchWithVisual();
 	local modData = item:getModData()
-	if modData.attachmentsProvided then
-		result:getModData().attachmentsProvided = modData.attachmentsProvided
+	if modData.attachments then
+		result:getModData().attachments = modData.attachments
 	end
 end
 
@@ -19,6 +19,31 @@ local function transferItemsToInventory(container,player)
 	end
 end
 
+local excludedItemsFromSlot = {
+	Weapon = {
+		Bag_Bush = true,
+		Bag_Schoolbag = true,
+		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
+		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
+	},
+	Right = {
+		Bag_Bush = true,
+		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
+		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
+	},
+	Bedroll = {
+		Bag_Bush = true,
+		Bag_Schoolbag = true,
+		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
+		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
+	},
+	Trinket = {
+		Bag_Bush = true,
+		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
+		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
+	}
+}
+
 function getAttachmentName(baseWord,item)
 	local prefix = string.gsub(item:getFullType(),"Base.","")
 	return NATTBackpacks[prefix]..baseWord
@@ -30,10 +55,10 @@ local function slotHandler(result,items,player,add)
 	local item = items:get(0)
 	local attachmentName = getAttachmentName(baseWord,item)
 	local modData = item:getModData()
-	if not modData.attachmentsProvided then	
-		modData.attachmentsProvided= {}
+	if not modData.attachments then	
+		modData.attachments= {}
 	end
-	modData.attachmentsProvided[attachmentName] = add
+	modData.attachments[attachmentName] = add
 	player:getInventory():AddItem(item)
 end
 
@@ -41,12 +66,12 @@ function checkIsValidAdd(item,result)
 	if item:IsInventoryContainer() then 
 		if item:isEquipped() then return false end
 		local modData = item:getModData()
-		local attachmentsProvided = modData.attachmentsProvided
-		if not attachmentsProvided then return true end
+		local attachments = modData.attachments
+		if not attachments then return true end
 		local resultType = result:getType()
 		local baseWord = string.gsub(resultType,"NATT_","")
 		local attachmentName = getAttachmentName(baseWord,item)
-		return not attachmentsProvided[attachmentName]
+		return not attachments[attachmentName]
 	end
 	return true
 end
@@ -55,12 +80,12 @@ function checkIsValidRemove(item,result)
 	if item:IsInventoryContainer() then 
 		if item:isEquipped() then return false end
 		local modData = item:getModData()
-		local attachmentsProvided = modData.attachmentsProvided
-		if not attachmentsProvided then return false end
+		local attachments = modData.attachments
+		if not attachments then return false end
 		local resultType = result:getType()
 		local baseWord = string.gsub(resultType,"NATT_","")
 		local attachmentName = getAttachmentName(baseWord,item)
-		return attachmentsProvided[attachmentName]
+		return attachments[attachmentName]
 	end
 	return true
 end
@@ -73,7 +98,59 @@ function RemoveAttachmentSlot(items,result,player)
 	slotHandler(result,items,player,false)
 end
 
-function recipeBackpacks(scriptItems) 
+function WeaponSlotBackpacks(scriptItems) 
+	for k,v in pairs(NATTBackpacks) do
+		if not excludedItemsFromSlot["Weapon"][k] then
+			local scriptItem = getScriptManager():FindItem(k)
+			scriptItems:add(scriptItem)
+		end
+	end
+end
+
+function ShortWeaponSlotBackpacks(scriptItems) 
+	for k,v in pairs(NATTBackpacks) do
+		if excludedItemsFromSlot["Weapon"][k] then
+			local scriptItem = getScriptManager():FindItem(k)
+			scriptItems:add(scriptItem)
+		end
+	end
+end
+
+function RightSlotBackpacks(scriptItems) 
+	for k,v in pairs(NATTBackpacks) do
+		if not excludedItemsFromSlot["Right"][k] then
+			local scriptItem = getScriptManager():FindItem(k)
+			scriptItems:add(scriptItem)
+		end
+	end
+end
+
+function LeftSlotBackpacks(scriptItems) 
+	for k,v in pairs(NATTBackpacks) do
+		local scriptItem = getScriptManager():FindItem(k)
+		scriptItems:add(scriptItem)
+	end
+end
+
+function TrinketSlotBackpacks(scriptItems) 
+	for k,v in pairs(NATTBackpacks) do
+		if not excludedItemsFromSlot["Trinket"][k] then
+			local scriptItem = getScriptManager():FindItem(k)
+			scriptItems:add(scriptItem)
+		end
+	end
+end
+
+function BedrollSlotBackpacks(scriptItems) 
+	for k,v in pairs(NATTBackpacks) do
+		if not excludedItemsFromSlot["Bedroll"][k] then
+			local scriptItem = getScriptManager():FindItem(k)
+			scriptItems:add(scriptItem)
+		end
+	end
+end
+
+function FlashlightSlotBackpacks(scriptItems) 
 	for k,v in pairs(NATTBackpacks) do
 		local scriptItem = getScriptManager():FindItem(k)
 		scriptItems:add(scriptItem)

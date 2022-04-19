@@ -27,6 +27,23 @@ for _,v in pairs(NATTBackpacks) do
 		table.insert(ISHotbarAttachDefinition, slot);
 
 		slot = {
+			type = v.."ShortWeapon",
+			name = "ShortWeapon", 
+			animset = "back",
+			attachments = {
+				Hammer = v.."Weapon",
+				Nightstick = v.."Weapon",
+				MeatCleaver = v.."Weapon",
+				Knife = v.."Weapon",
+				Screwdriver = v.."Weapon",
+				Wrench = v.."Wrench",
+				Pan = v.."WeaponPan",
+				Saucepan = v.."WeaponSaucePan",
+			},
+		}
+		table.insert(ISHotbarAttachDefinition, slot);
+
+		slot = {
 			type = v.."Flashlight",
 			name = "Flashlight", 
 			animset = "back",

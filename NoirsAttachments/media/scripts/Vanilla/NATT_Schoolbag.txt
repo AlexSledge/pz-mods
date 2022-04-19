@@ -120,18 +120,6 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
-		attachment Schoolbag_weaponbig {
-			offset = 0.0550 0.0000 0.0600,
-			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Schoolbag_weaponshovel {
-			offset = 0.0550 0.0000 0.0600,
-			rotate = 90.0000 90.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
 		attachment Schoolbag_weaponpan {
 			offset = 0.0600 0.0000 0.0600,
 			rotate = 90.0000 40.0000 -180.0000,
@@ -269,18 +257,6 @@ module Base {
 		attachment Schoolbag_weapon {
 			offset = 0.0900 0.0000 0.0700,
 			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Schoolbag_weaponbig {
-			offset = 0.0900 0.0000 0.0600,
-			rotate = 90.0000 0.0000 -180.0000,
-			bone = Bip01_BackPack,
-		}
-
-		attachment Schoolbag_weaponshovel {
-			offset = 0.0900 0.0000 0.0600,
-			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

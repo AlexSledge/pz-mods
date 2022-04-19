@@ -1,6 +1,7 @@
 IGUI_EN = {
 
     IGUI_HotbarAttachment_SchoolbagWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_SchoolbagShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_SchoolbagLeft = "Left Slot",
     IGUI_HotbarAttachment_SchoolbagRight = "Right Slot",
     IGUI_HotbarAttachment_SchoolbagBedroll = "Bedroll Slot",
@@ -8,6 +9,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_SchoolbagFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_AlicepackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_AlicepackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_AlicepackLeft = "Left Slot",
     IGUI_HotbarAttachment_AlicepackRight = "Right Slot",
     IGUI_HotbarAttachment_AlicepackBedroll = "Bedroll Slot",
@@ -15,6 +17,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_AlicepackFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BigHikingbagWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BigHikingbagShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BigHikingbagLeft = "Left Slot",
     IGUI_HotbarAttachment_BigHikingbagRight = "Right Slot",
     IGUI_HotbarAttachment_BigHikingbagBedroll = "Bedroll Slot",
@@ -22,6 +25,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BigHikingbagFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_HikingbagWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_HikingbagShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_HikingbagLeft = "Left Slot",
     IGUI_HotbarAttachment_HikingbagRight = "Right Slot",
     IGUI_HotbarAttachment_HikingbagBedroll = "Bedroll Slot",
@@ -29,6 +33,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_HikingbagFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_HRWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_HRShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_HRLeft = "Left Slot",
     IGUI_HotbarAttachment_HRRight = "Right Slot",
     IGUI_HotbarAttachment_HRBedroll = "Bedroll Slot",
@@ -36,6 +41,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_HRFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_RUKSAK1Weapon = "Weapon Slot",
+    IGUI_HotbarAttachment_RUKSAK1ShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_RUKSAK1Left = "Left Slot",
     IGUI_HotbarAttachment_RUKSAK1Right = "Right Slot",
     IGUI_HotbarAttachment_RUKSAK1Bedroll = "Bedroll Slot",
@@ -43,6 +49,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_RUKSAK1Flashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_RUKSAK2Weapon = "Weapon Slot",
+    IGUI_HotbarAttachment_RUKSAK2ShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_RUKSAK2Left = "Left Slot",
     IGUI_HotbarAttachment_RUKSAK2Right= "Right Slot",
     IGUI_HotbarAttachment_RUKSAK2Bedroll = "Bedroll Slot",
@@ -50,6 +57,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_RUKSAK2Flashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_ANATWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_ANATShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_ANATLeft = "Left Slot",
     IGUI_HotbarAttachment_ANATRight = "Right Slot",
     IGUI_HotbarAttachment_ANATBedroll = "Bedroll Slot",
@@ -57,20 +65,39 @@ IGUI_EN = {
     IGUI_HotbarAttachment_ANATFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_NomadBackpackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_NomadBackpackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_NomadBackpackLeft = "Left Slot",
     IGUI_HotbarAttachment_NomadBackpackRight = "Right Slot",
     IGUI_HotbarAttachment_NomadBackpackBedroll = "Bedroll Slot",
     IGUI_HotbarAttachment_NomadBackpackTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_NomadBackpackFlashlight = "Flashlight Slot",
 
+    IGUI_HotbarAttachment_PrepperVestPackedWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedShortWeapon = "Short Weapon Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedLeft = "Left Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedRight = "Right Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedBedroll = "Bedroll Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedTrinket = "Trinket Slot",
+    IGUI_HotbarAttachment_PrepperVestPackedFlashlight = "Flashlight Slot",
+
     IGUI_HotbarAttachment_RucksackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_RucksackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_RucksackLeft = "Left Slot",
     IGUI_HotbarAttachment_RucksackRight = "Right Slot",
     IGUI_HotbarAttachment_RucksackBedroll = "Bedroll Slot",
     IGUI_HotbarAttachment_RucksackTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_RucksackFlashlight = "Flashlight Slot",
 
+    IGUI_HotbarAttachment_PoliceUtilityBagWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_PoliceUtilityBagShortWeapon = "Short Weapon Slot",
+    IGUI_HotbarAttachment_PoliceUtilityBagLeft = "Left Slot",
+    IGUI_HotbarAttachment_PoliceUtilityBagRight = "Right Slot",
+    IGUI_HotbarAttachment_PoliceUtilityBagBedroll = "Bedroll Slot",
+    IGUI_HotbarAttachment_PoliceUtilityBagTrinket = "Trinket Slot",
+    IGUI_HotbarAttachment_PoliceUtilityBagFlashlight = "Flashlight Slot",
+
     IGUI_HotbarAttachment_CFP90PatrolPackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_CFP90PatrolPackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_CFP90PatrolPackLeft = "Left Slot",
     IGUI_HotbarAttachment_CFP90PatrolPackRight = "Right Slot",
     IGUI_HotbarAttachment_CFP90PatrolPackBedroll = "Bedroll Slot",
@@ -78,6 +105,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_CFP90PatrolPackFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_MilitaryMedicalBagWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_MilitaryMedicalBagShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_MilitaryMedicalBagLeft = "Left Slot",
     IGUI_HotbarAttachment_MilitaryMedicalBagRight = "Right Slot",
     IGUI_HotbarAttachment_MilitaryMedicalBagBedroll = "Bedroll Slot",
@@ -85,6 +113,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_MilitaryMedicalBagFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagSniperPackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagSniperPackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagSniperPackLeft = "Left Slot",
     IGUI_HotbarAttachment_BagSniperPackRight = "Right Slot",
     IGUI_HotbarAttachment_BagSniperPackBedroll = "Bedroll Slot",
@@ -92,6 +121,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagSniperPackFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_ARVNRucksackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_ARVNRucksackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_ARVNRucksackLeft = "Left Slot",
     IGUI_HotbarAttachment_ARVNRucksackRight = "Right Slot",
     IGUI_HotbarAttachment_ARVNRucksackBedroll = "Bedroll Slot",
@@ -99,6 +129,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_ARVNRucksackFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagST53SetWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagST53SetShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagST53SetLeft = "Left Slot",
     IGUI_HotbarAttachment_BagST53SetRight = "Right Slot",
     IGUI_HotbarAttachment_BagST53SetBedroll = "Bedroll Slot",
@@ -106,6 +137,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagST53SetFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagSCBAWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagSCBAShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagSCBALeft = "Left Slot",
     IGUI_HotbarAttachment_BagSCBARight = "Right Slot",
     IGUI_HotbarAttachment_BagSCBABedroll = "Bedroll Slot",
@@ -113,6 +145,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagSCBAFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagZIPWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagZIPShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagZIPLeft = "Left Slot",
     IGUI_HotbarAttachment_BagZIPRight = "Right Slot",
     IGUI_HotbarAttachment_BagZIPBedroll = "Bedroll Slot",
@@ -120,6 +153,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagZIPFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagSSOWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagSSOShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagSSOLeft = "Left Slot",
     IGUI_HotbarAttachment_BagSSORight = "Right Slot",
     IGUI_HotbarAttachment_BagSSOBedroll = "Bedroll Slot",
@@ -127,6 +161,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagSSOFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagSavottaWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagSavottaShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagSavottaLeft = "Left Slot",
     IGUI_HotbarAttachment_BagSavottaRight = "Right Slot",
     IGUI_HotbarAttachment_BagSavottaBedroll = "Bedroll Slot",
@@ -134,6 +169,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagSavottaFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagBushWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagBushShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagBushLeft = "Left Slot",
     IGUI_HotbarAttachment_BagBushRight = "Right Slot",
     IGUI_HotbarAttachment_BagBushBedroll = "Bedroll Slot",
@@ -141,6 +177,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagBushFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagHuntingWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagHuntingShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagHuntingLeft = "Left Slot",
     IGUI_HotbarAttachment_BagHuntingRight = "Right Slot",
     IGUI_HotbarAttachment_BagHuntingBedroll = "Bedroll Slot",
@@ -148,6 +185,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagHuntingFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagRadioPackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagRadioPackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagRadioPackLeft = "Left Slot",
     IGUI_HotbarAttachment_BagRadioPackRight = "Right Slot",
     IGUI_HotbarAttachment_BagRadioPackBedroll = "Bedroll Slot",
@@ -155,6 +193,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagRadioPackFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagTacticalAliceWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagTacticalAliceShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagTacticalAliceLeft = "Left Slot",
     IGUI_HotbarAttachment_BagTacticalAliceRight = "Right Slot",
     IGUI_HotbarAttachment_BagTacticalAliceBedroll = "Bedroll Slot",
@@ -162,6 +201,7 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagTacticalAliceFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagCatPackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagCatPackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagCatPackLeft = "Left Slot",
     IGUI_HotbarAttachment_BagCatPackRight = "Right Slot",
     IGUI_HotbarAttachment_BagCatPackBedroll = "Bedroll Slot",
@@ -169,18 +209,20 @@ IGUI_EN = {
     IGUI_HotbarAttachment_BagCatPackFlashlight = "Flashlight Slot",
 
     IGUI_HotbarAttachment_BagM2A1PackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_BagM2A1PackShortWeapon = "Short Weapon Slot",
     IGUI_HotbarAttachment_BagM2A1PackLeft = "Left Slot",
     IGUI_HotbarAttachment_BagM2A1PackRight = "Right Slot",
     IGUI_HotbarAttachment_BagM2A1PackBedroll = "Bedroll Slot",
     IGUI_HotbarAttachment_BagM2A1PackTrinket = "Trinket Slot",
     IGUI_HotbarAttachment_BagM2A1PackFlashlight = "Flashlight Slot",
 
-    IGUI_HotbarAttachment_BigSpiffoBackpackWeapon = "Weapon Slot",
-    IGUI_HotbarAttachment_BigSpiffoBackpackLeft = "Left Slot",
-    IGUI_HotbarAttachment_BigSpiffoBackpackRight = "Right Slot",
-    IGUI_HotbarAttachment_BigSpiffoBackpackBedroll = "Bedroll Slot",
-    IGUI_HotbarAttachment_BigSpiffoBackpackTrinket = "Trinket Slot",
-    IGUI_HotbarAttachment_BigSpiffoBackpackFlashlight = "Flashlight Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackWeapon = "Weapon Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackShortWeapon = "Short Weapon Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackLeft = "Left Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackRight = "Right Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackBedroll = "Bedroll Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackTrinket = "Trinket Slot",
+    IGUI_HotbarAttachment_sBigSpiffoBackpackFlashlight = "Flashlight Slot",
     
     IGUI_CraftCategory_Tailoring = "Tailoring",
 

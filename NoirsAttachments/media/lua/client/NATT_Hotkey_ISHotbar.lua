@@ -220,7 +220,7 @@ function ISHotbar:attachItem (item, slot, slotIndex, slotDef, doAnim)
 		
 		self:reloadIcons();
 	end
-	NATTwrh.applyBackpackWR(self.chr,item)
+	NATT.applyBackpackWR(self.chr,item)
 end
 
 function isBack(slot)
@@ -272,7 +272,7 @@ end
 
 local checkReplacement = false
 function ISHotbar:removeItem(item, doAnim)
-	NATTwrh.restoreWeight(item)
+	NATT.restoreWeight(item)
 	if doAnim then
 		self:setAttachAnim(item);
 		ISTimedActionQueue.add(ISDetachItemHotbar:new(self.chr, item));
@@ -289,20 +289,18 @@ function ISHotbar:removeItem(item, doAnim)
 	end
 end
 
-local function sortSlots(item,attachmentsProvided)
-	local slotsOrder = {
-		[getAttachmentName("Weapon",item)] = true,
-		[getAttachmentName("Flashlight",item)] = true,
-		[getAttachmentName("Right",item)] = true,
-		[getAttachmentName("Left",item)] = true,
-		[getAttachmentName("Bedroll",item)] = true,
-		[getAttachmentName("Trinket",item)] = true,
+local function sortSlots(item,attachments)
+	local sorted = {
+		[getAttachmentName("Weapon",item)] = false,
+		[getAttachmentName("ShortWeapon",item)] = false,
+		[getAttachmentName("Flashlight",item)] = false,
+		[getAttachmentName("Right",item)] = false,
+		[getAttachmentName("Left",item)] = false,
+		[getAttachmentName("Bedroll",item)] = false,
+		[getAttachmentName("Trinket",item)] = false,
 	}
-	local sorted = {}
-	for k,v in pairs(attachmentsProvided) do
-		if slotsOrder[k] then 
-			sorted[k] = v
-		end
+	for k,v in pairs(attachments) do
+		sorted[k]=v
 	end
 	return sorted
 end
@@ -312,10 +310,10 @@ local function loadAttachmentsProvided(chr)
 	if not item then return end
 	local modData = item:getModData()
 	local attsList = ArrayList.new();
-	if modData.attachmentsProvided then
+	if modData.attachments then
 		item:setAttachmentsProvided(attsList)
-		modData.attachmentsProvided = sortSlots(item,modData.attachmentsProvided)
-		for k,v in pairs(modData.attachmentsProvided) do
+		modData.attachments = sortSlots(item,modData.attachments)
+		for k,v in pairs(modData.attachments) do
 			if v then 
 				attsList:add(k)
 			end

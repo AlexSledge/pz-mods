@@ -2,7 +2,7 @@ module Base {
 
 	recipe Add Weapon Slot
     {
-        [recipeBackpacks],
+        [WeaponSlotBackpacks],
         LeatherStrips=4,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
@@ -19,7 +19,7 @@ module Base {
 
 	recipe Remove Weapon Slot
     {
-        [recipeBackpacks],
+        [WeaponSlotBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
 
         Result:NATT_Weapon,
@@ -38,9 +38,47 @@ module Base {
 		Icon	=	AttachmentSlot,
 	}
 
+    recipe Add Short Weapon Slot
+    {
+        [ShortWeaponSlotBackpacks],
+        LeatherStrips=4,
+        Thread,
+        keep KitchenKnife/HuntingKnife/Scissors,
+        keep Needle,
+
+        Result:NATT_ShortWeapon,
+        Time:300.0,
+		OnCreate:AddAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidAdd,
+        Category:Tailoring,
+		SkillRequired:Tailoring=3,
+    }
+
+	recipe Remove Short Weapon Slot
+    {
+        [ShortWeaponSlotBackpacks],
+        keep KitchenKnife/HuntingKnife/Scissors,
+
+        Result:NATT_ShortWeapon,
+        Time:300.0,
+		OnCreate:RemoveAttachmentSlot,
+		RemoveResultItem:true,
+		OnTest: checkIsValidRemove,
+        Category:Tailoring,
+    }
+
+    item NATT_ShortWeapon
+	{
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	= Short Weapon Slot,
+		Icon	=	AttachmentSlot,
+	}
+
     recipe Add Left Slot
     {
-        [recipeBackpacks],
+        [LeftSlotBackpacks],
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
@@ -57,7 +95,7 @@ module Base {
 
 	recipe Remove Left Slot
     {
-        [recipeBackpacks],
+        [LeftSlotBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
 
         Result:NATT_Left,
@@ -78,7 +116,7 @@ module Base {
 
     recipe Add Right Slot
     {
-        [recipeBackpacks],
+        [RightSlotBackpacks],
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
@@ -95,7 +133,7 @@ module Base {
 
 	recipe Remove Right Slot
     {
-        [recipeBackpacks],
+        [RightSlotBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
 
         Result:NATT_Right,
@@ -116,7 +154,7 @@ module Base {
 
     recipe Add Flashlight Slot
     {
-        [recipeBackpacks],
+        [FlashlightSlotBackpacks],
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
@@ -133,11 +171,11 @@ module Base {
 
 	recipe Remove Flashlight Slot
     {
-        [recipeBackpacks],
+        [FlashlightSlotBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
 
 
-        Result:NATT_FlashLight,
+        Result:NATT_Flashlight,
         Time:300.0,
 		OnCreate:RemoveAttachmentSlot,
 		RemoveResultItem:true,
@@ -155,7 +193,7 @@ module Base {
 
     recipe Add Bedroll Slot
     {
-        [recipeBackpacks],
+        [BedrollSlotBackpacks],
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
@@ -172,7 +210,7 @@ module Base {
 
 	recipe Remove Bedroll Slot
     {
-        [recipeBackpacks],
+        [BedrollSlotBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
 
         Result:NATT_Bedroll,
@@ -194,7 +232,7 @@ module Base {
 
     recipe Add Trinket Slot
     {
-        [recipeBackpacks],
+        [TrinketSlotBackpacks],
         LeatherStrips=2,
         Thread,
         keep KitchenKnife/HuntingKnife/Scissors,
@@ -211,7 +249,7 @@ module Base {
 
 	recipe Remove Trinket Slot
     {
-        [recipeBackpacks],
+        [TrinketSlotBackpacks],
         keep KitchenKnife/HuntingKnife/Scissors,
 
         Result:NATT_Trinket,

@@ -1,4 +1,4 @@
-NATTwrh = {}
+NATT = {}
 
 local attachmentsProvided = {}
 local function getAttachmentsProvided(item)
@@ -17,7 +17,7 @@ local function excludeItem(item)
 	return false
 end
 
-NATTwrh.applyBackpackWR = function(chr,item)
+NATT.applyBackpackWR = function(chr,item)
 	if excludeItem(item) then return end;
 	local slotType = item:getAttachedSlotType()
 	if not slotType then return end
@@ -35,7 +35,7 @@ NATTwrh.applyBackpackWR = function(chr,item)
 	end
 end
 
-NATTwrh.restoreWeight = function (item)
+NATT.restoreWeight = function (item)
 	if not item then return end;
 	if excludeItem(item) then return end;
 	local modData = item:getModData()
@@ -45,62 +45,62 @@ NATTwrh.restoreWeight = function (item)
 end
 
 local lastEquippedItem
-NATTwrh.equipPrimary = function (chr, item)
+NATT.equipPrimary = function (chr, item)
     if item and item:getAttachedSlotType() then
         lastEquippedItem = item
-        NATTwrh.restoreWeight(item)
+        NATT.restoreWeight(item)
         return
     end
     if lastEquippedItem and lastEquippedItem:getAttachedSlotType() then
-        NATTwrh.applyBackpackWR(chr,lastEquippedItem)
+        NATT.applyBackpackWR(chr,lastEquippedItem)
    		return
  	end
 end
 
-NATTwrh.OnClothingUpdated = function(chr)
+NATT.OnClothingUpdated = function(chr)
 	local hotbar = getPlayerHotbar(chr:getPlayerNum());
 	if not hotbar then return end;
 	for _,item in pairs(hotbar.attachedItems) do
 		if chr:isEquipped(item) then
-			NATTwrh.restoreWeight(item)
+			NATT.restoreWeight(item)
 		end
 	end
 end
 
 function ISInventoryTransferAction:waitToStart()
-    NATTwrh.restoreWeight(self.item)
+    NATT.restoreWeight(self.item)
     return false
 end
 
 local oldISInventoryTransferActionStop = ISInventoryTransferAction.stop
 function ISInventoryTransferAction:stop()
 	oldISInventoryTransferActionStop(self)
-	NATTwrh.restoreWeight(self.item)
-	NATTwrh.applyBackpackWR(self.character,self.item)
+	NATT.restoreWeight(self.item)
+	NATT.applyBackpackWR(self.character,self.item)
 end
 
 function ISDetachItemHotbar:waitToStart()
-    NATTwrh.restoreWeight(self.item)
+    NATT.restoreWeight(self.item)
     return false
 end
 
 function ISAttachItemHotbar:waitToStart()
 	self.item:setAttachedSlotType(self.slotDef.type)
-    NATTwrh.applyBackpackWR(self.character,self.item)
+    NATT.applyBackpackWR(self.character,self.item)
     return false
 end
 
 local oldISAttachItemHotbarStop = ISAttachItemHotbar.stop
 function ISAttachItemHotbar:stop()
 	oldISAttachItemHotbarStop(self)
-	NATTwrh.restoreWeight(self.item)
+	NATT.restoreWeight(self.item)
 end
 
 local oldISInventoryPaneGetActualItems = ISInventoryPane.getActualItems
 function ISInventoryPane.getActualItems(items)
 	local itemsTmp = oldISInventoryPaneGetActualItems(items)
 	for _,item in ipairs(itemsTmp) do
-		NATTwrh.restoreWeight(item)
+		NATT.restoreWeight(item)
 	end
 	return itemsTmp
 end
@@ -111,14 +111,14 @@ function ISInventoryPaneDraggedItems:reset()
         for _,item in ipairs(self.items) do
             if item:getAttachedSlotType() then
                 local chr = getSpecificPlayer(self.playerNum)
-                NATTwrh.applyBackpackWR(chr,item)
+                NATT.applyBackpackWR(chr,item)
 			else
-				NATTwrh.restoreWeight(item)
+				NATT.restoreWeight(item)
 			end
         end
     end
     oldISInventoryPaneDraggedItemsReset(self)
 end
 
-Events.OnClothingUpdated.Add(NATTwrh.OnClothingUpdated)
-Events.OnEquipPrimary.Add(NATTwrh.equipPrimary)
+Events.OnClothingUpdated.Add(NATT.OnClothingUpdated)
+Events.OnEquipPrimary.Add(NATT.equipPrimary)
