@@ -289,24 +289,44 @@ function ISHotbar:removeItem(item, doAnim)
 	end
 end
 
+local function sortSlots(item,attachmentsProvided)
+	local possibleSlots = {
+		[getAttachmentName("Weapon",item)] = false,
+		[getAttachmentName("Flashlight",item)] = false,
+		[getAttachmentName("Right",item)] = false,
+		[getAttachmentName("Left",item)] = false,
+		[getAttachmentName("Bedroll",item)] = false,
+		[getAttachmentName("Trinket",item)] = false,
+	}
+	for k,_ in pairs(attachmentsProvided) do
+		if possibleSlots[k] ~= nil then 
+			possibleSlots[k] = true
+		end
+	end
+	attachmentsProvided = {}
+	for k,v in pairs(possibleSlots) do
+		if v then 
+			attachmentsProvided[k]=v
+		end
+	end
+	return attachmentsProvided
+end
+
 local function loadAttachmentsProvided(chr)
 	local item = chr:getClothingItem_Back()
 	if not item then return end
 	local modData = item:getModData()
 	local attsList = ArrayList.new();
 	if modData.attachmentsProvided then
+		item:setAttachmentsProvided(attsList)
+		modData.attachmentsProvided = sortSlots(item,modData.attachmentsProvided)
 		for k,v in pairs(modData.attachmentsProvided) do
 			if v then 
 				attsList:add(k)
 			end
 		end
-		local attachmentsProvided = item:getAttachmentsProvided() 
-		if attachmentsProvided then
-			item:getAttachmentsProvided():addAll(attsList)
-		else
-			item:setAttachmentsProvided(attsList)
-		end
  	end
+	item:setAttachmentsProvided(attsList)
 end
 
 local originalRefresh = ISHotbar.refresh;

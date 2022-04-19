@@ -19,7 +19,7 @@ local function transferItemsToInventory(container,player)
 	end
 end
 
-local function getAttachmentName(baseWord,item)
+function getAttachmentName(baseWord,item)
 	local prefix = string.gsub(item:getFullType(),"Base.","")
 	return NATTBackpacks[prefix]..baseWord
 end
@@ -34,11 +34,6 @@ local function slotHandler(result,items,player,add)
 		modData.attachmentsProvided= {}
 	end
 	modData.attachmentsProvided[attachmentName] = add
-	if not add then
-		if item:getAttachmentsProvided() then
-			item:getAttachmentsProvided():remove(attachmentName)
-		end
-	end
 	player:getInventory():AddItem(item)
 end
 

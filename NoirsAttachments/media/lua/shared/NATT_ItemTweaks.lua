@@ -140,8 +140,6 @@ if isModActivated(NATTmods.PwSleepingbags) then
 end
 
 if isModActivated(NATTmods.UndeadSuvivor) then
-	Tweaker("UndeadSurvivor.NomadBackpack","AttachmentsProvided", "NomadBackpackBedroll");
-
 	Tweaker("UndeadSurvivor.StalkerMask","StaticModel", "StalkerMask_Ground");
 	Tweaker("UndeadSurvivor.StalkerMask","AttachmentType", "MaskGround");
 

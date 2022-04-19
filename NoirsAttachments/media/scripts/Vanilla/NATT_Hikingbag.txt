@@ -113,6 +113,18 @@ module Base {
 			bone = Bip01_BackPack,
 		}
 
+		attachment Hikingbag_weaponbig {
+			offset = 0.0900 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponshovel {
+			offset = 0.0900 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
 		attachment Hikingbag_weaponpan {
 			offset = 0.0900 0.0000 -0.0300,
 			rotate = 90.0000 40.0000 -180.0000,
@@ -250,6 +262,18 @@ module Base {
 		attachment Hikingbag_weapon {
 			offset = 0.1150 0.0000 0.0600,
 			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponbig {
+			offset = 0.1150 0.0000 0.0700,
+			rotate = 90.0000 0.0000 -180.0000,
+			bone = Bip01_BackPack,
+		}
+
+		attachment Hikingbag_weaponshovel {
+			offset = 0.1150 0.0000 0.1500,
+			rotate = 90.0000 90.0000 -180.0000,
 			bone = Bip01_BackPack,
 		}
 

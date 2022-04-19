@@ -6,7 +6,6 @@ NATTmods = {
 	ClothesBox = "2507488373",
 	UndeadSuvivor = "UndeadSuvivor",
 	ScrapArmor = "ScrapArmor(new version)",
-	SLEO = "SLEO",
 	SMUI = "SMUI",
 	MoreTraits = "ToadTraits",
 	SWATPack = "Swatpack",
@@ -17,7 +16,16 @@ NATTmods = {
 	SnakeClothing = "SnakeClothingMod",
 	PwSleepingbags = "PwSleepingbags",
 	DawnTime = "DawnTime",
-}  
+}
+
+NATTBackpacks = {
+    Bag_Schoolbag = "Schoolbag",
+    Bag_ALICEpack = "Alicepack",
+    Bag_ALICEpack_Army = "Alicepack",
+    Bag_SurvivorBag = "Alicepack",
+    Bag_BigHikingBag = "BigHikingbag",
+    Bag_NormalHikingBag = "Hikingbag",
+}
 
 local modsBackpacks = {
     [NATTmods.Pitstop] = {
@@ -78,15 +86,6 @@ local modsBackpacks = {
         Bag_Cat_Pack = "BagCatPack",
         Bag_M2A1_Pack = "BagM2A1Pack",
     },
-}
-
-NATTBackpacks = {
-    Bag_Schoolbag = "Schoolbag",
-    Bag_ALICEpack = "Alicepack",
-    Bag_ALICEpack_Army = "Alicepack",
-    Bag_SurvivorBag = "Alicepack",
-    Bag_BigHikingBag = "BigHikingbag",
-    Bag_NormalHikingBag = "Hikingbag",
 }
 
 activatedModsCache = nil
