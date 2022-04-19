@@ -21,27 +21,33 @@ end
 
 local excludedItemsFromSlot = {
 	Weapon = {
-		Bag_Bush = true,
 		Bag_Schoolbag = true,
+		Bag_Bush = true,
+		["UndeadSurvivor.PrepperVestPacked"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
 	},
 	Right = {
 		Bag_Bush = true,
+		["UndeadSurvivor.PrepperVestPacked"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
 	},
 	Bedroll = {
 		Bag_Bush = true,
-		Bag_Schoolbag = true,
+		["UndeadSurvivor.PrepperVestPacked"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
 	},
 	Trinket = {
 		Bag_Bush = true,
+		["UndeadSurvivor.PrepperVestPacked"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBag"] = true,
 		["SLEOClothing.Bag_PoliceUtilityBagGreen"] = true,
-	}
+	},
+	Flashlight = {
+		["UndeadSurvivor.PrepperVestPacked"] = true,
+	},
 }
 
 function getAttachmentName(baseWord,item)
@@ -152,8 +158,10 @@ end
 
 function FlashlightSlotBackpacks(scriptItems) 
 	for k,v in pairs(NATTBackpacks) do
-		local scriptItem = getScriptManager():FindItem(k)
-		scriptItems:add(scriptItem)
+		if not excludedItemsFromSlot["Flashlight"][k] then
+			local scriptItem = getScriptManager():FindItem(k)
+			scriptItems:add(scriptItem)
+		end
 	end
 end
 

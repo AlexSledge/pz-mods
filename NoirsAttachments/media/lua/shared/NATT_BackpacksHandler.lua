@@ -40,6 +40,7 @@ local modsBackpacks = {
     },
     [NATTmods.UndeadSuvivor] = {
         ["UndeadSurvivor.NomadBackpack"] = "NomadBackpack",
+        ["UndeadSurvivor.PrepperVestPacked"] = "PrepperVestPacked",
     },
     [NATTmods.ScrapArmor] = {
         Rucksack = "Rucksack",

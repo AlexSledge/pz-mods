@@ -289,36 +289,55 @@ function ISHotbar:removeItem(item, doAnim)
 	end
 end
 
-local function sortSlots(item,attachments)
-	local sorted = {
-		[getAttachmentName("Weapon",item)] = false,
-		[getAttachmentName("ShortWeapon",item)] = false,
-		[getAttachmentName("Flashlight",item)] = false,
-		[getAttachmentName("Right",item)] = false,
-		[getAttachmentName("Left",item)] = false,
-		[getAttachmentName("Bedroll",item)] = false,
-		[getAttachmentName("Trinket",item)] = false,
+local getModSlotsList(item,active){
+	local slots = {
+		[getAttachmentName("Weapon",item)] = active,
+		[getAttachmentName("ShortWeapon",item)] = active,
+		[getAttachmentName("Flashlight",item)] = active,
+		[getAttachmentName("Right",item)] = active,
+		[getAttachmentName("Left",item)] = active,
+		[getAttachmentName("Bedroll",item)] = active,
+		[getAttachmentName("Trinket",item)] = active,
 	}
+	return slots
+}
+
+local function sortSlots(item,attachments)
+	local sorted = getModSlotsList(item,false)
 	for k,v in pairs(attachments) do
 		sorted[k]=v
 	end
 	return sorted
 end
 
+local function defaultSlots(item)
+	local modSlots = getModSlotsList(item,true)
+	local attsList = ArrayList.new();
+	local attachmentsProvided = item:getAttachmentsProvided()
+	if attachmentsProvided then
+		for i=0, attachmentsProvided:size() - 1 do
+			if not modSlots[attachmentsProvided:get(i)]  then
+				attsList:add(attachmentsProvided:get(i))
+			end
+		end
+	end
+	return attsList
+end
+
 local function loadAttachmentsProvided(chr)
 	local item = chr:getClothingItem_Back()
 	if not item then return end
 	local modData = item:getModData()
-	local attsList = ArrayList.new();
 	if modData.attachments then
-		item:setAttachmentsProvided(attsList)
+		local defaultSlots = defaultSlots(item)
+		item:setAttachmentsProvided(ArrayList.new())
 		modData.attachments = sortSlots(item,modData.attachments)
 		for k,v in pairs(modData.attachments) do
 			if v then 
-				attsList:add(k)
+				item:getAttachmentsProvided():add(k)
 			end
 		end
-		item:setAttachmentsProvided(attsList)
+		item:getAttachmentsProvided():addAll(defaultSlots)
  	end
 end
 
