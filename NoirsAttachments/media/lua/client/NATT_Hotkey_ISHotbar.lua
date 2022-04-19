@@ -290,26 +290,21 @@ function ISHotbar:removeItem(item, doAnim)
 end
 
 local function sortSlots(item,attachmentsProvided)
-	local possibleSlots = {
-		[getAttachmentName("Weapon",item)] = false,
-		[getAttachmentName("Flashlight",item)] = false,
-		[getAttachmentName("Right",item)] = false,
-		[getAttachmentName("Left",item)] = false,
-		[getAttachmentName("Bedroll",item)] = false,
-		[getAttachmentName("Trinket",item)] = false,
+	local slotsOrder = {
+		[getAttachmentName("Weapon",item)] = true,
+		[getAttachmentName("Flashlight",item)] = true,
+		[getAttachmentName("Right",item)] = true,
+		[getAttachmentName("Left",item)] = true,
+		[getAttachmentName("Bedroll",item)] = true,
+		[getAttachmentName("Trinket",item)] = true,
 	}
-	for k,_ in pairs(attachmentsProvided) do
-		if possibleSlots[k] ~= nil then 
-			possibleSlots[k] = true
+	local sorted = {}
+	for k,v in pairs(attachmentsProvided) do
+		if slotsOrder[k] then 
+			sorted[k] = v
 		end
 	end
-	attachmentsProvided = {}
-	for k,v in pairs(possibleSlots) do
-		if v then 
-			attachmentsProvided[k]=v
-		end
-	end
-	return attachmentsProvided
+	return sorted
 end
 
 local function loadAttachmentsProvided(chr)
@@ -325,8 +320,8 @@ local function loadAttachmentsProvided(chr)
 				attsList:add(k)
 			end
 		end
+		item:setAttachmentsProvided(attsList)
  	end
-	item:setAttachmentsProvided(attsList)
 end
 
 local originalRefresh = ISHotbar.refresh;

@@ -15,5 +15,12 @@ ItemName_ES = {
     ItemName_Base.SleepingbagLBRolled = "Saco de dormir (Enrollado)",
     ItemName_Base.SleepingbagRRolled = "Saco de dormir (Enrollado)",
     ItemName_Base.SleepingbagGRolled = "Saco de dormir (Enrollado)",
+
+    ItemName_Base.NATT_Trinket = "Ranura Baratija",
+    ItemName_Base.NATT_Weapon= "Ranura Arma",
+    ItemName_Base.NATT_Flashlight = "Ranura Linterna",
+    ItemName_Base.NATT_Left  = "Ranura Izquierda",
+    ItemName_Base.NATT_Right  = "Ranura Derecha",
+    ItemName_Base.NATT_Bedroll  = "Ranura Saco de dormir",
     
 }

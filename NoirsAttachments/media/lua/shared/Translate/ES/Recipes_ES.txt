@@ -8,4 +8,11 @@ Recipes_ES = {
     Recipe_Add_Pouch_SnakeAlice = "Agregar bolsa de almacenaje a mochila Alice",
     Recipe_Remove_Pouch_SnakeAlice = "Quitar bolsa de almacenaje a mochila Alice",
 
+    Recipe_Add_Weapon_Slot = "Agregar ranura Arma",
+    Recipe_Add_Trinket_Slot = "Agregar ranura Baratija",
+    Recipe_Add_Left_Slot = "Agregar ranura Izquierda",
+    Recipe_Add_Right_Slot = "Agregar ranura Derecha",
+    Recipe_Add_Bedroll_Slot = "Agregar ranura Saco de dormir",
+    Recipe_Add_Flashlight_Slot = "Agregar ranura Linterna",
+
 }
